@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코딩 용어 퀴즈</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 홈 화면 -->
+  <div id="screen-home" class="screen active">
+    <header class="app-header">
+      <h1>코딩 용어 퀴즈</h1>
+    </header>
+    <main class="home-container">
+      <p class="section-label">주차 선택</p>
+      <div id="week-list"></div>
+
+      <div id="review-section" style="display:none">
+        <p class="section-label" style="margin-top:1.5rem">복습</p>
+        <div id="review-card" class="review-card">
+          <div class="review-card-header">
+            <span class="review-label">★ 즐겨찾기 복습</span>
+            <span id="review-count" class="review-count"></span>
+          </div>
+          <p class="review-hint">오답·모르겠음으로 저장된 용어</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- 주차 상세 화면 -->
+  <div id="screen-week" class="screen">
+    <header class="app-header nav-header">
+      <button id="btn-back-home" class="back-btn">← 홈</button>
+      <h2 id="week-title"></h2>
+      <span></span>
+    </header>
+    <main class="week-container">
+      <div id="day-list"></div>
+    </main>
+  </div>
+
+  <!-- 퀴즈 화면 -->
+  <div id="screen-quiz" class="screen">
+    <header class="app-header nav-header">
+      <button id="btn-back-week" class="back-btn">← 뒤로</button>
+      <h2 id="quiz-session-title"></h2>
+      <span id="quiz-progress" class="quiz-progress-badge"></span>
+    </header>
+    <div id="review-controls" class="review-controls" style="display:none">
+      <select id="category-select" class="category-select"></select>
+    </div>
+    <main class="quiz-container">
+      <div class="question-meta">
+        <span class="category-badge" id="category-badge"></span>
+        <span class="difficulty-badge" id="difficulty-badge"></span>
+      </div>
+      <div class="question-box">
+        <p class="question-label">다음 설명에 해당하는 용어를 고르세요.</p>
+        <p class="question-stem" id="question-stem"></p>
+      </div>
+      <div class="choices" id="choices"></div>
+      <div class="result-box" id="result-box"></div>
+      <button id="next-btn">다음 문제 →</button>
+    </main>
+  </div>
+
+  <!-- 완료 화면 -->
+  <div id="screen-complete" class="screen">
+    <main class="complete-container">
+      <div class="complete-card">
+        <div class="complete-emoji">🎉</div>
+        <h2 id="complete-title"></h2>
+        <p id="complete-score" class="complete-score"></p>
+        <p id="complete-miss" class="complete-miss"></p>
+        <div class="complete-buttons">
+          <button id="btn-complete-next" class="btn-primary">다음 날로 →</button>
+          <button id="btn-complete-home" class="btn-secondary">홈으로</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
