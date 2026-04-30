@@ -4,39 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>코딩 용어 퀴즈</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="bg-orb bg-orb-1"></div>
-  <div class="bg-orb bg-orb-2"></div>
-  <div class="bg-grid"></div>
-
   <!-- 홈 화면 -->
   <div id="screen-home" class="screen active">
     <header class="app-header">
-      <div class="brand">
-        <span class="brand-bracket">&lt;</span>
-        <span class="brand-name">코딩 용어 퀴즈</span>
-        <span class="brand-bracket">&nbsp;/&gt;</span>
-        <span class="brand-cursor">_</span>
-      </div>
+      <h1>코딩 용어 퀴즈</h1>
     </header>
     <main class="home-container">
-      <p class="section-label"><span class="label-comment">// </span>주차 선택</p>
+      <p class="section-label">주차 선택</p>
       <div id="week-list"></div>
 
       <div id="review-section" style="display:none">
-        <p class="section-label" style="margin-top:2rem"><span class="label-comment">// </span>복습 모드</p>
+        <p class="section-label" style="margin-top:1.5rem">복습</p>
         <div id="wrong-review-card" class="review-card review-card-wrong">
           <div class="review-card-header">
             <span class="review-label">✗ 틀린 것 복습</span>
             <span id="wrong-count" class="review-count"></span>
           </div>
-          <p class="review-hint">오답 · 모르겠음 — 카테고리별 선택</p>
+          <p class="review-hint">오답·모르겠음 — 카테고리별 선택</p>
         </div>
         <div id="correct-review-card" class="review-card review-card-correct">
           <div class="review-card-header">
@@ -57,7 +45,7 @@
       <span></span>
     </header>
     <main class="week-container">
-      <p class="section-label"><span class="label-comment">// </span>카테고리 선택</p>
+      <p class="section-label">카테고리 선택</p>
       <div id="wrong-cat-list"></div>
     </main>
   </div>
@@ -103,7 +91,7 @@
   <div id="screen-complete" class="screen">
     <main class="complete-container">
       <div class="complete-card">
-        <div class="complete-icon">◈</div>
+        <div class="complete-emoji">🎉</div>
         <h2 id="complete-title"></h2>
         <p id="complete-score" class="complete-score"></p>
         <p id="complete-miss" class="complete-miss"></p>
