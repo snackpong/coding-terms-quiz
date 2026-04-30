@@ -294,25 +294,31 @@ body {
 }
 .btn-secondary:hover { border-color: #94a3b8; color: #e2e8f0; }
 
-/* ── 즐겨찾기 복습 카드 ── */
+/* ── 복습 카드 ── */
 .review-card {
   background: #1e293b;
-  border: 1px solid #7c3aed;
   border-radius: 12px;
   padding: 1rem 1.2rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
   transition: background 0.12s, border-color 0.12s;
 }
-.review-card:hover { background: #243044; border-color: #a78bfa; }
+.review-card-wrong  { border: 1px solid #991b1b; }
+.review-card-correct { border: 1px solid #166534; }
+.review-card-wrong:hover  { background: #243044; border-color: #ef4444; }
+.review-card-correct:hover { background: #243044; border-color: #22c55e; }
 .review-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.3rem;
 }
-.review-label { font-size: 0.95rem; font-weight: 700; color: #c4b5fd; }
-.review-count  { font-size: 0.8rem; color: #a78bfa; font-weight: 600; }
-.review-hint   { font-size: 0.75rem; color: #64748b; }
+.review-card-wrong  .review-label { color: #fca5a5; }
+.review-card-correct .review-label { color: #86efac; }
+.review-card-wrong  .review-count { color: #ef4444; font-size: 0.8rem; font-weight: 600; }
+.review-card-correct .review-count { color: #22c55e; font-size: 0.8rem; font-weight: 600; }
+.review-label { font-size: 0.95rem; font-weight: 700; }
+.review-hint  { font-size: 0.75rem; color: #64748b; }
 
 /* ── 복습 모드 카테고리 필터 ── */
 .review-controls {

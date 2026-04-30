@@ -83,6 +83,20 @@ function pickReviewTerm() {
   return weightedRandom(pool, weights);
 }
 
+function pickCorrectTerm() {
+  const stats = getTermStats();
+  const favIds = getFavorites();
+  let pool = state.allTerms.filter(t => {
+    const s = stats[t.id];
+    return s && s.correct > 0 && !favIds.includes(t.id);
+  });
+  if (state.reviewCategory !== 'all') {
+    pool = pool.filter(t => t.category === state.reviewCategory);
+  }
+  if (pool.length === 0) return null;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
 // ── 화면 전환 ─────────────────────────────────────────────
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -119,11 +133,15 @@ function showHome() {
     list.appendChild(card);
   }
 
-  // 즐겨찾기 복습 카드
   const favs = getFavorites();
+  const stats = getTermStats();
+  const correctIds = Object.keys(stats).filter(id => stats[id].correct > 0 && !favs.includes(id));
   const reviewSection = document.getElementById('review-section');
-  reviewSection.style.display = favs.length > 0 ? 'block' : 'none';
-  document.getElementById('review-count').textContent = `${favs.length}개`;
+  reviewSection.style.display = (favs.length > 0 || correctIds.length > 0) ? 'block' : 'none';
+  document.getElementById('wrong-count').textContent = `${favs.length}개`;
+  document.getElementById('correct-count').textContent = `${correctIds.length}개`;
+  document.getElementById('wrong-review-card').style.display = favs.length > 0 ? '' : 'none';
+  document.getElementById('correct-review-card').style.display = correctIds.length > 0 ? '' : 'none';
 }
 
 // ── 주차 상세 ─────────────────────────────────────────────
@@ -192,16 +210,54 @@ function startQuiz(week, day) {
   renderQuestion();
 }
 
-// ── 복습 모드 시작 ────────────────────────────────────────
-function startReview() {
+// ── 틀린 것 카테고리 화면 ────────────────────────────────
+function showWrongCategories() {
+  showScreen('screen-wrong-cats');
+  const favIds = getFavorites();
+  const favTerms = state.allTerms.filter(t => favIds.includes(t.id));
+
+  const catCounts = {};
+  favTerms.forEach(t => { catCounts[t.category] = (catCounts[t.category] || 0) + 1; });
+
+  const list = document.getElementById('wrong-cat-list');
+  list.innerHTML = '';
+
+  const allItem = document.createElement('div');
+  allItem.className = 'day-item';
+  allItem.innerHTML = `
+    <div class="day-info">
+      <span class="day-label">전체</span>
+      <span class="day-hint">${favIds.length}개</span>
+    </div>
+    <span class="day-status">→</span>`;
+  allItem.addEventListener('click', () => startWrongReview('all'));
+  list.appendChild(allItem);
+
+  Object.entries(catCounts)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([cat, count]) => {
+      const item = document.createElement('div');
+      item.className = 'day-item';
+      item.innerHTML = `
+        <div class="day-info">
+          <span class="day-label">${cat}</span>
+          <span class="day-hint">${count}개</span>
+        </div>
+        <span class="day-status">→</span>`;
+      item.addEventListener('click', () => startWrongReview(cat));
+      list.appendChild(item);
+    });
+}
+
+// ── 틀린 것 복습 시작 ─────────────────────────────────────
+function startWrongReview(category = 'all') {
   const favIds = getFavorites();
   const favTerms = state.allTerms.filter(t => favIds.includes(t.id));
   if (favTerms.length === 0) return;
 
   state.mode = 'review';
-  state.reviewCategory = 'all';
+  state.reviewCategory = category;
 
-  // 카테고리 필터 옵션 채우기
   const categories = [...new Set(favTerms.map(t => t.category))].sort();
   const select = document.getElementById('category-select');
   select.innerHTML = '<option value="all">전체 카테고리</option>';
@@ -211,14 +267,47 @@ function startReview() {
     opt.textContent = `${cat} (${favTerms.filter(t => t.category === cat).length})`;
     select.appendChild(opt);
   });
+  select.value = category;
 
-  document.getElementById('btn-back-week').textContent = '← 홈';
-  document.getElementById('quiz-session-title').textContent = '즐겨찾기 복습';
-  document.getElementById('quiz-progress').textContent = `★ ${favIds.length}개`;
+  document.getElementById('btn-back-week').textContent = '← 카테고리';
+  document.getElementById('quiz-session-title').textContent = '틀린 것 복습';
+  document.getElementById('quiz-progress').textContent = `✗ ${favIds.length}개`;
   document.getElementById('review-controls').style.display = 'block';
 
   showScreen('screen-quiz');
   renderQuestion(pickReviewTerm());
+}
+
+// ── 맞은 것 복습 시작 ─────────────────────────────────────
+function startCorrectReview() {
+  const stats = getTermStats();
+  const favIds = getFavorites();
+  const correctTerms = state.allTerms.filter(t => {
+    const s = stats[t.id];
+    return s && s.correct > 0 && !favIds.includes(t.id);
+  });
+  if (correctTerms.length === 0) return;
+
+  state.mode = 'correct-review';
+  state.reviewCategory = 'all';
+
+  const categories = [...new Set(correctTerms.map(t => t.category))].sort();
+  const select = document.getElementById('category-select');
+  select.innerHTML = '<option value="all">전체 카테고리</option>';
+  categories.forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = `${cat} (${correctTerms.filter(t => t.category === cat).length})`;
+    select.appendChild(opt);
+  });
+
+  document.getElementById('btn-back-week').textContent = '← 홈';
+  document.getElementById('quiz-session-title').textContent = '맞은 것 복습';
+  document.getElementById('quiz-progress').textContent = `✓ ${correctTerms.length}개`;
+  document.getElementById('review-controls').style.display = 'block';
+
+  showScreen('screen-quiz');
+  renderQuestion(pickCorrectTerm());
 }
 
 // ── 문제 렌더 ─────────────────────────────────────────────
@@ -304,7 +393,7 @@ function handleAnswer(choice, clickedBtn, term) {
     <div class="hint-text">💡 ${term.hint}</div>`;
 
   const nextBtn = document.getElementById('next-btn');
-  if (state.mode === 'review') {
+  if (state.mode === 'review' || state.mode === 'correct-review') {
     nextBtn.textContent = '다음 문제 →';
   } else {
     nextBtn.textContent = state.sessionIndex < 9 ? '다음 문제 →' : '결과 보기 →';
@@ -317,13 +406,18 @@ function onNextBtn() {
   if (state.mode === 'review') {
     const term = pickReviewTerm();
     if (term) {
-      // 진행 중 즐겨찾기 수 갱신
       const favCount = getFavorites().length;
-      document.getElementById('quiz-progress').textContent = `★ ${favCount}개`;
+      document.getElementById('quiz-progress').textContent = `✗ ${favCount}개`;
       renderQuestion(term);
     } else {
-      showHome();
+      showWrongCategories();
     }
+    return;
+  }
+  if (state.mode === 'correct-review') {
+    const term = pickCorrectTerm();
+    if (term) renderQuestion(term);
+    else showHome();
     return;
   }
   // daily mode
@@ -369,9 +463,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('btn-back-week')
     .addEventListener('click', () => {
-      if (state.mode === 'review') showHome();
+      if (state.mode === 'review') showWrongCategories();
+      else if (state.mode === 'correct-review') showHome();
       else showWeekDetail(state.currentWeek);
     });
+
+  document.getElementById('btn-wc-back')
+    .addEventListener('click', showHome);
 
   document.getElementById('btn-complete-home')
     .addEventListener('click', showHome);
@@ -379,13 +477,17 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-complete-next')
     .addEventListener('click', () => startQuiz(state.currentWeek, state.currentDay + 1));
 
-  document.getElementById('review-card')
-    .addEventListener('click', startReview);
+  document.getElementById('wrong-review-card')
+    .addEventListener('click', showWrongCategories);
+
+  document.getElementById('correct-review-card')
+    .addEventListener('click', startCorrectReview);
 
   document.getElementById('category-select')
     .addEventListener('change', e => {
       state.reviewCategory = e.target.value;
-      renderQuestion(pickReviewTerm());
+      if (state.mode === 'correct-review') renderQuestion(pickCorrectTerm());
+      else renderQuestion(pickReviewTerm());
     });
 
   init();

@@ -19,14 +19,34 @@
 
       <div id="review-section" style="display:none">
         <p class="section-label" style="margin-top:1.5rem">복습</p>
-        <div id="review-card" class="review-card">
+        <div id="wrong-review-card" class="review-card review-card-wrong">
           <div class="review-card-header">
-            <span class="review-label">★ 즐겨찾기 복습</span>
-            <span id="review-count" class="review-count"></span>
+            <span class="review-label">✗ 틀린 것 복습</span>
+            <span id="wrong-count" class="review-count"></span>
           </div>
-          <p class="review-hint">오답·모르겠음으로 저장된 용어</p>
+          <p class="review-hint">오답·모르겠음 — 카테고리별 선택</p>
+        </div>
+        <div id="correct-review-card" class="review-card review-card-correct">
+          <div class="review-card-header">
+            <span class="review-label">✓ 맞은 것 복습</span>
+            <span id="correct-count" class="review-count"></span>
+          </div>
+          <p class="review-hint">한 번이라도 정답을 맞춘 용어 전체</p>
         </div>
       </div>
+    </main>
+  </div>
+
+  <!-- 틀린 것 카테고리 화면 -->
+  <div id="screen-wrong-cats" class="screen">
+    <header class="app-header nav-header">
+      <button id="btn-wc-back" class="back-btn">← 홈</button>
+      <h2>틀린 것 복습</h2>
+      <span></span>
+    </header>
+    <main class="week-container">
+      <p class="section-label">카테고리 선택</p>
+      <div id="wrong-cat-list"></div>
     </main>
   </div>
 
