@@ -4,102 +4,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>코딩 용어 퀴즈</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- 홈 화면 -->
   <div id="screen-home" class="screen active">
-    <header class="app-header">
-      <h1>코딩 용어 퀴즈</h1>
-    </header>
-    <main class="home-container">
-      <p class="section-label">주차 선택</p>
-      <div id="week-list"></div>
+    <div class="home-brand">
+      <div class="home-kicker">CODE.QUIZ — vol. 01</div>
+      <h1 class="home-title">코딩 용어<br><span class="gradient-text">퀴즈.</span></h1>
+      <p class="home-subtitle" id="home-subtitle">주차를 선택해서 퀴즈를 시작해보세요.</p>
+    </div>
 
-      <div id="review-section" style="display:none">
-        <p class="section-label" style="margin-top:1.5rem">복습</p>
-        <div id="wrong-review-card" class="review-card review-card-wrong">
-          <div class="review-card-header">
-            <span class="review-label">✗ 틀린 것 복습</span>
-            <span id="wrong-count" class="review-count"></span>
-          </div>
-          <p class="review-hint">오답·모르겠음 — 카테고리별 선택</p>
-        </div>
-        <div id="correct-review-card" class="review-card review-card-correct">
-          <div class="review-card-header">
-            <span class="review-label">✓ 맞은 것 복습</span>
-            <span id="correct-count" class="review-count"></span>
-          </div>
-          <p class="review-hint">한 번이라도 정답을 맞춘 용어 전체</p>
-        </div>
+    <div class="streak-ribbon">
+      <div class="streak-orb"></div>
+      <div class="streak-icon">🔥</div>
+      <div class="streak-info">
+        <div class="streak-num" id="streak-days">0<span>일째</span></div>
+        <div class="streak-sub">연속 학습 중</div>
       </div>
-    </main>
+      <div class="streak-bars" id="streak-bars"></div>
+    </div>
+
+    <div class="section-header">
+      <div class="section-title">WEEKS <span class="dot">·</span> 주차별</div>
+      <div class="section-meta" id="week-meta"></div>
+    </div>
+
+    <div id="week-list" class="home-container"></div>
+
+    <div id="review-section" class="home-review-section" style="display:none">
+      <div class="home-review-grid">
+        <button id="wrong-review-card" class="review-card review-card-wrong">
+          <div class="review-card-orb"></div>
+          <div class="review-card-count" id="wrong-count">0</div>
+          <div class="review-card-label">틀린 것</div>
+          <div class="review-card-hint">복습 →</div>
+        </button>
+        <button id="correct-review-card" class="review-card review-card-correct">
+          <div class="review-card-orb"></div>
+          <div class="review-card-count" id="correct-count">0</div>
+          <div class="review-card-label">맞은 것</div>
+          <div class="review-card-hint">복습 →</div>
+        </button>
+      </div>
+    </div>
   </div>
 
   <!-- 틀린 것 카테고리 화면 -->
   <div id="screen-wrong-cats" class="screen">
-    <header class="app-header nav-header">
-      <button id="btn-wc-back" class="back-btn">← 홈</button>
-      <h2>틀린 것 복습</h2>
-      <span></span>
-    </header>
-    <main class="week-container">
-      <p class="section-label">카테고리 선택</p>
-      <div id="wrong-cat-list"></div>
-    </main>
+    <div class="wrong-cats-header">
+      <button id="btn-wc-back" class="back-btn">‹</button>
+      <div class="wrong-cats-title">
+        <div class="wrong-cats-kicker">WRONG.REVIEW</div>
+        <div class="wrong-cats-heading">틀린 것 <em>복습</em></div>
+      </div>
+    </div>
+    <div class="wrong-cats-hero">
+      <div class="wrong-cats-hero-orb"></div>
+      <div class="wrong-cats-hero-content">
+        <div class="hero-meta">오늘의 복습</div>
+        <div class="hero-count"><span id="wrong-cats-total">0</span><span>단어</span></div>
+        <div class="hero-desc">카테고리를 선택하거나 전체를 한번에 복습해보세요.</div>
+        <button class="hero-btn" id="hero-start-all">전체 복습 시작 →</button>
+      </div>
+    </div>
+    <div class="cats-section-header">
+      <div class="section-title">BY CATEGORY</div>
+      <div style="font-style:italic;font-size:11px;color:var(--ink-mute);font-family:'Syne',sans-serif;">고르기</div>
+    </div>
+    <div id="wrong-cat-list" class="cats-grid"></div>
   </div>
 
   <!-- 주차 상세 화면 -->
   <div id="screen-week" class="screen">
-    <header class="app-header nav-header">
-      <button id="btn-back-home" class="back-btn">← 홈</button>
+    <div class="nav-header">
+      <button id="btn-back-home" class="back-btn">‹</button>
       <h2 id="week-title"></h2>
       <span></span>
-    </header>
-    <main class="week-container">
+    </div>
+    <div class="week-container">
       <div id="day-list"></div>
-    </main>
+    </div>
   </div>
 
   <!-- 퀴즈 화면 -->
   <div id="screen-quiz" class="screen">
-    <header class="app-header nav-header">
-      <button id="btn-back-week" class="back-btn">← 뒤로</button>
-      <h2 id="quiz-session-title"></h2>
-      <span id="quiz-progress" class="quiz-progress-badge"></span>
-    </header>
+    <div class="quiz-header">
+      <div class="quiz-header-row">
+        <button id="btn-back-week" class="back-btn">‹</button>
+        <div class="quiz-counter">
+          <span class="num" id="quiz-num">01</span><span class="total" id="quiz-total"> / 10</span>
+        </div>
+        <span id="quiz-progress" class="quiz-progress-badge"></span>
+      </div>
+      <div class="quiz-progress-wrap">
+        <div class="progress-bar">
+          <div id="quiz-progress-fill" class="progress-fill quiz-progress-fill" style="width:10%"></div>
+        </div>
+      </div>
+    </div>
+
     <div id="review-controls" class="review-controls" style="display:none">
       <select id="category-select" class="category-select"></select>
     </div>
-    <main class="quiz-container">
-      <div class="question-meta">
-        <span class="category-badge" id="category-badge"></span>
-        <span class="difficulty-badge" id="difficulty-badge"></span>
+
+    <div class="quiz-scrollable">
+      <div class="question-card">
+        <div class="question-card-stripe"></div>
+        <div class="question-card-orb"></div>
+        <div class="question-pills">
+          <span class="q-pill violet" id="pill-week"></span>
+          <span class="q-pill sky" id="pill-cat"></span>
+          <span class="q-pill amber" id="pill-diff"></span>
+        </div>
+        <div class="question-kicker">DEFINE //</div>
+        <div class="question-text" id="question-stem"></div>
       </div>
-      <div class="question-box">
-        <p class="question-label">다음 설명에 해당하는 용어를 고르세요.</p>
-        <p class="question-stem" id="question-stem"></p>
-      </div>
+      <div class="choices-label">— 답을 골라주세요</div>
       <div class="choices" id="choices"></div>
       <div class="result-box" id="result-box"></div>
-      <button id="next-btn">다음 문제 →</button>
-    </main>
+      <button id="next-btn" style="display:none"></button>
+    </div>
+
+    <div class="result-footer" id="result-footer">
+      <div class="result-icon" id="result-icon"></div>
+      <div class="result-body">
+        <div class="result-verdict" id="result-verdict"></div>
+        <div class="result-answer" id="result-answer"></div>
+        <div class="result-hint" id="result-hint"></div>
+      </div>
+      <button class="result-next-btn" id="result-next-btn">다음 →</button>
+    </div>
   </div>
 
   <!-- 완료 화면 -->
   <div id="screen-complete" class="screen">
     <main class="complete-container">
-      <div class="complete-card">
-        <div class="complete-emoji">🎉</div>
-        <h2 id="complete-title"></h2>
-        <p id="complete-score" class="complete-score"></p>
-        <p id="complete-miss" class="complete-miss"></p>
-        <div class="complete-buttons">
-          <button id="btn-complete-next" class="btn-primary">다음 날로 →</button>
-          <button id="btn-complete-home" class="btn-secondary">홈으로</button>
-        </div>
+      <div class="complete-kicker" id="complete-kicker">RESULT</div>
+      <h2 class="complete-heading">오늘의<br><em>스코어.</em></h2>
+      <div class="complete-score-big">
+        <span class="complete-score-num" id="complete-score">8</span><span class="complete-score-denom">/10</span>
       </div>
+      <p class="complete-tagline" id="complete-tagline"></p>
+      <div class="complete-stats" id="complete-stats"></div>
+      <div class="complete-buttons">
+        <button id="btn-complete-next" class="btn-primary" style="display:none">다음 날로 →</button>
+        <button id="btn-complete-home" class="btn-secondary">홈으로</button>
+      </div>
+      <!-- legacy hidden IDs used by app.js -->
+      <span id="complete-title" style="display:none"></span>
+      <span id="complete-miss"  style="display:none"></span>
     </main>
   </div>
 

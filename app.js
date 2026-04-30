@@ -1,22 +1,55 @@
 // ── 상태 ──────────────────────────────────────────────────
 const state = {
   allTerms: [],
-  mode: 'daily',        // 'daily' | 'review'
+  mode: 'daily',
   currentWeek: null,
   currentDay: null,
   sessionTerms: [],
   sessionIndex: 0,
   sessionScore: 0,
+  sessionWrong: 0,
+  sessionSkip: 0,
   wrongIds: [],
   answered: false,
   reviewCategory: 'all',
 };
 
+// ── 디자인 상수 ───────────────────────────────────────────
+const WEEK_COLORS = ['violet', 'coral', 'amber', 'sky', 'mint'];
+const WEEK_ASYMS  = ['asym-tl', 'asym-tr', 'asym-br', 'asym-bl', 'asym-tl'];
+const WEEK_NAMES  = [
+  '',
+  '프로그래밍 기초', '변수와 자료형', '조건문과 반복문', '함수와 스코프',
+  'AI / 머신러닝', '웹 기초', '네트워크', '자료구조',
+  '알고리즘', '데이터베이스', '운영체제', '버전 관리',
+];
+
+const CAT_COLORS = {
+  '프로그래밍 기초': 'violet', 'AI / 머신러닝': 'coral', '웹 기초': 'sky',
+  '자료구조': 'amber', '알고리즘': 'mint', '데이터베이스': 'violet',
+  '운영체제': 'coral', '네트워크': 'sky', '버전 관리': 'amber',
+  '변수와 자료형': 'coral', '조건문과 반복문': 'amber', '함수와 스코프': 'sky',
+};
+const CAT_GLYPHS = {
+  '프로그래밍 기초': '{}', 'AI / 머신러닝': 'AI', '웹 기초': '<>',
+  '자료구조': '[]', '알고리즘': 'fn', '데이터베이스': 'DB',
+  '운영체제': 'OS', '네트워크': '~~', '버전 관리': 'git',
+  '변수와 자료형': ':=', '조건문과 반복문': 'if', '함수와 스코프': 'fn',
+};
+const COLOR_CSS = {
+  violet: 'var(--violet)', coral: 'var(--coral)', amber: 'var(--amber)',
+  sky: 'var(--sky)', mint: 'var(--mint)',
+};
+const COLOR_SOFT = {
+  violet: 'var(--violet-soft)', coral: 'var(--coral-soft)', amber: 'var(--amber-soft)',
+  sky: 'var(--sky-soft)', mint: 'var(--mint-soft)',
+};
+
 // ── localStorage 헬퍼 ──────────────────────────────────────
-function getProgress()        { return JSON.parse(localStorage.getItem('quiz_progress')    || '{}'); }
-function saveProgress(data)   { localStorage.setItem('quiz_progress', JSON.stringify(data)); }
-function getFavorites()       { return JSON.parse(localStorage.getItem('quiz_favorites')   || '[]'); }
-function getTermStats()       { return JSON.parse(localStorage.getItem('quiz_term_stats')  || '{}'); }
+function getProgress()      { return JSON.parse(localStorage.getItem('quiz_progress')   || '{}'); }
+function saveProgress(data) { localStorage.setItem('quiz_progress', JSON.stringify(data)); }
+function getFavorites()     { return JSON.parse(localStorage.getItem('quiz_favorites')  || '[]'); }
+function getTermStats()     { return JSON.parse(localStorage.getItem('quiz_term_stats') || '{}'); }
 
 function addFavorite(termId) {
   const favs = getFavorites();
@@ -54,7 +87,7 @@ function getDayTerms(week, day) {
     .slice((day - 1) * 10, day * 10);
 }
 
-// ── SRS: 가중치 기반 랜덤 선택 ───────────────────────────
+// ── SRS ───────────────────────────────────────────────────
 function weightedRandom(items, weights) {
   const total = weights.reduce((a, b) => a + b, 0);
   let rand = Math.random() * total;
@@ -68,17 +101,12 @@ function weightedRandom(items, weights) {
 function pickReviewTerm() {
   const favIds = getFavorites();
   let pool = state.allTerms.filter(t => favIds.includes(t.id));
-  if (state.reviewCategory !== 'all') {
-    pool = pool.filter(t => t.category === state.reviewCategory);
-  }
+  if (state.reviewCategory !== 'all') pool = pool.filter(t => t.category === state.reviewCategory);
   if (pool.length === 0) return null;
-
   const stats = getTermStats();
-  // 틀린 횟수가 많을수록 가중치 높음, 맞은 비율 높으면 낮음
   const weights = pool.map(t => {
     const s = stats[t.id] || { seen: 0, correct: 0 };
-    const wrong = s.seen - s.correct;
-    return Math.max(1, wrong * 3 + 1);
+    return Math.max(1, (s.seen - s.correct) * 3 + 1);
   });
   return weightedRandom(pool, weights);
 }
@@ -90,9 +118,7 @@ function pickCorrectTerm() {
     const s = stats[t.id];
     return s && s.correct > 0 && !favIds.includes(t.id);
   });
-  if (state.reviewCategory !== 'all') {
-    pool = pool.filter(t => t.category === state.reviewCategory);
-  }
+  if (state.reviewCategory !== 'all') pool = pool.filter(t => t.category === state.reviewCategory);
   if (pool.length === 0) return null;
   return pool[Math.floor(Math.random() * pool.length)];
 }
@@ -111,23 +137,52 @@ function showHome() {
   const availableWeeks = getAvailableWeeks();
   const totalDisplay = Math.max(4, availableWeeks[availableWeeks.length - 1] || 1);
 
+  // streak (학습한 날 수 기반 단순 계산)
+  const allDays = Object.values(progress).filter(v => v.completed);
+  const streakDays = allDays.length;
+  document.getElementById('streak-days').innerHTML = `${streakDays}<span>일째</span>`;
+  const barsEl = document.getElementById('streak-bars');
+  barsEl.innerHTML = '';
+  for (let i = 0; i < 7; i++) {
+    const bar = document.createElement('div');
+    bar.className = 'streak-bar' + (i < Math.min(streakDays, 7) ? ' on' : '');
+    barsEl.appendChild(bar);
+  }
+
+  const completedWeeks = availableWeeks.filter(w =>
+    [1,2,3,4,5,6,7].every(d => progress[`w${w}d${d}`]?.completed)
+  ).length;
+  document.getElementById('week-meta').textContent = `${completedWeeks}/${totalDisplay}`;
+
   const list = document.getElementById('week-list');
   list.innerHTML = '';
   for (let w = 1; w <= totalDisplay; w++) {
     const isAvailable = availableWeeks.includes(w);
     const completedDays = [1,2,3,4,5,6,7].filter(d => progress[`w${w}d${d}`]?.completed).length;
+    const pct = isAvailable ? Math.round(completedDays / 7 * 100) : 0;
+    const color = WEEK_COLORS[(w - 1) % WEEK_COLORS.length];
+    const asym  = WEEK_ASYMS[(w - 1) % WEEK_ASYMS.length];
+    const name  = WEEK_NAMES[w] || `${w}주차`;
+    const iconNum = String(w).padStart(2, '0');
 
     const card = document.createElement('div');
-    card.className = 'week-card' + (isAvailable ? '' : ' locked');
+    card.className = `week-card c-${color} ${asym}` + (isAvailable ? '' : ' locked');
     card.innerHTML = `
-      <div class="week-card-header">
-        <span class="week-label">${w}주차</span>
-        ${isAvailable
-          ? `<span class="week-days">${completedDays} / 7일</span>`
-          : `<span class="week-lock">준비 중</span>`}
+      <div class="accent-stripe"></div>
+      <div class="week-card-inner">
+        <div class="week-icon">${isAvailable ? iconNum : '🔒'}</div>
+        <div class="week-info">
+          <div class="week-name">${name}</div>
+          <div class="week-stat">
+            ${isAvailable
+              ? `<span>${completedDays}/7일</span><span style="color:var(--line)">·</span><span class="week-pct">${pct}%</span>`
+              : `<span style="color:var(--ink-mute)">준비 중</span>`}
+          </div>
+        </div>
+        ${pct >= 100 && isAvailable ? `<span class="week-badge">★ 완료</span>` : ''}
       </div>
       <div class="progress-bar">
-        <div class="progress-fill" style="width:${isAvailable ? completedDays/7*100 : 0}%"></div>
+        <div class="progress-fill" style="width:${pct}%"></div>
       </div>`;
     if (isAvailable) card.addEventListener('click', () => showWeekDetail(w));
     list.appendChild(card);
@@ -138,8 +193,8 @@ function showHome() {
   const correctIds = Object.keys(stats).filter(id => stats[id].correct > 0 && !favs.includes(id));
   const reviewSection = document.getElementById('review-section');
   reviewSection.style.display = (favs.length > 0 || correctIds.length > 0) ? 'block' : 'none';
-  document.getElementById('wrong-count').textContent = `${favs.length}개`;
-  document.getElementById('correct-count').textContent = `${correctIds.length}개`;
+  document.getElementById('wrong-count').textContent = `${favs.length}`;
+  document.getElementById('correct-count').textContent = `${correctIds.length}`;
   document.getElementById('wrong-review-card').style.display = favs.length > 0 ? '' : 'none';
   document.getElementById('correct-review-card').style.display = correctIds.length > 0 ? '' : 'none';
 }
@@ -148,7 +203,8 @@ function showHome() {
 function showWeekDetail(week) {
   state.currentWeek = week;
   showScreen('screen-week');
-  document.getElementById('week-title').textContent = `${week}주차`;
+  const name = WEEK_NAMES[week] || `${week}주차`;
+  document.getElementById('week-title').textContent = name;
 
   const progress = getProgress();
   const list = document.getElementById('day-list');
@@ -168,23 +224,23 @@ function showWeekDetail(week) {
     if (isCompleted) {
       item.innerHTML = `
         <div class="day-info">
-          <span class="day-label">${d}일차</span>
-          <span class="day-score">점수 ${dayProg.score} / 10</span>
+          <div class="day-label">${d}일차</div>
+          <div class="day-score">점수 ${dayProg.score} / 10</div>
         </div>
         <span class="day-status done-icon">✓</span>`;
     } else if (isUnlocked) {
       item.innerHTML = `
         <div class="day-info">
-          <span class="day-label">${d}일차</span>
-          <span class="day-hint">10문제</span>
+          <div class="day-label">${d}일차</div>
+          <div class="day-hint">10문제</div>
         </div>
         <span class="day-status">→</span>`;
       item.addEventListener('click', () => startQuiz(week, d));
     } else {
       item.innerHTML = `
         <div class="day-info">
-          <span class="day-label">${d}일차</span>
-          <span class="day-hint">이전 날 완료 후 해금</span>
+          <div class="day-label">${d}일차</div>
+          <div class="day-hint">이전 날 완료 후 해금</div>
         </div>
         <span class="day-status">🔒</span>`;
     }
@@ -199,13 +255,13 @@ function startQuiz(week, day) {
   state.sessionTerms = getDayTerms(week, day);
   state.sessionIndex = 0;
   state.sessionScore = 0;
+  state.sessionWrong = 0;
+  state.sessionSkip  = 0;
   state.wrongIds = [];
 
-  const backBtn = document.getElementById('btn-back-week');
-  backBtn.textContent = '← 뒤로';
-
-  document.getElementById('quiz-session-title').textContent = `${week}주차 ${day}일차`;
+  document.getElementById('btn-back-week').dataset.mode = 'daily';
   document.getElementById('review-controls').style.display = 'none';
+  document.getElementById('quiz-total').textContent = ' / 10';
   showScreen('screen-quiz');
   renderQuestion();
 }
@@ -216,36 +272,33 @@ function showWrongCategories() {
   const favIds = getFavorites();
   const favTerms = state.allTerms.filter(t => favIds.includes(t.id));
 
+  document.getElementById('wrong-cats-total').textContent = favIds.length;
+
   const catCounts = {};
   favTerms.forEach(t => { catCounts[t.category] = (catCounts[t.category] || 0) + 1; });
 
-  const list = document.getElementById('wrong-cat-list');
-  list.innerHTML = '';
-
-  const allItem = document.createElement('div');
-  allItem.className = 'day-item';
-  allItem.innerHTML = `
-    <div class="day-info">
-      <span class="day-label">전체</span>
-      <span class="day-hint">${favIds.length}개</span>
-    </div>
-    <span class="day-status">→</span>`;
-  allItem.addEventListener('click', () => startWrongReview('all'));
-  list.appendChild(allItem);
+  const grid = document.getElementById('wrong-cat-list');
+  grid.innerHTML = '';
 
   Object.entries(catCounts)
     .sort((a, b) => b[1] - a[1])
     .forEach(([cat, count]) => {
-      const item = document.createElement('div');
-      item.className = 'day-item';
-      item.innerHTML = `
-        <div class="day-info">
-          <span class="day-label">${cat}</span>
-          <span class="day-hint">${count}개</span>
-        </div>
-        <span class="day-status">→</span>`;
-      item.addEventListener('click', () => startWrongReview(cat));
-      list.appendChild(item);
+      const color = CAT_COLORS[cat] || WEEK_COLORS[Object.keys(catCounts).indexOf(cat) % WEEK_COLORS.length];
+      const glyph = CAT_GLYPHS[cat] || cat.slice(0, 2);
+      const card = document.createElement('div');
+      card.className = 'cat-card asym-tl';
+      card.innerHTML = `
+        <div class="accent-stripe" style="background:${COLOR_CSS[color]}"></div>
+        <div class="cat-card-glyph" style="color:${COLOR_CSS[color]}">${glyph}</div>
+        <div class="cat-card-count" style="color:${COLOR_CSS[color]}">${count}</div>
+        <div class="cat-card-bottom">
+          <div class="cat-card-name">${cat}</div>
+          <div class="cat-card-sub">단어 →</div>
+        </div>`;
+      card.style.background = `linear-gradient(135deg, ${COLOR_SOFT[color]}, rgba(255,255,255,0.92))`;
+      card.style.border = `1px solid var(--line)`;
+      card.addEventListener('click', () => startWrongReview(cat));
+      grid.appendChild(card);
     });
 }
 
@@ -269,9 +322,11 @@ function startWrongReview(category = 'all') {
   });
   select.value = category;
 
-  document.getElementById('btn-back-week').textContent = '← 카테고리';
-  document.getElementById('quiz-session-title').textContent = '틀린 것 복습';
+  document.getElementById('btn-back-week').dataset.mode = 'review';
   document.getElementById('quiz-progress').textContent = `✗ ${favIds.length}개`;
+  document.getElementById('quiz-num').textContent = '–';
+  document.getElementById('quiz-total').textContent = '';
+  document.getElementById('quiz-progress-fill').style.width = '0%';
   document.getElementById('review-controls').style.display = 'block';
 
   showScreen('screen-quiz');
@@ -301,9 +356,11 @@ function startCorrectReview() {
     select.appendChild(opt);
   });
 
-  document.getElementById('btn-back-week').textContent = '← 홈';
-  document.getElementById('quiz-session-title').textContent = '맞은 것 복습';
+  document.getElementById('btn-back-week').dataset.mode = 'correct-review';
   document.getElementById('quiz-progress').textContent = `✓ ${correctTerms.length}개`;
+  document.getElementById('quiz-num').textContent = '–';
+  document.getElementById('quiz-total').textContent = '';
+  document.getElementById('quiz-progress-fill').style.width = '0%';
   document.getElementById('review-controls').style.display = 'block';
 
   showScreen('screen-quiz');
@@ -316,30 +373,34 @@ function renderQuestion(termOverride) {
   const term = termOverride || state.sessionTerms[state.sessionIndex];
 
   if (state.mode === 'daily') {
-    document.getElementById('quiz-progress').textContent = `${state.sessionIndex + 1} / 10`;
+    const n = state.sessionIndex + 1;
+    document.getElementById('quiz-num').textContent = String(n).padStart(2, '0');
+    document.getElementById('quiz-progress-fill').style.width = `${n / 10 * 100}%`;
   }
 
-  document.getElementById('category-badge').textContent = term.category;
-  const diffBadge = document.getElementById('difficulty-badge');
-  diffBadge.textContent = { easy: '쉬움', medium: '보통', hard: '어려움' }[term.difficulty];
-  diffBadge.className = `difficulty-badge ${term.difficulty}`;
+  const diffLabels = { easy: '쉬움', medium: '보통 ★★', hard: '어려움 ★★★' };
+  document.getElementById('pill-week').textContent = `${term.week}주차`;
+  document.getElementById('pill-cat').textContent = term.category;
+  document.getElementById('pill-diff').textContent = diffLabels[term.difficulty] || term.difficulty;
   document.getElementById('question-stem').textContent = term.definition;
+
+  // hide result footer
+  const footer = document.getElementById('result-footer');
+  footer.className = 'result-footer';
 
   const choicesEl = document.getElementById('choices');
   choicesEl.innerHTML = '';
   buildChoices(term).forEach((choice, i) => {
+    const isDontKnow = choice === '모르겠음';
     const btn = document.createElement('button');
-    btn.className = 'choice-btn' + (choice === '모르겠음' ? ' dont-know' : '');
-    btn.textContent = `${i + 1}.  ${choice}`;
+    btn.className = 'choice-btn' + (isDontKnow ? ' dont-know' : '');
     btn.dataset.choice = choice;
+    btn.innerHTML = isDontKnow
+      ? `<span class="choice-badge">?</span><span class="choice-text">모르겠음</span>`
+      : `<span class="choice-badge">${i + 1}</span><span class="choice-text">${choice}</span>`;
     btn.addEventListener('click', () => handleAnswer(choice, btn, term));
     choicesEl.appendChild(btn);
   });
-
-  const resultBox = document.getElementById('result-box');
-  resultBox.className = 'result-box';
-  resultBox.innerHTML = '';
-  document.getElementById('next-btn').style.display = 'none';
 }
 
 // ── 선택지 생성 ───────────────────────────────────────────
@@ -365,40 +426,56 @@ function handleAnswer(choice, clickedBtn, term) {
   state.answered = true;
 
   const isCorrect = choice === term.term;
-  const isSkip = choice === '모르겠음';
+  const isSkip    = choice === '모르겠음';
 
   document.querySelectorAll('.choice-btn').forEach(btn => {
     btn.disabled = true;
     if (btn.dataset.choice === term.term) btn.classList.add('correct');
+    else if (!isCorrect && btn !== clickedBtn) btn.classList.add('dim');
   });
   if (!isCorrect) clickedBtn.classList.add('wrong');
 
-  // 통계 업데이트 (SRS 기반)
   updateTermStat(term.id, isCorrect);
 
   if (isCorrect) {
     if (state.mode === 'daily') state.sessionScore++;
   } else {
     addFavorite(term.id);
-    if (state.mode === 'daily') state.wrongIds.push(term.id);
+    if (state.mode === 'daily') {
+      state.wrongIds.push(term.id);
+      if (isSkip) state.sessionSkip++; else state.sessionWrong++;
+    }
   }
 
-  const resultBox = document.getElementById('result-box');
-  resultBox.className = 'result-box show';
-  const labelClass = isCorrect ? 'ok' : (isSkip ? 'skip' : 'bad');
-  const labelText = isCorrect ? '정답입니다!'
-    : (isSkip ? `정답: ${term.term}` : `오답 — 정답: ${term.term}`);
-  resultBox.innerHTML = `
-    <div class="result-label ${labelClass}">${labelText}</div>
-    <div class="hint-text">💡 ${term.hint}</div>`;
+  // result footer
+  const footer   = document.getElementById('result-footer');
+  const iconEl   = document.getElementById('result-icon');
+  const verdict  = document.getElementById('result-verdict');
+  const answer   = document.getElementById('result-answer');
+  const hintEl   = document.getElementById('result-hint');
+  const nextLabel = document.getElementById('result-next-btn');
 
-  const nextBtn = document.getElementById('next-btn');
-  if (state.mode === 'review' || state.mode === 'correct-review') {
-    nextBtn.textContent = '다음 문제 →';
+  if (isCorrect) {
+    footer.className = 'result-footer show ok';
+    iconEl.textContent = '✓';
+    verdict.textContent = '정답이에요!';
+  } else if (isSkip) {
+    footer.className = 'result-footer show skip';
+    iconEl.textContent = '?';
+    verdict.textContent = '같이 알아봐요';
   } else {
-    nextBtn.textContent = state.sessionIndex < 9 ? '다음 문제 →' : '결과 보기 →';
+    footer.className = 'result-footer show bad';
+    iconEl.textContent = '✗';
+    verdict.textContent = '아쉬워요';
   }
-  nextBtn.style.display = 'block';
+  answer.innerHTML = `정답: <strong>${term.term}</strong>`;
+  hintEl.textContent = `💡 ${term.hint}`;
+
+  if (state.mode === 'review' || state.mode === 'correct-review') {
+    nextLabel.textContent = '다음 →';
+  } else {
+    nextLabel.textContent = state.sessionIndex < 9 ? '다음 →' : '결과 보기 →';
+  }
 }
 
 // ── 다음 문제 / 결과 ──────────────────────────────────────
@@ -406,8 +483,7 @@ function onNextBtn() {
   if (state.mode === 'review') {
     const term = pickReviewTerm();
     if (term) {
-      const favCount = getFavorites().length;
-      document.getElementById('quiz-progress').textContent = `✗ ${favCount}개`;
+      document.getElementById('quiz-progress').textContent = `✗ ${getFavorites().length}개`;
       renderQuestion(term);
     } else {
       showWrongCategories();
@@ -420,7 +496,6 @@ function onNextBtn() {
     else showHome();
     return;
   }
-  // daily mode
   if (state.sessionIndex < 9) {
     state.sessionIndex++;
     renderQuestion();
@@ -441,13 +516,36 @@ function finishSession() {
   saveProgress(progress);
 
   showScreen('screen-complete');
-  document.getElementById('complete-title').textContent =
-    `${state.currentWeek}주차 ${state.currentDay}일차 완료!`;
-  document.getElementById('complete-score').textContent = `${state.sessionScore} / 10`;
-  document.getElementById('complete-miss').textContent =
-    state.wrongIds.length > 0
-      ? `즐겨찾기에 ${state.wrongIds.length}개 추가됨 ★`
-      : '전부 정답! 완벽합니다 🎉';
+
+  const correct = state.sessionScore;
+  const wrong   = state.sessionWrong;
+  const skip    = state.sessionSkip;
+
+  document.getElementById('complete-kicker').textContent =
+    `RESULT — ${state.currentWeek}주차 · ${state.currentDay}일차`;
+  document.getElementById('complete-score').textContent = correct;
+
+  const taglines = ['훌륭해요! 계속 가봐요 🎉', '잘 하고 있어요! 복습이면 완벽 👍', '조금만 더 하면 완벽해요!', '복습을 통해 더 강해질 거예요!'];
+  const pct = correct / 10;
+  document.getElementById('complete-tagline').textContent =
+    pct >= 0.9 ? taglines[0] : pct >= 0.7 ? taglines[1] : pct >= 0.5 ? taglines[2] : taglines[3];
+
+  document.getElementById('complete-stats').innerHTML = `
+    <div class="stat-row ok">
+      <div class="stat-icon">✓</div>
+      <div class="stat-label">정답</div>
+      <div class="stat-value">${correct}<span> /10</span></div>
+    </div>
+    <div class="stat-row bad">
+      <div class="stat-icon">✗</div>
+      <div class="stat-label">오답</div>
+      <div class="stat-value">${wrong}<span> /10</span></div>
+    </div>
+    <div class="stat-row skip">
+      <div class="stat-icon">?</div>
+      <div class="stat-label">모름</div>
+      <div class="stat-value">${skip}<span> /10</span></div>
+    </div>`;
 
   document.getElementById('btn-complete-next').style.display =
     state.currentDay < 7 ? 'block' : 'none';
@@ -455,40 +553,33 @@ function finishSession() {
 
 // ── 이벤트 바인딩 ─────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('next-btn')
-    .addEventListener('click', onNextBtn);
+  document.getElementById('result-next-btn').addEventListener('click', onNextBtn);
+  document.getElementById('next-btn').addEventListener('click', onNextBtn);
 
-  document.getElementById('btn-back-home')
-    .addEventListener('click', showHome);
+  document.getElementById('btn-back-home').addEventListener('click', showHome);
 
-  document.getElementById('btn-back-week')
-    .addEventListener('click', () => {
-      if (state.mode === 'review') showWrongCategories();
-      else if (state.mode === 'correct-review') showHome();
-      else showWeekDetail(state.currentWeek);
-    });
+  document.getElementById('btn-back-week').addEventListener('click', () => {
+    const mode = document.getElementById('btn-back-week').dataset.mode || state.mode;
+    if (mode === 'review') showWrongCategories();
+    else if (mode === 'correct-review') showHome();
+    else showWeekDetail(state.currentWeek);
+  });
 
-  document.getElementById('btn-wc-back')
-    .addEventListener('click', showHome);
+  document.getElementById('btn-wc-back').addEventListener('click', showHome);
+  document.getElementById('hero-start-all').addEventListener('click', () => startWrongReview('all'));
 
-  document.getElementById('btn-complete-home')
-    .addEventListener('click', showHome);
+  document.getElementById('btn-complete-home').addEventListener('click', showHome);
+  document.getElementById('btn-complete-next').addEventListener('click', () =>
+    startQuiz(state.currentWeek, state.currentDay + 1));
 
-  document.getElementById('btn-complete-next')
-    .addEventListener('click', () => startQuiz(state.currentWeek, state.currentDay + 1));
+  document.getElementById('wrong-review-card').addEventListener('click', showWrongCategories);
+  document.getElementById('correct-review-card').addEventListener('click', startCorrectReview);
 
-  document.getElementById('wrong-review-card')
-    .addEventListener('click', showWrongCategories);
-
-  document.getElementById('correct-review-card')
-    .addEventListener('click', startCorrectReview);
-
-  document.getElementById('category-select')
-    .addEventListener('change', e => {
-      state.reviewCategory = e.target.value;
-      if (state.mode === 'correct-review') renderQuestion(pickCorrectTerm());
-      else renderQuestion(pickReviewTerm());
-    });
+  document.getElementById('category-select').addEventListener('change', e => {
+    state.reviewCategory = e.target.value;
+    if (state.mode === 'correct-review') renderQuestion(pickCorrectTerm());
+    else renderQuestion(pickReviewTerm());
+  });
 
   init();
 });
