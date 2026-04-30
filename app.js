@@ -128,6 +128,17 @@ function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   window.scrollTo(0, 0);
+  // Update site header nav active state
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+  const map = {
+    'screen-home': 'nav-curriculum',
+    'screen-wrong-cats': 'nav-review',
+    'screen-week': 'nav-curriculum',
+    'screen-quiz': null,
+    'screen-complete': null,
+  };
+  const targetId = map[id];
+  if (targetId) document.getElementById(targetId)?.classList.add('active');
 }
 
 // ── 홈 화면 ───────────────────────────────────────────────
@@ -555,6 +566,18 @@ function finishSession() {
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('result-next-btn').addEventListener('click', onNextBtn);
   document.getElementById('next-btn').addEventListener('click', onNextBtn);
+
+  // Site header nav
+  document.getElementById('nav-home-logo')?.addEventListener('click', e => { e.preventDefault(); showHome(); });
+  document.getElementById('nav-curriculum')?.addEventListener('click', e => { e.preventDefault(); showHome(); });
+  document.getElementById('nav-review')?.addEventListener('click', e => {
+    e.preventDefault();
+    if (getFavorites().length > 0) showWrongCategories(); else showHome();
+  });
+  document.getElementById('site-start-btn')?.addEventListener('click', () => {
+    const weeks = getAvailableWeeks();
+    if (weeks.length > 0) showWeekDetail(weeks[0]); else showHome();
+  });
 
   document.getElementById('btn-back-home').addEventListener('click', showHome);
 

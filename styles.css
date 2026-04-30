@@ -568,3 +568,201 @@ body::before {
   .home-title { font-size: 32px; }
   .cats-grid { grid-template-columns: 1fr; }
 }
+
+/* ═══════════════════════════════════════════════════
+   DESKTOP (≥ 768px)
+   ═══════════════════════════════════════════════════ */
+
+/* Dot-grid background on desktop */
+@media (min-width: 768px) {
+  body {
+    background-image:
+      radial-gradient(rgba(204,195,217,0.32) 1px, transparent 0),
+      radial-gradient(circle at 8% 4%, rgba(123,47,255,0.11), transparent 35%),
+      radial-gradient(circle at 96% 96%, rgba(255,92,92,0.11), transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(255,172,51,0.06), transparent 50%);
+    background-size: 24px 24px, auto, auto, auto;
+    background-position: -12px -12px, 0 0, 0 0, 0 0;
+  }
+}
+
+/* Atmospheric orbs */
+.atm-orb { position: fixed; border-radius: 50%; pointer-events: none; z-index: 0; display: none; }
+@media (min-width: 768px) { .atm-orb { display: block; } }
+.atm-orb-1 {
+  top: -10%; left: -5%; width: 40vw; height: 40vw;
+  background: radial-gradient(circle, rgba(123,47,255,0.14), transparent 70%);
+  filter: blur(80px);
+}
+.atm-orb-2 {
+  bottom: -10%; right: -5%; width: 50vw; height: 50vw;
+  background: radial-gradient(circle, rgba(255,92,92,0.09), transparent 70%);
+  filter: blur(100px);
+}
+
+/* Material Symbols */
+.material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+
+/* ── SITE HEADER ── */
+#site-header {
+  display: none;
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(253,252,251,0.88);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(123,47,255,0.1);
+  box-shadow: inset 0 -1px 0 rgba(123,47,255,0.08);
+  width: 100%;
+}
+.site-header-inner {
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 1280px; margin: 0 auto; padding: 14px 48px; width: 100%;
+}
+.site-logo {
+  font-family: 'Epilogue', 'Syne', sans-serif; font-weight: 900; font-size: 22px;
+  color: var(--violet); text-decoration: none; text-transform: uppercase;
+  font-style: italic; letter-spacing: -0.02em; white-space: nowrap;
+}
+.site-header-left { display: flex; align-items: center; gap: 36px; }
+.site-nav { display: flex; align-items: center; }
+.site-nav a {
+  font-family: 'Epilogue', 'Syne', sans-serif; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-mute); text-decoration: none; padding: 8px 14px; border-radius: 6px;
+  transition: all 0.2s;
+}
+.site-nav a:hover, .site-nav a.active { color: var(--violet); background: rgba(123,47,255,0.07); }
+.site-header-right { display: flex; align-items: center; gap: 6px; }
+.site-icon-btn {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: none; border: none; color: var(--ink-mute);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.2s;
+}
+.site-icon-btn:hover { color: var(--violet); background: rgba(123,47,255,0.07); }
+.site-icon-btn .material-symbols-outlined { font-size: 22px; }
+.site-start-btn {
+  background: var(--violet); color: #fff; border: none; cursor: pointer;
+  font-family: 'Epilogue', 'Syne', sans-serif; font-weight: 700; font-size: 13px;
+  padding: 9px 22px; border-radius: 999px; letter-spacing: 0.04em; margin-left: 8px;
+  box-shadow: 0 4px 14px -4px rgba(123,47,255,0.45); transition: all 0.2s;
+}
+.site-start-btn:hover { opacity: 0.92; transform: translateY(-1px); }
+
+/* Glass card utility */
+.glass {
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(204,195,217,0.4);
+}
+
+@media (min-width: 768px) {
+  #site-header { display: flex; }
+
+  /* screens below sticky header */
+  .screen { min-height: calc(100vh - 65px); position: relative; z-index: 1; }
+  #screen-quiz.active { height: calc(100vh - 65px); min-height: unset; }
+
+  /* ── HOME DESKTOP ── */
+  .home-brand {
+    max-width: 1280px; margin: 0 auto; width: 100%;
+    padding: 56px 56px 24px 60px;
+    position: relative;
+  }
+  .home-brand::before {
+    content: ''; position: absolute; left: 48px; top: 56px; bottom: 8px;
+    width: 4px; background: var(--violet); border-radius: 999px;
+  }
+  .home-title { font-size: 68px; }
+  .home-subtitle { font-size: 17px; max-width: 480px; margin-top: 10px; }
+
+  .streak-ribbon {
+    max-width: calc(1280px - 96px); margin: 16px auto 12px;
+    border-radius: 16px;
+  }
+
+  .section-header { max-width: 1280px; margin: 0 auto; padding: 12px 48px 16px; }
+
+  /* 3-column week grid */
+  .home-container {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 20px; padding: 0 48px 24px;
+    max-width: 1280px; margin: 0 auto; width: 100%;
+    flex: unset; overflow: visible;
+  }
+  .week-card { margin-bottom: 0; }
+
+  /* Review buttons: bigger on desktop */
+  .home-review-section { max-width: 1280px; margin: 0 auto; padding: 8px 48px 56px; width: 100%; }
+  .home-review-grid { gap: 20px; }
+  .review-card { min-height: 190px; padding: 20px 20px 18px; }
+  .review-card-count { font-size: 52px; }
+  .review-card-label { font-size: 15px; margin-top: 8px; }
+
+  /* ── WRONG CATS DESKTOP ── */
+  .wrong-cats-header { max-width: 1280px; margin: 0 auto; padding: 28px 48px 16px; width: 100%; }
+  .wrong-cats-hero { max-width: calc(1280px - 96px); margin: 4px auto 20px; }
+  .cats-section-header { max-width: 1280px; margin: 0 auto; padding: 0 48px 16px; width: 100%; }
+  .cats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1280px; margin: 0 auto; padding: 4px 48px 56px; width: 100%;
+  }
+  .cat-card { min-height: 160px; }
+
+  /* ── WEEK DETAIL DESKTOP ── */
+  .nav-header { max-width: 1280px; margin: 0 auto; padding: 24px 48px; width: 100%; }
+  .week-container { max-width: 1280px; margin: 0 auto; padding: 8px 48px 48px; width: 100%; }
+
+  /* ── QUIZ DESKTOP ── */
+  .quiz-header { max-width: 860px; margin: 0 auto; padding: 24px 24px 10px; width: 100%; }
+  .review-controls {
+    max-width: 860px; margin: 0 auto; width: 100%;
+    background: transparent; border: none; padding: 4px 0;
+  }
+  .quiz-scrollable { align-items: center; }
+  .quiz-scrollable .question-card,
+  .quiz-scrollable .choices-label,
+  .quiz-scrollable .choices { max-width: 860px; width: calc(100% - 0px); }
+  .question-card {
+    border-radius: 40px 12px 40px 12px; padding: 28px 36px 32px;
+    margin: 12px 0 14px;
+  }
+  .question-text { font-size: 20px; line-height: 1.6; }
+  .choices { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .choice-btn { padding: 12px 14px 12px 12px; }
+  .choice-text { font-size: 15px; }
+  .result-footer { max-width: 860px; margin: 0 auto; width: 100%; border-radius: 16px 16px 0 0; }
+
+  /* ── COMPLETE DESKTOP ── */
+  #screen-complete {
+    justify-content: center; align-items: flex-start;
+    padding: 48px 24px;
+    background: none; /* let glass card provide bg */
+  }
+  .complete-container {
+    max-width: 560px; width: 100%;
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(204,195,217,0.4);
+    border-radius: 48px 8px 48px 8px;
+    box-shadow:
+      inset 0 4px 24px rgba(123,47,255,0.04),
+      0 24px 56px rgba(0,0,0,0.04);
+    padding: 40px;
+    /* override the relative positioning that might clip content */
+    position: relative;
+  }
+  /* Asymmetric accent stripe on the result card */
+  .complete-container::before {
+    content: ''; position: absolute;
+    left: 0; top: 25%; bottom: 25%; width: 6px;
+    background: var(--violet); border-radius: 0 3px 3px 0;
+    box-shadow: 0 0 12px rgba(123,47,255,0.5);
+  }
+  .complete-score-num { font-size: 130px; }
+  .complete-stats { grid-template-columns: repeat(3, 1fr); display: grid; gap: 12px; }
+  .stat-row { flex-direction: column; align-items: center; text-align: center; padding: 16px 12px; }
+  .stat-label { font-size: 12px; }
+  .stat-value { font-size: 36px; margin-top: 4px; }
+  .complete-buttons { flex-direction: row; gap: 12px; }
+  .btn-primary, .btn-secondary { padding: 14px; font-size: 14px; }
+}

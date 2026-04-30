@@ -6,10 +6,35 @@
   <title>코딩 용어 퀴즈</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,700;0,800;0,900;1,900&family=Syne:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Decorative atmospheric orbs (desktop only) -->
+  <div class="atm-orb atm-orb-1"></div>
+  <div class="atm-orb atm-orb-2"></div>
+
+  <!-- Persistent site header (desktop only) -->
+  <header id="site-header">
+    <div class="site-header-inner">
+      <div class="site-header-left">
+        <a href="#" id="nav-home-logo" class="site-logo">코딩 용어 퀴즈</a>
+        <nav class="site-nav">
+          <a href="#" id="nav-curriculum" class="nav-link active">Curriculum</a>
+          <a href="#" id="nav-review"      class="nav-link">Review</a>
+          <a href="#" class="nav-link">Collections</a>
+          <a href="#" class="nav-link">Community</a>
+        </nav>
+      </div>
+      <div class="site-header-right">
+        <button class="site-icon-btn" title="Terminal"><span class="material-symbols-outlined">terminal</span></button>
+        <button class="site-icon-btn" title="Account"><span class="material-symbols-outlined">account_circle</span></button>
+        <button id="site-start-btn" class="site-start-btn">Start Quiz</button>
+      </div>
+    </div>
+  </header>
 
   <!-- 홈 화면 -->
   <div id="screen-home" class="screen active">
