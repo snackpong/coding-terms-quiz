@@ -8,13 +8,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,700;0,800;0,900;1,900&family=Syne:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260502-arena-3">
 </head>
 <body>
 
   <!-- Decorative atmospheric orbs (desktop only) -->
   <div class="atm-orb atm-orb-1"></div>
   <div class="atm-orb atm-orb-2"></div>
+  <div class="circuit-backdrop" aria-hidden="true">
+    <div class="circuit-core"></div>
+    <div class="circuit-grid"></div>
+    <div class="circuit-trace trace-a"></div>
+    <div class="circuit-trace trace-b"></div>
+    <div class="circuit-trace trace-c"></div>
+    <div class="circuit-trace trace-d"></div>
+    <div class="circuit-trace trace-e"></div>
+    <div class="circuit-trace trace-f"></div>
+    <div class="circuit-node node-a"></div>
+    <div class="circuit-node node-b"></div>
+    <div class="circuit-node node-c"></div>
+    <div class="circuit-node node-d"></div>
+    <div class="circuit-node node-e"></div>
+    <div class="circuit-node node-f"></div>
+    <div class="ai-bot">
+      <img src="assets/ai-robot.png" alt="">
+      <div class="bot-signal"></div>
+      <div class="bot-eye-glow bot-eye-glow-left"></div>
+      <div class="bot-eye-glow bot-eye-glow-right"></div>
+      <div class="bot-core-overlay"></div>
+      <div class="bot-hand-wave"></div>
+      <div class="bot-thruster"></div>
+      <div class="bot-halo"></div>
+      <div class="bot-spark spark-a"></div>
+      <div class="bot-spark spark-b"></div>
+      <div class="bot-spark spark-c"></div>
+      <div class="bot-shadow"></div>
+    </div>
+  </div>
 
   <!-- Persistent site header (desktop only) -->
   <header id="site-header">
@@ -24,8 +54,9 @@
         <nav class="site-nav">
           <a href="#" id="nav-curriculum" class="nav-link active">Curriculum</a>
           <a href="#" id="nav-review"      class="nav-link">Review</a>
-          <a href="#" class="nav-link">Collections</a>
-          <a href="#" class="nav-link">Community</a>
+          <a href="#" id="nav-collections" class="nav-link">Collections</a>
+          <a href="#" id="nav-games" class="nav-link">Games</a>
+          <a href="#" id="nav-community" class="nav-link">Community</a>
         </nav>
       </div>
       <div class="site-header-right">
@@ -42,6 +73,25 @@
       <div class="home-kicker">CODE.QUIZ — vol. 01</div>
       <h1 class="home-title">코딩 용어<br><span class="gradient-text">퀴즈.</span></h1>
       <p class="home-subtitle" id="home-subtitle">주차를 선택해서 퀴즈를 시작해보세요.</p>
+      <div class="home-actions">
+        <button id="home-continue-btn" class="home-action-btn primary">이어하기</button>
+        <button id="home-weak-btn" class="home-action-btn secondary">약점 복습</button>
+      </div>
+    </div>
+
+    <div class="home-summary-grid">
+      <div class="home-summary-card">
+        <span>용어</span>
+        <strong id="summary-terms">0</strong>
+      </div>
+      <div class="home-summary-card">
+        <span>완료 일차</span>
+        <strong id="summary-days">0/0</strong>
+      </div>
+      <div class="home-summary-card">
+        <span>복습 대기</span>
+        <strong id="summary-review">0</strong>
+      </div>
     </div>
 
     <div class="streak-ribbon">
@@ -80,6 +130,187 @@
   </div>
 
   <!-- 틀린 것 카테고리 화면 -->
+  <div id="screen-review" class="screen utility-screen">
+    <main class="utility-container">
+      <div class="utility-kicker">REVIEW</div>
+      <h2 class="utility-title">복습 센터</h2>
+      <p class="utility-copy">틀린 문제와 맞힌 문제를 다시 확인하는 공간입니다.</p>
+      <div class="utility-grid">
+        <button id="review-wrong-start" class="utility-card utility-card-wrong">
+          <span class="material-symbols-outlined">error</span>
+          <strong id="review-wrong-total">0</strong>
+          <em>틀린 문제 복습</em>
+        </button>
+        <button id="review-correct-start" class="utility-card utility-card-correct">
+          <span class="material-symbols-outlined">check_circle</span>
+          <strong id="review-correct-total">0</strong>
+          <em>맞힌 문제 복습</em>
+        </button>
+        <button id="review-weak-start" class="utility-card utility-card-weak">
+          <span class="material-symbols-outlined">psychology</span>
+          <strong id="review-weak-total">0</strong>
+          <em>약점 용어 복습</em>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <div id="screen-collections" class="screen utility-screen">
+    <main class="utility-container">
+      <div class="utility-kicker">COLLECTIONS</div>
+      <h2 class="utility-title">용어 컬렉션</h2>
+      <p class="utility-copy">주차별 학습 묶음과 현재 저장된 복습 항목을 한눈에 보는 공간입니다.</p>
+      <label class="term-search">
+        <span class="material-symbols-outlined">search</span>
+        <input id="term-search-input" type="search" placeholder="용어, 설명, 카테고리 검색">
+      </label>
+      <div id="term-search-results" class="term-search-results"></div>
+      <div id="collections-list" class="utility-list"></div>
+    </main>
+  </div>
+
+  <div id="screen-community" class="screen utility-screen">
+    <main class="utility-container">
+      <div class="utility-kicker">COMMUNITY</div>
+      <h2 class="utility-title">커뮤니티</h2>
+      <p class="utility-copy">학습 기록을 공유하고 함께 공부할 수 있는 공간입니다. 현재는 로컬 학습 앱 기준의 준비 화면입니다.</p>
+      <div class="utility-list">
+        <div class="utility-row">
+          <strong>오늘의 학습</strong>
+          <span id="community-today">진행 기록을 쌓으면 이곳에 표시됩니다.</span>
+        </div>
+        <div class="utility-row">
+          <strong>공유 준비</strong>
+          <span>오답 수와 완료한 일차를 기반으로 공유 문구를 만들 수 있습니다.</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="screen-games" class="screen utility-screen">
+    <main class="utility-container">
+      <div class="utility-kicker">GAMES</div>
+      <h2 class="utility-title">게임 모드</h2>
+      <p class="utility-copy">용어를 짧은 게임처럼 반복해서 익히는 공간입니다.</p>
+      <div class="utility-grid games-grid">
+        <button id="game-charge-start" data-charge-mode="all" class="utility-card game-card-charge">
+          <span class="material-symbols-outlined">battery_charging_full</span>
+          <strong>전체 충전</strong>
+          <em>전체 용어에서 무작위로 AI 로봇을 충전합니다.</em>
+        </button>
+        <button id="game-charge-week-start" data-charge-mode="week" class="utility-card game-card-charge">
+          <span class="material-symbols-outlined">view_week</span>
+          <strong>주차별 충전</strong>
+          <em>선택한 주차의 용어만 골라 충전합니다.</em>
+        </button>
+        <button id="game-charge-weak-start" data-charge-mode="weak" class="utility-card game-card-charge">
+          <span class="material-symbols-outlined">psychology</span>
+          <strong>약점 충전</strong>
+          <em>틀렸거나 모른 용어만 집중 충전합니다.</em>
+        </button>
+      </div>
+      <div class="game-week-row" id="game-week-row">
+        <span class="game-week-label">주차 선택</span>
+        <div class="game-week-seg" id="game-week-seg"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="screen-charge-game" class="screen">
+    <div id="charge-result-overlay" class="charge-result-overlay">
+      <div class="charge-result-panel">
+        <div class="charge-result-kicker" id="res-result-kicker">COMPLETE</div>
+        <h2 class="charge-result-title" id="res-result-title">충전 완료!</h2>
+        <div class="charge-result-stats">
+          <div class="charge-res-stat"><span>최종 배터리</span><strong id="res-battery">0%</strong></div>
+          <div class="charge-res-stat"><span>점수</span><strong id="res-score">0</strong></div>
+          <div class="charge-res-stat"><span>최고 콤보</span><strong id="res-combo">0</strong></div>
+          <div class="charge-res-stat"><span>맞힌 수</span><strong id="res-correct">0</strong></div>
+          <div class="charge-res-stat"><span>틀린/모름</span><strong id="res-wrong">0</strong></div>
+          <div class="charge-res-stat"><span>정답률</span><strong id="res-accuracy">0%</strong></div>
+        </div>
+        <div class="charge-result-wrong-terms" id="res-wrong-terms-section" style="display:none">
+          <div class="res-wrong-label">이번 게임 틀린 용어</div>
+          <div class="res-wrong-list" id="res-wrong-list"></div>
+        </div>
+        <div class="charge-result-actions">
+          <button id="btn-result-retry" class="charge-next-btn">다시 하기 →</button>
+          <button id="btn-result-games" class="charge-small-btn">← Games</button>
+        </div>
+      </div>
+    </div>
+    <main class="charge-game-shell">
+      <div class="charge-impact-layer" aria-hidden="true">
+        <div id="charge-screen-flash" class="charge-screen-flash"></div>
+        <div id="charge-float" class="charge-float"></div>
+      </div>
+      <div class="charge-topbar">
+        <button id="btn-charge-back" class="back-btn">‹</button>
+        <div>
+          <div class="charge-kicker" id="charge-mode-label">AI CORE REACTOR</div>
+          <h2>로봇 코어 충전 작전</h2>
+        </div>
+        <div class="charge-top-actions">
+          <button id="btn-charge-sound" class="charge-small-btn" aria-pressed="true">Sound On</button>
+          <button id="btn-charge-restart" class="charge-small-btn">재시작</button>
+        </div>
+      </div>
+
+      <section class="charge-stage" id="charge-stage">
+        <div class="charge-hud">
+          <div class="charge-battery">
+            <div class="charge-battery-row">
+              <span>AI CORE BATTERY</span>
+              <strong id="charge-battery-text">35%</strong>
+            </div>
+            <div class="charge-battery-track">
+              <div id="charge-battery-fill" class="charge-battery-fill" style="width:35%"></div>
+            </div>
+          </div>
+          <div class="charge-stats">
+            <div><span>콤보</span><strong id="charge-combo">0</strong></div>
+            <div><span>문제</span><strong id="charge-round">1/10</strong></div>
+            <div><span>점수</span><strong id="charge-score">0</strong></div>
+          </div>
+        </div>
+
+        <div class="charge-arena" id="charge-arena">
+          <div class="charge-combatant charge-ai-side">
+            <div class="charge-robot-wrap" id="charge-robot-wrap">
+              <div class="charge-robot-aura"></div>
+              <img src="assets/ai-robot.png" alt="">
+              <div class="charge-core"></div>
+              <div class="charge-boost"></div>
+              <div class="charge-shadow"></div>
+            </div>
+            <div class="combatant-name">AI CORE</div>
+          </div>
+          <div class="charge-arena-center">
+            <div class="arena-vs">VS</div>
+          </div>
+          <div class="charge-combatant charge-villain-side">
+            <div class="charge-villain-wrap" id="charge-villain-wrap">
+              <div class="charge-villain-aura"></div>
+              <img src="assets/villain-robot..png" alt="">
+              <div class="charge-villain-core"></div>
+              <div class="charge-villain-shadow"></div>
+            </div>
+            <div class="villain-energy-bar"><div class="villain-energy-fill" id="villain-energy-fill"></div></div>
+            <div class="combatant-name villain-name">VILLAIN</div>
+          </div>
+        </div>
+
+        <div class="charge-question-panel">
+          <div class="charge-status" id="charge-status">로봇이 에너지를 기다리고 있습니다.</div>
+          <div class="charge-definition" id="charge-definition"></div>
+          <div class="charge-choices" id="charge-choices"></div>
+          <div class="charge-feedback" id="charge-feedback"></div>
+          <button id="charge-next-btn" class="charge-next-btn" style="display:none">다음 →</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
   <div id="screen-wrong-cats" class="screen">
     <div class="wrong-cats-header">
       <button id="btn-wc-back" class="back-btn">‹</button>
@@ -186,6 +417,6 @@
     </main>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=20260502-arena-3"></script>
 </body>
 </html>
