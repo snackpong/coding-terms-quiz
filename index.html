@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,700;0,800;0,900;1,900&family=Syne:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260502-arena-3">
+  <link rel="stylesheet" href="styles.css?v=20260503-level">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
 </head>
 <body>
 
@@ -31,7 +32,7 @@
     <div class="circuit-node node-e"></div>
     <div class="circuit-node node-f"></div>
     <div class="ai-bot">
-      <img src="assets/ai-robot.png" alt="">
+      <img id="ai-bot-img" src="assets/ai-robot.png" alt="">
       <div class="bot-signal"></div>
       <div class="bot-eye-glow bot-eye-glow-left"></div>
       <div class="bot-eye-glow bot-eye-glow-right"></div>
@@ -94,6 +95,25 @@
       </div>
     </div>
 
+    <div class="level-section">
+      <div class="level-card">
+        <div class="level-robot-col">
+          <img id="level-robot-img" src="assets/ai-robot.png" alt="">
+        </div>
+        <div class="level-info-col">
+          <div class="level-top">
+            <span class="level-badge-label">Lv.<span id="level-num">1</span></span>
+            <span class="level-name" id="level-name">입문자</span>
+            <span class="level-max-badge" id="level-max-badge" style="display:none">MAX</span>
+          </div>
+          <div class="level-xp-bar-wrap">
+            <div class="level-xp-fill" id="level-xp-fill" style="width:0%"></div>
+          </div>
+          <div class="level-xp-text" id="level-xp-text">0 XP</div>
+        </div>
+      </div>
+    </div>
+
     <div class="streak-ribbon">
       <div class="streak-orb"></div>
       <div class="streak-icon">🔥</div>
@@ -111,7 +131,7 @@
 
     <div id="week-list" class="home-container"></div>
 
-    <div id="review-section" class="home-review-section" style="display:none">
+    <div id="review-section" class="home-review-section">
       <div class="home-review-grid">
         <button id="wrong-review-card" class="review-card review-card-wrong">
           <div class="review-card-orb"></div>
@@ -126,6 +146,16 @@
           <div class="review-card-hint">복습 →</div>
         </button>
       </div>
+      <div class="review-reset-row">
+        <button id="btn-reset-review" class="review-reset-btn">기록 초기화</button>
+      </div>
+    </div>
+
+    <div class="cat-accuracy-section">
+      <div class="section-header" style="padding:0 24px">
+        <div class="section-title">ACCURACY <span class="dot">·</span> 카테고리별 정답률</div>
+      </div>
+      <div id="cat-accuracy-list" class="cat-accuracy-list"></div>
     </div>
   </div>
 
@@ -417,6 +447,6 @@
     </main>
   </div>
 
-  <script src="app.js?v=20260502-arena-3"></script>
+  <script src="app.js?v=20260503-level"></script>
 </body>
 </html>

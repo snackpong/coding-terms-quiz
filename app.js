@@ -75,6 +75,117 @@ const COLOR_SOFT = {
   sky: 'var(--sky-soft)', mint: 'var(--mint-soft)',
 };
 
+// ── 레벨 시스템 ────────────────────────────────────────────
+const LEVELS = [
+  { level: 1, name: '입문자',      xp: 0     },
+  { level: 2, name: '견습생',      xp: 500   },
+  { level: 3, name: '학습자',      xp: 2000  },
+  { level: 4, name: '주니어',      xp: 5000  },
+  { level: 5, name: '개발자',      xp: 9000  },
+  { level: 6, name: 'AI 엔지니어', xp: 14000 },
+  { level: 7, name: '마스터',      xp: 17000 },
+];
+
+function getTotalXP() {
+  const stats = getTermStats();
+  return Object.values(stats).reduce((sum, s) => sum + (s.correct || 0), 0) * 10;
+}
+
+function getCurrentLevel() {
+  const xp = getTotalXP();
+  let idx = 0;
+  // ?lv=N 파라미터로 레벨 강제 미리보기
+  const previewLv = parseInt(new URLSearchParams(window.location.search).get('lv'));
+  if (previewLv >= 1 && previewLv <= 7) {
+    idx = previewLv - 1;
+  } else {
+    for (let i = 0; i < LEVELS.length; i++) {
+      if (xp >= LEVELS[i].xp) idx = i;
+    }
+  }
+  const current = LEVELS[idx];
+  const next = LEVELS[idx + 1] || null;
+  const pct = next
+    ? Math.min(100, Math.round(((xp - current.xp) / (next.xp - current.xp)) * 100))
+    : 100;
+  return { current, next, xp, pct };
+}
+
+function getCategoryAccuracy() {
+  const stats = getTermStats();
+  const cats = {};
+  state.allTerms.forEach(term => {
+    const cat = term.category;
+    if (!cats[cat]) cats[cat] = { correct: 0, seen: 0 };
+    const s = stats[term.id];
+    if (s) {
+      cats[cat].seen   += s.seen    || 0;
+      cats[cat].correct += s.correct || 0;
+    }
+  });
+  return cats;
+}
+
+const LEVEL_ROBOT_IMGS = {
+  1: 'assets/ai-robot.png',
+  2: 'assets/level-robots/lv2-robot.png',
+  3: 'assets/level-robots/lv3-robot.png',
+  4: 'assets/level-robots/lv4-robot.png',
+  5: 'assets/level-robots/lv5-robot.png',
+  6: 'assets/level-robots/lv6-robot.png',
+  7: 'assets/level-robots/lv7-robot.png',
+};
+
+function updateRobotImage() {
+  const { current } = getCurrentLevel();
+  const src = LEVEL_ROBOT_IMGS[current.level] || LEVEL_ROBOT_IMGS[1];
+  const botImg  = document.getElementById('ai-bot-img');
+  const cardImg = document.getElementById('level-robot-img');
+  if (botImg)  botImg.src  = src;
+  if (cardImg) cardImg.src = src;
+}
+
+function renderLevelSection() {
+  const { current, next, xp, pct } = getCurrentLevel();
+  const numEl   = document.getElementById('level-num');
+  const nameEl  = document.getElementById('level-name');
+  const fillEl  = document.getElementById('level-xp-fill');
+  const textEl  = document.getElementById('level-xp-text');
+  const maxEl   = document.getElementById('level-max-badge');
+  if (!numEl) return;
+  numEl.textContent  = current.level;
+  nameEl.textContent = current.name;
+  fillEl.style.width = `${pct}%`;
+  if (next) {
+    textEl.textContent   = `${xp.toLocaleString()} / ${next.xp.toLocaleString()} XP`;
+    if (maxEl) maxEl.style.display = 'none';
+  } else {
+    textEl.textContent   = `${xp.toLocaleString()} XP — 마스터 달성!`;
+    if (maxEl) maxEl.style.display = '';
+  }
+}
+
+function renderCategoryAccuracy() {
+  const list = document.getElementById('cat-accuracy-list');
+  if (!list) return;
+  const catData = getCategoryAccuracy();
+  const entries = Object.entries(catData).filter(([, d]) => d.seen > 0)
+    .sort((a, b) => (b[1].correct / b[1].seen) - (a[1].correct / a[1].seen));
+  if (entries.length === 0) {
+    list.innerHTML = '<div class="cat-accuracy-empty">퀴즈를 풀면 카테고리별 정답률이 표시됩니다.</div>';
+    return;
+  }
+  list.innerHTML = entries.map(([cat, d]) => {
+    const pct   = Math.round((d.correct / d.seen) * 100);
+    const color = CAT_COLORS[cat] || 'violet';
+    return `<div class="cat-acc-row">
+      <div class="cat-acc-label">${cat}</div>
+      <div class="cat-acc-bar-wrap"><div class="cat-acc-bar c-${color}" style="width:${pct}%"></div></div>
+      <div class="cat-acc-pct">${pct}%</div>
+    </div>`;
+  }).join('');
+}
+
 // ── localStorage 헬퍼 ──────────────────────────────────────
 function getProgress()      { return JSON.parse(localStorage.getItem('quiz_progress')   || '{}'); }
 function saveProgress(data) { localStorage.setItem('quiz_progress', JSON.stringify(data)); }
@@ -402,11 +513,19 @@ function showHome(options = {}) {
   weakBtn.disabled = weakIds.length === 0;
 
   const reviewSection = document.getElementById('review-section');
-  reviewSection.style.display = (favs.length > 0 || correctIds.length > 0 || weakIds.length > 0) ? 'block' : 'none';
+  reviewSection.style.display = 'block';
   document.getElementById('wrong-count').textContent = `${favs.length}`;
   document.getElementById('correct-count').textContent = `${correctIds.length}`;
-  document.getElementById('wrong-review-card').style.display = favs.length > 0 ? '' : 'none';
-  document.getElementById('correct-review-card').style.display = correctIds.length > 0 ? '' : 'none';
+  const wrongCard = document.getElementById('wrong-review-card');
+  const correctCard = document.getElementById('correct-review-card');
+  wrongCard.style.display = '';
+  correctCard.style.display = '';
+  wrongCard.disabled = favs.length === 0;
+  correctCard.disabled = correctIds.length === 0;
+
+  renderLevelSection();
+  renderCategoryAccuracy();
+  updateRobotImage();
 }
 
 // ── 주차 상세 ─────────────────────────────────────────────
@@ -1671,6 +1790,12 @@ document.addEventListener('DOMContentLoaded', () => {
     startQuiz(target.week, target.day);
   });
   document.getElementById('home-weak-btn')?.addEventListener('click', startWeakReview);
+  document.getElementById('btn-reset-review')?.addEventListener('click', () => {
+    if (!confirm('맞은 것, 틀린 것 기록을 모두 초기화할까요?\n주차별 완료 기록은 유지됩니다.')) return;
+    localStorage.removeItem('quiz_favorites');
+    localStorage.removeItem('quiz_term_stats');
+    showHome({ skipHistory: true });
+  });
 
   document.getElementById('btn-back-home').addEventListener('click', () => goBackOr(showHome));
 

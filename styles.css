@@ -26,6 +26,33 @@ html, body {
   overflow-x: hidden;
 }
 
+#summary-terms,
+#summary-days,
+#summary-review,
+#streak-days,
+#wrong-count,
+#correct-count,
+#charge-battery-text,
+#charge-combo,
+#charge-round,
+#charge-score,
+#res-battery,
+#res-score,
+#res-combo,
+#res-correct,
+#res-wrong,
+#res-accuracy,
+#complete-score,
+.complete-score-denom,
+.week-icon,
+.week-pct,
+.day-score,
+.choice-badge,
+.stat-value {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
 body::before {
   content: '';
   position: fixed; inset: 0; z-index: 0; pointer-events: none;
@@ -175,6 +202,139 @@ body::before {
   color: var(--ink);
 }
 
+/* ── Level card ── */
+.level-section {
+  padding: 14px 24px 0;
+}
+.level-card {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  padding: 21px 24px;
+  border-radius: 20px 8px 20px 8px;
+  background: linear-gradient(135deg, rgba(123,47,255,0.07), rgba(91,184,255,0.05));
+  border: 1px solid rgba(123,47,255,0.18);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.85), 0 8px 24px -14px rgba(123,47,255,0.2);
+}
+.level-robot-col {
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+}
+.level-robot-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(123,47,255,0.22));
+}
+.level-info-col { flex: 1; min-width: 0; }
+.level-top {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.level-badge-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--violet);
+  letter-spacing: 0.04em;
+}
+.level-name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--ink);
+}
+.level-max-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--amber), var(--coral));
+  padding: 3px 11px;
+  border-radius: 9px;
+  letter-spacing: 0.08em;
+}
+.level-xp-bar-wrap {
+  height: 12px;
+  background: rgba(123,47,255,0.1);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.level-xp-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--violet), var(--sky));
+  box-shadow: 0 0 10px rgba(123,47,255,0.35);
+  transition: width 0.7s cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+.level-xp-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  color: var(--ink-mute);
+  letter-spacing: 0.03em;
+}
+
+/* ── Category accuracy ── */
+.cat-accuracy-section {
+  padding: 14px 0 24px;
+}
+.cat-accuracy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 10px 24px 0;
+}
+.cat-acc-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 36px;
+  align-items: center;
+  gap: 10px;
+}
+.cat-acc-label {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cat-acc-bar-wrap {
+  height: 7px;
+  background: rgba(0,0,0,0.07);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.cat-acc-bar {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.55s cubic-bezier(0.34,1.1,0.64,1);
+  min-width: 3px;
+}
+.cat-acc-bar.c-violet { background: var(--violet); }
+.cat-acc-bar.c-coral  { background: var(--coral);  }
+.cat-acc-bar.c-amber  { background: var(--amber);  }
+.cat-acc-bar.c-sky    { background: var(--sky);    }
+.cat-acc-bar.c-mint   { background: var(--mint);   }
+.cat-acc-pct {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink-mute);
+  text-align: right;
+}
+.cat-accuracy-empty {
+  font-size: 12px;
+  color: var(--ink-mute);
+  text-align: center;
+  padding: 12px 0;
+  font-style: italic;
+}
+
 .streak-ribbon {
   margin: 12px 24px 14px; padding: 12px 14px;
   border-radius: 20px 8px 20px 8px;
@@ -289,7 +449,32 @@ body::before {
 
 /* Review section on home */
 .home-review-section { padding: 12px 24px 28px; }
-.home-review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.home-review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: stretch; }
+
+.review-reset-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 2px 0;
+}
+.review-reset-btn {
+  background: rgba(255,92,92,0.07);
+  border: 1px solid rgba(255,92,92,0.3);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--coral);
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 10px;
+  line-height: 1.2;
+  text-align: center;
+  transition: background 0.14s, border-color 0.14s, transform 0.12s;
+  letter-spacing: 0.01em;
+}
+.review-reset-btn:hover {
+  background: rgba(255,92,92,0.15);
+  border-color: rgba(255,92,92,0.55);
+}
 
 .review-card {
   cursor: pointer; text-align: left; padding: 14px 14px 12px;
@@ -298,6 +483,14 @@ body::before {
   transition: transform 0.12s;
 }
 .review-card:hover { transform: translateY(-1px); }
+.review-card:disabled {
+  cursor: default;
+  opacity: 0.58;
+  filter: saturate(0.7);
+}
+.review-card:disabled:hover {
+  transform: none;
+}
 .review-card-wrong {
   border-radius: 20px 6px 20px 6px;
   background: linear-gradient(135deg, var(--coral-soft), #fff);
@@ -393,6 +586,14 @@ body::before {
   font-family: 'Syne', sans-serif;
   font-size: 46px;
   line-height: 1;
+}
+
+.game-card-charge strong {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 28px;
+  line-height: 1.16;
+  letter-spacing: 0;
+  word-break: keep-all;
 }
 .utility-card em {
   font-style: normal;
@@ -1629,6 +1830,7 @@ body::before {
   .utility-card { min-height: 260px; padding: 34px; border-radius: 30px 10px 30px 10px; }
   .utility-card .material-symbols-outlined { font-size: 46px; }
   .utility-card strong { font-size: 82px; }
+  .game-card-charge strong { font-size: 34px; line-height: 1.18; }
   .utility-card em { font-size: 22px; }
   .utility-list { gap: 18px; margin-top: 34px; }
   .utility-row { padding: 26px 30px; }
