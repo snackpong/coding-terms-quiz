@@ -139,8 +139,8 @@
   border: 1px solid rgba(255,255,255,0.14);
   border-radius: 14px;
   background:
-    linear-gradient(to bottom, rgba(4,2,14,0.30) 0%, rgba(4,2,14,0.55) 100%),
-    url('assets/battle-background-ai-city.png') center center / cover no-repeat;
+    linear-gradient(to bottom, rgba(4,2,14,0.20) 0%, rgba(4,2,14,0.45) 100%),
+    url('../assets/battle-background-cyberpunk-arena.png') center center / cover no-repeat;
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.08),
     0 24px 70px -46px rgba(0,0,0,0.8),

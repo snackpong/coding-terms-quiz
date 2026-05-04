@@ -663,5 +663,66 @@ body[data-active-screen="screen-home"] .ai-bot {
   .utility-grid {
     grid-template-columns: 1fr;
   }
-}
 
+  .charge-game-shell {
+    box-sizing: border-box;
+    padding: 24px 16px 36px;
+    overflow-x: hidden;
+  }
+
+  .charge-topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .charge-stage,
+  .charge-hud,
+  .charge-arena,
+  .charge-question-panel {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .charge-hud {
+    grid-template-columns: 1fr;
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .charge-battery,
+  .charge-battery-track {
+    min-width: 0;
+  }
+
+  .charge-battery-row {
+    gap: 12px;
+  }
+
+  .charge-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    min-width: 0;
+  }
+
+  .charge-stats div {
+    min-width: 0;
+    padding: 9px 8px;
+  }
+
+  .charge-top-actions {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .charge-arena {
+    min-height: 176px;
+    padding: 12px 8px 8px;
+  }
+
+  .charge-robot-wrap,
+  .charge-villain-wrap {
+    width: min(35vw, 136px);
+  }
+}
