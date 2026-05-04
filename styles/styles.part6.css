@@ -44,6 +44,14 @@
   animation: stageShake 0.46s ease-out !important;
 }
 
+@keyframes chargeChoiceWarning {
+  0% { transform: translateX(0); filter: brightness(1); }
+  18% { transform: translateX(-6px); filter: brightness(1.65); }
+  36% { transform: translateX(5px); }
+  56% { transform: translateX(-3px); }
+  100% { transform: translateX(0); filter: brightness(1); }
+}
+
 /* Combo burst text */
 .charge-combo-burst {
   position: absolute;

@@ -78,6 +78,7 @@ function spawnTravelParticles(direction, combo) {
 }
 
 function firePositionedBeam(fromEl, toEl, kind, combo) {
+  if (!fromEl || !toEl) return;
   const fromRect = fromEl.getBoundingClientRect();
   const toRect = toEl.getBoundingClientRect();
   const cx1 = fromRect.left + fromRect.width / 2;
@@ -123,6 +124,37 @@ function firePositionedBeam(fromEl, toEl, kind, combo) {
   window.setTimeout(() => outer.remove(), 800);
 }
 
+function getChargeCore() {
+  return document.querySelector('#charge-robot-wrap .charge-core');
+}
+
+function triggerChargeCoreBurst() {
+  const core = getChargeCore();
+  if (!core) return;
+  core.classList.remove('core-burst');
+  void core.offsetWidth;
+  core.classList.add('core-burst');
+  window.setTimeout(() => core.classList.remove('core-burst'), 650);
+}
+
+function fireChoiceToCoreBeam(clickedBtn, combo) {
+  const core = getChargeCore();
+  if (!clickedBtn || !core) return;
+  clickedBtn.classList.add('energy-source');
+  firePositionedBeam(clickedBtn, core, 'correct', combo);
+  window.setTimeout(triggerChargeCoreBurst, 220);
+  window.setTimeout(() => clickedBtn.classList.remove('energy-source'), 720);
+}
+
+function fireCoreDrainBeam(clickedBtn) {
+  const core = getChargeCore();
+  if (!core) return;
+  const target = clickedBtn || document.getElementById('charge-choices') || document.getElementById('charge-arena');
+  target?.classList?.add('warning-target');
+  firePositionedBeam(core, target, 'drain', 0);
+  window.setTimeout(() => target?.classList?.remove('warning-target'), 720);
+}
+
 function triggerChargeImpact(kind, label, clickedBtn, combo) {
   const floatEl = document.getElementById('charge-float');
   const fill = document.getElementById('charge-battery-fill');
@@ -139,10 +171,10 @@ function triggerChargeImpact(kind, label, clickedBtn, combo) {
   window.setTimeout(() => floatEl.classList.remove('float-active', 'float-correct', 'float-drain'), 1000);
 
   // Battery bar kick
-  fill?.classList.remove('kick');
+  fill?.classList.remove('kick', 'overshoot', 'drain-hit');
   void fill?.offsetWidth;
-  fill?.classList.add('kick');
-  window.setTimeout(() => fill?.classList.remove('kick'), 360);
+  fill?.classList.add('kick', kind === 'correct' ? 'overshoot' : 'drain-hit');
+  window.setTimeout(() => fill?.classList.remove('kick', 'overshoot', 'drain-hit'), 520);
 
   // Screen flash
   if (flash) {
@@ -173,11 +205,11 @@ function triggerChargeImpact(kind, label, clickedBtn, combo) {
       robotWrap.classList.add('robot-shake');
       window.setTimeout(() => robotWrap.classList.remove('robot-shake'), 500);
     }
-    if (villainWrap && robotWrap) {
-      firePositionedBeam(robotWrap, villainWrap, 'drain', 0);
-      triggerVillainSurge();
-    }
+    fireCoreDrainBeam(clickedBtn);
+    triggerChargeCoreBurst();
+    triggerVillainSurge();
   } else {
+    fireChoiceToCoreBeam(clickedBtn, c);
     // Correct: charge → compress → fire ki projectile
     if (robotWrap) {
       robotWrap.classList.remove('robot-charge');
@@ -223,18 +255,11 @@ function triggerChargeImpact(kind, label, clickedBtn, combo) {
         // On impact
         window.setTimeout(() => {
           proj.remove();
-          const core = robotWrap.querySelector('.charge-core');
-          if (core) {
-            core.classList.remove('core-burst');
-            void core.offsetWidth;
-            core.classList.add('core-burst');
-            window.setTimeout(() => core.classList.remove('core-burst'), 650);
-          }
-          firePositionedBeam(villainWrap, robotWrap, 'correct', c);
+          triggerChargeCoreBurst();
           triggerVillainHit(c);
           if (c >= 3) {
-            window.setTimeout(() => firePositionedBeam(villainWrap, robotWrap, 'correct', Math.max(0, c - 1)), 60);
-            window.setTimeout(() => firePositionedBeam(villainWrap, robotWrap, 'correct', Math.max(0, c - 2)), 130);
+            window.setTimeout(() => fireChoiceToCoreBeam(clickedBtn, Math.max(0, c - 1)), 60);
+            window.setTimeout(() => fireChoiceToCoreBeam(clickedBtn, Math.max(0, c - 2)), 130);
           }
         }, dur);
 

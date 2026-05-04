@@ -238,7 +238,15 @@
 
 @keyframes batteryKick {
   0%, 100% { transform: scaleX(1); }
-  40% { transform: scaleX(1.028); }
+  35% { transform: scaleX(1.035); filter: brightness(1.55); }
+  62% { transform: scaleX(0.99); filter: brightness(1.1); }
+}
+
+@keyframes batteryDrainHit {
+  0%, 100% { transform: translateX(0); filter: brightness(1); }
+  22% { transform: translateX(-4px); filter: brightness(1.45) saturate(1.6); }
+  44% { transform: translateX(3px); }
+  66% { transform: translateX(-2px); }
 }
 
 @media (max-width: 400px) {
