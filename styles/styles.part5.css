@@ -705,12 +705,12 @@
   }
 
   .charge-choices {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
   .charge-choice {
-    min-height: 86px;
-    font-size: 19px;
+    min-height: 82px;
+    font-size: 17px;
   }
 }
 

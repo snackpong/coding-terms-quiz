@@ -377,7 +377,7 @@ function renderChargeQuestion() {
     const btn = document.createElement('button');
     btn.className = 'charge-choice' + (choice === '모르겠음' ? ' dont-know' : '');
     btn.dataset.choice = choice;
-    btn.textContent = choice === '모르겠음' ? '0. 모르겠음' : `${index + 1}. ${choice}`;
+    btn.textContent = choice === '모르겠음' ? '7. 모르겠음' : `${index + 1}. ${choice}`;
     btn.addEventListener('click', () => handleChargeAnswer(choice, btn));
     choicesEl.appendChild(btn);
   });

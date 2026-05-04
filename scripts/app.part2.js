@@ -491,11 +491,11 @@ function pickChargeTerms(mode, count) {
 function buildChargeChoices(term) {
   const sameCat = state.allTerms.filter(t => t.id !== term.id && t.category === term.category);
   const diffCat = state.allTerms.filter(t => t.id !== term.id && t.category !== term.category);
-  const wrong = [...sameCat].sort(() => Math.random() - 0.5).slice(0, 2).map(t => t.term);
+  const wrong = [...sameCat].sort(() => Math.random() - 0.5).slice(0, 3).map(t => t.term);
   let i = 0;
   const shuffledDiff = [...diffCat].sort(() => Math.random() - 0.5);
-  while (wrong.length < 3 && i < shuffledDiff.length) wrong.push(shuffledDiff[i++].term);
-  const pool = [term.term, ...wrong.slice(0, 3)].sort(() => Math.random() - 0.5);
+  while (wrong.length < 5 && i < shuffledDiff.length) wrong.push(shuffledDiff[i++].term);
+  const pool = [term.term, ...wrong.slice(0, 5)].sort(() => Math.random() - 0.5);
   pool.push('모르겠음');
   return pool;
 }
