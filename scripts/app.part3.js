@@ -341,6 +341,7 @@ function startChargeGame(options = {}) {
   game.currentTerm = null;
   game.answered = false;
   game.finished = false;
+  game.finishing = false;
   game.auraLevel = 1 + (playerLevel - 1) * 0.35;
 
   const overlay = document.getElementById('charge-result-overlay');
@@ -456,11 +457,11 @@ function handleChargeAnswer(choice, clickedBtn) {
   playChargeSound(isCorrect ? 'correct' : 'wrong', game.combo);
 
   if (game.battery >= 100) {
-    finishChargeGame('complete');
+    scheduleFinishChargeGame('complete');
     return;
   }
   if (game.battery <= 0) {
-    finishChargeGame('fail');
+    scheduleFinishChargeGame('fail');
     return;
   }
 
@@ -469,18 +470,27 @@ function handleChargeAnswer(choice, clickedBtn) {
 
 function nextChargeQuestion() {
   const game = state.chargeGame;
-  if (!game.answered || game.finished) return;
+  if (!game.answered || game.finished || game.finishing) return;
   game.round++;
   if (game.round >= game.maxRounds) {
-    finishChargeGame(game.battery >= 70 ? 'done' : 'fail');
+    scheduleFinishChargeGame(game.battery >= 70 ? 'done' : 'fail');
     return;
   }
   renderChargeQuestion();
 }
 
+function scheduleFinishChargeGame(result) {
+  const game = state.chargeGame;
+  if (game.finished || game.finishing) return;
+  game.finishing = true;
+  document.getElementById('charge-next-btn').style.display = 'none';
+  window.setTimeout(() => finishChargeGame(result), 760);
+}
+
 function finishChargeGame(result) {
   const game = state.chargeGame;
   game.finished = true;
+  game.finishing = false;
   const complete = result === 'complete';
   const fail = result === 'fail';
   setChargeStageState(complete ? 'complete' : fail ? 'wrong' : 'correct');

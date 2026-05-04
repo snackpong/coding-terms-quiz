@@ -370,7 +370,7 @@ function bootApplication() {
         nextBtn.click();
         return;
       }
-      if (!state.chargeGame.answered && !state.chargeGame.finished) {
+      if (!state.chargeGame.answered && !state.chargeGame.finished && !state.chargeGame.finishing) {
         const buttons = [...document.querySelectorAll('#charge-choices .charge-choice:not(:disabled)')];
         const index = Number(event.key);
         if (index >= 1 && index <= buttons.length) {

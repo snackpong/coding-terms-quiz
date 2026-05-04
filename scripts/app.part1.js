@@ -25,6 +25,7 @@ const state = {
     currentTerm: null,
     answered: false,
     finished: false,
+    finishing: false,
     sourceMode: 'all',
     sourceLabel: '전체 랜덤',
     soundOn: true,

@@ -1,9 +1,19 @@
 const fs = require('fs');
 const path = require('path');
 
-const file = path.join(__dirname, '..', 'data', 'terms.json');
-const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-const existing = new Set(data.terms.map(term => term.term));
+const dataDir = path.join(__dirname, '..', 'data');
+const weekNumbers = [1, 2, 3, 4, 5];
+const weekFiles = new Map(weekNumbers.map(week => [
+  week,
+  path.join(dataDir, `terms.week${week}.json`),
+]));
+const termsByWeek = new Map([...weekFiles].map(([week, file]) => [
+  week,
+  JSON.parse(fs.readFileSync(file, 'utf8')),
+]));
+const changedWeeks = new Set();
+const allTerms = [...termsByWeek.values()].flat();
+const existing = new Set(allTerms.map(term => term.term));
 
 const additions = [
   ['순수 함수', '함수와 스코프', 'easy', 4, '입력값이 같으면 항상 같은 결과를 반환하고 외부 상태를 바꾸지 않는 함수. 테스트와 예측이 쉬워집니다.', '같은 입력이면 같은 출력'],
@@ -140,10 +150,13 @@ const additions = [
   ['탑-k 샘플링', 'AI / 머신러닝', 'hard', 5, '확률이 높은 K개의 후보 중에서 다음 토큰을 고르는 생성 방식.', '상위 K개 후보에서 선택'],
 ];
 
-let nextId = Math.max(...data.terms.map(term => Number(term.id))) + 1;
+let nextId = Math.max(...allTerms.map(term => Number(term.id))) + 1;
+let added = 0;
 for (const [term, category, difficulty, week, definition, hint] of additions) {
   if (existing.has(term)) continue;
-  data.terms.push({
+  const targetTerms = termsByWeek.get(week);
+  if (!targetTerms) throw new Error(`Unsupported week: ${week}`);
+  targetTerms.push({
     id: String(nextId++).padStart(3, '0'),
     term,
     category,
@@ -154,8 +167,12 @@ for (const [term, category, difficulty, week, definition, hint] of additions) {
     hint,
   });
   existing.add(term);
+  changedWeeks.add(week);
+  added++;
 }
 
-data.meta.totalTerms = data.terms.length;
-data.meta.lastUpdated = '2026-05-01';
-fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
+for (const week of changedWeeks) {
+  fs.writeFileSync(weekFiles.get(week), `${JSON.stringify(termsByWeek.get(week), null, 2)}\n`, 'utf8');
+}
+
+console.log(`Added ${added} term(s). Total terms: ${allTerms.length + added}`);
