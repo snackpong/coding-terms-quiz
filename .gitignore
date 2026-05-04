@@ -2,3 +2,18 @@ node_modules/
 .DS_Store
 Thumbs.db
 firebase-config.js
+
+# Local browser profiles and debug captures
+.chrome-*/
+.edge-*/
+
+# Local assistant/session notes
+.claude/
+NEXT_SESSION_PROMPT.md
+STITCH_MCP_PROGRESS.md
+WORK_PROGRESS_*.md
+*.txt
+
+# Reference/generated image search assets
+images/
+assets/battle-background-cyberpunk.png
