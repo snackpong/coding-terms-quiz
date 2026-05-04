@@ -6,10 +6,16 @@
   <title>코딩 용어 퀴즈</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,700;0,800;0,900;1,900&family=Syne:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,700;0,800;0,900;1,900&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260503-level">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="modulepreload" href="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js">
+  <link rel="modulepreload" href="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js">
+  <link rel="modulepreload" href="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js">
+  <link rel="stylesheet" href="styles.css?v=20260504-modal2">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 </head>
 <body>
 
@@ -62,7 +68,7 @@
       </div>
       <div class="site-header-right">
         <button class="site-icon-btn" title="Terminal"><span class="material-symbols-outlined">terminal</span></button>
-        <button class="site-icon-btn" title="Account"><span class="material-symbols-outlined">account_circle</span></button>
+        <button id="btn-account" class="site-icon-btn" title="Account"><span class="material-symbols-outlined">account_circle</span></button>
         <button id="site-start-btn" class="site-start-btn">Start Quiz</button>
       </div>
     </div>
@@ -104,6 +110,7 @@
           <div class="level-top">
             <span class="level-badge-label">Lv.<span id="level-num">1</span></span>
             <span class="level-name" id="level-name">입문자</span>
+            <span class="level-title-badge" id="level-title-badge">입문자 배지</span>
             <span class="level-max-badge" id="level-max-badge" style="display:none">MAX</span>
           </div>
           <div class="level-xp-bar-wrap">
@@ -111,6 +118,15 @@
           </div>
           <div class="level-xp-text" id="level-xp-text">0 XP</div>
         </div>
+      </div>
+    </div>
+
+    <div class="today-summary-section">
+      <div class="today-summary-grid">
+        <div class="today-summary-card"><span>푼 문제</span><strong id="today-solved">0</strong></div>
+        <div class="today-summary-card"><span>맞힌 문제</span><strong id="today-correct">0</strong></div>
+        <div class="today-summary-card"><span>얻은 XP</span><strong id="today-xp">0</strong></div>
+        <div class="today-summary-card"><span>추가 약점</span><strong id="today-weak">0</strong></div>
       </div>
     </div>
 
@@ -181,6 +197,11 @@
           <strong id="review-weak-total">0</strong>
           <em>약점 용어 복습</em>
         </button>
+        <button id="review-note-start" class="utility-card utility-card-note">
+          <span class="material-symbols-outlined">menu_book</span>
+          <strong id="review-note-total">0</strong>
+          <em>오답 노트</em>
+        </button>
       </div>
     </main>
   </div>
@@ -194,6 +215,17 @@
         <span class="material-symbols-outlined">search</span>
         <input id="term-search-input" type="search" placeholder="용어, 설명, 카테고리 검색">
       </label>
+      <div class="term-filter-row">
+        <select id="term-category-filter" class="term-filter-select">
+          <option value="all">전체 카테고리</option>
+        </select>
+        <select id="term-difficulty-filter" class="term-filter-select">
+          <option value="all">전체 난이도</option>
+          <option value="easy">쉬움</option>
+          <option value="medium">보통</option>
+          <option value="hard">어려움</option>
+        </select>
+      </div>
       <div id="term-search-results" class="term-search-results"></div>
       <div id="collections-list" class="utility-list"></div>
     </main>
@@ -259,6 +291,7 @@
           <div class="charge-res-stat"><span>틀린/모름</span><strong id="res-wrong">0</strong></div>
           <div class="charge-res-stat"><span>정답률</span><strong id="res-accuracy">0%</strong></div>
         </div>
+        <div class="charge-result-reward" id="res-reward"></div>
         <div class="charge-result-wrong-terms" id="res-wrong-terms-section" style="display:none">
           <div class="res-wrong-label">이번 게임 틀린 용어</div>
           <div class="res-wrong-list" id="res-wrong-list"></div>
@@ -365,6 +398,18 @@
     <div id="wrong-cat-list" class="cats-grid"></div>
   </div>
 
+  <div id="screen-wrong-note" class="screen utility-screen">
+    <main class="utility-container">
+      <div class="utility-kicker">WRONG.NOTE</div>
+      <h2 class="utility-title">오답 노트</h2>
+      <p class="utility-copy">틀렸거나 모른 용어의 정답, 설명, 힌트를 한 번에 확인합니다.</p>
+      <div id="wrong-note-list" class="wrong-note-list"></div>
+      <div class="wrong-note-actions">
+        <button id="wrong-note-retry" class="charge-next-btn">오답 다시 풀기 →</button>
+      </div>
+    </main>
+  </div>
+
   <!-- 주차 상세 화면 -->
   <div id="screen-week" class="screen">
     <div class="nav-header">
@@ -409,6 +454,7 @@
         </div>
         <div class="question-kicker">DEFINE //</div>
         <div class="question-text" id="question-stem"></div>
+        <button class="detail-open-btn" id="detail-open-btn" style="display:none">// 자세히 알기 ↗</button>
       </div>
       <div class="choices-label">— 답을 골라주세요</div>
       <div class="choices" id="choices"></div>
@@ -436,6 +482,7 @@
         <span class="complete-score-num" id="complete-score">8</span><span class="complete-score-denom">/10</span>
       </div>
       <p class="complete-tagline" id="complete-tagline"></p>
+      <div class="complete-level-line" id="complete-level-line"></div>
       <div class="complete-stats" id="complete-stats"></div>
       <div class="complete-buttons">
         <button id="btn-complete-next" class="btn-primary" style="display:none">다음 날로 →</button>
@@ -447,6 +494,37 @@
     </main>
   </div>
 
-  <script src="app.js?v=20260503-level"></script>
+  <!-- 자세히 알기 Modal -->
+  <div id="detail-modal" class="detail-modal" role="dialog" aria-modal="true">
+    <div class="detail-panel">
+      <div class="detail-header">
+        <div class="detail-header-left">
+          <span class="detail-category-tag" id="dm-category"></span>
+          <h2 class="detail-term-name" id="dm-term"></h2>
+        </div>
+        <button class="detail-close-btn" id="detail-close-btn" aria-label="닫기">✕</button>
+      </div>
+      <div class="detail-body">
+        <div class="detail-section">
+          <div class="detail-section-label">// 핵심 한 줄</div>
+          <p class="detail-section-text" id="dm-easy"></p>
+        </div>
+        <div class="detail-section" id="dm-analogy-sec">
+          <div class="detail-section-label">// 쉬운 비유</div>
+          <p class="detail-section-text" id="dm-analogy"></p>
+        </div>
+        <div class="detail-section" id="dm-example-sec">
+          <div class="detail-section-label">// 예시</div>
+          <pre class="detail-code-block" id="dm-example"></pre>
+        </div>
+        <div class="detail-section" id="dm-tip-sec">
+          <div class="detail-section-label">// 초보자 팁</div>
+          <p class="detail-section-text detail-tip-block" id="dm-tip"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js?v=20260503-firebase"></script>
 </body>
 </html>

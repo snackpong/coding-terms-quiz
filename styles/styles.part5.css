@@ -1,0 +1,781 @@
+
+.charge-cannon.cannon-draining .cannon-tip {
+  background: radial-gradient(circle, rgba(255,92,92,1) 0%, rgba(255,92,92,0.4) 55%, transparent 100%);
+  box-shadow: 0 0 22px rgba(255,92,92,0.9), 0 0 50px rgba(255,92,92,0.4);
+  animation: none;
+}
+
+.charge-cannon.cannon-draining .cannon-body {
+  border-color: rgba(255,92,92,0.28);
+}
+
+.charge-cannon.cannon-draining .cannon-label {
+  color: rgba(255,150,150,0.8);
+}
+
+/* ── Screen flash ── */
+.charge-screen-flash {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.charge-screen-flash.flash-correct {
+  animation: flashCorrect 0.44s ease-out forwards;
+}
+
+.charge-screen-flash.flash-wrong {
+  animation: flashWrong 0.48s ease-out forwards;
+}
+
+@keyframes flashCorrect {
+  0%   { background: rgba(0,229,160,0);    opacity: 0; }
+  16%  { background: rgba(0,229,160,0.28); opacity: 1; }
+  100% { background: rgba(0,229,160,0);    opacity: 0; }
+}
+
+@keyframes flashWrong {
+  0%   { background: rgba(255,50,50,0);    opacity: 0; }
+  16%  { background: rgba(255,50,50,0.32); opacity: 1; }
+  100% { background: rgba(255,50,50,0);    opacity: 0; }
+}
+
+/* ── Floating delta text ── */
+.charge-float {
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, 0);
+  font-family: 'Syne', 'Noto Sans KR', sans-serif;
+  font-size: clamp(32px, 6vw, 72px);
+  font-weight: 900;
+  opacity: 0;
+}
+
+.charge-float.float-correct {
+  color: #00e5a0;
+  text-shadow: 0 0 28px rgba(0,229,160,0.9), 0 0 56px rgba(0,229,160,0.55);
+}
+
+.charge-float.float-drain {
+  color: #ff5c5c;
+  text-shadow: 0 0 28px rgba(255,92,92,0.9), 0 0 56px rgba(255,92,92,0.55);
+}
+
+.charge-float.float-active {
+  animation: chargeFloatUp 0.9s ease-out forwards;
+}
+
+.charge-topbar {
+  color: #fff;
+}
+
+.charge-kicker {
+  color: rgba(0,229,160,0.95);
+  text-shadow: 0 0 18px rgba(0,229,160,0.55);
+}
+
+.charge-topbar h2 {
+  color: #fff;
+  text-shadow: 0 0 28px rgba(91,184,255,0.34);
+}
+
+.charge-top-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.charge-small-btn {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.22);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.charge-stage {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+  min-height: 0;
+}
+
+.charge-stage.correct {
+  filter: brightness(1.08) saturate(1.14);
+}
+
+.charge-stage.wrong {
+  animation: chargeDrainPulse 0.5s ease-out;
+}
+
+.charge-hud,
+.charge-question-panel {
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 14px;
+  background: rgba(11,9,26,0.58);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 24px 70px -46px rgba(0,0,0,0.7);
+  backdrop-filter: blur(18px);
+}
+
+.charge-hud {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto;
+  gap: 18px;
+  align-items: end;
+  padding: 16px 18px;
+}
+
+/* ── Arena: both robots face each other ── */
+.charge-arena {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 14px;
+  background:
+    linear-gradient(to bottom, rgba(4,2,14,0.30) 0%, rgba(4,2,14,0.55) 100%),
+    url('assets/battle-background-ai-city.png') center center / cover no-repeat;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    0 24px 70px -46px rgba(0,0,0,0.8),
+    inset 0 0 80px rgba(0,0,0,0.5);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  padding: 14px 12px 10px;
+  min-height: 190px;
+}
+.charge-arena::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(180deg, transparent, transparent 3px, rgba(255,255,255,0.007) 3px, rgba(255,255,255,0.007) 4px);
+  pointer-events: none;
+  z-index: 0;
+}
+.charge-arena::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(91,184,255,0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+.charge-combatant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  z-index: 2;
+}
+.charge-arena-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+}
+.arena-vs {
+  font-family: 'Syne', sans-serif;
+  font-weight: 900;
+  font-size: clamp(16px, 2.6vw, 28px);
+  color: rgba(255,255,255,0.09);
+  letter-spacing: 0.14em;
+  text-shadow: 0 0 30px rgba(123,47,255,0.3);
+}
+.combatant-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: rgba(91,184,255,0.5);
+}
+.villain-name {
+  color: rgba(255,92,120,0.5);
+}
+
+.charge-robot-wrap {
+  position: relative;
+  width: min(42vh, 200px, 32vw);
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+.charge-robot-aura {
+  inset: -32%;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(255,255,255,calc(var(--charge-aura-intensity) * 0.62)), transparent 20%),
+    radial-gradient(circle at 50% 46%, rgba(0,229,160,var(--charge-aura-intensity)), transparent 40%),
+    radial-gradient(circle at 54% 58%, rgba(91,184,255,calc(var(--charge-aura-intensity) * 0.78)), transparent 56%),
+    radial-gradient(circle at 45% 62%, rgba(123,47,255,calc(var(--charge-aura-intensity) * 0.5)), transparent 68%);
+  animation: chargeAuraBrightness 3s ease-in-out infinite;
+}
+
+/* ── Villain robot ── */
+.charge-villain-wrap {
+  position: relative;
+  width: min(42vh, 200px, 32vw);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  --villain-aura-scale: 1.2;
+  --villain-aura-intensity: 0.6;
+  --villain-aura-blur: 28px;
+  transition: filter 0.24s ease;
+}
+.charge-villain-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 3;
+  transform: scaleX(-1);
+  filter: drop-shadow(0 18px 22px rgba(200,0,80,0.32)) hue-rotate(290deg) saturate(1.5);
+  animation: chargeRobotFloat 5.2s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+}
+.charge-villain-aura {
+  position: absolute;
+  inset: -32%;
+  z-index: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(255,255,255,calc(var(--villain-aura-intensity) * 0.5)), transparent 20%),
+    radial-gradient(circle at 50% 46%, rgba(255,40,100,var(--villain-aura-intensity)), transparent 42%),
+    radial-gradient(circle at 42% 60%, rgba(180,0,255,calc(var(--villain-aura-intensity) * 0.8)), transparent 58%),
+    radial-gradient(circle at 56% 62%, rgba(255,100,0,calc(var(--villain-aura-intensity) * 0.6)), transparent 66%);
+  filter: blur(var(--villain-aura-blur));
+  transform: scale(var(--villain-aura-scale));
+  opacity: calc(0.55 + var(--villain-aura-intensity) * 0.5);
+  animation: villainAuraBrightness 3.8s ease-in-out infinite;
+  transition: transform 0.6s cubic-bezier(0.34, 1.3, 0.64, 1), opacity 0.5s ease;
+}
+.charge-villain-core {
+  position: absolute;
+  left: 49%;
+  top: 55%;
+  width: 19%;
+  aspect-ratio: 1;
+  z-index: 4;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255,255,255,0.7), rgba(255,40,100,0.52) 38%, transparent 68%);
+  mix-blend-mode: screen;
+  filter: blur(1px) drop-shadow(0 0 20px rgba(255,40,100,0.9));
+  animation: chargeCorePulse 2.1s ease-in-out infinite;
+}
+.charge-villain-shadow {
+  position: absolute;
+  left: 28%;
+  bottom: 3%;
+  width: 44%;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(100,0,50,0.22);
+  filter: blur(10px);
+  z-index: 2;
+}
+.villain-energy-bar {
+  width: min(130px, 30vw);
+  height: 5px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid rgba(255,40,100,0.18);
+}
+.villain-energy-fill {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #ff1a4e, #ff6820);
+  box-shadow: 0 0 14px rgba(255,40,80,0.75);
+  border-radius: inherit;
+  transition: width 0.42s ease;
+}
+
+/* ── Villain hit / surge state ── */
+.charge-villain-wrap.villain-hit {
+  animation: villainHitShake 0.5s ease-in-out !important;
+}
+.charge-villain-wrap.villain-surge {
+  animation: villainSurgeWrap 0.32s ease-out !important;
+}
+.charge-villain-wrap.villain-hit .charge-villain-aura {
+  animation: villainAuraDrain 0.52s ease-out !important;
+}
+.charge-villain-wrap.villain-surge .charge-villain-aura {
+  animation: villainAuraBurst 0.65s ease-out !important;
+}
+.charge-villain-wrap.villain-surge img {
+  animation: villainSurgeImg 0.58s ease-out !important;
+}
+/* Villain shockwave (red) */
+.charge-shockwave.sw-villain-drain {
+  width: 72px; height: 72px;
+  border: 3px solid rgba(255,40,100,0.9);
+  box-shadow: 0 0 24px rgba(255,40,100,0.9), 0 0 56px rgba(180,0,255,0.45), inset 0 0 24px rgba(255,40,100,0.3);
+}
+
+/* ── Travel particles ── */
+.travel-particle {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: travelToTarget 0.58s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.tp-energy {
+  background: radial-gradient(circle, rgba(255,255,255,0.95) 15%, rgba(0,229,160,0.92) 50%, transparent);
+  box-shadow: 0 0 18px 5px rgba(0,229,160,0.9), 0 0 34px 8px rgba(91,184,255,0.45);
+}
+.tp-drain {
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 15%, rgba(255,40,100,0.92) 50%, transparent);
+  box-shadow: 0 0 18px 5px rgba(255,40,100,0.9), 0 0 34px 8px rgba(180,0,255,0.45);
+}
+@keyframes travelToTarget {
+  0%   { transform: translate(0, 0) scale(1.4); opacity: 1; }
+  60%  { opacity: 0.9; }
+  100% { transform: translate(var(--tx), var(--ty)) scale(0.1); opacity: 0; }
+}
+
+.charge-stage.correct .charge-robot-aura,
+.charge-stage.complete .charge-robot-aura {
+  background:
+    radial-gradient(circle at 50% 38%, rgba(255,255,255,calc(var(--charge-aura-intensity) * 0.82)), transparent 20%),
+    radial-gradient(circle at 50% 52%, rgba(0,229,160,var(--charge-aura-intensity)), transparent 44%),
+    radial-gradient(circle at 52% 58%, rgba(91,184,255,calc(var(--charge-aura-intensity) * 0.92)), transparent 66%);
+}
+
+.charge-robot-wrap[data-combo-tier="active"] .charge-robot-aura {
+  background:
+    radial-gradient(circle at 50% 38%, rgba(255,255,255,calc(var(--charge-aura-intensity) * 0.78)), transparent 20%),
+    radial-gradient(circle at 50% 50%, rgba(0,229,160,var(--charge-aura-intensity)), transparent 44%),
+    radial-gradient(circle at 54% 60%, rgba(91,184,255,calc(var(--charge-aura-intensity) * 0.86)), transparent 66%);
+}
+
+.charge-robot-wrap[data-combo-tier="high"] .charge-robot-aura {
+  background:
+    radial-gradient(circle at 50% 36%, rgba(255,255,255,calc(var(--charge-aura-intensity) * 0.9)), transparent 20%),
+    radial-gradient(circle at 50% 50%, rgba(255,215,0,var(--charge-aura-intensity)), transparent 42%),
+    radial-gradient(circle at 56% 61%, rgba(0,229,160,calc(var(--charge-aura-intensity) * 0.85)), transparent 62%),
+    radial-gradient(circle at 43% 63%, rgba(91,184,255,calc(var(--charge-aura-intensity) * 0.78)), transparent 70%);
+}
+
+.charge-robot-wrap[data-combo-tier="max"] .charge-robot-aura {
+  background:
+    radial-gradient(circle at 50% 36%, rgba(255,255,255,1), transparent 18%),
+    radial-gradient(circle at 50% 50%, rgba(255,215,0,var(--charge-aura-intensity)), transparent 42%),
+    radial-gradient(circle at 58% 62%, rgba(255,92,92,calc(var(--charge-aura-intensity) * 0.72)), transparent 64%),
+    radial-gradient(circle at 42% 64%, rgba(123,47,255,calc(var(--charge-aura-intensity) * 0.7)), transparent 72%);
+}
+
+.charge-stage.wrong .charge-robot-aura {
+  background:
+    radial-gradient(circle at 50% 45%, rgba(255,92,92,calc(var(--charge-aura-intensity) * 0.7)), transparent 34%),
+    radial-gradient(circle at 55% 58%, rgba(123,47,255,calc(var(--charge-aura-intensity) * 0.58)), transparent 56%);
+}
+
+.charge-robot-wrap[data-aura-level="0"] .charge-robot-aura,
+.charge-robot-wrap[data-aura-level="1"] .charge-robot-aura {
+  opacity: 0.26;
+}
+
+.charge-robot-wrap[data-aura-level="7"] img,
+.charge-robot-wrap[data-aura-level="8"] img,
+.charge-robot-wrap[data-aura-level="9"] img,
+.charge-robot-wrap[data-aura-level="10"] img {
+  filter:
+    drop-shadow(0 28px 34px rgba(27,21,48,0.22))
+    drop-shadow(0 0 28px rgba(0,229,160,0.32));
+}
+
+.charge-core {
+  width: 21%;
+  filter: blur(0.6px) drop-shadow(0 0 26px rgba(0,229,160,0.82));
+}
+
+.charge-stage.correct .charge-core,
+.charge-stage.complete .charge-core {
+  animation-duration: 0.62s;
+  filter: blur(0.4px) drop-shadow(0 0 36px rgba(0,229,160,1)) drop-shadow(0 0 54px rgba(91,184,255,0.8));
+}
+
+.charge-stage.wrong .charge-core {
+  background: radial-gradient(circle, rgba(255,255,255,0.6), rgba(255,92,92,0.38) 38%, transparent 68%);
+  filter: blur(1px) drop-shadow(0 0 22px rgba(255,92,92,0.7));
+}
+
+.charge-battery {
+  margin-top: 0;
+}
+
+.charge-battery-row {
+  color: rgba(255,255,255,0.72);
+}
+
+.charge-battery-row strong {
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0,229,160,0.46);
+}
+
+.charge-battery-track {
+  background:
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.1) 0 2px, transparent 2px 18px),
+    rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.charge-battery-fill.kick {
+  animation: batteryKick 0.3s ease-out;
+}
+
+.charge-stats {
+  margin-top: 0;
+  min-width: min(380px, 38vw);
+}
+
+.charge-stats div {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.13);
+}
+
+.charge-stats span {
+  color: rgba(255,255,255,0.62);
+}
+
+.charge-stats strong {
+  color: #fff;
+}
+
+.charge-question-panel {
+  padding: clamp(18px, 2.6vw, 34px);
+}
+
+.charge-cannon {
+  margin: 8px 0 16px;
+}
+
+.cannon-body {
+  background: rgba(15,12,32,0.88);
+  border-color: rgba(76,215,246,0.28);
+}
+
+.cannon-label {
+  color: rgba(76,215,246,0.8);
+}
+
+.charge-status {
+  background: rgba(0,229,160,0.1);
+  border-color: rgba(0,229,160,0.25);
+  color: rgba(175,255,232,0.98);
+}
+
+.charge-definition {
+  color: #fff;
+  text-shadow: 0 0 18px rgba(91,184,255,0.16);
+}
+
+.charge-choice {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.18);
+  color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.charge-choice:hover:not(:disabled) {
+  border-color: rgba(0,229,160,0.5);
+  background: rgba(0,229,160,0.12);
+  box-shadow: 0 0 24px -12px rgba(0,229,160,0.9);
+}
+
+.charge-choice.correct {
+  background: rgba(0,229,160,0.22);
+  border-color: var(--mint);
+  box-shadow: 0 0 28px -10px rgba(0,229,160,0.95);
+}
+
+.charge-choice.wrong {
+  background: rgba(255,92,92,0.18);
+  border-color: var(--coral);
+  box-shadow: 0 0 28px -10px rgba(255,92,92,0.9);
+}
+
+.charge-feedback {
+  color: rgba(255,255,255,0.74);
+}
+
+.charge-next-btn {
+  background: linear-gradient(135deg, var(--mint), var(--sky), var(--violet));
+}
+
+/* ── Result overlay ── */
+.charge-result-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 300;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8,6,20,0.88);
+  backdrop-filter: blur(14px);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.charge-result-overlay.visible {
+  opacity: 1;
+}
+
+.charge-result-panel {
+  background: rgba(18,14,38,0.94);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 28px;
+  padding: clamp(28px,5vw,48px) clamp(24px,6vw,56px);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow:
+    0 0 80px -24px rgba(0,229,160,0.4),
+    0 60px 100px -48px rgba(0,0,0,0.8);
+  animation: resultOverlayIn 0.38s ease-out;
+}
+
+.charge-result-overlay.result-complete .charge-result-panel {
+  border-color: rgba(0,229,160,0.45);
+  box-shadow:
+    0 0 100px -20px rgba(0,229,160,0.55),
+    0 60px 100px -48px rgba(0,0,0,0.8);
+}
+
+.charge-result-overlay.result-fail .charge-result-panel {
+  border-color: rgba(255,92,92,0.4);
+  box-shadow:
+    0 0 80px -24px rgba(255,92,92,0.4),
+    0 60px 100px -48px rgba(0,0,0,0.8);
+}
+
+.charge-result-kicker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: rgba(0,229,160,0.9);
+  text-shadow: 0 0 18px rgba(0,229,160,0.6);
+  margin-bottom: 10px;
+}
+
+.charge-result-overlay.result-fail .charge-result-kicker {
+  color: rgba(255,92,92,0.9);
+  text-shadow: 0 0 18px rgba(255,92,92,0.6);
+}
+
+.charge-result-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 900;
+  font-size: clamp(28px,6vw,48px);
+  color: #fff;
+  margin: 0 0 28px;
+  text-shadow: 0 0 40px rgba(91,184,255,0.35);
+}
+
+.charge-result-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.charge-res-stat {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 14px 8px;
+}
+
+.charge-res-stat span {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255,255,255,0.52);
+  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+}
+
+.charge-res-stat strong {
+  display: block;
+  font-family: 'Syne', sans-serif;
+  font-weight: 900;
+  font-size: clamp(20px,4vw,30px);
+  color: #fff;
+}
+
+.charge-result-actions {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.charge-result-reward {
+  margin: -10px 0 22px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(175,255,232,0.92);
+}
+
+/* ── Week selector in Games screen ── */
+.game-week-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px 8px 18px 8px;
+  background: rgba(255,255,255,0.86);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.9), 0 6px 16px -12px rgba(27,21,48,0.18);
+  flex-wrap: wrap;
+}
+
+.game-week-label {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--ink-mute);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.game-week-seg {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.game-week-btn {
+  appearance: none;
+  cursor: pointer;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(123,47,255,0.22);
+  background: rgba(255,255,255,0.9);
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink-soft);
+  transition: all 0.15s ease;
+}
+
+.game-week-btn:hover {
+  border-color: var(--violet);
+  color: var(--violet);
+  background: rgba(123,47,255,0.06);
+}
+
+.game-week-btn.selected {
+  background: var(--violet);
+  border-color: var(--violet);
+  color: #fff;
+  box-shadow: 0 6px 18px -8px rgba(123,47,255,0.72);
+}
+
+@media (min-width: 768px) {
+  .charge-game-shell {
+    padding: 28px clamp(32px, 4vw, 72px) 40px;
+  }
+
+  .charge-arena {
+    min-height: 260px;
+  }
+
+  .charge-robot-wrap,
+  .charge-villain-wrap {
+    width: min(48vh, 240px, 28vw);
+  }
+
+  .charge-question-panel {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .charge-choices {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .charge-choice {
+    min-height: 86px;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  .charge-hud {
+    grid-template-columns: 1fr;
+  }
+
+  .charge-stats {
+    min-width: 0;
+  }
+
+  .charge-top-actions {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+/* ── Impact Effects ── */
+
+/* Shockwave rings */
+.charge-shockwave {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 22;
+  animation: impactShockwave 0.65s ease-out forwards;
+}
+.charge-shockwave.sw-correct {
+  width: 72px; height: 72px;
+  border: 3px solid rgba(0,229,160,1);
+  box-shadow: 0 0 22px rgba(0,229,160,0.85), 0 0 50px rgba(0,229,160,0.4), inset 0 0 22px rgba(0,229,160,0.3);
+}
+.charge-shockwave.sw-combo {
+  width: 72px; height: 72px;
+  border: 3px solid rgba(255,215,0,1);
+  box-shadow: 0 0 28px rgba(255,215,0,0.95), 0 0 60px rgba(255,172,51,0.5), inset 0 0 28px rgba(255,215,0,0.3);
+}
+.charge-shockwave.sw-wrong {
+  width: 72px; height: 72px;
+  border: 3px solid rgba(255,60,60,1);
+  box-shadow: 0 0 22px rgba(255,60,60,0.85), 0 0 50px rgba(255,60,60,0.4), inset 0 0 22px rgba(255,60,60,0.3);
+}
+@keyframes impactShockwave {
+  0%   { transform: translate(-50%,-50%) scale(0);   opacity: 1; }
+  100% { transform: translate(-50%,-50%) scale(4.8); opacity: 0; }
+}
+
+/* Impact particles */
+.charge-particle {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 23;
+  animation: impactParticle var(--pdur, 0.7s) ease-out forwards;
+}
+.charge-particle.pt-correct {
+  background: rgba(0,229,160,0.95);
+  box-shadow: 0 0 6px rgba(0,229,160,0.8), 0 0 14px rgba(91,184,255,0.5);
+}
+.charge-particle.pt-combo {
+  background: rgba(255,215,0,0.95);
+  box-shadow: 0 0 8px rgba(255,215,0,0.9), 0 0 18px rgba(255,172,51,0.6);
+}

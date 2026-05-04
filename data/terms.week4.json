@@ -1,0 +1,702 @@
+[
+  {
+    "id": "211",
+    "term": "멱등성",
+    "category": "웹/네트워킹",
+    "difficulty": "hard",
+    "phase": 1,
+    "week": 4,
+    "definition": "같은 요청을 여러 번 해도 결과가 항상 같은 성질. HTTP에서 GET, PUT 메서드는 멱등하지만 POST는 매번 새 데이터를 만듭니다.",
+    "hint": "같은 요청을 반복해도 결과가 동일한 성질"
+  },
+  {
+    "id": "212",
+    "term": "페이지네이션",
+    "category": "웹/네트워킹",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 4,
+    "definition": "데이터를 한 번에 모두 불러오지 않고 페이지 단위로 나눠 가져오는 것. 게시판의 '1페이지, 2페이지...'가 대표적입니다.",
+    "hint": "데이터를 페이지로 나눠 불러오기"
+  },
+  {
+    "id": "213",
+    "term": "레이턴시",
+    "category": "인프라",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 4,
+    "definition": "요청을 보낸 후 첫 번째 응답이 돌아오기까지의 시간. 지연 시간이라고도 하며 낮을수록 빠른 시스템입니다.",
+    "hint": "요청에서 첫 응답까지의 지연 시간"
+  },
+  {
+    "id": "214",
+    "term": "스루풋",
+    "category": "인프라",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 4,
+    "definition": "단위 시간당 처리할 수 있는 작업의 양. 서버가 초당 몇 개의 요청을 처리할 수 있는지로 표현합니다.",
+    "hint": "단위 시간당 처리 가능한 작업량"
+  },
+  {
+    "id": "215",
+    "term": "스케일링",
+    "category": "인프라",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 4,
+    "definition": "시스템의 처리 능력을 늘리는 것. 서버 성능을 높이는 수직 스케일링과 서버 수를 늘리는 수평 스케일링이 있습니다.",
+    "hint": "시스템 처리 능력 늘리기"
+  },
+  {
+    "id": "216",
+    "term": "로드 밸런싱",
+    "category": "인프라",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 4,
+    "definition": "여러 서버에 트래픽을 균등하게 분산하는 것. 한 서버에 부하가 몰리지 않도록 요청을 나눠 처리합니다.",
+    "hint": "여러 서버에 요청을 균등 분산"
+  },
+  {
+    "id": "217",
+    "term": "파이프라인",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 4,
+    "definition": "데이터나 작업을 단계별로 순서대로 처리하는 흐름. CI/CD 파이프라인처럼 각 단계의 출력이 다음 단계의 입력이 됩니다.",
+    "hint": "단계별로 순서대로 처리하는 흐름"
+  },
+  {
+    "id": "218",
+    "term": "네임스페이스",
+    "category": "프로그래밍 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 4,
+    "definition": "이름 충돌을 방지하기 위해 식별자(변수, 함수 등)를 그룹으로 묶어 구분하는 것. 같은 이름의 함수가 다른 네임스페이스에 있으면 서로 구분됩니다.",
+    "hint": "이름 충돌 방지를 위해 식별자를 묶는 그룹"
+  },
+  {
+    "id": "219",
+    "term": "아키텍처",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 4,
+    "definition": "소프트웨어 시스템의 전체적인 구조 설계. 컴포넌트들의 배치, 연결 방식, 데이터 흐름 등을 큰 그림으로 나타냅니다.",
+    "hint": "소프트웨어 전체 구조 설계"
+  },
+  {
+    "id": "220",
+    "term": "기술 부채",
+    "category": "개발 도구",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 4,
+    "definition": "빠른 개발을 위해 당장은 좋지 않은 방식으로 짠 코드. 나중에 제대로 고치는 데 더 많은 비용이 들어 '빚'처럼 쌓여갑니다.",
+    "hint": "나쁜 코드 선택이 나중에 더 큰 비용으로 돌아오는 것"
+  },
+  {
+    "id": "221",
+    "term": "부수 효과",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수가 결과를 반환하는 것 외에 외부 변수 변경, 파일 저장, 화면 변경 같은 영향을 주는 것.",
+    "hint": "함수 밖 상태를 바꾸는 영향"
+  },
+  {
+    "id": "222",
+    "term": "콜 스택",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수가 호출된 순서를 쌓아두는 메모리 구조. 현재 실행 중인 함수와 돌아갈 위치를 관리합니다.",
+    "hint": "함수 호출 순서를 쌓는 구조"
+  },
+  {
+    "id": "223",
+    "term": "실행 컨텍스트",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "코드가 실행될 때 변수, 함수, this, 스코프 정보 등을 담는 환경.",
+    "hint": "코드 실행에 필요한 정보 묶음"
+  },
+  {
+    "id": "224",
+    "term": "렉시컬 스코프",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수를 어디에서 호출했는지가 아니라 어디에 작성했는지에 따라 변수 접근 범위가 결정되는 규칙.",
+    "hint": "작성 위치 기준 스코프"
+  },
+  {
+    "id": "225",
+    "term": "블록 스코프",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "중괄호 블록 안에서 선언한 변수가 그 블록 안에서만 유효한 범위.",
+    "hint": "중괄호 안에서만 유효"
+  },
+  {
+    "id": "226",
+    "term": "함수 스코프",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수 안에서 선언한 변수가 그 함수 내부에서만 유효한 범위.",
+    "hint": "함수 안에서만 유효"
+  },
+  {
+    "id": "227",
+    "term": "스코프 체인",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "현재 스코프에 변수가 없으면 바깥 스코프로 거슬러 올라가며 찾는 연결 구조.",
+    "hint": "바깥 범위로 변수를 찾아가는 연결"
+  },
+  {
+    "id": "228",
+    "term": "this 바인딩",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수 안의 this가 어떤 객체를 가리킬지 정해지는 방식. 호출 방식에 따라 달라질 수 있습니다.",
+    "hint": "this가 가리키는 대상 결정"
+  },
+  {
+    "id": "229",
+    "term": "즉시 실행 함수",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "정의하자마자 바로 실행되는 함수. 임시 스코프를 만들거나 초기화 코드를 묶을 때 사용합니다.",
+    "hint": "만들자마자 실행되는 함수"
+  },
+  {
+    "id": "230",
+    "term": "커링",
+    "category": "함수와 스코프",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 4,
+    "definition": "여러 인자를 받는 함수를 인자 하나씩 받는 함수들의 연속으로 바꾸는 기법.",
+    "hint": "인자를 나눠 받는 함수 변환"
+  },
+  {
+    "id": "231",
+    "term": "부분 적용",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수의 일부 인자를 미리 고정해 새 함수를 만드는 기법.",
+    "hint": "일부 인자를 먼저 채워 둠"
+  },
+  {
+    "id": "232",
+    "term": "메모이제이션",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "이미 계산한 결과를 저장해두고 같은 입력이 오면 다시 계산하지 않고 재사용하는 최적화.",
+    "hint": "계산 결과를 저장해 재사용"
+  },
+  {
+    "id": "233",
+    "term": "일급 객체",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "변수에 담거나 인자로 전달하고 반환값으로 쓸 수 있는 값. JavaScript에서 함수는 일급 객체입니다.",
+    "hint": "값처럼 다룰 수 있는 대상"
+  },
+  {
+    "id": "234",
+    "term": "람다",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "이름 없이 짧게 표현하는 함수. 간단한 동작을 바로 전달할 때 자주 사용합니다.",
+    "hint": "짧게 쓰는 익명 함수"
+  },
+  {
+    "id": "235",
+    "term": "프로시저",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "값을 반환하기보다 어떤 동작을 수행하는 데 초점이 있는 함수나 코드 묶음.",
+    "hint": "동작 수행 중심 코드 묶음"
+  },
+  {
+    "id": "236",
+    "term": "서브루틴",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "프로그램 안에서 반복 사용할 수 있도록 분리한 작은 코드 단위.",
+    "hint": "반복 사용 가능한 작은 코드 단위"
+  },
+  {
+    "id": "237",
+    "term": "재진입성",
+    "category": "함수와 스코프",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 4,
+    "definition": "같은 함수가 동시에 여러 번 실행되어도 서로의 상태를 망가뜨리지 않는 성질.",
+    "hint": "동시에 실행돼도 안전한 성질"
+  },
+  {
+    "id": "238",
+    "term": "가변 인자",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수가 정해진 개수보다 많거나 적은 인자를 받을 수 있게 하는 방식.",
+    "hint": "인자 개수가 유동적"
+  },
+  {
+    "id": "239",
+    "term": "기본 매개변수",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "인자가 전달되지 않았을 때 자동으로 사용되는 기본값.",
+    "hint": "인자가 없을 때 쓰는 기본값"
+  },
+  {
+    "id": "240",
+    "term": "구조 분해 할당",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "배열이나 객체의 값을 꺼내 변수에 간단히 할당하는 문법.",
+    "hint": "배열/객체에서 값을 꺼내 할당"
+  },
+  {
+    "id": "241",
+    "term": "스프레드 문법",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "배열이나 객체의 값을 펼쳐서 복사하거나 인자로 전달하는 문법.",
+    "hint": "값들을 펼쳐 쓰는 문법"
+  },
+  {
+    "id": "242",
+    "term": "레스트 파라미터",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "여러 인자를 배열처럼 한 번에 모아 받는 매개변수 문법.",
+    "hint": "남은 인자를 모아 받음"
+  },
+  {
+    "id": "243",
+    "term": "콜백 지옥",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "콜백 함수가 여러 단계로 중첩되어 코드 흐름을 읽기 어려워진 상태.",
+    "hint": "중첩 콜백으로 복잡해진 코드"
+  },
+  {
+    "id": "244",
+    "term": "함수 시그니처",
+    "category": "함수와 스코프",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수 이름, 매개변수, 반환 타입처럼 함수를 구분하고 사용하는 데 필요한 형태 정보.",
+    "hint": "함수의 사용 형태 정보"
+  },
+  {
+    "id": "245",
+    "term": "반환 타입",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수가 실행을 마친 뒤 돌려주는 값의 종류.",
+    "hint": "함수가 돌려주는 값의 종류"
+  },
+  {
+    "id": "246",
+    "term": "인자",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수를 호출할 때 실제로 전달하는 값.",
+    "hint": "호출할 때 넣는 실제 값"
+  },
+  {
+    "id": "247",
+    "term": "매개변수 목록",
+    "category": "함수와 스코프",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "함수가 받을 값들의 이름과 순서를 적어둔 부분.",
+    "hint": "함수가 받을 값 목록"
+  },
+  {
+    "id": "248",
+    "term": "명명 규칙",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "변수, 함수, 파일 이름을 일관되게 짓기 위한 약속.",
+    "hint": "이름을 일관되게 짓는 규칙"
+  },
+  {
+    "id": "249",
+    "term": "카멜 케이스",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "첫 단어는 소문자로 시작하고 이후 단어 첫 글자를 대문자로 쓰는 이름 표기법.",
+    "hint": "userName 같은 이름 표기"
+  },
+  {
+    "id": "250",
+    "term": "스네이크 케이스",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "단어 사이를 밑줄로 연결하는 이름 표기법.",
+    "hint": "user_name 같은 이름 표기"
+  },
+  {
+    "id": "251",
+    "term": "파스칼 케이스",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "모든 단어의 첫 글자를 대문자로 쓰는 이름 표기법. 클래스 이름에 자주 사용합니다.",
+    "hint": "UserProfile 같은 이름 표기"
+  },
+  {
+    "id": "252",
+    "term": "가독성",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "코드를 사람이 읽고 이해하기 쉬운 정도.",
+    "hint": "코드가 읽기 쉬운 정도"
+  },
+  {
+    "id": "253",
+    "term": "응집도",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "하나의 모듈이나 클래스 안의 기능들이 얼마나 밀접하게 관련되어 있는지 나타내는 정도.",
+    "hint": "관련 기능이 한곳에 모인 정도"
+  },
+  {
+    "id": "254",
+    "term": "결합도",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "모듈끼리 서로 얼마나 강하게 의존하는지 나타내는 정도. 낮을수록 변경에 유리합니다.",
+    "hint": "모듈 간 의존 정도"
+  },
+  {
+    "id": "255",
+    "term": "관심사 분리",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "서로 다른 역할의 코드를 분리해 유지보수와 이해를 쉽게 만드는 설계 원칙.",
+    "hint": "역할별로 코드를 나누는 원칙"
+  },
+  {
+    "id": "256",
+    "term": "모듈화",
+    "category": "아키텍처",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "큰 프로그램을 독립적으로 이해하고 재사용할 수 있는 작은 단위로 나누는 것.",
+    "hint": "큰 코드를 작은 단위로 분리"
+  },
+  {
+    "id": "257",
+    "term": "추상 계층",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "복잡한 구현을 감추고 필요한 인터페이스만 보여주는 설계 층.",
+    "hint": "구현을 감춘 사용 층"
+  },
+  {
+    "id": "258",
+    "term": "도메인 모델",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "서비스가 다루는 실제 업무 개념을 코드 구조로 표현한 모델.",
+    "hint": "업무 개념을 코드로 표현"
+  },
+  {
+    "id": "259",
+    "term": "유스케이스",
+    "category": "아키텍처",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "사용자가 시스템으로 달성하려는 구체적인 목적이나 사용 시나리오.",
+    "hint": "사용자가 하려는 구체적 일"
+  },
+  {
+    "id": "260",
+    "term": "요구사항",
+    "category": "아키텍처",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "시스템이 제공해야 할 기능이나 만족해야 할 조건.",
+    "hint": "시스템이 해야 할 일과 조건"
+  },
+  {
+    "id": "261",
+    "term": "기능 요구사항",
+    "category": "아키텍처",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "로그인, 검색, 결제처럼 시스템이 실제로 수행해야 하는 기능.",
+    "hint": "시스템이 제공할 기능"
+  },
+  {
+    "id": "262",
+    "term": "비기능 요구사항",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "성능, 보안, 안정성, 사용성처럼 기능 외에 시스템이 만족해야 하는 품질 조건.",
+    "hint": "성능·보안 같은 품질 조건"
+  },
+  {
+    "id": "263",
+    "term": "확장성",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "사용자나 데이터가 늘어도 시스템을 키워 대응할 수 있는 성질.",
+    "hint": "커져도 대응 가능한 성질"
+  },
+  {
+    "id": "264",
+    "term": "유지보수성",
+    "category": "아키텍처",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 4,
+    "definition": "코드를 고치고 개선하기 쉬운 정도.",
+    "hint": "고치고 개선하기 쉬운 정도"
+  },
+  {
+    "id": "265",
+    "term": "테스트 가능성",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "기능을 자동 테스트로 검증하기 쉬운 정도.",
+    "hint": "자동 테스트하기 쉬운 정도"
+  },
+  {
+    "id": "266",
+    "term": "단일 책임 원칙",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "하나의 모듈이나 클래스가 하나의 책임만 가져야 한다는 설계 원칙.",
+    "hint": "하나의 책임만 갖는 원칙"
+  },
+  {
+    "id": "267",
+    "term": "개방 폐쇄 원칙",
+    "category": "아키텍처",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 4,
+    "definition": "기존 코드는 수정하지 않고 새 기능은 확장으로 추가할 수 있어야 한다는 원칙.",
+    "hint": "수정보다 확장으로 변경"
+  },
+  {
+    "id": "268",
+    "term": "리스코프 치환 원칙",
+    "category": "아키텍처",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 4,
+    "definition": "부모 타입 대신 자식 타입을 넣어도 프로그램이 올바르게 동작해야 한다는 원칙.",
+    "hint": "자식 타입이 부모를 대체 가능"
+  },
+  {
+    "id": "269",
+    "term": "인터페이스 분리 원칙",
+    "category": "아키텍처",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 4,
+    "definition": "클라이언트가 사용하지 않는 기능에 의존하지 않도록 인터페이스를 작게 나누는 원칙.",
+    "hint": "필요한 인터페이스만 의존"
+  },
+  {
+    "id": "270",
+    "term": "의존성 역전 원칙",
+    "category": "아키텍처",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 4,
+    "definition": "상위 정책 코드가 구체 구현이 아니라 추상화에 의존해야 한다는 원칙.",
+    "hint": "구현보다 추상화에 의존"
+  },
+  {
+    "id": "271",
+    "term": "SOLID",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "객체지향 설계에서 유지보수성을 높이기 위한 다섯 가지 원칙의 묶음.",
+    "hint": "객체지향 설계 원칙 묶음"
+  },
+  {
+    "id": "272",
+    "term": "어댑터 패턴",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "서로 맞지 않는 인터페이스를 중간에서 변환해 함께 사용할 수 있게 하는 패턴.",
+    "hint": "인터페이스를 맞춰주는 패턴"
+  },
+  {
+    "id": "273",
+    "term": "전략 패턴",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "여러 알고리즘이나 정책을 객체로 분리해 상황에 따라 바꿔 끼울 수 있게 하는 패턴.",
+    "hint": "알고리즘을 바꿔 끼우는 패턴"
+  },
+  {
+    "id": "274",
+    "term": "데코레이터 패턴",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "기존 객체를 감싸 기능을 동적으로 추가하는 디자인 패턴.",
+    "hint": "감싸서 기능을 추가하는 패턴"
+  },
+  {
+    "id": "275",
+    "term": "퍼사드 패턴",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "복잡한 내부 기능을 단순한 인터페이스 하나로 사용할 수 있게 하는 패턴.",
+    "hint": "복잡한 기능을 단순하게 감싸는 패턴"
+  },
+  {
+    "id": "276",
+    "term": "레이어드 아키텍처",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "화면, 비즈니스 로직, 데이터 접근처럼 역할별 계층으로 나누는 구조.",
+    "hint": "역할별 계층 구조"
+  },
+  {
+    "id": "277",
+    "term": "헥사고날 아키텍처",
+    "category": "아키텍처",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 4,
+    "definition": "비즈니스 로직을 중심에 두고 외부 입출력은 어댑터로 분리하는 구조.",
+    "hint": "핵심 로직과 외부 연결 분리"
+  },
+  {
+    "id": "278",
+    "term": "모놀리식 아키텍처",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "애플리케이션 기능이 하나의 큰 코드베이스와 배포 단위로 묶인 구조.",
+    "hint": "하나로 묶인 큰 애플리케이션"
+  },
+  {
+    "id": "279",
+    "term": "서비스 경계",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "각 서비스가 책임질 기능과 데이터의 범위를 나누는 기준.",
+    "hint": "서비스 책임을 나누는 기준"
+  },
+  {
+    "id": "350",
+    "term": "계층 분리",
+    "category": "아키텍처",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 4,
+    "definition": "화면, 비즈니스 로직, 데이터 접근처럼 서로 다른 책임을 층으로 나누어 변경 영향을 줄이는 설계 방식.",
+    "hint": "책임을 층으로 나누는 설계"
+  }
+]

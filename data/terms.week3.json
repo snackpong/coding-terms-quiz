@@ -1,0 +1,702 @@
+[
+  {
+    "id": "141",
+    "term": "객체지향 프로그래밍",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "코드를 '클래스'와 '객체' 중심으로 구성하는 프로그래밍 방식. 현실 세계의 사물처럼 데이터와 행동을 하나로 묶어 표현합니다.",
+    "hint": "클래스·객체 중심으로 코드를 구성하는 방식"
+  },
+  {
+    "id": "142",
+    "term": "함수형 프로그래밍",
+    "category": "프로그래밍 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "순수 함수와 불변 데이터를 중심으로 코드를 작성하는 방식. 부작용을 최소화하고 예측 가능한 코드를 만드는 것을 목표로 합니다.",
+    "hint": "순수 함수 중심의 프로그래밍 방식"
+  },
+  {
+    "id": "143",
+    "term": "선언형 프로그래밍",
+    "category": "프로그래밍 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "'어떻게'가 아닌 '무엇을'에 집중하는 프로그래밍 방식. SQL, React의 JSX가 대표적으로 결과를 기술하고 방법은 시스템에 맡깁니다.",
+    "hint": "무엇을 원하는지 선언하는 방식"
+  },
+  {
+    "id": "144",
+    "term": "정적 타입",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "변수의 타입을 코드 작성 시 미리 선언하고 실행 전에 타입 검사를 하는 방식. Java, TypeScript가 이를 사용합니다.",
+    "hint": "실행 전에 타입을 미리 정하는 방식"
+  },
+  {
+    "id": "145",
+    "term": "동적 타입",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "변수의 타입이 실행 중에 자동으로 결정되는 방식. JavaScript, Python이 이를 사용합니다. 편리하지만 타입 오류를 실행 후에야 발견합니다.",
+    "hint": "실행 중에 타입이 결정되는 방식"
+  },
+  {
+    "id": "146",
+    "term": "타입 추론",
+    "category": "프로그래밍 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "개발자가 타입을 직접 적지 않아도 컴파일러나 인터프리터가 코드를 분석해 자동으로 타입을 결정하는 기능.",
+    "hint": "자동으로 타입을 파악하는 기능"
+  },
+  {
+    "id": "147",
+    "term": "제네릭",
+    "category": "프로그래밍 기초",
+    "difficulty": "hard",
+    "phase": 1,
+    "week": 3,
+    "definition": "타입을 미리 정하지 않고 사용할 때 타입을 지정할 수 있는 기능. 같은 코드로 다양한 타입에 대응하는 재사용 가능한 컴포넌트를 만듭니다.",
+    "hint": "타입을 나중에 정하는 코드 재사용 기법"
+  },
+  {
+    "id": "148",
+    "term": "싱글톤 패턴",
+    "category": "프로그래밍 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "클래스의 인스턴스를 딱 하나만 만들어 전역에서 공유하는 디자인 패턴. 데이터베이스 연결이나 설정 관리에 자주 씁니다.",
+    "hint": "인스턴스를 하나만 유지하는 패턴"
+  },
+  {
+    "id": "149",
+    "term": "팩토리 패턴",
+    "category": "프로그래밍 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "객체 생성 로직을 별도의 함수나 클래스로 분리하는 디자인 패턴. 생성 방법을 숨기고 유연하게 객체를 만들 수 있습니다.",
+    "hint": "객체 생성을 분리한 패턴"
+  },
+  {
+    "id": "150",
+    "term": "옵저버 패턴",
+    "category": "프로그래밍 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "하나의 객체(발행자)가 변경되면 구독한 여러 객체(구독자)에 자동으로 알리는 디자인 패턴. 이벤트 시스템이 이 방식으로 작동합니다.",
+    "hint": "상태 변화를 구독자에 알리는 패턴"
+  },
+  {
+    "id": "151",
+    "term": "MVC 패턴",
+    "category": "프로그래밍 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "코드를 Model(데이터), View(화면), Controller(제어 로직) 세 부분으로 분리하는 구조. 역할이 명확히 나뉘어 유지보수하기 좋습니다.",
+    "hint": "Model-View-Controller 구조 분리 패턴"
+  },
+  {
+    "id": "152",
+    "term": "유닛 테스트",
+    "category": "개발 도구",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "코드의 가장 작은 단위(함수, 메서드 하나)가 올바르게 작동하는지 확인하는 테스트. 버그를 일찍 발견하고 코드 변경을 안전하게 합니다.",
+    "hint": "함수 하나씩 검증하는 테스트"
+  },
+  {
+    "id": "153",
+    "term": "TDD",
+    "category": "개발 도구",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "테스트를 먼저 작성하고 그 테스트를 통과시키는 코드를 나중에 작성하는 개발 방식. '테스트 주도 개발'의 약자입니다.",
+    "hint": "테스트를 먼저 쓰고 코드를 짜는 방식"
+  },
+  {
+    "id": "154",
+    "term": "모의 객체 (Mock)",
+    "category": "개발 도구",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "테스트에서 실제 객체 대신 사용하는 가짜 객체. 데이터베이스나 외부 API 없이도 테스트할 수 있게 해줍니다.",
+    "hint": "테스트용 가짜 객체"
+  },
+  {
+    "id": "155",
+    "term": "로깅",
+    "category": "개발 도구",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "프로그램 실행 중 발생하는 이벤트나 오류를 기록하는 것. 문제 발생 시 원인을 추적하는 데 핵심 도구입니다.",
+    "hint": "실행 중 정보를 기록하는 것"
+  },
+  {
+    "id": "156",
+    "term": "미들웨어",
+    "category": "웹/네트워킹",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "요청과 응답 사이에서 처리를 담당하는 소프트웨어. 로그인 확인, 로깅, 데이터 변환 등을 요청 처리 흐름에 끼워넣어 처리합니다.",
+    "hint": "요청-응답 사이의 중간 처리 소프트웨어"
+  },
+  {
+    "id": "157",
+    "term": "엔드포인트",
+    "category": "웹/네트워킹",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "API에서 클라이언트가 서버에 요청을 보내는 특정 URL 경로. 예: /api/users는 사용자 목록을 가져오는 엔드포인트입니다.",
+    "hint": "API의 특정 요청 경로"
+  },
+  {
+    "id": "158",
+    "term": "마이크로서비스",
+    "category": "인프라",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "큰 애플리케이션을 기능별로 독립적인 작은 서비스 단위로 나누는 구조. 각 서비스를 따로 배포하고 확장할 수 있습니다.",
+    "hint": "기능별로 나뉜 독립적인 서비스 구조"
+  },
+  {
+    "id": "159",
+    "term": "컨테이너",
+    "category": "인프라",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "애플리케이션과 실행에 필요한 모든 것을 패키징한 독립 실행 환경. 어떤 컴퓨터에서도 동일하게 실행됩니다. Docker가 대표적입니다.",
+    "hint": "앱과 환경을 패키징한 독립 실행 단위"
+  },
+  {
+    "id": "160",
+    "term": "Docker",
+    "category": "인프라",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "컨테이너를 만들고 관리하는 가장 대표적인 도구. '내 컴퓨터에서는 됐는데'라는 환경 차이 문제를 해결합니다.",
+    "hint": "컨테이너 생성·관리 도구"
+  },
+  {
+    "id": "161",
+    "term": "CI/CD",
+    "category": "개발 도구",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "코드 변경 시 자동으로 테스트(CI)하고 배포(CD)하는 파이프라인. GitHub Actions, Jenkins 등이 이를 구현하는 도구입니다.",
+    "hint": "자동 테스트·배포 파이프라인"
+  },
+  {
+    "id": "162",
+    "term": "커밋",
+    "category": "개발 도구",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "Git에서 변경 사항을 저장소에 영구적으로 기록하는 행동. 코드의 스냅샷을 찍어두는 것과 같습니다.",
+    "hint": "변경 내용을 저장소에 기록"
+  },
+  {
+    "id": "163",
+    "term": "브랜치",
+    "category": "개발 도구",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "Git에서 독립적인 작업 흐름을 만드는 것. 새 기능이나 버그 수정을 메인 코드에 영향 없이 작업한 뒤 합칩니다.",
+    "hint": "독립적인 코드 작업 흐름"
+  },
+  {
+    "id": "164",
+    "term": "병합 (Merge)",
+    "category": "개발 도구",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "Git에서 두 브랜치의 변경 내용을 하나로 합치는 것. 작업이 완료된 브랜치를 메인 브랜치에 통합할 때 씁니다.",
+    "hint": "두 브랜치를 하나로 합치기"
+  },
+  {
+    "id": "165",
+    "term": "풀 리퀘스트",
+    "category": "개발 도구",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "내가 작업한 브랜치를 다른 브랜치에 병합해달라고 요청하는 것. GitHub에서 PR이라고도 하며, 코드 리뷰를 받는 과정이기도 합니다.",
+    "hint": "브랜치 병합 요청 (PR)"
+  },
+  {
+    "id": "166",
+    "term": "리팩토링",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "코드의 외부 동작은 유지하면서 내부 구조를 개선하는 것. 기능은 같지만 더 읽기 쉽고 효율적인 코드로 바꿉니다.",
+    "hint": "기능은 유지하며 코드 구조 개선"
+  },
+  {
+    "id": "167",
+    "term": "코드 리뷰",
+    "category": "개발 도구",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "다른 개발자가 코드를 검토하여 버그, 개선점, 스타일 문제를 찾는 과정. 코드 품질 향상과 지식 공유에 효과적입니다.",
+    "hint": "동료가 코드를 검토하는 과정"
+  },
+  {
+    "id": "168",
+    "term": "스파게티 코드",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "구조 없이 복잡하게 얽혀 이해하거나 유지보수하기 어려운 코드를 비유적으로 부르는 말.",
+    "hint": "복잡하게 얽혀 관리 어려운 코드"
+  },
+  {
+    "id": "169",
+    "term": "클린 코드",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "읽기 쉽고 이해하기 쉽게 잘 작성된 코드. 좋은 변수명, 짧은 함수, 명확한 로직이 특징입니다.",
+    "hint": "읽기 쉽고 관리하기 좋은 코드"
+  },
+  {
+    "id": "170",
+    "term": "하드 코딩",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "값을 코드 안에 직접 고정해서 작성하는 것. 할인율을 0.1로 코드에 박아두면 나중에 바꾸려면 코드를 직접 수정해야 합니다.",
+    "hint": "값을 코드에 직접 고정해 넣기"
+  },
+  {
+    "id": "171",
+    "term": "HTTPS",
+    "category": "웹/네트워킹",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "HTTP에 암호화(SSL/TLS)를 추가한 보안 프로토콜. 주소창의 자물쇠 아이콘이 HTTPS를 나타내며, 데이터가 안전하게 전송됩니다.",
+    "hint": "암호화된 안전한 HTTP"
+  },
+  {
+    "id": "172",
+    "term": "쿠키",
+    "category": "웹/네트워킹",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "웹사이트가 사용자의 브라우저에 저장하는 작은 데이터. 로그인 상태나 사용자 설정을 유지하는 데 씁니다.",
+    "hint": "브라우저에 저장되는 작은 데이터"
+  },
+  {
+    "id": "173",
+    "term": "세션",
+    "category": "웹/네트워킹",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "사용자가 웹사이트에 접속해 있는 동안 서버가 유지하는 정보. 로그인 상태를 서버가 기억하는 방식입니다.",
+    "hint": "서버가 사용자 상태를 유지하는 기간"
+  },
+  {
+    "id": "174",
+    "term": "캐시",
+    "category": "웹/네트워킹",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "자주 쓰는 데이터를 빠르게 접근할 수 있는 임시 저장소에 미리 저장해두는 것. 브라우저가 웹사이트 이미지를 저장해 빠르게 보여주는 것이 캐시입니다.",
+    "hint": "자주 쓰는 데이터 임시 저장"
+  },
+  {
+    "id": "175",
+    "term": "토큰 (Token)",
+    "category": "웹/네트워킹",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "사용자 인증 정보를 담은 암호화된 문자열. 서버가 '이 사람은 로그인된 사용자다'라는 것을 증명하는 데 씁니다.",
+    "hint": "인증 정보를 담은 암호화 문자열"
+  },
+  {
+    "id": "176",
+    "term": "JWT",
+    "category": "웹/네트워킹",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "사용자 정보를 포함한 JSON 형식의 인증 토큰. 서버에 저장하지 않고도 사용자를 인증할 수 있어 API 인증에 많이 씁니다.",
+    "hint": "JSON 기반 인증 토큰"
+  },
+  {
+    "id": "177",
+    "term": "OAuth",
+    "category": "웹/네트워킹",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "제3자(구글, 카카오 등)의 계정으로 다른 서비스에 로그인할 수 있게 하는 인증 프레임워크. '구글로 로그인' 버튼이 OAuth를 씁니다.",
+    "hint": "제3자 계정으로 로그인 가능하게 하는 인증 체계"
+  },
+  {
+    "id": "178",
+    "term": "CORS",
+    "category": "웹/네트워킹",
+    "difficulty": "hard",
+    "phase": 1,
+    "week": 3,
+    "definition": "웹 브라우저가 다른 출처(도메인, 포트)로의 요청을 제한하는 보안 정책. 서버에서 허용 설정을 해야 다른 도메인에서 API를 쓸 수 있습니다.",
+    "hint": "다른 출처 요청에 대한 브라우저 보안 정책"
+  },
+  {
+    "id": "179",
+    "term": "SQL",
+    "category": "데이터",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "관계형 데이터베이스에서 데이터를 다루는 언어. SELECT, INSERT, UPDATE, DELETE 등으로 데이터를 조회하고 수정합니다.",
+    "hint": "관계형 DB를 다루는 언어"
+  },
+  {
+    "id": "180",
+    "term": "NoSQL",
+    "category": "데이터",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "표(테이블) 구조를 쓰지 않는 데이터베이스. 유연한 구조로 대량의 다양한 형태 데이터를 저장합니다. MongoDB가 대표적입니다.",
+    "hint": "테이블 없는 유연한 데이터베이스"
+  },
+  {
+    "id": "181",
+    "term": "인덱스 (DB)",
+    "category": "데이터",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "데이터베이스에서 검색 속도를 높이기 위해 특정 컬럼을 미리 정렬해 놓은 구조. 책의 색인처럼 원하는 데이터를 빠르게 찾습니다.",
+    "hint": "DB 검색 속도를 높이는 색인 구조"
+  },
+  {
+    "id": "182",
+    "term": "트랜잭션",
+    "category": "데이터",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "데이터베이스에서 여러 작업을 하나의 단위로 묶어 전부 성공하거나 전부 실패하게 하는 것. 계좌 이체에서 출금과 입금이 반드시 함께 처리되어야 하는 것이 예입니다.",
+    "hint": "전부 성공 아니면 전부 실패하는 작업 묶음"
+  },
+  {
+    "id": "183",
+    "term": "React",
+    "category": "웹 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "Facebook이 만든 UI 컴포넌트 기반 JavaScript 라이브러리. 화면을 작은 재사용 컴포넌트로 나눠 개발합니다.",
+    "hint": "컴포넌트 기반 UI 라이브러리"
+  },
+  {
+    "id": "184",
+    "term": "컴포넌트",
+    "category": "웹 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "UI를 구성하는 독립적이고 재사용 가능한 단위. 버튼, 카드, 헤더 등을 컴포넌트로 만들어 조합합니다.",
+    "hint": "재사용 가능한 UI 조각"
+  },
+  {
+    "id": "185",
+    "term": "상태 (State)",
+    "category": "웹 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "컴포넌트가 현재 어떤 상황인지를 저장하는 데이터. 버튼이 클릭됐는지, 입력값이 무엇인지 같은 것들이 상태입니다.",
+    "hint": "컴포넌트의 현재 데이터·상황"
+  },
+  {
+    "id": "186",
+    "term": "렌더링",
+    "category": "웹 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "HTML, CSS, JavaScript를 해석해서 실제 화면에 보이는 픽셀로 표시하는 과정. '렌더링된다'는 화면에 그려진다는 의미입니다.",
+    "hint": "코드를 화면에 시각적으로 그리는 과정"
+  },
+  {
+    "id": "187",
+    "term": "가상 DOM",
+    "category": "웹 기초",
+    "difficulty": "hard",
+    "phase": 1,
+    "week": 3,
+    "definition": "실제 DOM을 직접 수정하지 않고 메모리에 복사본을 만들어 변경사항을 비교한 후 최소한의 실제 DOM만 업데이트하는 기술. React가 성능 최적화에 씁니다.",
+    "hint": "변경 최소화를 위한 DOM 메모리 복사본"
+  },
+  {
+    "id": "188",
+    "term": "라우팅",
+    "category": "웹 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "URL에 따라 다른 화면(컴포넌트)을 보여주는 것. 주소창의 주소를 바꾸면 다른 페이지가 나오는 것이 라우팅입니다.",
+    "hint": "URL에 따라 화면을 바꾸는 것"
+  },
+  {
+    "id": "189",
+    "term": "SPA",
+    "category": "웹 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "페이지 이동 시 전체를 새로 불러오지 않고 필요한 부분만 업데이트하는 단일 페이지 웹 앱. 빠른 사용자 경험을 제공합니다.",
+    "hint": "페이지 전체 갱신 없이 동적으로 바뀌는 웹앱"
+  },
+  {
+    "id": "190",
+    "term": "SSR",
+    "category": "웹 기초",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "서버에서 HTML을 완성해서 클라이언트로 보내는 방식. 초기 로딩이 빠르고 SEO에 유리합니다. Next.js가 지원합니다.",
+    "hint": "서버에서 HTML을 만들어 보내는 렌더링 방식"
+  },
+  {
+    "id": "191",
+    "term": "토큰 (AI)",
+    "category": "AI/ML",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "LLM이 텍스트를 처리하는 기본 단위. 영어는 보통 단어 단위, 한국어는 음절·형태소 수준입니다. GPT-4의 컨텍스트 한도도 토큰 수로 표시됩니다.",
+    "hint": "AI가 텍스트를 나누는 기본 단위"
+  },
+  {
+    "id": "192",
+    "term": "프롬프트",
+    "category": "AI/ML",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "AI에게 주는 입력 텍스트. 질문, 지시, 예시 등을 포함하며 어떻게 작성하느냐에 따라 AI 응답 품질이 크게 달라집니다.",
+    "hint": "AI에게 주는 입력 텍스트"
+  },
+  {
+    "id": "193",
+    "term": "파인튜닝",
+    "category": "AI/ML",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "사전 학습된 AI 모델을 특정 목적에 맞게 추가 학습시키는 것. 일반적인 모델을 의료, 법률 등 전문 분야에 맞게 조정합니다.",
+    "hint": "기존 AI 모델을 특정 용도에 맞게 추가 학습"
+  },
+  {
+    "id": "194",
+    "term": "RAG",
+    "category": "AI/ML",
+    "difficulty": "hard",
+    "phase": 1,
+    "week": 3,
+    "definition": "AI 응답 생성 시 외부 문서 데이터베이스를 검색해 관련 정보를 가져와 더 정확한 답변을 만드는 기술. '검색 증강 생성'의 약자입니다.",
+    "hint": "외부 문서 검색으로 AI 응답을 보강하는 기술"
+  },
+  {
+    "id": "195",
+    "term": "임베딩",
+    "category": "AI/ML",
+    "difficulty": "hard",
+    "phase": 1,
+    "week": 3,
+    "definition": "텍스트, 이미지 등을 의미를 담은 숫자 벡터로 변환하는 것. 의미가 비슷한 것들은 벡터 공간에서도 가까이 위치합니다.",
+    "hint": "의미를 담은 숫자 벡터로 변환"
+  },
+  {
+    "id": "196",
+    "term": "파라미터 (AI)",
+    "category": "AI/ML",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "AI 모델이 학습을 통해 얻은 내부 값들. GPT-4는 1조 개 이상의 파라미터를 가지며 수가 많을수록 더 복잡한 패턴을 학습합니다.",
+    "hint": "AI 모델의 학습된 내부 값"
+  },
+  {
+    "id": "197",
+    "term": "추론 (Inference)",
+    "category": "AI/ML",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "학습이 완료된 AI 모델이 새로운 입력에 대해 예측이나 응답을 생성하는 과정. 모델을 '실제로 사용'하는 단계입니다.",
+    "hint": "학습된 AI 모델을 실제로 사용하는 과정"
+  },
+  {
+    "id": "198",
+    "term": "신경망",
+    "category": "AI/ML",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "뇌의 뉴런 구조를 모방한 AI 모델의 기본 구조. 여러 층(layer)의 노드가 연결되어 데이터의 패턴을 학습합니다.",
+    "hint": "뉴런을 모방한 AI 모델 구조"
+  },
+  {
+    "id": "199",
+    "term": "데이터셋",
+    "category": "AI/ML",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "AI 학습에 사용하는 데이터 모음. 학습(training)용, 검증(validation)용, 테스트(test)용으로 나누어 사용합니다.",
+    "hint": "AI 학습에 쓰이는 데이터 모음"
+  },
+  {
+    "id": "200",
+    "term": "오버피팅",
+    "category": "AI/ML",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "AI 모델이 학습 데이터에는 완벽하지만 새로운 데이터에는 잘 맞지 않는 현상. 외운 문제만 잘 풀고 새 문제를 못 푸는 것과 같습니다.",
+    "hint": "학습 데이터만 외우고 일반화 못 하는 현상"
+  },
+  {
+    "id": "201",
+    "term": "암호화",
+    "category": "웹/네트워킹",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "데이터를 알아볼 수 없는 형태로 변환하는 것. 비밀번호나 개인정보를 안전하게 보호합니다.",
+    "hint": "데이터를 알아볼 수 없게 변환"
+  },
+  {
+    "id": "202",
+    "term": "해싱",
+    "category": "웹/네트워킹",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "입력 데이터를 고정 길이의 문자열로 변환하는 것. 같은 입력은 항상 같은 결과가 나오며 원본 복원이 불가능합니다. 비밀번호 저장에 씁니다.",
+    "hint": "일방향 암호화 변환"
+  },
+  {
+    "id": "203",
+    "term": "인증 (Authentication)",
+    "category": "웹/네트워킹",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "사용자가 '자신이라고 주장하는 사람이 맞다'는 것을 확인하는 과정. 아이디·비밀번호 입력, 지문 인식 등이 인증 방법입니다.",
+    "hint": "사용자가 누구인지 확인"
+  },
+  {
+    "id": "204",
+    "term": "인가 (Authorization)",
+    "category": "웹/네트워킹",
+    "difficulty": "medium",
+    "phase": 1,
+    "week": 3,
+    "definition": "인증된 사용자가 특정 자원이나 기능에 접근할 권한이 있는지 확인하는 것. 로그인했어도 관리자 페이지는 관리자만 접근 가능한 것이 인가입니다.",
+    "hint": "접근 권한이 있는지 확인"
+  },
+  {
+    "id": "205",
+    "term": "XSS",
+    "category": "웹/네트워킹",
+    "difficulty": "hard",
+    "phase": 1,
+    "week": 3,
+    "definition": "공격자가 웹사이트에 악성 스크립트를 삽입해 사용자 브라우저에서 실행시키는 공격. 사용자의 쿠키, 세션을 훔칠 수 있습니다.",
+    "hint": "악성 스크립트를 웹에 삽입하는 공격"
+  },
+  {
+    "id": "206",
+    "term": "재사용성",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "한번 작성한 코드를 여러 곳에서 다시 사용할 수 있는 성질. 함수, 클래스, 모듈로 코드를 잘 나누면 재사용성이 높아집니다.",
+    "hint": "코드를 여러 곳에서 다시 쓸 수 있는 성질"
+  },
+  {
+    "id": "207",
+    "term": "유지보수",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "개발 후 코드를 수정하고 버그를 고치고 새 기능을 추가하는 지속적인 활동. 코드의 가독성이 높을수록 유지보수가 쉽습니다.",
+    "hint": "코드를 지속적으로 수정·개선하는 활동"
+  },
+  {
+    "id": "208",
+    "term": "의존성 주입",
+    "category": "프로그래밍 기초",
+    "difficulty": "hard",
+    "phase": 1,
+    "week": 3,
+    "definition": "객체가 필요한 의존성을 스스로 만들지 않고 외부에서 주입받는 패턴. 코드의 유연성과 테스트 용이성을 높입니다.",
+    "hint": "의존성을 외부에서 주입받는 설계 패턴"
+  },
+  {
+    "id": "209",
+    "term": "에러 핸들링",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "프로그램 실행 중 발생한 오류를 감지하고 적절히 처리하는 것. try-catch로 오류를 잡아 앱이 멈추지 않게 합니다.",
+    "hint": "오류를 감지하고 적절히 처리하는 것"
+  },
+  {
+    "id": "210",
+    "term": "리터럴",
+    "category": "프로그래밍 기초",
+    "difficulty": "easy",
+    "phase": 1,
+    "week": 3,
+    "definition": "코드에 직접 작성된 고정된 값. 42, 'hello', true, [1,2,3] 등 코드 안에 바로 적힌 값들이 리터럴입니다.",
+    "hint": "코드에 직접 적힌 고정 값"
+  }
+]

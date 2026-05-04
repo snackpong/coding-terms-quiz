@@ -1,0 +1,147 @@
+.charge-particle.pt-wrong {
+  background: rgba(255,60,60,0.95);
+  box-shadow: 0 0 6px rgba(255,60,60,0.85), 0 0 14px rgba(123,47,255,0.4);
+}
+@keyframes impactParticle {
+  0%   { transform: translate(-50%,-50%) scale(1.5);                       opacity: 1; }
+  100% { transform: translate(-50%,-50%) translate(var(--pdx),var(--pdy)) scale(0); opacity: 0; }
+}
+
+/* Aura flare overlay */
+.charge-aura-flare {
+  position: absolute;
+  inset: -10%;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 4;
+  animation: auraFlareExpand 0.7s ease-out forwards;
+}
+.charge-aura-flare.flare-correct {
+  background: radial-gradient(circle, rgba(0,229,160,0.65) 0%, rgba(91,184,255,0.25) 45%, transparent 72%);
+}
+.charge-aura-flare.flare-combo {
+  background: radial-gradient(circle, rgba(255,215,0,0.75) 0%, rgba(255,172,51,0.35) 45%, transparent 72%);
+}
+.charge-aura-flare.flare-wrong {
+  background: radial-gradient(circle, rgba(255,60,60,0.55) 0%, rgba(123,47,255,0.22) 45%, transparent 72%);
+}
+@keyframes auraFlareExpand {
+  0%   { transform: scale(0.15); opacity: 0; }
+  14%  { opacity: 1; }
+  30%  { transform: scale(1.05); }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* Stage shake on wrong */
+@keyframes stageShake {
+  0%,100% { transform: translate(0, 0); }
+  18%     { transform: translate(-11px, 5px); }
+  36%     { transform: translate(9px, -5px); }
+  54%     { transform: translate(-7px, 4px); }
+  72%     { transform: translate(5px, -2px); }
+}
+.charge-stage.stage-shake {
+  animation: stageShake 0.46s ease-out !important;
+}
+
+/* Combo burst text */
+.charge-combo-burst {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  pointer-events: none;
+  z-index: 30;
+  font-family: 'Syne', 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  font-size: clamp(22px, 4.5vw, 46px);
+  white-space: nowrap;
+  animation: comboBurstAnim 0.92s ease-out forwards;
+}
+.charge-combo-burst.burst-combo {
+  color: #ffd700;
+  text-shadow: 0 0 22px rgba(255,215,0,0.95), 0 0 46px rgba(255,172,51,0.65), 0 2px 5px rgba(0,0,0,0.55);
+}
+@keyframes comboBurstAnim {
+  0%   { transform: translate(-50%, 0)     scale(0.45); opacity: 0; }
+  18%  { transform: translate(-50%, -8px)  scale(1.22); opacity: 1; }
+  100% { transform: translate(-50%, -44px) scale(0.88); opacity: 0; }
+}
+
+/* ── Villain animations ── */
+@keyframes villainAuraBrightness {
+  0%, 100% { filter: blur(var(--villain-aura-blur)) brightness(0.78); }
+  50%       { filter: blur(var(--villain-aura-blur)) brightness(1.45); }
+}
+@keyframes villainHitShake {
+  0%   { transform: translateX(0)     rotate(0); }
+  12%  { transform: translateX(18px)  rotate(4deg); }
+  30%  { transform: translateX(-15px) rotate(-3.5deg); }
+  50%  { transform: translateX(11px)  rotate(2.5deg); }
+  70%  { transform: translateX(-7px)  rotate(-1.2deg); }
+  100% { transform: translateX(0)     rotate(0); }
+}
+@keyframes villainAuraDrain {
+  0%   { transform: scale(1.2); opacity: 0.85; filter: brightness(1); }
+  18%  { transform: scale(0.35); opacity: 0.15; filter: brightness(0.15); }
+  60%  { transform: scale(0.68); opacity: 0.45; filter: brightness(0.55); }
+  100% { transform: scale(1.0); opacity: 0.72; filter: brightness(1); }
+}
+@keyframes villainAuraBurst {
+  0%   { transform: scale(1.2); filter: brightness(1); }
+  18%  { transform: scale(2.2); filter: brightness(3.5) saturate(2.2); }
+  65%  { transform: scale(1.5); filter: brightness(1.6); }
+  100% { transform: scale(1.2); filter: brightness(1); }
+}
+@keyframes villainSurgeImg {
+  0%   { filter: drop-shadow(0 18px 22px rgba(200,0,80,0.32)) hue-rotate(290deg) saturate(1.5); }
+  22%  { filter: drop-shadow(0 0 48px rgba(255,40,100,1)) hue-rotate(290deg) saturate(3.5) brightness(2.8); }
+  100% { filter: drop-shadow(0 18px 22px rgba(200,0,80,0.32)) hue-rotate(290deg) saturate(1.5); }
+}
+@keyframes villainSurgeWrap {
+  0%   { transform: scaleX(1) scaleY(1); }
+  28%  { transform: scaleX(1.08) scaleY(0.92); }
+  60%  { transform: scaleX(0.95) scaleY(1.05); }
+  100% { transform: scaleX(1) scaleY(1); }
+}
+
+/* ── Desktop: larger robots ── */
+@media (min-width: 768px) {
+  .charge-robot-wrap,
+  .charge-villain-wrap {
+    width: min(48vh, 240px, 28vw);
+  }
+}
+
+/* ── Result wrong terms ── */
+.charge-result-wrong-terms {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.res-wrong-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: rgba(255,255,255,0.38);
+  letter-spacing: 0.14em;
+  margin-bottom: 10px;
+}
+.res-wrong-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.res-wrong-term {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255,60,60,0.14);
+  border: 1px solid rgba(255,60,60,0.28);
+  color: rgba(255,160,160,0.92);
+  font-family: 'Syne', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ── Result stats 3×2 grid ── */
+.charge-result-stats {
+  grid-template-columns: repeat(3, 1fr);
+}

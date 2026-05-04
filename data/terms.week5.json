@@ -1,0 +1,702 @@
+[
+  {
+    "id": "280",
+    "term": "지도 학습",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "정답이 있는 데이터로 모델을 학습시키는 방식. 입력과 정답의 관계를 배워 새 입력을 예측합니다.",
+    "hint": "정답 있는 데이터로 학습"
+  },
+  {
+    "id": "281",
+    "term": "비지도 학습",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "정답 라벨 없이 데이터의 패턴이나 구조를 찾는 학습 방식.",
+    "hint": "정답 없이 패턴 찾기"
+  },
+  {
+    "id": "282",
+    "term": "강화 학습",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "행동에 대한 보상과 벌점을 통해 더 좋은 선택을 배우는 학습 방식.",
+    "hint": "보상으로 행동을 배우는 학습"
+  },
+  {
+    "id": "283",
+    "term": "라벨",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "학습 데이터에 붙은 정답이나 분류 이름.",
+    "hint": "데이터에 붙은 정답"
+  },
+  {
+    "id": "284",
+    "term": "특징",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델이 예측에 사용하는 입력 데이터의 속성이나 변수.",
+    "hint": "모델이 보는 입력 속성"
+  },
+  {
+    "id": "285",
+    "term": "피처 엔지니어링",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델이 더 잘 학습하도록 원본 데이터를 의미 있는 특징으로 가공하는 작업.",
+    "hint": "입력 특징을 잘 만드는 작업"
+  },
+  {
+    "id": "286",
+    "term": "학습 데이터",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델이 패턴을 배우는 데 사용하는 데이터.",
+    "hint": "모델이 배우는 데이터"
+  },
+  {
+    "id": "287",
+    "term": "검증 데이터",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "학습 중 모델 성능을 확인하고 설정을 조정하는 데 쓰는 데이터.",
+    "hint": "학습 중 성능 확인 데이터"
+  },
+  {
+    "id": "288",
+    "term": "테스트 데이터",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "학습이 끝난 모델의 최종 성능을 평가하는 데 쓰는 데이터.",
+    "hint": "최종 성능 평가 데이터"
+  },
+  {
+    "id": "289",
+    "term": "데이터 전처리",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "학습 전에 결측치, 이상치, 형식 등을 정리해 데이터를 모델이 쓰기 좋게 만드는 과정.",
+    "hint": "학습 전 데이터 정리"
+  },
+  {
+    "id": "290",
+    "term": "정규화",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "데이터 값의 범위를 일정하게 맞춰 학습이 안정적으로 되게 하는 처리.",
+    "hint": "값 범위를 맞추는 처리"
+  },
+  {
+    "id": "291",
+    "term": "표준화",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "데이터를 평균 0, 표준편차 1에 가깝게 바꾸는 스케일 조정 방법.",
+    "hint": "평균과 분산 기준 조정"
+  },
+  {
+    "id": "292",
+    "term": "결측치",
+    "category": "데이터",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "데이터에서 비어 있거나 기록되지 않은 값.",
+    "hint": "비어 있는 데이터 값"
+  },
+  {
+    "id": "293",
+    "term": "이상치",
+    "category": "데이터",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "다른 값들과 크게 동떨어진 데이터 값.",
+    "hint": "유난히 튀는 값"
+  },
+  {
+    "id": "294",
+    "term": "데이터 증강",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "기존 데이터를 회전, 변형, 문장 바꾸기 등으로 늘려 학습 데이터를 다양하게 만드는 기법.",
+    "hint": "기존 데이터를 변형해 늘림"
+  },
+  {
+    "id": "295",
+    "term": "손실 함수",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델의 예측이 정답과 얼마나 다른지 숫자로 계산하는 함수.",
+    "hint": "예측 오차를 재는 함수"
+  },
+  {
+    "id": "296",
+    "term": "비용 함수",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델 전체의 오차를 계산해 학습 방향을 정하는 함수. 손실 함수와 비슷하게 쓰입니다.",
+    "hint": "전체 오차를 계산하는 함수"
+  },
+  {
+    "id": "297",
+    "term": "경사 하강법",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "손실을 줄이는 방향으로 모델 파라미터를 조금씩 조정하는 최적화 방법.",
+    "hint": "오차가 줄어드는 방향으로 이동"
+  },
+  {
+    "id": "298",
+    "term": "학습률",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델 파라미터를 한 번에 얼마나 크게 조정할지 정하는 값.",
+    "hint": "학습할 때 이동하는 보폭"
+  },
+  {
+    "id": "299",
+    "term": "에폭",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "전체 학습 데이터를 한 번 모두 사용해 학습한 횟수.",
+    "hint": "전체 데이터를 한 바퀴 학습"
+  },
+  {
+    "id": "300",
+    "term": "배치",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "학습 데이터를 한 번에 처리하는 작은 묶음.",
+    "hint": "한 번에 처리하는 데이터 묶음"
+  },
+  {
+    "id": "301",
+    "term": "미니배치",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "전체 데이터 중 일부 묶음씩 나누어 학습하는 방식에서 사용하는 작은 데이터 단위.",
+    "hint": "조금씩 나눠 학습하는 묶음"
+  },
+  {
+    "id": "302",
+    "term": "옵티마이저",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "손실을 줄이기 위해 파라미터를 어떻게 업데이트할지 정하는 알고리즘.",
+    "hint": "파라미터 업데이트 방법"
+  },
+  {
+    "id": "303",
+    "term": "하이퍼파라미터",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델이 직접 배우는 값이 아니라 사람이 정하는 학습 설정값.",
+    "hint": "사람이 정하는 학습 설정"
+  },
+  {
+    "id": "304",
+    "term": "모델 파라미터",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "학습 과정에서 모델이 데이터로부터 조정하는 내부 값.",
+    "hint": "모델이 학습하는 내부 값"
+  },
+  {
+    "id": "305",
+    "term": "가중치",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "입력 특징이 예측에 얼마나 영향을 주는지 나타내는 모델 내부 값.",
+    "hint": "입력 영향도를 나타내는 값"
+  },
+  {
+    "id": "306",
+    "term": "편향",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델 출력에 기본적으로 더해지는 값. 데이터의 기준점을 맞추는 역할을 합니다.",
+    "hint": "출력 기준을 조정하는 값"
+  },
+  {
+    "id": "307",
+    "term": "활성화 함수",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "신경망에서 입력을 비선형 출력으로 바꿔 복잡한 패턴을 학습하게 하는 함수.",
+    "hint": "신경망에 비선형성을 주는 함수"
+  },
+  {
+    "id": "308",
+    "term": "ReLU",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "0보다 작으면 0, 크면 그대로 출력하는 대표적인 활성화 함수.",
+    "hint": "음수는 0, 양수는 그대로"
+  },
+  {
+    "id": "309",
+    "term": "시그모이드",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "값을 0과 1 사이로 바꾸는 함수. 확률처럼 해석할 때 자주 사용합니다.",
+    "hint": "0과 1 사이로 압축"
+  },
+  {
+    "id": "310",
+    "term": "소프트맥스",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "여러 클래스 점수를 확률 분포처럼 바꿔주는 함수.",
+    "hint": "여러 점수를 확률처럼 변환"
+  },
+  {
+    "id": "311",
+    "term": "퍼셉트론",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "입력에 가중치를 곱해 합산한 뒤 활성화 함수로 출력하는 단순한 신경망 단위.",
+    "hint": "가장 기본적인 신경망 단위"
+  },
+  {
+    "id": "312",
+    "term": "은닉층",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "신경망에서 입력층과 출력층 사이에 있는 계산 층.",
+    "hint": "입력과 출력 사이의 계산 층"
+  },
+  {
+    "id": "313",
+    "term": "출력층",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "신경망의 마지막 층으로 최종 예측값을 내는 부분.",
+    "hint": "최종 예측을 내는 층"
+  },
+  {
+    "id": "314",
+    "term": "역전파",
+    "category": "AI / 머신러닝",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 5,
+    "definition": "출력 오차를 뒤쪽 층에서 앞쪽 층으로 전달하며 가중치를 조정하는 학습 방법.",
+    "hint": "오차를 뒤로 보내 가중치 조정"
+  },
+  {
+    "id": "315",
+    "term": "과소적합",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델이 데이터의 패턴을 충분히 배우지 못해 학습 데이터와 새 데이터 모두에서 성능이 낮은 상태.",
+    "hint": "패턴을 덜 배운 상태"
+  },
+  {
+    "id": "316",
+    "term": "일반화",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델이 처음 보는 데이터에서도 잘 작동하는 능력.",
+    "hint": "새 데이터에도 잘 맞는 능력"
+  },
+  {
+    "id": "317",
+    "term": "교차 검증",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "데이터를 여러 번 나누어 학습과 검증을 반복해 모델 성능을 더 안정적으로 평가하는 방법.",
+    "hint": "데이터를 나눠 반복 평가"
+  },
+  {
+    "id": "318",
+    "term": "혼동 행렬",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "분류 모델의 실제 정답과 예측 결과를 표로 정리해 성능을 분석하는 도구.",
+    "hint": "분류 결과를 표로 정리"
+  },
+  {
+    "id": "319",
+    "term": "정밀도",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델이 양성이라고 예측한 것 중 실제로 양성인 비율.",
+    "hint": "양성 예측 중 맞은 비율"
+  },
+  {
+    "id": "320",
+    "term": "재현율",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "실제 양성 중 모델이 양성으로 찾아낸 비율.",
+    "hint": "실제 양성을 찾아낸 비율"
+  },
+  {
+    "id": "321",
+    "term": "F1 점수",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "정밀도와 재현율을 함께 고려한 분류 성능 지표.",
+    "hint": "정밀도와 재현율의 균형 지표"
+  },
+  {
+    "id": "322",
+    "term": "ROC 곡선",
+    "category": "AI / 머신러닝",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 5,
+    "definition": "분류 기준을 바꿨을 때 참 양성률과 거짓 양성률의 변화를 보여주는 곡선.",
+    "hint": "분류 기준 변화 성능 곡선"
+  },
+  {
+    "id": "323",
+    "term": "AUC",
+    "category": "AI / 머신러닝",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 5,
+    "definition": "ROC 곡선 아래 면적. 1에 가까울수록 분류 성능이 좋습니다.",
+    "hint": "ROC 곡선 아래 면적"
+  },
+  {
+    "id": "324",
+    "term": "회귀",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "집값이나 온도처럼 연속적인 숫자 값을 예측하는 머신러닝 문제.",
+    "hint": "숫자 값을 예측하는 문제"
+  },
+  {
+    "id": "325",
+    "term": "분류 문제",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "스팸 여부나 이미지 종류처럼 정해진 클래스 중 하나를 예측하는 문제.",
+    "hint": "정해진 종류를 맞히는 문제"
+  },
+  {
+    "id": "326",
+    "term": "군집화",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "정답 없이 비슷한 데이터끼리 그룹으로 묶는 비지도 학습 방법.",
+    "hint": "비슷한 데이터끼리 묶기"
+  },
+  {
+    "id": "327",
+    "term": "차원 축소",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "데이터의 중요한 정보는 유지하면서 특징 수를 줄이는 기법.",
+    "hint": "중요 정보만 남기고 축 줄이기"
+  },
+  {
+    "id": "328",
+    "term": "PCA",
+    "category": "AI / 머신러닝",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 5,
+    "definition": "데이터 분산을 잘 설명하는 방향을 찾아 차원을 줄이는 대표적인 차원 축소 기법.",
+    "hint": "분산 기준 차원 축소"
+  },
+  {
+    "id": "329",
+    "term": "K-평균",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "데이터를 K개의 그룹으로 나누는 대표적인 군집화 알고리즘.",
+    "hint": "K개 그룹으로 묶는 알고리즘"
+  },
+  {
+    "id": "330",
+    "term": "결정 트리",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "질문을 가지처럼 나누어 분류나 예측을 수행하는 모델.",
+    "hint": "질문 가지로 예측하는 모델"
+  },
+  {
+    "id": "331",
+    "term": "랜덤 포레스트",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "여러 결정 트리를 조합해 더 안정적인 예측을 만드는 앙상블 모델.",
+    "hint": "여러 결정 트리를 합친 모델"
+  },
+  {
+    "id": "332",
+    "term": "앙상블",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "여러 모델의 예측을 결합해 하나의 모델보다 더 좋은 성능을 얻는 방법.",
+    "hint": "여러 모델을 합쳐 예측"
+  },
+  {
+    "id": "333",
+    "term": "부스팅",
+    "category": "AI / 머신러닝",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 5,
+    "definition": "이전 모델이 틀린 부분을 다음 모델이 보완하도록 순차적으로 학습하는 앙상블 방법.",
+    "hint": "틀린 부분을 이어서 보완"
+  },
+  {
+    "id": "334",
+    "term": "서포트 벡터 머신",
+    "category": "AI / 머신러닝",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 5,
+    "definition": "데이터를 가장 잘 나누는 경계선을 찾아 분류하는 머신러닝 모델.",
+    "hint": "분류 경계선을 찾는 모델"
+  },
+  {
+    "id": "335",
+    "term": "나이브 베이즈",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "특징들이 서로 독립이라고 가정하고 확률로 분류하는 모델.",
+    "hint": "독립 가정 기반 확률 분류"
+  },
+  {
+    "id": "336",
+    "term": "K-최근접 이웃",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "새 데이터와 가까운 K개의 기존 데이터를 보고 분류나 예측을 하는 알고리즘.",
+    "hint": "가까운 이웃을 보고 예측"
+  },
+  {
+    "id": "337",
+    "term": "추천 시스템",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "사용자 행동이나 아이템 특징을 분석해 관심 있을 만한 항목을 제안하는 시스템.",
+    "hint": "관심 있을 항목을 제안"
+  },
+  {
+    "id": "338",
+    "term": "협업 필터링",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "비슷한 사용자나 아이템의 행동 패턴을 이용해 추천하는 방법.",
+    "hint": "비슷한 행동 패턴으로 추천"
+  },
+  {
+    "id": "339",
+    "term": "콘텐츠 기반 추천",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "사용자가 좋아한 항목의 특징과 비슷한 항목을 추천하는 방법.",
+    "hint": "비슷한 특징의 항목 추천"
+  },
+  {
+    "id": "340",
+    "term": "자연어 처리",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "컴퓨터가 사람의 언어를 이해하고 생성하도록 다루는 AI 분야.",
+    "hint": "사람 언어를 다루는 AI"
+  },
+  {
+    "id": "341",
+    "term": "컴퓨터 비전",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "이미지나 영상을 인식하고 분석하는 AI 분야.",
+    "hint": "이미지와 영상을 다루는 AI"
+  },
+  {
+    "id": "342",
+    "term": "음성 인식",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "사람의 말을 텍스트나 명령으로 변환하는 AI 기술.",
+    "hint": "말소리를 텍스트로 변환"
+  },
+  {
+    "id": "343",
+    "term": "생성형 AI",
+    "category": "AI / 머신러닝",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 5,
+    "definition": "텍스트, 이미지, 코드처럼 새로운 콘텐츠를 만들어내는 AI.",
+    "hint": "새 콘텐츠를 만드는 AI"
+  },
+  {
+    "id": "344",
+    "term": "환각",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "AI가 사실이 아닌 내용을 그럴듯하게 만들어내는 현상.",
+    "hint": "그럴듯한 거짓 답변 현상"
+  },
+  {
+    "id": "345",
+    "term": "컨텍스트 윈도우",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "언어 모델이 한 번에 참고할 수 있는 입력과 대화 기록의 최대 범위.",
+    "hint": "모델이 한 번에 보는 범위"
+  },
+  {
+    "id": "346",
+    "term": "시스템 프롬프트",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "AI 모델의 역할, 규칙, 응답 방식을 정하는 상위 지시문.",
+    "hint": "모델 행동을 정하는 상위 지시"
+  },
+  {
+    "id": "347",
+    "term": "샘플링",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "모델 출력 후보 중 하나를 확률적으로 선택하는 과정.",
+    "hint": "확률적으로 출력 선택"
+  },
+  {
+    "id": "348",
+    "term": "온도값",
+    "category": "AI / 머신러닝",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 5,
+    "definition": "AI 출력의 무작위성과 창의성을 조절하는 설정값.",
+    "hint": "출력 무작위성 조절값"
+  },
+  {
+    "id": "349",
+    "term": "탑-k 샘플링",
+    "category": "AI / 머신러닝",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 5,
+    "definition": "확률이 높은 K개의 후보 중에서 다음 토큰을 고르는 생성 방식.",
+    "hint": "상위 K개 후보에서 선택"
+  }
+]
