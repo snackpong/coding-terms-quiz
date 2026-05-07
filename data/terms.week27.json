@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1821",
+    "term": "MLOps 개요",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 27,
+    "definition": "MLOps 개요: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "개요",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. MLOps 개요을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"MLOps 개요\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "MLOps 개요은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1822",
+    "term": "ML 파이프라인",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 27,
+    "definition": "ML 파이프라인: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "파이프라인",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. ML 파이프라인을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ML 파이프라인\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ML 파이프라인은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1823",
+    "term": "데이터 버전 관리(DVC)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 27,
+    "definition": "데이터 버전 관리(DVC): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "데이터버전관리",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 데이터 버전 관리(DVC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 버전 관리(DVC)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 버전 관리(DVC)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1824",
+    "term": "실험 추적(MLflow)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 27,
+    "definition": "실험 추적(MLflow): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "실험추적",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 실험 추적(MLflow)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"실험 추적(MLflow)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "실험 추적(MLflow)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1825",
+    "term": "아티팩트 저장소",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "아티팩트 저장소: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "아티팩트저장소",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 아티팩트 저장소을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"아티팩트 저장소\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "아티팩트 저장소을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1826",
+    "term": "모델 레지스트리",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 레지스트리: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델레지스트리",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 레지스트리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 레지스트리\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 레지스트리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1827",
+    "term": "모델 버전 관리",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 버전 관리: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델버전관리",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 버전 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 버전 관리\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 버전 관리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1828",
+    "term": "모델 태깅/스테이징",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 태깅/스테이징: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델태깅스테이징",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 태깅/스테이징을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 태깅/스테이징\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 태깅/스테이징을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1829",
+    "term": "피처 스토어(심화)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "피처 스토어(심화): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "피처스토어",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 피처 스토어(심화)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피처 스토어(심화)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피처 스토어(심화)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1830",
+    "term": "온라인 피처 서빙",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "온라인 피처 서빙: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "온라인피처서빙",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 온라인 피처 서빙을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"온라인 피처 서빙\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "온라인 피처 서빙을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1831",
+    "term": "오프라인 피처 계산",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "오프라인 피처 계산: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "오프라인피처계산",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 오프라인 피처 계산을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"오프라인 피처 계산\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "오프라인 피처 계산을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1832",
+    "term": "피처 드리프트",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "피처 드리프트: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "피처드리프트",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 피처 드리프트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피처 드리프트\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피처 드리프트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1833",
+    "term": "데이터 드리프트",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "데이터 드리프트: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "데이터드리프트",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 데이터 드리프트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 드리프트\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 드리프트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1834",
+    "term": "컨셉 드리프트",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "컨셉 드리프트: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "컨셉드리프트",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 컨셉 드리프트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컨셉 드리프트\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컨셉 드리프트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1835",
+    "term": "모델 모니터링",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 모니터링: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델모니터링",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 모니터링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 모니터링\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 모니터링을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1836",
+    "term": "예측 로깅",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "예측 로깅: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "예측로깅",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 예측 로깅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"예측 로깅\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "예측 로깅을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1837",
+    "term": "레이블 지연",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "레이블 지연: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "레이블지연",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 레이블 지연을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"레이블 지연\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "레이블 지연을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1838",
+    "term": "지속 학습(Continuous Training)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "지속 학습(Continuous Training): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "지속학습",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 지속 학습(Continuous Training)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"지속 학습(Continuous Training)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "지속 학습(Continuous Training)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1839",
+    "term": "트리거 기반 재학습",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "트리거 기반 재학습: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "트리거기반재학습",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 트리거 기반 재학습을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"트리거 기반 재학습\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "트리거 기반 재학습을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1840",
+    "term": "스케줄 기반 재학습",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "스케줄 기반 재학습: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "스케줄기반재학습",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 스케줄 기반 재학습을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스케줄 기반 재학습\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스케줄 기반 재학습을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1841",
+    "term": "챔피언-챌린저 배포",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "챔피언-챌린저 배포: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "챔피언챌린저배포",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 챔피언-챌린저 배포을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"챔피언-챌린저 배포\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "챔피언-챌린저 배포을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1842",
+    "term": "그림자 모드(Shadow Mode)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "그림자 모드(Shadow Mode): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "그림자모드",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 그림자 모드(Shadow Mode)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"그림자 모드(Shadow Mode)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "그림자 모드(Shadow Mode)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1843",
+    "term": "온라인 평가",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "온라인 평가: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "온라인평가",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 온라인 평가을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"온라인 평가\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "온라인 평가을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1844",
+    "term": "오프라인 평가",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "오프라인 평가: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "오프라인평가",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 오프라인 평가을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"오프라인 평가\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "오프라인 평가을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1845",
+    "term": "A/B 테스트(모델)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "A/B 테스트(모델): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "테스트",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. A/B 테스트(모델)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"A/B 테스트(모델)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "A/B 테스트(모델)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1846",
+    "term": "멀티암드 밴딧(모델 선택)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "멀티암드 밴딧(모델 선택): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "멀티암드밴딧",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 멀티암드 밴딧(모델 선택)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"멀티암드 밴딧(모델 선택)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "멀티암드 밴딧(모델 선택)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1847",
+    "term": "모델 서빙 아키텍처",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 서빙 아키텍처: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델서빙아키텍처",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 서빙 아키텍처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 서빙 아키텍처\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 서빙 아키텍처을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1848",
+    "term": "REST 서빙",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "REST 서빙: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "서빙",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. REST 서빙을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"REST 서빙\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "REST 서빙을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1849",
+    "term": "gRPC 서빙",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "gRPC 서빙: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "서빙",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. gRPC 서빙을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"gRPC 서빙\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "gRPC 서빙을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1850",
+    "term": "배치 추론 파이프라인",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "배치 추론 파이프라인: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "배치추론파이프라인",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 배치 추론 파이프라인을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"배치 추론 파이프라인\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "배치 추론 파이프라인을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1851",
+    "term": "실시간 추론",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "실시간 추론: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "실시간추론",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 실시간 추론을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"실시간 추론\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "실시간 추론을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1852",
+    "term": "스트리밍 추론",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 27,
+    "definition": "스트리밍 추론: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "스트리밍추론",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 스트리밍 추론을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스트리밍 추론\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스트리밍 추론을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1853",
+    "term": "TensorRT 최적화",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "TensorRT 최적화: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "최적화",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. TensorRT 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"TensorRT 최적화\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "TensorRT 최적화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1854",
+    "term": "ONNX 변환",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "ONNX 변환: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "변환",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. ONNX 변환을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ONNX 변환\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ONNX 변환은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1855",
+    "term": "모델 양자화(서빙)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 양자화(서빙): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델양자화",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 양자화(서빙)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 양자화(서빙)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 양자화(서빙)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1856",
+    "term": "추론 캐싱",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "추론 캐싱: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "추론캐싱",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 추론 캐싱을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"추론 캐싱\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "추론 캐싱은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1857",
+    "term": "모델 앙상블 서빙",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 앙상블 서빙: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델앙상블서빙",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 앙상블 서빙을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 앙상블 서빙\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 앙상블 서빙은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1858",
+    "term": "다중 모델 서빙",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "다중 모델 서빙: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "다중모델서빙",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 다중 모델 서빙을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"다중 모델 서빙\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "다중 모델 서빙은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1859",
+    "term": "Triton Inference Server",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "Triton Inference Server: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "TritonInfe",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. Triton Inference Server을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Triton Inference Server\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Triton Inference Server은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1860",
+    "term": "KServe",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "KServe: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "KServe",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. KServe을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"KServe\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "KServe은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1861",
+    "term": "Ray Serve",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "Ray Serve: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "RayServe",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. Ray Serve을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Ray Serve\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Ray Serve은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1862",
+    "term": "LLM 서빙 최적화",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "LLM 서빙 최적화: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "서빙최적화",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. LLM 서빙 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"LLM 서빙 최적화\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "LLM 서빙 최적화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1863",
+    "term": "vLLM",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "vLLM: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "vLLM",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. vLLM을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"vLLM\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "vLLM은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1864",
+    "term": "연속 배치(Continuous Batching)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "연속 배치(Continuous Batching): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "연속배치",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 연속 배치(Continuous Batching)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"연속 배치(Continuous Batching)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "연속 배치(Continuous Batching)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1865",
+    "term": "페이지드 어텐션(PagedAttention)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "페이지드 어텐션(PagedAttention): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "페이지드어텐션",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 페이지드 어텐션(PagedAttention)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"페이지드 어텐션(PagedAttention)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "페이지드 어텐션(PagedAttention)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1866",
+    "term": "투기적 디코딩(Speculative Decoding)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "투기적 디코딩(Speculative Decoding): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "투기적디코딩",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 투기적 디코딩(Speculative Decoding)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"투기적 디코딩(Speculative Decoding)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "투기적 디코딩(Speculative Decoding)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1867",
+    "term": "KV 캐시 관리",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "KV 캐시 관리: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "캐시관리",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. KV 캐시 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"KV 캐시 관리\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "KV 캐시 관리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1868",
+    "term": "멀티 GPU 추론",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "멀티 GPU 추론: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "멀티추론",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 멀티 GPU 추론을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"멀티 GPU 추론\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "멀티 GPU 추론은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1869",
+    "term": "텐서 병렬",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "텐서 병렬: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "텐서병렬",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 텐서 병렬을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"텐서 병렬\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "텐서 병렬은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1870",
+    "term": "파이프라인 병렬",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "파이프라인 병렬: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "파이프라인병렬",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 파이프라인 병렬을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"파이프라인 병렬\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "파이프라인 병렬은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1871",
+    "term": "AI 거버넌스",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "AI 거버넌스: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "거버넌스",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. AI 거버넌스을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"AI 거버넌스\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "AI 거버넌스은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1872",
+    "term": "모델 카드",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 카드: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델카드",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 카드을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 카드\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 카드은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1873",
+    "term": "책임 있는 AI",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "책임 있는 AI: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "책임있는",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 책임 있는 AI을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"책임 있는 AI\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "책임 있는 AI은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1874",
+    "term": "편향 탐지",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "편향 탐지: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "편향탐지",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 편향 탐지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"편향 탐지\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "편향 탐지은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1875",
+    "term": "공정성 지표",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "공정성 지표: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "공정성지표",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 공정성 지표을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"공정성 지표\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "공정성 지표은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1876",
+    "term": "AI 규제 대응",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "AI 규제 대응: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "규제대응",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. AI 규제 대응을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"AI 규제 대응\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "AI 규제 대응은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1877",
+    "term": "모델 평가 자동화",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 평가 자동화: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델평가자동화",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 평가 자동화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 평가 자동화\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 평가 자동화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1878",
+    "term": "데이터셋 버전 관리",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "데이터셋 버전 관리: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "데이터셋버전관리",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 데이터셋 버전 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터셋 버전 관리\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터셋 버전 관리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1879",
+    "term": "학습 재현성",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "학습 재현성: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "학습재현성",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 학습 재현성을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"학습 재현성\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "학습 재현성은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1880",
+    "term": "시드 고정(Random Seed)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "시드 고정(Random Seed): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "시드고정",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 시드 고정(Random Seed)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"시드 고정(Random Seed)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "시드 고정(Random Seed)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1881",
+    "term": "결정론적 훈련",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "결정론적 훈련: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "결정론적훈련",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 결정론적 훈련을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"결정론적 훈련\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "결정론적 훈련은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1882",
+    "term": "분산 학습(DDP)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "분산 학습(DDP): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "분산학습",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 분산 학습(DDP)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 학습(DDP)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 학습(DDP)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1883",
+    "term": "모델 체크포인트 전략",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "모델 체크포인트 전략: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모델체크포인트전략",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 모델 체크포인트 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모델 체크포인트 전략\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모델 체크포인트 전략은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1884",
+    "term": "조기 종료(Early Stopping)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "조기 종료(Early Stopping): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "조기종료",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 조기 종료(Early Stopping)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"조기 종료(Early Stopping)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "조기 종료(Early Stopping)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1885",
+    "term": "학습 커브 분석",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "학습 커브 분석: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "학습커브분석",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 학습 커브 분석을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"학습 커브 분석\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "학습 커브 분석은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1886",
+    "term": "검증 손실 추적",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "검증 손실 추적: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "검증손실추적",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 검증 손실 추적을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"검증 손실 추적\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "검증 손실 추적은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1887",
+    "term": "데이터셋 카드(Dataset Card)",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "데이터셋 카드(Dataset Card): 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "데이터셋카드",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 데이터셋 카드(Dataset Card)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터셋 카드(Dataset Card)\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터셋 카드(Dataset Card)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1888",
+    "term": "공정성 메트릭",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "공정성 메트릭: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "공정성메트릭",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 공정성 메트릭을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"공정성 메트릭\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "공정성 메트릭은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1889",
+    "term": "ML 모니터링 대시보드",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "ML 모니터링 대시보드: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "모니터링대시보드",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. ML 모니터링 대시보드을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ML 모니터링 대시보드\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ML 모니터링 대시보드은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1890",
+    "term": "피처 중요도 모니터링",
+    "category": "MLOps / AI 시스템",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 27,
+    "definition": "피처 중요도 모니터링: 머신러닝 모델을 실험에서 운영까지 재현 가능하게 배포, 모니터링, 개선하기 위한 프로세스와 시스템 개념입니다. 데이터와 모델 변화까지 운영 대상으로 다룹니다.",
+    "hint": "피처중요도모니터링",
+    "detail": {
+      "easy": "AI 모델을 운영하는 방법",
+      "analogy": "신제품을 만들고 품질검사, 창고 등록, 매장 배치, 고객 반응 확인까지 이어지는 과정과 같습니다. MLOps는 모델도 제품처럼 버전과 품질을 관리합니다. 피처 중요도 모니터링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피처 중요도 모니터링\"\ncategory = \"MLOps / AI 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피처 중요도 모니터링은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

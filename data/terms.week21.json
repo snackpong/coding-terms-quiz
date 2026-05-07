@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1401",
+    "term": "컴포넌트 기반 설계",
+    "category": "프론트엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 21,
+    "definition": "컴포넌트 기반 설계: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "컴포넌트기반설계",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 컴포넌트 기반 설계을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컴포넌트 기반 설계\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컴포넌트 기반 설계은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1402",
+    "term": "단방향 데이터 흐름",
+    "category": "프론트엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 21,
+    "definition": "단방향 데이터 흐름: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "단방향데이터흐름",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 단방향 데이터 흐름을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"단방향 데이터 흐름\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "단방향 데이터 흐름은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1403",
+    "term": "Virtual DOM",
+    "category": "프론트엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 21,
+    "definition": "Virtual DOM: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "VirtualDOM",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Virtual DOM을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Virtual DOM\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Virtual DOM은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1404",
+    "term": "재조정(Reconciliation)",
+    "category": "프론트엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 21,
+    "definition": "재조정(Reconciliation): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "재조정",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 재조정(Reconciliation)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"재조정(Reconciliation)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "재조정(Reconciliation)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1405",
+    "term": "파이버 아키텍처(React)",
+    "category": "프론트엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 21,
+    "definition": "파이버 아키텍처(React): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "파이버아키텍처",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 파이버 아키텍처(React)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"파이버 아키텍처(React)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "파이버 아키텍처(React)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1406",
+    "term": "Hooks(useState/useEffect)",
+    "category": "프론트엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 21,
+    "definition": "Hooks(useState/useEffect): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "Hooks(useS",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Hooks(useState/useEffect)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Hooks(useState/useEffect)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Hooks(useState/useEffect)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1407",
+    "term": "커스텀 훅",
+    "category": "프론트엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 21,
+    "definition": "커스텀 훅: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "커스텀훅",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 커스텀 훅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"커스텀 훅\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "커스텀 훅은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1408",
+    "term": "컨텍스트 API",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "컨텍스트 API: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "컨텍스트",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 컨텍스트 API을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컨텍스트 API\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컨텍스트 API을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1409",
+    "term": "상태 끌어올리기",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "상태 끌어올리기: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "상태끌어올리기",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 상태 끌어올리기을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"상태 끌어올리기\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "상태 끌어올리기을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1410",
+    "term": "Props Drilling",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "Props Drilling: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "PropsDrill",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Props Drilling을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Props Drilling\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Props Drilling을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1411",
+    "term": "전역 상태 관리",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "전역 상태 관리: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "전역상태관리",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 전역 상태 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"전역 상태 관리\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "전역 상태 관리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1412",
+    "term": "Redux 기초",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "Redux 기초: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "기초",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Redux 기초을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Redux 기초\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Redux 기초을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1413",
+    "term": "Redux Toolkit",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "Redux Toolkit: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "ReduxToolk",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Redux Toolkit을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Redux Toolkit\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Redux Toolkit을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1414",
+    "term": "Zustand",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "Zustand: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "Zustand",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Zustand을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Zustand\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Zustand을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1415",
+    "term": "Jotai",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "Jotai: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "Jotai",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Jotai을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Jotai\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Jotai을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1416",
+    "term": "반응형 상태(Reactive State)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "반응형 상태(Reactive State): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "반응형상태",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 반응형 상태(Reactive State)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"반응형 상태(Reactive State)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "반응형 상태(Reactive State)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1417",
+    "term": "불변성(Immutability)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "불변성(Immutability): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "불변성",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 불변성(Immutability)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"불변성(Immutability)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "불변성(Immutability)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1418",
+    "term": "메모이제이션(useMemo/useCallback)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "메모이제이션(useMemo/useCallback): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "메모이제이션",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 메모이제이션(useMemo/useCallback)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"메모이제이션(useMemo/useCallback)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "메모이제이션(useMemo/useCallback)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1419",
+    "term": "React.memo",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "React.memo: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "React.memo",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. React.memo을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"React.memo\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "React.memo을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1420",
+    "term": "가상화(Windowing)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "가상화(Windowing): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "가상화",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 가상화(Windowing)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"가상화(Windowing)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "가상화(Windowing)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1421",
+    "term": "코드 스플리팅",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "코드 스플리팅: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "코드스플리팅",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 코드 스플리팅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"코드 스플리팅\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "코드 스플리팅을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1422",
+    "term": "지연 로딩(Lazy Loading)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "지연 로딩(Lazy Loading): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "지연로딩",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 지연 로딩(Lazy Loading)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"지연 로딩(Lazy Loading)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "지연 로딩(Lazy Loading)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1423",
+    "term": "Suspense",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "Suspense: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "Suspense",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Suspense을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Suspense\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Suspense을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1424",
+    "term": "에러 바운더리",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "에러 바운더리: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "에러바운더리",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 에러 바운더리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"에러 바운더리\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "에러 바운더리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1425",
+    "term": "서버 컴포넌트(RSC)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "서버 컴포넌트(RSC): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "서버컴포넌트",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 서버 컴포넌트(RSC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"서버 컴포넌트(RSC)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "서버 컴포넌트(RSC)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1426",
+    "term": "수화(Hydration)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "수화(Hydration): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "수화",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 수화(Hydration)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"수화(Hydration)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "수화(Hydration)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1427",
+    "term": "점진적 수화",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "점진적 수화: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "점진적수화",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 점진적 수화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"점진적 수화\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "점진적 수화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1428",
+    "term": "스트리밍 SSR",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "스트리밍 SSR: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "스트리밍",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 스트리밍 SSR을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스트리밍 SSR\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스트리밍 SSR을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1429",
+    "term": "라우팅(SPA)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "라우팅(SPA): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "라우팅",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 라우팅(SPA)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"라우팅(SPA)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "라우팅(SPA)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1430",
+    "term": "해시 라우팅",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "해시 라우팅: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "해시라우팅",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 해시 라우팅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"해시 라우팅\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "해시 라우팅을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1431",
+    "term": "히스토리 API",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "히스토리 API: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "히스토리",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 히스토리 API을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"히스토리 API\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "히스토리 API을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1432",
+    "term": "빌드 도구(Vite/Webpack)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "빌드 도구(Vite/Webpack): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "빌드도구",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 빌드 도구(Vite/Webpack)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"빌드 도구(Vite/Webpack)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "빌드 도구(Vite/Webpack)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1433",
+    "term": "번들링",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "번들링: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "번들링",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 번들링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"번들링\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "번들링을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1434",
+    "term": "트리 쉐이킹",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "트리 쉐이킹: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "트리쉐이킹",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 트리 쉐이킹을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"트리 쉐이킹\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "트리 쉐이킹을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1435",
+    "term": "코드 압축(Minification)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "코드 압축(Minification): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "코드압축",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 코드 압축(Minification)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"코드 압축(Minification)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "코드 압축(Minification)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1436",
+    "term": "소스맵",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "소스맵: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "소스맵",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 소스맵을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"소스맵\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "소스맵을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1437",
+    "term": "HMR(핫 모듈 교체)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "HMR(핫 모듈 교체): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "HMR(핫모듈교체)",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. HMR(핫 모듈 교체)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"HMR(핫 모듈 교체)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "HMR(핫 모듈 교체)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1438",
+    "term": "CSS-in-JS",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "CSS-in-JS: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "CSS-in-JS",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. CSS-in-JS을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CSS-in-JS\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CSS-in-JS을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1439",
+    "term": "CSS Modules",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "CSS Modules: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "CSSModules",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. CSS Modules을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CSS Modules\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CSS Modules을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1440",
+    "term": "Tailwind CSS",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "Tailwind CSS: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "TailwindCS",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Tailwind CSS을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Tailwind CSS\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Tailwind CSS을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1441",
+    "term": "디자인 시스템",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "디자인 시스템: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "디자인시스템",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 디자인 시스템을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"디자인 시스템\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "디자인 시스템을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1442",
+    "term": "접근성(A11y)",
+    "category": "프론트엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 21,
+    "definition": "접근성(A11y): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "접근성",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 접근성(A11y)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"접근성(A11y)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "접근성(A11y)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1443",
+    "term": "ARIA 역할",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "ARIA 역할: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "역할",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. ARIA 역할을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ARIA 역할\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ARIA 역할은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1444",
+    "term": "포커스 관리",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "포커스 관리: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "포커스관리",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 포커스 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"포커스 관리\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "포커스 관리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1445",
+    "term": "색상 대비",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "색상 대비: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "색상대비",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 색상 대비을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"색상 대비\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "색상 대비은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1446",
+    "term": "국제화(i18n)",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "국제화(i18n): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "국제화",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 국제화(i18n)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"국제화(i18n)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "국제화(i18n)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1447",
+    "term": "현지화(l10n)",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "현지화(l10n): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "현지화",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 현지화(l10n)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"현지화(l10n)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "현지화(l10n)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1448",
+    "term": "다국어 날짜/숫자 포맷",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "다국어 날짜/숫자 포맷: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "다국어날짜숫자포맷",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 다국어 날짜/숫자 포맷을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"다국어 날짜/숫자 포맷\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "다국어 날짜/숫자 포맷은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1449",
+    "term": "웹 성능 지표(CWV)",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "웹 성능 지표(CWV): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "웹성능지표",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 웹 성능 지표(CWV)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"웹 성능 지표(CWV)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "웹 성능 지표(CWV)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1450",
+    "term": "LCP",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "LCP: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "LCP",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. LCP을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"LCP\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "LCP은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1451",
+    "term": "FID/INP",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "FID/INP: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "FID/INP",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. FID/INP을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"FID/INP\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "FID/INP은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1452",
+    "term": "CLS",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "CLS: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "CLS",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. CLS을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CLS\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CLS은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1453",
+    "term": "성능 프로파일링",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "성능 프로파일링: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "성능프로파일링",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 성능 프로파일링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"성능 프로파일링\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "성능 프로파일링은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1454",
+    "term": "Lighthouse",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "Lighthouse: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "Lighthouse",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Lighthouse을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Lighthouse\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Lighthouse은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1455",
+    "term": "브라우저 렌더링 파이프라인",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "브라우저 렌더링 파이프라인: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "브라우저렌더링파이프",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 브라우저 렌더링 파이프라인을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"브라우저 렌더링 파이프라인\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "브라우저 렌더링 파이프라인은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1456",
+    "term": "레이아웃 재계산(Reflow)",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "레이아웃 재계산(Reflow): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "레이아웃재계산",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 레이아웃 재계산(Reflow)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"레이아웃 재계산(Reflow)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "레이아웃 재계산(Reflow)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1457",
+    "term": "페인트(Repaint)",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "페인트(Repaint): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "페인트",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 페인트(Repaint)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"페인트(Repaint)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "페인트(Repaint)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1458",
+    "term": "합성(Compositing)",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "합성(Compositing): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "합성",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 합성(Compositing)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"합성(Compositing)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "합성(Compositing)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1459",
+    "term": "GPU 가속",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "GPU 가속: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "가속",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. GPU 가속을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"GPU 가속\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "GPU 가속은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1460",
+    "term": "웹 워커",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "웹 워커: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "웹워커",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 웹 워커을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"웹 워커\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "웹 워커은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1461",
+    "term": "공유 메모리",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "공유 메모리: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "공유메모리",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 공유 메모리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"공유 메모리\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "공유 메모리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1462",
+    "term": "마이크로 프론트엔드",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "마이크로 프론트엔드: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "마이크로프론트엔드",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 마이크로 프론트엔드을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"마이크로 프론트엔드\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "마이크로 프론트엔드은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1463",
+    "term": "모듈 페더레이션(Module Federation)",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "모듈 페더레이션(Module Federation): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "모듈페더레이션",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 모듈 페더레이션(Module Federation)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모듈 페더레이션(Module Federation)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모듈 페더레이션(Module Federation)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1464",
+    "term": "웹 컴포넌트(Web Components)",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "웹 컴포넌트(Web Components): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "웹컴포넌트",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 웹 컴포넌트(Web Components)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"웹 컴포넌트(Web Components)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "웹 컴포넌트(Web Components)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1465",
+    "term": "Shadow DOM",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "Shadow DOM: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "ShadowDOM",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Shadow DOM을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Shadow DOM\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Shadow DOM은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1466",
+    "term": "Custom Elements",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "Custom Elements: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "CustomElem",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. Custom Elements을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Custom Elements\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Custom Elements은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1467",
+    "term": "인터섹션 옵저버(Intersection Observer)",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "인터섹션 옵저버(Intersection Observer): 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "인터섹션옵저버",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 인터섹션 옵저버(Intersection Observer)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인터섹션 옵저버(Intersection Observer)\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인터섹션 옵저버(Intersection Observer)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1468",
+    "term": "ResizeObserver",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "ResizeObserver: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "ResizeObse",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. ResizeObserver을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ResizeObserver\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ResizeObserver은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1469",
+    "term": "MutationObserver",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "MutationObserver: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "MutationOb",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. MutationObserver을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"MutationObserver\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "MutationObserver은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1470",
+    "term": "캔버스(Canvas) API",
+    "category": "프론트엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 21,
+    "definition": "캔버스(Canvas) API: 브라우저에서 사용자 인터페이스를 구조화하고 상태, 렌더링, 접근성, 성능을 관리하기 위한 프론트엔드 개념입니다. 화면을 빠르고 예측 가능하게 갱신하는 데 쓰입니다.",
+    "hint": "캔버스",
+    "detail": {
+      "easy": "화면을 만들고 빠르게 움직이는 방법",
+      "analogy": "무대 공연에서 배우, 조명, 장면 전환, 관객 동선이 맞아야 공연이 자연스럽습니다. 프론트엔드 기술은 화면 요소와 상태 변화를 그런 식으로 조율합니다. 캔버스(Canvas) API을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"캔버스(Canvas) API\"\ncategory = \"프론트엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "캔버스(Canvas) API은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

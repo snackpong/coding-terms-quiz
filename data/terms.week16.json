@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1051",
+    "term": "확장성(Scalability)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "확장성은 사용자 수, 데이터 양, 요청량이 늘어도 시스템이 성능을 유지하거나 쉽게 용량을 키울 수 있는 능력입니다. 설계 단계에서 병목과 상태 저장 방식을 고려해야 합니다.",
+    "hint": "확장성",
+    "detail": {
+      "easy": "확장성(Scalability)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "작은 가게가 손님이 늘 때 계산대와 주방 동선을 늘려도 운영이 무너지지 않는 모습과 같습니다. 손님이 많아져도 줄이 끝없이 길어지지 않아야 합니다.",
+      "example": "# 확장성(Scalability) 예시: Python 3에서 실행 가능한 코드\nrequests = 1000\nservers = 4\nprint(requests // servers)",
+      "tip": "확장성(Scalability)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1052",
+    "term": "수직 확장(Scale-up)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "수직 확장은 기존 서버 한 대의 CPU, 메모리, 디스크 같은 자원을 더 강하게 늘리는 방식입니다. 구조 변경이 적지만 장비 한계와 비용 증가가 빠르게 찾아올 수 있습니다.",
+    "hint": "수직 확장",
+    "detail": {
+      "easy": "수직 확장(Scale-up)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "작은 트럭을 더 큰 트럭으로 바꾸는 것과 같습니다. 운전자는 그대로지만 트럭이 감당할 수 있는 짐에는 결국 한계가 있습니다.",
+      "example": "# 수직 확장(Scale-up) 예시: Python 3에서 실행 가능한 코드\ncpu_cores = 4\ncpu_cores *= 2\nprint(cpu_cores)",
+      "tip": "수직 확장(Scale-up)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1053",
+    "term": "수평 확장(Scale-out)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "수평 확장은 서버나 인스턴스 수를 늘려 요청을 여러 대가 나눠 처리하게 하는 방식입니다. 로드 밸런싱, 상태 공유, 데이터 분산 설계가 함께 필요합니다.",
+    "hint": "수평 확장",
+    "detail": {
+      "easy": "수평 확장(Scale-out)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "계산대 하나를 크게 만드는 대신 계산대를 여러 개 여는 마트와 같습니다. 손님을 어느 줄로 보낼지 정하는 안내가 필요합니다.",
+      "example": "# 수평 확장(Scale-out) 예시: Python 3에서 실행 가능한 코드\nrequests = list(range(10))\nservers = [[], []]\nfor i, r in enumerate(requests):\n    servers[i % 2].append(r)\nprint(servers)",
+      "tip": "수평 확장(Scale-out)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1054",
+    "term": "가용성(Availability)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "가용성은 사용자가 필요할 때 시스템이 정상적으로 서비스를 제공할 수 있는 비율입니다. 장애가 발생해도 빠르게 복구하거나 우회하는 설계가 중요합니다.",
+    "hint": "가용성",
+    "detail": {
+      "easy": "가용성(Availability)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "편의점이 24시간 문을 열고 있어야 하는 정도와 같습니다. 물건이 좋아도 문이 닫혀 있으면 사용자는 서비스를 쓸 수 없습니다.",
+      "example": "# 가용성(Availability) 예시: Python 3에서 실행 가능한 코드\nuptime = 999\ntotal = 1000\nprint(uptime / total)",
+      "tip": "가용성(Availability)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1055",
+    "term": "내구성(Durability)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "내구성은 저장된 데이터가 장애나 재시작 후에도 사라지지 않고 보존되는 성질입니다. 디스크 기록, 복제, 백업, 로그 기반 복구가 내구성을 높입니다.",
+    "hint": "내구성",
+    "detail": {
+      "easy": "내구성(Durability)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "은행 금고에 넣은 계약서가 정전이나 이사 뒤에도 그대로 남아 있어야 하는 것과 같습니다. 잠깐 빠르게 처리하는 것보다 잃지 않는 것이 핵심입니다.",
+      "example": "# 내구성(Durability) 예시: Python 3에서 실행 가능한 코드\ndata = {\"order_id\": 1}\nsaved = data.copy()\nprint(saved[\"order_id\"])",
+      "tip": "내구성(Durability)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1056",
+    "term": "신뢰성(Reliability)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "신뢰성은 시스템이 오랜 시간 동안 올바른 결과를 지속적으로 제공하는 능력입니다. 오류 처리, 모니터링, 테스트, 복구 절차가 신뢰성을 좌우합니다.",
+    "hint": "신뢰성",
+    "detail": {
+      "easy": "신뢰성(Reliability)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "매일 같은 시간에 정확히 도착하는 통근 열차와 같습니다. 한두 번 빠른 것보다 꾸준히 예측 가능하게 동작하는 것이 중요합니다.",
+      "example": "# 신뢰성(Reliability) 예시: Python 3에서 실행 가능한 코드\nsuccesses = [True, True, False, True]\nprint(successes.count(True) / len(successes))",
+      "tip": "신뢰성(Reliability)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1057",
+    "term": "운영성(Operability)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "운영성은 시스템을 배포, 관찰, 장애 대응, 설정 변경, 복구하기 쉬운 정도입니다. 운영성이 좋은 시스템은 문제가 생겼을 때 원인을 빠르게 찾고 안전하게 조치할 수 있습니다.",
+    "hint": "운영성",
+    "detail": {
+      "easy": "운영성(Operability)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "자동차 보닛을 열었을 때 주요 부품과 경고등이 잘 정리되어 정비사가 바로 점검할 수 있는 상태와 같습니다. 달리는 성능만큼 고치기 쉬운지도 중요합니다.",
+      "example": "# 운영성(Operability) 예시: Python 3에서 실행 가능한 코드\nsignals = {\"logs\": True, \"metrics\": True, \"alerts\": True}\nprint(all(signals.values()))",
+      "tip": "운영성(Operability)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1058",
+    "term": "지연 시간(Latency)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "지연 시간은 요청을 보낸 뒤 응답을 받기까지 걸리는 시간입니다. 사용자 체감 품질에는 평균보다 p95, p99 같은 꼬리 지연 시간이 특히 중요합니다.",
+    "hint": "지연 시간",
+    "detail": {
+      "easy": "지연 시간(Latency)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "엘리베이터 버튼을 누른 뒤 문이 열릴 때까지 기다리는 시간과 같습니다. 대부분 빠르더라도 가끔 매우 오래 걸리면 불편합니다.",
+      "example": "# 지연 시간(Latency) 예시: Python 3에서 실행 가능한 코드\nlatencies = [20, 25, 40]\nprint(max(latencies))",
+      "tip": "지연 시간(Latency)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1059",
+    "term": "처리량(Throughput)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "처리량은 단위 시간 동안 시스템이 처리할 수 있는 작업이나 요청의 수입니다. 대량 작업에서는 개별 지연 시간뿐 아니라 전체 처리량이 비용과 성능을 결정합니다.",
+    "hint": "처리량",
+    "detail": {
+      "easy": "처리량(Throughput)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "공장 컨베이어 벨트가 1분에 몇 개의 제품을 완성하는지와 같습니다. 한 제품 속도와 전체 생산량은 구분해서 봐야 합니다.",
+      "example": "# 처리량(Throughput) 예시: Python 3에서 실행 가능한 코드\nprocessed = 1200\nseconds = 60\nprint(processed / seconds)",
+      "tip": "처리량(Throughput)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1060",
+    "term": "대역폭",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "대역폭은 네트워크나 채널이 단위 시간에 전송할 수 있는 데이터 양입니다. 큰 파일, 동영상, 백업처럼 데이터량이 많은 작업에서 병목이 됩니다.",
+    "hint": "대역폭",
+    "detail": {
+      "easy": "대역폭은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "도로의 차선 수와 같습니다. 차선이 넓으면 한 번에 더 많은 차가 지나가지만, 목적지 처리 속도와는 별개의 제한입니다.",
+      "example": "# 대역폭 예시: Python 3에서 실행 가능한 코드\nmb = 500\nmbps = 100\nprint(mb / mbps)",
+      "tip": "대역폭을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1061",
+    "term": "병목 지점(Bottleneck)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "병목 지점은 전체 시스템 성능을 제한하는 가장 느리거나 부족한 구간입니다. 병목이 아닌 부분을 개선해도 전체 성능은 크게 좋아지지 않습니다.",
+    "hint": "병목 지점",
+    "detail": {
+      "easy": "병목 지점(Bottleneck)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "물병 목이 좁으면 몸통이 아무리 넓어도 물은 목을 통과하는 속도로만 나오는 것과 같습니다. 가장 좁은 구간을 찾아야 합니다.",
+      "example": "# 병목 지점(Bottleneck) 예시: Python 3에서 실행 가능한 코드\nstages = {\"api\": 100, \"db\": 30, \"cache\": 200}\nprint(min(stages, key=stages.get))",
+      "tip": "병목 지점(Bottleneck)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1062",
+    "term": "단일 장애점(SPOF)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "단일 장애점은 하나가 고장나면 전체 서비스가 멈추는 구성 요소입니다. 고가용성을 위해 복제, 이중화, 우회 경로로 제거해야 합니다.",
+    "hint": "단일 장애점",
+    "detail": {
+      "easy": "단일 장애점(SPOF)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "건물 전체 전기가 하나의 낡은 멀티탭에만 의존하는 상황과 같습니다. 그 멀티탭이 고장나면 모든 방이 꺼집니다.",
+      "example": "# 단일 장애점(SPOF) 예시: Python 3에서 실행 가능한 코드\ncomponents = {\"db_primary\": 1, \"api\": 3}\nprint([k for k, n in components.items() if n == 1])",
+      "tip": "단일 장애점(SPOF)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1063",
+    "term": "이중화(Redundancy)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "이중화는 같은 역할을 할 수 있는 구성 요소를 둘 이상 준비해 장애 시 대체할 수 있게 하는 설계입니다. 비용은 늘지만 가용성과 복구 능력이 좋아집니다.",
+    "hint": "이중화",
+    "detail": {
+      "easy": "이중화(Redundancy)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "비행기에 엔진이 여러 개 있어 하나가 멈춰도 바로 추락하지 않는 구조와 같습니다. 여분은 평소에는 낭비처럼 보여도 장애 때 가치를 냅니다.",
+      "example": "# 이중화(Redundancy) 예시: Python 3에서 실행 가능한 코드\nreplicas = [\"db1\", \"db2\"]\nprint(len(replicas) >= 2)",
+      "tip": "이중화(Redundancy)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1064",
+    "term": "페일오버(Failover)",
+    "category": "시스템 디자인",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 16,
+    "definition": "페일오버는 주 구성 요소가 실패했을 때 대기 중인 구성 요소로 자동 또는 수동 전환하는 절차입니다. 전환 감지와 데이터 동기화가 제대로 되어야 서비스 중단을 줄입니다.",
+    "hint": "페일오버",
+    "detail": {
+      "easy": "페일오버(Failover)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "주 운전자가 아프면 보조 운전자가 즉시 운전대를 넘겨받는 버스와 같습니다. 넘겨받는 절차가 늦으면 승객은 멈춤을 겪습니다.",
+      "example": "# 페일오버(Failover) 예시: Python 3에서 실행 가능한 코드\nprimary_ok = False\nactive = \"primary\" if primary_ok else \"standby\"\nprint(active)",
+      "tip": "페일오버(Failover)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1065",
+    "term": "서킷 브레이커(Circuit Breaker)",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "서킷 브레이커는 외부 서비스 실패가 반복될 때 호출을 잠시 차단해 연쇄 장애를 막는 패턴입니다. 일정 시간이 지나면 제한적으로 다시 시도해 회복 여부를 확인합니다.",
+    "hint": "서킷 브레이커",
+    "detail": {
+      "easy": "서킷 브레이커(Circuit Breaker)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "전기 과부하가 나면 차단기가 내려가 집 전체 화재를 막는 것과 같습니다. 계속 전기를 밀어 넣는 대신 잠시 끊어 안전을 확보합니다.",
+      "example": "# 서킷 브레이커(Circuit Breaker) 예시: Python 3에서 실행 가능한 코드\nfailures = 5\nthreshold = 3\nstate = \"open\" if failures >= threshold else \"closed\"\nprint(state)",
+      "tip": "서킷 브레이커(Circuit Breaker)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1066",
+    "term": "재시도 로직",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "재시도 로직은 일시적 실패가 발생했을 때 같은 작업을 다시 시도하는 처리입니다. 네트워크 흔들림에는 유용하지만 무제한 재시도는 과부하를 키울 수 있습니다.",
+    "hint": "재시도 로직",
+    "detail": {
+      "easy": "재시도 로직은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "택배 문자가 잠깐 실패하면 몇 분 뒤 다시 보내는 것과 같습니다. 다만 계속 두드리면 상대 시스템을 더 힘들게 할 수 있습니다.",
+      "example": "# 재시도 로직 예시: Python 3에서 실행 가능한 코드\nattempts = 0\nok = False\nwhile attempts < 3 and not ok:\n    attempts += 1\n    ok = attempts == 2\nprint(ok, attempts)",
+      "tip": "재시도 로직을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1067",
+    "term": "지수 백오프",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "지수 백오프는 재시도 간격을 1초, 2초, 4초처럼 점점 늘리는 전략입니다. 장애 중인 서비스에 요청이 한꺼번에 몰리는 것을 줄입니다.",
+    "hint": "지수 백오프",
+    "detail": {
+      "easy": "지수 백오프은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "문이 잠겨 있으면 처음에는 잠깐 기다리고, 계속 안 열리면 더 길게 기다렸다가 다시 확인하는 방식과 같습니다.",
+      "example": "# 지수 백오프 예시: Python 3에서 실행 가능한 코드\nfor retry in range(4):\n    wait = 2 ** retry\n    print(wait)",
+      "tip": "지수 백오프을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1068",
+    "term": "타임아웃",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "타임아웃은 작업이나 요청이 정해진 시간 안에 끝나지 않으면 실패로 처리하는 제한입니다. 무한 대기를 막고 자원을 회수해 시스템이 멈추는 것을 방지합니다.",
+    "hint": "타임아웃",
+    "detail": {
+      "easy": "타임아웃은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "식당에서 주문이 30분 넘게 나오지 않으면 확인하거나 취소하는 규칙과 같습니다. 끝없이 기다리면 다음 일정도 모두 밀립니다.",
+      "example": "# 타임아웃 예시: Python 3에서 실행 가능한 코드\nelapsed = 12\ntimeout = 10\nprint(\"fail\" if elapsed > timeout else \"ok\")",
+      "tip": "타임아웃을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1069",
+    "term": "헬스 체크",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "헬스 체크는 서버나 서비스가 정상적으로 요청을 처리할 수 있는지 주기적으로 확인하는 검사입니다. 로드 밸런서와 오케스트레이터가 트래픽 전달 여부를 결정하는 데 사용합니다.",
+    "hint": "헬스 체크",
+    "detail": {
+      "easy": "헬스 체크은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "버스가 출발 전 브레이크와 문을 점검하는 절차와 같습니다. 겉으로 서 있어도 실제 운행 가능한지 확인해야 합니다.",
+      "example": "# 헬스 체크 예시: Python 3에서 실행 가능한 코드\nchecks = {\"db\": True, \"disk\": True, \"queue\": False}\nprint(all(checks.values()))",
+      "tip": "헬스 체크을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1070",
+    "term": "그레이스풀 셧다운",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "그레이스풀 셧다운은 새 요청을 받지 않으면서 이미 처리 중인 요청을 끝낸 뒤 안전하게 종료하는 방식입니다. 배포나 재시작 중 사용자 오류를 줄입니다.",
+    "hint": "그레이스풀 셧다운",
+    "detail": {
+      "easy": "그레이스풀 셧다운은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "식당이 마감할 때 새 손님은 받지 않지만 이미 주문한 손님 식사는 끝까지 내는 것과 같습니다. 갑자기 불을 끄지 않습니다.",
+      "example": "# 그레이스풀 셧다운 예시: Python 3에서 실행 가능한 코드\ninflight = 2\naccepting_new = False\nwhile inflight:\n    inflight -= 1\nprint(\"shutdown\")",
+      "tip": "그레이스풀 셧다운을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1071",
+    "term": "캐싱 전략",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "캐싱 전략은 자주 쓰는 데이터나 계산 결과를 빠른 저장소에 두어 지연 시간과 원본 부하를 줄이는 설계입니다. 무엇을 얼마나 오래 저장하고 언제 지울지 정하는 것이 핵심입니다.",
+    "hint": "캐싱 전략",
+    "detail": {
+      "easy": "캐싱 전략은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "자주 보는 책을 서고가 아니라 책상 위에 두는 습관과 같습니다. 빨리 꺼낼 수 있지만 오래된 판본이 남지 않게 관리해야 합니다.",
+      "example": "# 캐싱 전략 예시: Python 3에서 실행 가능한 코드\ncache = {}\nkey = \"user:1\"\ncache[key] = {\"name\": \"Kim\"}\nprint(cache.get(key))",
+      "tip": "캐싱 전략을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1072",
+    "term": "캐시 히트/미스",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "캐시 히트는 요청한 데이터가 캐시에 있는 경우이고, 캐시 미스는 없어 원본 저장소에서 가져와야 하는 경우입니다. 히트율이 높을수록 캐시 효과가 큽니다.",
+    "hint": "캐시 히트/미스",
+    "detail": {
+      "easy": "캐시 히트/미스은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "책상 위에 찾는 책이 있으면 히트, 없어서 서고까지 가야 하면 미스와 같습니다. 책상에 무엇을 올릴지가 중요합니다.",
+      "example": "# 캐시 히트/미스 예시: Python 3에서 실행 가능한 코드\ncache = {\"a\": 1}\nfor key in [\"a\", \"b\"]:\n    print(key, \"hit\" if key in cache else \"miss\")",
+      "tip": "캐시 히트/미스을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1073",
+    "term": "TTL(만료 시간)",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "TTL은 캐시나 메시지 같은 항목이 유효한 시간 제한입니다. 시간이 지나면 자동으로 만료시켜 오래된 데이터를 계속 쓰는 위험을 줄입니다.",
+    "hint": "TTL",
+    "detail": {
+      "easy": "TTL(만료 시간)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "도시락에 붙은 유통기한과 같습니다. 시간이 지나면 아직 보관되어 있어도 더 이상 믿고 먹지 않습니다.",
+      "example": "# TTL(만료 시간) 예시: Python 3에서 실행 가능한 코드\ncreated = 10\nnow = 25\nttl = 12\nprint(now - created <= ttl)",
+      "tip": "TTL(만료 시간)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1074",
+    "term": "캐시 무효화",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "캐시 무효화는 원본 데이터가 바뀌었을 때 오래된 캐시를 제거하거나 갱신하는 작업입니다. 무효화가 늦으면 빠르지만 틀린 데이터를 제공할 수 있습니다.",
+    "hint": "캐시 무효화",
+    "detail": {
+      "easy": "캐시 무효화은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "메뉴 가격이 바뀌면 오래된 종이 메뉴판을 회수하는 일과 같습니다. 손님에게 빠르게 보여 줘도 가격이 틀리면 문제가 됩니다.",
+      "example": "# 캐시 무효화 예시: Python 3에서 실행 가능한 코드\ncache = {\"price\": 1000}\ndata_changed = True\nif data_changed:\n    cache.pop(\"price\", None)\nprint(cache)",
+      "tip": "캐시 무효화을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1075",
+    "term": "라이트 스루 캐시",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "라이트 스루 캐시는 데이터를 쓸 때 캐시와 원본 저장소에 동시에 기록하는 방식입니다. 읽기 일관성은 좋지만 쓰기 지연 시간이 늘 수 있습니다.",
+    "hint": "라이트 스루 캐시",
+    "detail": {
+      "easy": "라이트 스루 캐시은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "주문 내용을 계산대 장부와 창고 장부에 동시에 적는 방식과 같습니다. 기록은 맞지만 쓰는 데 시간이 더 듭니다.",
+      "example": "# 라이트 스루 캐시 예시: Python 3에서 실행 가능한 코드\ncache = {}; db = {}\ndef write(k, v):\n    cache[k] = v; db[k] = v\nwrite(\"x\", 1)\nprint(cache, db)",
+      "tip": "라이트 스루 캐시을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1076",
+    "term": "라이트 백 캐시",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "라이트 백 캐시는 먼저 캐시에만 쓰고 나중에 원본 저장소에 반영하는 방식입니다. 쓰기 성능은 좋지만 캐시 장애 시 데이터 손실 위험을 관리해야 합니다.",
+    "hint": "라이트 백 캐시",
+    "detail": {
+      "easy": "라이트 백 캐시은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "메모지에 주문을 빠르게 적어 두고 한가할 때 정식 장부에 옮기는 방식과 같습니다. 메모지를 잃어버리지 않게 해야 합니다.",
+      "example": "# 라이트 백 캐시 예시: Python 3에서 실행 가능한 코드\ncache = {\"x\": 2}\ndirty = {\"x\"}\ndb = {}\nfor k in dirty:\n    db[k] = cache[k]\nprint(db)",
+      "tip": "라이트 백 캐시을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1077",
+    "term": "캐시 사이드",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "캐시 사이드는 애플리케이션이 캐시를 먼저 조회하고 없으면 데이터베이스에서 읽어 캐시에 채우는 패턴입니다. 캐시 정책을 앱에서 직접 제어할 수 있습니다.",
+    "hint": "캐시 사이드",
+    "detail": {
+      "easy": "캐시 사이드은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "책상 위에서 책을 먼저 찾고 없으면 서고에서 가져와 책상에 올려 두는 방식과 같습니다. 다음에는 책상에서 바로 찾습니다.",
+      "example": "# 캐시 사이드 예시: Python 3에서 실행 가능한 코드\ncache = {}; db = {\"u1\": \"Kim\"}\nkey = \"u1\"\nvalue = cache.get(key)\nif value is None:\n    value = db[key]; cache[key] = value\nprint(value)",
+      "tip": "캐시 사이드을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1078",
+    "term": "Redis 기초",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "Redis는 메모리 기반 키-값 저장소로 캐시, 세션, 카운터, 큐 등에 사용됩니다. 문자열, 리스트, 셋, 정렬 셋 같은 다양한 자료구조를 제공합니다.",
+    "hint": "Redis 기초",
+    "detail": {
+      "easy": "Redis 기초은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "계산대 옆 빠른 메모함처럼 자주 쓰는 정보를 즉시 꺼내는 저장소와 같습니다. 오래 보관하는 창고라기보다 빠른 작업대에 가깝습니다.",
+      "example": "# Redis 기초 예시: Python 3에서 실행 가능한 코드\nredis_like = {}\nredis_like[\"session:1\"] = \"active\"\nprint(redis_like[\"session:1\"])",
+      "tip": "Redis 기초을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1079",
+    "term": "Memcached",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "Memcached는 단순한 메모리 기반 분산 캐시 시스템입니다. 문자열 키-값 캐싱에 집중하며 데이터 구조 기능은 Redis보다 단순합니다.",
+    "hint": "Memcached",
+    "detail": {
+      "easy": "Memcached은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "책상 위 포스트잇 보관함처럼 간단한 메모를 빠르게 붙이고 떼는 도구와 같습니다. 복잡한 장부 기능보다 속도와 단순함이 장점입니다.",
+      "example": "# Memcached 예시: Python 3에서 실행 가능한 코드\ncache = {\"page:/home\": \"<html>\"}\nprint(cache.get(\"page:/home\"))",
+      "tip": "Memcached을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1080",
+    "term": "메시지 큐 기초",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "메시지 큐는 생산자가 보낸 작업 메시지를 저장하고 소비자가 나중에 처리하도록 분리하는 구조입니다. 비동기 처리, 부하 완충, 장애 격리에 유용합니다.",
+    "hint": "메시지 큐 기초",
+    "detail": {
+      "easy": "메시지 큐 기초은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "접수함에 서류를 넣어 두면 담당자가 순서대로 가져가 처리하는 사무실과 같습니다. 요청자와 처리자가 같은 순간에 만나지 않아도 됩니다.",
+      "example": "# 메시지 큐 기초 예시: Python 3에서 실행 가능한 코드\nfrom collections import deque\nqueue = deque()\nqueue.append(\"email job\")\nprint(queue.popleft())",
+      "tip": "메시지 큐 기초을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1081",
+    "term": "Kafka 기초",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "Kafka는 분산 로그 기반 메시징 플랫폼으로 높은 처리량의 이벤트 스트림을 저장하고 전달합니다. 토픽, 파티션, 컨슈머 그룹을 통해 대규모 이벤트 처리를 구성합니다.",
+    "hint": "Kafka 기초",
+    "detail": {
+      "easy": "Kafka 기초은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "시간순으로 계속 기록되는 공장 작업 일지와 같습니다. 여러 팀이 같은 일지를 각자 필요한 위치부터 읽을 수 있습니다.",
+      "example": "# Kafka 기초 예시: Python 3에서 실행 가능한 코드\ntopic = []\ntopic.append({\"offset\": 0, \"event\": \"signup\"})\nprint(topic[0])",
+      "tip": "Kafka 기초을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1082",
+    "term": "RabbitMQ",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "RabbitMQ는 AMQP 기반 메시지 브로커로 큐, 교환기, 라우팅 키를 통해 메시지를 전달합니다. 작업 큐와 복잡한 라우팅이 필요한 시스템에서 자주 사용됩니다.",
+    "hint": "RabbitMQ",
+    "detail": {
+      "easy": "RabbitMQ은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "우체국 분류원이 주소와 우편 종류를 보고 알맞은 창구로 편지를 보내는 구조와 같습니다. 교환기가 분류 규칙을 담당합니다.",
+      "example": "# RabbitMQ 예시: Python 3에서 실행 가능한 코드\nrouting_key = \"email.urgent\"\nqueues = {\"email.urgent\": [\"send now\"]}\nprint(queues.get(routing_key))",
+      "tip": "RabbitMQ을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1083",
+    "term": "발행-구독 패턴",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "발행-구독 패턴은 발행자가 이벤트를 보내면 해당 주제를 구독한 여러 소비자가 메시지를 받는 구조입니다. 생산자와 소비자를 느슨하게 분리합니다.",
+    "hint": "발행-구독 패턴",
+    "detail": {
+      "easy": "발행-구독 패턴은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "신문사가 기사를 발행하면 구독자들이 각자 신문을 받아 보는 방식과 같습니다. 기자는 구독자 명단을 일일이 호출하지 않습니다.",
+      "example": "# 발행-구독 패턴 예시: Python 3에서 실행 가능한 코드\nsubscribers = {\"news\": [\"A\", \"B\"]}\nevent = \"news\"\nprint(subscribers[event])",
+      "tip": "발행-구독 패턴을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1084",
+    "term": "이벤트 소싱",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "이벤트 소싱은 현재 상태를 직접 저장하기보다 상태를 만든 모든 이벤트 기록을 저장하는 패턴입니다. 이벤트를 재생하면 과거 상태를 추적하거나 현재 상태를 재구성할 수 있습니다.",
+    "hint": "이벤트 소싱",
+    "detail": {
+      "easy": "이벤트 소싱은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "계좌 잔액만 적는 대신 모든 입금과 출금 내역을 보관하는 통장과 같습니다. 내역을 더하면 현재 잔액과 변화 이유를 모두 알 수 있습니다.",
+      "example": "# 이벤트 소싱 예시: Python 3에서 실행 가능한 코드\nevents = [(\"deposit\", 100), (\"withdraw\", 30)]\nbalance = sum(v if t == \"deposit\" else -v for t, v in events)\nprint(balance)",
+      "tip": "이벤트 소싱을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1085",
+    "term": "CQRS",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "CQRS는 명령으로 상태를 변경하는 모델과 조회로 데이터를 읽는 모델을 분리하는 설계 패턴입니다. 읽기와 쓰기 요구가 크게 다를 때 각각 최적화할 수 있습니다.",
+    "hint": "CQRS",
+    "detail": {
+      "easy": "CQRS은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "주문 접수 창구와 주문 현황 안내판을 따로 운영하는 식당과 같습니다. 주문을 바꾸는 업무와 빠르게 보여 주는 업무의 구조가 다릅니다.",
+      "example": "# CQRS 예시: Python 3에서 실행 가능한 코드\ncommands = [\"create_order\"]\nread_model = {\"order_count\": 1}\nprint(commands[0], read_model[\"order_count\"])",
+      "tip": "CQRS을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1086",
+    "term": "CAP 정리",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "CAP 정리는 분산 시스템에서 네트워크 분할이 발생했을 때 일관성과 가용성을 동시에 완벽히 보장할 수 없다는 원리입니다. 실제 설계는 분할 상황에서 어떤 성질을 우선할지 선택해야 합니다.",
+    "hint": "CAP 정리",
+    "detail": {
+      "easy": "CAP 정리은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "두 지점 매장의 통신이 끊겼을 때 둘 다 계속 팔게 할지, 중앙 확인 전까지 판매를 멈출지 골라야 하는 상황과 같습니다.",
+      "example": "# CAP 정리 예시: Python 3에서 실행 가능한 코드\npartition = True\nchoice = \"availability\" if partition else \"consistency\"\nprint(choice)",
+      "tip": "CAP 정리을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1087",
+    "term": "일관성(Consistency)",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "일관성은 여러 읽기와 복제본이 같은 규칙과 최신 상태를 관찰하도록 보장하는 성질입니다. 강한 일관성은 직관적이지만 지연과 가용성 비용이 커질 수 있습니다.",
+    "hint": "일관성",
+    "detail": {
+      "easy": "일관성(Consistency)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "같은 은행 계좌를 어느 지점에서 조회해도 같은 잔액이 보여야 하는 것과 같습니다. 한 지점만 늦게 갱신되면 혼란이 생깁니다.",
+      "example": "# 일관성(Consistency) 예시: Python 3에서 실행 가능한 코드\nprimary = 100\nreplica = 100\nprint(primary == replica)",
+      "tip": "일관성(Consistency)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1088",
+    "term": "가용성 vs 일관성",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "가용성 vs 일관성은 분산 장애 상황에서 항상 응답할지, 정확히 같은 상태만 보여 줄지 사이의 선택 문제입니다. 서비스 특성에 따라 우선순위가 달라집니다.",
+    "hint": "가용성 vs 일관성",
+    "detail": {
+      "easy": "가용성 vs 일관성은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "정전 중에도 임시 장부로 판매를 계속할지, 정확한 재고 확인 전까지 판매를 멈출지 결정하는 매장과 같습니다.",
+      "example": "# 가용성 vs 일관성 예시: Python 3에서 실행 가능한 코드\nneed_exact = False\nmode = \"serve_stale\" if not need_exact else \"wait_for_sync\"\nprint(mode)",
+      "tip": "가용성 vs 일관성을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1089",
+    "term": "최종 일관성(Eventual Consistency)",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "최종 일관성은 일시적으로 복제본 상태가 다를 수 있지만 시간이 지나면 같은 상태로 수렴하는 모델입니다. 높은 가용성과 확장성을 얻는 대신 잠깐의 불일치를 허용합니다.",
+    "hint": "최종 일관성",
+    "detail": {
+      "easy": "최종 일관성(Eventual Consistency)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "여러 지점의 가격표가 본사 공지 후 몇 분 안에 차례로 바뀌는 상황과 같습니다. 순간적으로 다를 수 있지만 결국 같은 가격이 됩니다.",
+      "example": "# 최종 일관성(Eventual Consistency) 예시: Python 3에서 실행 가능한 코드\nreplicas = [1, 0, 0]\nreplicas = [1, 1, 1]\nprint(len(set(replicas)) == 1)",
+      "tip": "최종 일관성(Eventual Consistency)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1090",
+    "term": "동기 통신",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "동기 통신은 요청자가 응답을 받을 때까지 기다리는 통신 방식입니다. 흐름이 단순하지만 상대 서비스 지연이나 장애가 요청자에게 직접 전파될 수 있습니다.",
+    "hint": "동기 통신",
+    "detail": {
+      "easy": "동기 통신은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "전화 통화처럼 상대가 받을 때까지 기다리고 대답을 들어야 다음 말을 할 수 있는 방식과 같습니다.",
+      "example": "# 동기 통신 예시: Python 3에서 실행 가능한 코드\ndef call_service():\n    return \"done\"\nresult = call_service()\nprint(result)",
+      "tip": "동기 통신을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1091",
+    "term": "비동기 통신",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "비동기 통신은 요청을 보낸 뒤 응답을 기다리지 않고 다른 작업을 계속하는 방식입니다. 큐나 이벤트를 통해 서비스 간 결합과 지연 전파를 줄일 수 있습니다.",
+    "hint": "비동기 통신",
+    "detail": {
+      "easy": "비동기 통신은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "우편함에 편지를 넣고 바로 다른 일을 하는 것과 같습니다. 답장은 나중에 오며 보내는 순간 상대가 준비되어 있을 필요는 없습니다.",
+      "example": "# 비동기 통신 예시: Python 3에서 실행 가능한 코드\njobs = []\njobs.append(\"resize image\")\nprint(\"accepted\", len(jobs))",
+      "tip": "비동기 통신을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1092",
+    "term": "API 설계 원칙",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "API 설계 원칙은 명확한 리소스, 일관된 응답, 버전 관리, 오류 표현, 보안 등을 고려해 인터페이스를 만드는 기준입니다. 좋은 API는 사용자가 예측 가능하게 호출하고 장애를 이해할 수 있게 합니다.",
+    "hint": "API 설계 원칙",
+    "detail": {
+      "easy": "API 설계 원칙은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "식당 메뉴판이 이름, 가격, 옵션, 알레르기 정보를 일관된 형식으로 보여 주는 것과 같습니다. 손님이 주문 방법을 추측하지 않아도 됩니다.",
+      "example": "# API 설계 원칙 예시: Python 3에서 실행 가능한 코드\nresponse = {\"data\": {\"id\": 1}, \"error\": None}\nprint(response[\"data\"][\"id\"])",
+      "tip": "API 설계 원칙을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1093",
+    "term": "페이로드 크기 최적화",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "페이로드 크기 최적화는 요청과 응답에 필요한 데이터만 담아 네트워크 비용과 지연을 줄이는 작업입니다. 필드 선택, 압축, 페이지네이션 등이 사용됩니다.",
+    "hint": "페이로드 크기 최적화",
+    "detail": {
+      "easy": "페이로드 크기 최적화은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "택배 상자에 주문한 물건만 넣고 빈 포장재와 불필요한 안내책자를 줄이는 것과 같습니다. 가볍게 보낼수록 빠르고 저렴합니다.",
+      "example": "# 페이로드 크기 최적화 예시: Python 3에서 실행 가능한 코드\nuser = {\"id\": 1, \"name\": \"Kim\", \"bio\": \"x\" * 100}\nsmall = {k: user[k] for k in [\"id\", \"name\"]}\nprint(small)",
+      "tip": "페이로드 크기 최적화을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1094",
+    "term": "데이터 직렬화",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "데이터 직렬화는 객체나 구조화된 데이터를 저장이나 전송 가능한 바이트 또는 문자열 형식으로 변환하는 과정입니다. JSON, Protocol Buffers, MessagePack 같은 형식이 있습니다.",
+    "hint": "데이터 직렬화",
+    "detail": {
+      "easy": "데이터 직렬화은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "입체 조립품을 배송하기 위해 설명서와 부품 봉투로 포장하는 것과 같습니다. 다른 곳에서 다시 조립할 수 있어야 합니다.",
+      "example": "# 데이터 직렬화 예시: Python 3에서 실행 가능한 코드\nimport json\npayload = {\"id\": 1, \"ok\": True}\ntext = json.dumps(payload)\nprint(text)",
+      "tip": "데이터 직렬화을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1095",
+    "term": "Protocol Buffers",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "Protocol Buffers는 스키마를 정의하고 데이터를 작고 빠른 바이너리 형식으로 직렬화하는 기술입니다. 서비스 간 통신에서 타입 안정성과 효율을 얻기 위해 사용됩니다.",
+    "hint": "Protocol Buffers",
+    "detail": {
+      "easy": "Protocol Buffers은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "택배 상자를 표준 규격 칸에 맞춰 아주 빽빽하게 포장하는 방식과 같습니다. 받는 쪽도 같은 규격표를 알고 있어야 정확히 풉니다.",
+      "example": "# Protocol Buffers 예시: Python 3에서 실행 가능한 코드\nschema = {\"id\": \"int32\", \"name\": \"string\"}\nmessage = {\"id\": 1, \"name\": \"Kim\"}\nprint(all(k in message for k in schema))",
+      "tip": "Protocol Buffers을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1096",
+    "term": "MessagePack",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "MessagePack은 JSON과 비슷한 데이터 구조를 더 작은 바이너리 형식으로 표현하는 직렬화 포맷입니다. 사람이 읽기 쉬운 것보다 전송 효율을 중시할 때 유용합니다.",
+    "hint": "MessagePack",
+    "detail": {
+      "easy": "MessagePack은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "글로 길게 쓴 주문서를 바코드로 압축해 찍는 것과 같습니다. 눈으로 읽기는 어렵지만 기계가 빠르게 전달하고 해석합니다.",
+      "example": "# MessagePack 예시: Python 3에서 실행 가능한 코드\ndata = {\"x\": 1, \"y\": [2, 3]}\nestimated_json = len(str(data))\nestimated_msgpack = estimated_json - 5\nprint(estimated_msgpack)",
+      "tip": "MessagePack을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1097",
+    "term": "압축 알고리즘",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "압축 알고리즘은 데이터의 중복이나 패턴을 이용해 더 작은 크기로 표현하는 방법입니다. 네트워크 전송량과 저장 공간을 줄이지만 압축과 해제 비용이 추가됩니다.",
+    "hint": "압축 알고리즘",
+    "detail": {
+      "easy": "압축 알고리즘은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "같은 문장이 반복되는 문서를 “위 문장 10번 반복”이라고 적어 종이를 줄이는 것과 같습니다. 읽을 때는 다시 펼쳐야 합니다.",
+      "example": "# 압축 알고리즘 예시: Python 3에서 실행 가능한 코드\ntext = \"aaaaabbbbcc\"\ncompressed = [(ch, text.count(ch)) for ch in sorted(set(text))]\nprint(compressed)",
+      "tip": "압축 알고리즘을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1098",
+    "term": "데이터 파티셔닝",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "데이터 파티셔닝은 큰 데이터를 기준에 따라 여러 조각으로 나누어 저장하거나 처리하는 설계입니다. 범위, 해시, 지역 기준 등으로 나눌 수 있으며 확장성과 관리성을 높입니다.",
+    "hint": "데이터 파티셔닝",
+    "detail": {
+      "easy": "데이터 파티셔닝은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "도서관 책을 한 방에 모두 쌓지 않고 분야별 서가로 나누는 것과 같습니다. 찾기와 관리가 쉬워지지만 나누는 기준이 중요합니다.",
+      "example": "# 데이터 파티셔닝 예시: Python 3에서 실행 가능한 코드\nusers = list(range(8))\nparts = {0: [], 1: []}\nfor u in users:\n    parts[u % 2].append(u)\nprint(parts)",
+      "tip": "데이터 파티셔닝을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1099",
+    "term": "일관된 해싱(Consistent Hashing)",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "일관된 해싱은 노드가 추가되거나 제거될 때 전체 키가 아니라 일부 키만 이동하도록 하는 분산 배치 기법입니다. 캐시나 샤딩 시스템에서 재배치 비용을 줄입니다.",
+    "hint": "일관된 해싱",
+    "detail": {
+      "easy": "일관된 해싱(Consistent Hashing)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "원형 회전판에 가게와 손님 번호를 올려 가까운 다음 가게로 배정하는 방식과 같습니다. 가게가 하나 늘어도 모든 손님이 다시 줄 서지는 않습니다.",
+      "example": "# 일관된 해싱(Consistent Hashing) 예시: Python 3에서 실행 가능한 코드\nring = [10, 40, 80]\nkey = 50\ntarget = next(n for n in ring if n >= key)\nprint(target)",
+      "tip": "일관된 해싱(Consistent Hashing)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1100",
+    "term": "가상 노드",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "가상 노드는 일관된 해싱 링에서 실제 노드 하나를 여러 위치에 배치해 부하를 더 고르게 나누는 기법입니다. 노드 성능 차이를 반영해 가중치를 주기에도 좋습니다.",
+    "hint": "가상 노드",
+    "detail": {
+      "easy": "가상 노드은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "큰 매장이 여러 개의 작은 접수 창구 이름표를 가지고 줄 곳곳에서 손님을 받는 것과 같습니다. 한 지점에 손님이 몰리는 일을 줄입니다.",
+      "example": "# 가상 노드 예시: Python 3에서 실행 가능한 코드\nphysical = \"serverA\"\nvirtual_nodes = [f\"{physical}#{i}\" for i in range(3)]\nprint(virtual_nodes)",
+      "tip": "가상 노드을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1101",
+    "term": "읽기/쓰기 분리",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "읽기/쓰기 분리는 쓰기는 주 저장소가 처리하고 읽기는 복제본이나 별도 경로가 처리하도록 나누는 설계입니다. 읽기 부하가 큰 서비스에서 확장성을 높입니다.",
+    "hint": "읽기/쓰기 분리",
+    "detail": {
+      "easy": "읽기/쓰기 분리은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "도서 원본 수정은 편집실에서만 하고, 독자는 복사본 열람실에서 읽게 하는 방식과 같습니다. 읽는 사람이 많아도 원본 작업을 덜 방해합니다.",
+      "example": "# 읽기/쓰기 분리 예시: Python 3에서 실행 가능한 코드\noperation = \"read\"\ntarget = \"replica\" if operation == \"read\" else \"primary\"\nprint(target)",
+      "tip": "읽기/쓰기 분리을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1102",
+    "term": "마스터-레플리카",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "마스터-레플리카는 주 노드가 쓰기를 받고 복제 노드들이 데이터를 따라 받아 읽기나 대기 역할을 하는 구조입니다. 복제 지연과 장애 전환 정책을 고려해야 합니다.",
+    "hint": "마스터-레플리카",
+    "detail": {
+      "easy": "마스터-레플리카은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "원본 장부는 본점에서 쓰고 지점들은 복사본을 받아 고객에게 조회해 주는 방식과 같습니다. 복사본이 늦게 도착할 수 있습니다.",
+      "example": "# 마스터-레플리카 예시: Python 3에서 실행 가능한 코드\nmaster = {\"v\": 2}\nreplica = master.copy()\nprint(replica[\"v\"])",
+      "tip": "마스터-레플리카을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1103",
+    "term": "멀티 리더",
+    "category": "시스템 디자인",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 16,
+    "definition": "멀티 리더는 여러 노드가 동시에 쓰기를 받을 수 있는 복제 구조입니다. 지역별 쓰기 지연을 줄일 수 있지만 충돌 해결이 복잡해집니다.",
+    "hint": "멀티 리더",
+    "detail": {
+      "easy": "멀티 리더은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "여러 지점이 각자 주문 장부를 쓰고 나중에 본사에서 합치는 방식과 같습니다. 같은 주문 번호를 동시에 쓸 위험을 조정해야 합니다.",
+      "example": "# 멀티 리더 예시: Python 3에서 실행 가능한 코드\nwrites = {\"seoul\": {\"x\": 1}, \"tokyo\": {\"x\": 2}}\nprint(list(writes))",
+      "tip": "멀티 리더을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1104",
+    "term": "리더 없는 복제",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "리더 없는 복제는 고정된 주 노드 없이 여러 복제본이 읽기와 쓰기에 참여하는 구조입니다. 쿼럼 읽기와 쓰기로 가용성과 일관성 균형을 맞춥니다.",
+    "hint": "리더 없는 복제",
+    "detail": {
+      "easy": "리더 없는 복제은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "반장이 없는 팀에서 여러 명에게 같은 공지를 전달하고 다수의 확인을 받아 결정하는 방식과 같습니다. 한 명이 없어도 진행할 수 있습니다.",
+      "example": "# 리더 없는 복제 예시: Python 3에서 실행 가능한 코드\nacks = 2\nreplicas = 3\nprint(acks >= 2)",
+      "tip": "리더 없는 복제을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1105",
+    "term": "쓰기 충돌 해결",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "쓰기 충돌 해결은 분산 환경에서 같은 데이터가 서로 다른 값으로 동시에 변경될 때 최종 값을 정하는 방식입니다. 타임스탬프, 버전 벡터, 병합 규칙 등이 사용됩니다.",
+    "hint": "쓰기 충돌 해결",
+    "detail": {
+      "easy": "쓰기 충돌 해결은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "두 지점 직원이 같은 고객 주소를 동시에 다르게 고쳤을 때 어느 주소를 쓸지 정하는 규칙과 같습니다. 규칙이 없으면 장부가 갈라집니다.",
+      "example": "# 쓰기 충돌 해결 예시: Python 3에서 실행 가능한 코드\nversions = [(\"A\", 10), (\"B\", 12)]\nwinner = max(versions, key=lambda x: x[1])\nprint(winner)",
+      "tip": "쓰기 충돌 해결을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1106",
+    "term": "벡터 시계",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "벡터 시계는 분산 시스템에서 각 노드의 이벤트 카운터를 함께 기록해 이벤트 간 인과관계를 판단하는 방법입니다. 단순 시간값으로 알 수 없는 동시 변경을 구분할 수 있습니다.",
+    "hint": "벡터 시계",
+    "detail": {
+      "easy": "벡터 시계은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "여러 지점 도장이 찍힌 여권처럼 어느 지점에서 몇 번째 처리까지 반영됐는지 함께 적는 방식과 같습니다. 도장 조합으로 순서를 추정합니다.",
+      "example": "# 벡터 시계 예시: Python 3에서 실행 가능한 코드\na = {\"n1\": 2, \"n2\": 1}\nb = {\"n1\": 2, \"n2\": 3}\nprint(all(a[k] <= b[k] for k in a))",
+      "tip": "벡터 시계을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1107",
+    "term": "분산 잠금",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "분산 잠금은 여러 서버나 프로세스가 공유 자원에 동시에 접근하지 못하도록 조정하는 잠금입니다. 네트워크 지연과 장애 때문에 만료 시간과 소유권 확인이 중요합니다.",
+    "hint": "분산 잠금",
+    "detail": {
+      "easy": "분산 잠금은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "여러 지점 직원이 하나뿐인 금고 열쇠를 빌려 쓰는 절차와 같습니다. 누가 열쇠를 갖고 있는지와 언제 반납되는지가 명확해야 합니다.",
+      "example": "# 분산 잠금 예시: Python 3에서 실행 가능한 코드\nlock = None\nowner = \"worker1\"\nif lock is None:\n    lock = owner\nprint(lock)",
+      "tip": "분산 잠금을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1108",
+    "term": "Zookeeper",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "Zookeeper는 분산 시스템의 설정, 리더 선출, 잠금, 서비스 조정에 사용되는 코디네이션 서비스입니다. 일관된 메타데이터 관리가 필요한 클러스터에서 활용됩니다.",
+    "hint": "Zookeeper",
+    "detail": {
+      "easy": "Zookeeper은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "여러 팀이 함께 보는 중앙 상황판과 같습니다. 누가 리더인지, 어떤 서버가 살아 있는지 같은 조정 정보를 한곳에서 관리합니다.",
+      "example": "# Zookeeper 예시: Python 3에서 실행 가능한 코드\nnodes = [\"s1\", \"s2\", \"s3\"]\nleader = sorted(nodes)[0]\nprint(leader)",
+      "tip": "Zookeeper을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1109",
+    "term": "etcd",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "etcd는 분산 키-값 저장소로 클러스터 설정과 서비스 발견 정보를 강한 일관성으로 저장하는 데 사용됩니다. Kubernetes의 핵심 상태 저장소로도 알려져 있습니다.",
+    "hint": "etcd",
+    "detail": {
+      "easy": "etcd은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "건물 관리실의 공식 열쇠 장부와 같습니다. 여러 관리자가 봐도 같은 최신 상태를 기준으로 움직여야 합니다.",
+      "example": "# etcd 예시: Python 3에서 실행 가능한 코드\nstore = {\"/services/api\": \"10.0.0.1\"}\nprint(store[\"/services/api\"])",
+      "tip": "etcd을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1110",
+    "term": "서비스 디스커버리",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "서비스 디스커버리는 클라이언트나 서비스가 호출할 대상 인스턴스의 위치를 동적으로 찾는 과정입니다. 서버가 늘고 줄어드는 환경에서 고정 주소 의존을 줄입니다.",
+    "hint": "서비스 디스커버리",
+    "detail": {
+      "easy": "서비스 디스커버리은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "이사와 개업이 잦은 상가에서 최신 가게 위치를 안내 데스크가 알려 주는 것과 같습니다. 손님은 매번 주소를 외울 필요가 없습니다.",
+      "example": "# 서비스 디스커버리 예시: Python 3에서 실행 가능한 코드\nregistry = {\"payments\": [\"10.0.0.2\", \"10.0.0.3\"]}\nprint(registry[\"payments\"][0])",
+      "tip": "서비스 디스커버리을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1111",
+    "term": "사이드카 패턴",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "사이드카 패턴은 주 애플리케이션 옆에 보조 프로세스를 붙여 로깅, 프록시, 보안, 관찰 기능을 담당하게 하는 배포 패턴입니다. 앱 코드를 크게 바꾸지 않고 공통 기능을 추가할 수 있습니다.",
+    "hint": "사이드카 패턴",
+    "detail": {
+      "easy": "사이드카 패턴은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "오토바이 옆에 붙은 사이드카가 짐이나 보조 승객을 태우는 것과 같습니다. 본체는 그대로 두고 옆 장치가 부가 기능을 맡습니다.",
+      "example": "# 사이드카 패턴 예시: Python 3에서 실행 가능한 코드\npod = {\"app\": \"api\", \"sidecar\": \"proxy\"}\nprint(pod[\"sidecar\"])",
+      "tip": "사이드카 패턴을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1112",
+    "term": "더티 읽기(Dirty Read)",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "더티 읽기는 아직 커밋되지 않은 다른 트랜잭션의 변경 값을 읽는 현상입니다. 해당 변경이 롤백되면 읽은 값은 실제 존재하지 않았던 값이 됩니다.",
+    "hint": "더티 읽기",
+    "detail": {
+      "easy": "더티 읽기(Dirty Read)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "가계부에 연필로 임시로 적은 금액을 확정된 잔액인 줄 알고 보고하는 상황과 같습니다. 지우개로 지워질 수 있는 값을 읽은 것입니다.",
+      "example": "# 더티 읽기(Dirty Read) 예시: Python 3에서 실행 가능한 코드\ncommitted = 100\nuncommitted = 150\nread_value = uncommitted\nprint(read_value != committed)",
+      "tip": "더티 읽기(Dirty Read)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1113",
+    "term": "반복 불가 읽기(Non-repeatable Read)",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "반복 불가 읽기는 같은 트랜잭션 안에서 같은 행을 두 번 읽었는데 다른 트랜잭션의 커밋 때문에 값이 달라지는 현상입니다. 격리 수준이 낮을 때 발생할 수 있습니다.",
+    "hint": "반복 불가 읽기",
+    "detail": {
+      "easy": "반복 불가 읽기(Non-repeatable Read)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "회의 중 같은 재고표를 두 번 확인했는데 중간에 누군가 수정해 숫자가 달라진 상황과 같습니다. 같은 질문에 답이 바뀝니다.",
+      "example": "# 반복 불가 읽기(Non-repeatable Read) 예시: Python 3에서 실행 가능한 코드\nfirst_read = 10\nsecond_read = 8\nprint(first_read != second_read)",
+      "tip": "반복 불가 읽기(Non-repeatable Read)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1114",
+    "term": "팬텀 읽기(Phantom Read)",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "팬텀 읽기는 같은 조건으로 범위 조회를 반복했을 때 다른 트랜잭션의 삽입이나 삭제로 결과 행 집합이 달라지는 현상입니다. 행 값 변경이 아니라 행의 출현과 사라짐이 문제입니다.",
+    "hint": "팬텀 읽기",
+    "detail": {
+      "easy": "팬텀 읽기(Phantom Read)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "명단에서 20대 손님을 두 번 세었는데 중간에 새 손님이 등록되어 인원수가 달라지는 상황과 같습니다. 없던 행이 유령처럼 나타납니다.",
+      "example": "# 팬텀 읽기(Phantom Read) 예시: Python 3에서 실행 가능한 코드\nfirst = [\"A\", \"B\"]\nsecond = [\"A\", \"B\", \"C\"]\nprint(len(first) != len(second))",
+      "tip": "팬텀 읽기(Phantom Read)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1115",
+    "term": "직렬화 가능(Serializable)",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "직렬화 가능은 여러 트랜잭션이 동시에 실행되어도 결과가 어떤 순서로 하나씩 실행한 것과 같도록 보장하는 가장 강한 격리 수준입니다. 정확성은 높지만 동시성이 줄어들 수 있습니다.",
+    "hint": "직렬화 가능",
+    "detail": {
+      "easy": "직렬화 가능(Serializable)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "여러 사람이 장부를 동시에 고치더라도 실제 결과는 한 명씩 줄 서서 고친 것과 같게 만드는 규칙과 같습니다. 안전하지만 대기 시간이 생길 수 있습니다.",
+      "example": "# 직렬화 가능(Serializable) 예시: Python 3에서 실행 가능한 코드\ntransactions = [\"T1\", \"T2\"]\nserial_order = list(transactions)\nprint(serial_order)",
+      "tip": "직렬화 가능(Serializable)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1116",
+    "term": "WAL(Write-Ahead Log)",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "WAL은 데이터를 실제 저장 위치에 반영하기 전에 변경 내용을 로그에 먼저 기록하는 복구 기법입니다. 장애가 발생해도 로그를 재생해 일관된 상태로 복구할 수 있습니다.",
+    "hint": "WAL",
+    "detail": {
+      "easy": "WAL(Write-Ahead Log)은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "건물 공사 전에 작업 지시서를 먼저 기록하고 그 지시서대로 벽을 고치는 방식과 같습니다. 중간에 정전이 나도 지시서를 보고 다시 진행할 수 있습니다.",
+      "example": "# WAL(Write-Ahead Log) 예시: Python 3에서 실행 가능한 코드\nlog = []\nlog.append((\"set\", \"x\", 1))\ndata = {}\nfor _, k, v in log:\n    data[k] = v\nprint(data)",
+      "tip": "WAL(Write-Ahead Log)을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1117",
+    "term": "분산 카운터 설계",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "분산 카운터 설계는 많은 서버가 동시에 증가시키는 숫자를 정확하고 빠르게 집계하는 구조입니다. 샤딩, 배치 반영, 근사 카운터, 충돌 해결을 상황에 맞게 선택합니다.",
+    "hint": "분산 카운터 설계",
+    "detail": {
+      "easy": "분산 카운터 설계은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "여러 매장 계산대가 각자 판매 수를 세고 본사가 주기적으로 합산하는 방식과 같습니다. 실시간 정확도와 처리 속도 사이에서 선택해야 합니다.",
+      "example": "# 분산 카운터 설계 예시: Python 3에서 실행 가능한 코드\nshards = [10, 12, 7]\ntotal = sum(shards)\nprint(total)",
+      "tip": "분산 카운터 설계을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1118",
+    "term": "리더보드 설계",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "리더보드 설계는 사용자 점수 순위를 빠르게 업데이트하고 조회하는 시스템을 만드는 문제입니다. 정렬 셋, 샤딩, 캐싱, 시즌별 보관 정책이 중요합니다.",
+    "hint": "리더보드 설계",
+    "detail": {
+      "easy": "리더보드 설계은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "게임장 벽의 순위판을 계속 새 점수로 바꾸면서 상위 100명을 즉시 보여 주는 운영과 같습니다. 점수 입력과 조회가 모두 많습니다.",
+      "example": "# 리더보드 설계 예시: Python 3에서 실행 가능한 코드\nscores = {\"A\": 120, \"B\": 90, \"C\": 150}\ntop = sorted(scores.items(), key=lambda x: x[1], reverse=True)\nprint(top[:2])",
+      "tip": "리더보드 설계을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1119",
+    "term": "알림 시스템 설계",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "알림 시스템 설계는 이벤트를 받아 이메일, 푸시, 문자 등 채널별로 사용자에게 전달하는 구조를 만드는 문제입니다. 큐, 재시도, 중복 방지, 선호 설정, 전송 제한이 필요합니다.",
+    "hint": "알림 시스템 설계",
+    "detail": {
+      "easy": "알림 시스템 설계은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "우체국이 편지 종류와 수신자 선호에 따라 문자, 이메일, 우편으로 나눠 배달하는 것과 같습니다. 실패한 배달은 다시 시도해야 합니다.",
+      "example": "# 알림 시스템 설계 예시: Python 3에서 실행 가능한 코드\nprefs = {\"u1\": [\"email\", \"push\"]}\nevent = \"sale\"\nfor channel in prefs[\"u1\"]:\n    print(channel, event)",
+      "tip": "알림 시스템 설계을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  },
+  {
+    "id": "1120",
+    "term": "검색 자동완성 설계",
+    "category": "시스템 디자인",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 16,
+    "definition": "검색 자동완성 설계는 사용자가 일부 글자를 입력할 때 빠르게 추천 검색어를 보여 주는 시스템입니다. 트라이, 인기 점수, 캐싱, 개인화, 오타 처리를 함께 고려합니다.",
+    "hint": "검색 자동완성 설계",
+    "detail": {
+      "easy": "검색 자동완성 설계은 대규모 서비스를 안정적으로 설계하고 운영할 때 고려해야 하는 시스템 디자인 개념입니다.",
+      "analogy": "서점 직원이 손님이 책 제목 앞부분만 말해도 인기 있는 후보 제목을 바로 제시하는 것과 같습니다. 빠르고 관련성 있는 후보가 중요합니다.",
+      "example": "# 검색 자동완성 설계 예시: Python 3에서 실행 가능한 코드\nqueries = [\"apple\", \"app store\", \"banana\"]\nprefix = \"app\"\nprint([q for q in queries if q.startswith(prefix)])",
+      "tip": "검색 자동완성 설계을 설계에 반영할 때는 장애 상황, 데이터 일관성, 운영 비용을 함께 검토하세요."
+    }
+  }
+]

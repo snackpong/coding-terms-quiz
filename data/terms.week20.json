@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1331",
+    "term": "데이터 과학 워크플로",
+    "category": "데이터 과학",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 20,
+    "definition": "데이터 과학 워크플로: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "데이터과학워크플로",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 데이터 과학 워크플로을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 과학 워크플로\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 과학 워크플로은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1332",
+    "term": "탐색적 데이터 분석(EDA)",
+    "category": "데이터 과학",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 20,
+    "definition": "탐색적 데이터 분석(EDA): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "탐색적데이터분석",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 탐색적 데이터 분석(EDA)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"탐색적 데이터 분석(EDA)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "탐색적 데이터 분석(EDA)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1333",
+    "term": "기술 통계",
+    "category": "데이터 과학",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 20,
+    "definition": "기술 통계: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "기술통계",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 기술 통계을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"기술 통계\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "기술 통계은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1334",
+    "term": "평균/중앙값/최빈값",
+    "category": "데이터 과학",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 20,
+    "definition": "평균/중앙값/최빈값: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "평균중앙값최빈값",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 평균/중앙값/최빈값을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"평균/중앙값/최빈값\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "평균/중앙값/최빈값은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1335",
+    "term": "분산과 표준편차",
+    "category": "데이터 과학",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 20,
+    "definition": "분산과 표준편차: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "분산과표준편차",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 분산과 표준편차을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산과 표준편차\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산과 표준편차은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1336",
+    "term": "사분위수(IQR)",
+    "category": "데이터 과학",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 20,
+    "definition": "사분위수(IQR): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "사분위수",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 사분위수(IQR)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"사분위수(IQR)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "사분위수(IQR)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1337",
+    "term": "이상값(Outlier) 탐지",
+    "category": "데이터 과학",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 20,
+    "definition": "이상값(Outlier) 탐지: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "이상값탐지",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 이상값(Outlier) 탐지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이상값(Outlier) 탐지\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이상값(Outlier) 탐지은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1338",
+    "term": "왜도와 첨도",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "왜도와 첨도: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "왜도와첨도",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 왜도와 첨도을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"왜도와 첨도\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "왜도와 첨도을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1339",
+    "term": "상관계수",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "상관계수: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "상관계수",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 상관계수을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"상관계수\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "상관계수을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1340",
+    "term": "피어슨 상관",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "피어슨 상관: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "피어슨상관",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 피어슨 상관을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피어슨 상관\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피어슨 상관을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1341",
+    "term": "스피어만 상관",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "스피어만 상관: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "스피어만상관",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 스피어만 상관을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스피어만 상관\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스피어만 상관을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1342",
+    "term": "인과관계 vs 상관관계",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "인과관계 vs 상관관계: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "인과관계상관관계",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 인과관계 vs 상관관계을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인과관계 vs 상관관계\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인과관계 vs 상관관계을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1343",
+    "term": "확률 기초",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "확률 기초: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "확률기초",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 확률 기초을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"확률 기초\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "확률 기초을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1344",
+    "term": "조건부 확률",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "조건부 확률: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "조건부확률",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 조건부 확률을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"조건부 확률\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "조건부 확률을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1345",
+    "term": "베이즈 정리",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "베이즈 정리: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "베이즈정리",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 베이즈 정리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"베이즈 정리\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "베이즈 정리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1346",
+    "term": "확률 분포",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "확률 분포: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "확률분포",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 확률 분포을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"확률 분포\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "확률 분포을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1347",
+    "term": "정규 분포",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "정규 분포: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "정규분포",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 정규 분포을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"정규 분포\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "정규 분포을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1348",
+    "term": "이항 분포",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "이항 분포: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "이항분포",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 이항 분포을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이항 분포\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이항 분포을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1349",
+    "term": "포아송 분포",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "포아송 분포: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "포아송분포",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 포아송 분포을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"포아송 분포\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "포아송 분포을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1350",
+    "term": "가설 검정",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "가설 검정: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "가설검정",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 가설 검정을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"가설 검정\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "가설 검정을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1351",
+    "term": "귀무가설/대립가설",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "귀무가설/대립가설: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "귀무가설대립가설",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 귀무가설/대립가설을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"귀무가설/대립가설\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "귀무가설/대립가설을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1352",
+    "term": "p값",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "p값: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "값",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. p값을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"p값\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "p값을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1353",
+    "term": "유의 수준",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "유의 수준: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "유의수준",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 유의 수준을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"유의 수준\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "유의 수준을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1354",
+    "term": "t검정",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "t검정: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "검정",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. t검정을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"t검정\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "t검정을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1355",
+    "term": "카이제곱 검정",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "카이제곱 검정: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "카이제곱검정",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 카이제곱 검정을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"카이제곱 검정\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "카이제곱 검정을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1356",
+    "term": "분산 분석(ANOVA)",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "분산 분석(ANOVA): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "분산분석",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 분산 분석(ANOVA)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 분석(ANOVA)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 분석(ANOVA)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1357",
+    "term": "신뢰 구간",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "신뢰 구간: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "신뢰구간",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 신뢰 구간을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"신뢰 구간\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "신뢰 구간을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1358",
+    "term": "검정력(Power)",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "검정력(Power): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "검정력",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 검정력(Power)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"검정력(Power)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "검정력(Power)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1359",
+    "term": "표본 크기 산출",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "표본 크기 산출: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "표본크기산출",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 표본 크기 산출을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"표본 크기 산출\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "표본 크기 산출을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1360",
+    "term": "A/B 테스트 설계",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "A/B 테스트 설계: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "테스트설계",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. A/B 테스트 설계을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"A/B 테스트 설계\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "A/B 테스트 설계을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1361",
+    "term": "멀티암드 밴딧",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "멀티암드 밴딧: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "멀티암드밴딧",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 멀티암드 밴딧을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"멀티암드 밴딧\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "멀티암드 밴딧을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1362",
+    "term": "데이터 전처리",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "데이터 전처리: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "데이터전처리",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 데이터 전처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 전처리\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 전처리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1363",
+    "term": "결측값 처리",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "결측값 처리: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "결측값처리",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 결측값 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"결측값 처리\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "결측값 처리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1364",
+    "term": "인코딩(Label/One-hot)",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "인코딩(Label/One-hot): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "인코딩",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 인코딩(Label/One-hot)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인코딩(Label/One-hot)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인코딩(Label/One-hot)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1365",
+    "term": "피처 스케일링",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "피처 스케일링: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "피처스케일링",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 피처 스케일링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피처 스케일링\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피처 스케일링을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1366",
+    "term": "표준화/정규화",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "표준화/정규화: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "표준화정규화",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 표준화/정규화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"표준화/정규화\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "표준화/정규화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1367",
+    "term": "차원 축소",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "차원 축소: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "차원축소",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 차원 축소을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"차원 축소\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "차원 축소을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1368",
+    "term": "피처 선택",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "피처 선택: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "피처선택",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 피처 선택을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피처 선택\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피처 선택을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1369",
+    "term": "피처 추출",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "피처 추출: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "피처추출",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 피처 추출을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피처 추출\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피처 추출을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1370",
+    "term": "피처 스토어",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "피처 스토어: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "피처스토어",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 피처 스토어을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피처 스토어\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피처 스토어을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1371",
+    "term": "데이터 파이프라인",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "데이터 파이프라인: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "데이터파이프라인",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 데이터 파이프라인을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 파이프라인\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 파이프라인을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1372",
+    "term": "ETL(추출-변환-적재)",
+    "category": "데이터 과학",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 20,
+    "definition": "ETL(추출-변환-적재): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "ETL(추출-변환-",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. ETL(추출-변환-적재)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ETL(추출-변환-적재)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ETL(추출-변환-적재)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1373",
+    "term": "ELT",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "ELT: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "ELT",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. ELT을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ELT\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ELT은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1374",
+    "term": "데이터 레이크",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "데이터 레이크: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "데이터레이크",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 데이터 레이크을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 레이크\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 레이크은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1375",
+    "term": "데이터 마트",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "데이터 마트: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "데이터마트",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 데이터 마트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 마트\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 마트은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1376",
+    "term": "데이터 카탈로그",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "데이터 카탈로그: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "데이터카탈로그",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 데이터 카탈로그을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 카탈로그\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 카탈로그은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1377",
+    "term": "데이터 리니지(Lineage)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "데이터 리니지(Lineage): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "데이터리니지",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 데이터 리니지(Lineage)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 리니지(Lineage)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 리니지(Lineage)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1378",
+    "term": "데이터 품질",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "데이터 품질: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "데이터품질",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 데이터 품질을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 품질\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 품질은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1379",
+    "term": "데이터 거버넌스",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "데이터 거버넌스: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "데이터거버넌스",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 데이터 거버넌스을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 거버넌스\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 거버넌스은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1380",
+    "term": "시각화 원칙",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "시각화 원칙: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "시각화원칙",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 시각화 원칙을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"시각화 원칙\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "시각화 원칙은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1381",
+    "term": "matplotlib/seaborn 기초",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "matplotlib/seaborn 기초: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "기초",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. matplotlib/seaborn 기초을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"matplotlib/seaborn 기초\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "matplotlib/seaborn 기초은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1382",
+    "term": "대시보드 설계",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "대시보드 설계: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "대시보드설계",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 대시보드 설계을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"대시보드 설계\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "대시보드 설계은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1383",
+    "term": "실험 설계",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "실험 설계: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "실험설계",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 실험 설계을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"실험 설계\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "실험 설계은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1384",
+    "term": "교란 변수",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "교란 변수: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "교란변수",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 교란 변수을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"교란 변수\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "교란 변수은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1385",
+    "term": "무작위 대조 실험(RCT)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "무작위 대조 실험(RCT): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "무작위대조실험",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 무작위 대조 실험(RCT)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"무작위 대조 실험(RCT)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "무작위 대조 실험(RCT)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1386",
+    "term": "관측 연구",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "관측 연구: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "관측연구",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 관측 연구을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"관측 연구\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "관측 연구은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1387",
+    "term": "생존 분석",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "생존 분석: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "생존분석",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 생존 분석을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"생존 분석\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "생존 분석은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1388",
+    "term": "시계열 분해",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "시계열 분해: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "시계열분해",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 시계열 분해을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"시계열 분해\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "시계열 분해은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1389",
+    "term": "ARIMA",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "ARIMA: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "ARIMA",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. ARIMA을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ARIMA\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ARIMA은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1390",
+    "term": "이상 탐지(통계 기반)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "이상 탐지(통계 기반): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "이상탐지",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 이상 탐지(통계 기반)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이상 탐지(통계 기반)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이상 탐지(통계 기반)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1391",
+    "term": "나이브 베이즈(Naive Bayes)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "나이브 베이즈(Naive Bayes): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "나이브베이즈",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 나이브 베이즈(Naive Bayes)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"나이브 베이즈(Naive Bayes)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "나이브 베이즈(Naive Bayes)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1392",
+    "term": "k-최근접 이웃(kNN)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "k-최근접 이웃(kNN): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "최근접이웃",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. k-최근접 이웃(kNN)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"k-최근접 이웃(kNN)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "k-최근접 이웃(kNN)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1393",
+    "term": "다중 회귀(Multiple Regression)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "다중 회귀(Multiple Regression): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "다중회귀",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 다중 회귀(Multiple Regression)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"다중 회귀(Multiple Regression)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "다중 회귀(Multiple Regression)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1394",
+    "term": "다항 회귀(Polynomial Regression)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "다항 회귀(Polynomial Regression): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "다항회귀",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 다항 회귀(Polynomial Regression)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"다항 회귀(Polynomial Regression)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "다항 회귀(Polynomial Regression)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1395",
+    "term": "선형 판별 분석(LDA)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "선형 판별 분석(LDA): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "선형판별분석",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 선형 판별 분석(LDA)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"선형 판별 분석(LDA)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "선형 판별 분석(LDA)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1396",
+    "term": "전진/후진 변수 선택",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "전진/후진 변수 선택: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "전진후진변수선택",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 전진/후진 변수 선택을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"전진/후진 변수 선택\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "전진/후진 변수 선택은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1397",
+    "term": "교차 검증(데이터과학)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "교차 검증(데이터과학): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "교차검증",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 교차 검증(데이터과학)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"교차 검증(데이터과학)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "교차 검증(데이터과학)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1398",
+    "term": "잔차 분석",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "잔차 분석: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "잔차분석",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 잔차 분석을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"잔차 분석\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "잔차 분석은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1399",
+    "term": "과적합 진단",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "과적합 진단: 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "과적합진단",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 과적합 진단을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"과적합 진단\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "과적합 진단은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1400",
+    "term": "이중차분법(DiD)",
+    "category": "데이터 과학",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 20,
+    "definition": "이중차분법(DiD): 데이터를 수집, 정리, 요약, 검정, 시각화해 의사결정에 사용할 근거를 만드는 데이터 과학 개념입니다. 실험 결과나 관측 데이터에서 의미 있는 패턴을 찾을 때 사용합니다.",
+    "hint": "이중차분법",
+    "detail": {
+      "easy": "데이터로 근거를 찾는 방법",
+      "analogy": "건강검진 결과표에서 수치의 평균, 정상 범위, 이상 징후를 함께 보는 것과 같습니다. 데이터 과학은 숫자를 해석 가능한 근거로 바꿉니다. 이중차분법(DiD)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이중차분법(DiD)\"\ncategory = \"데이터 과학\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이중차분법(DiD)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

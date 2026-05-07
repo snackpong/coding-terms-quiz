@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "911",
+    "term": "맥컬록-피츠 뉴런",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "맥컬록-피츠 뉴런은 입력 신호의 가중합이 임계값을 넘으면 1을 출력하는 초기 인공 뉴런 모델입니다. 현대 신경망의 복잡한 뉴런보다 단순하지만 논리 연산을 신경 계산으로 표현하는 출발점이 됩니다.",
+    "hint": "맥컬록-피츠 뉴런",
+    "detail": {
+      "easy": "맥컬록-피츠 뉴런은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "문 앞의 경비등이 여러 스위치 신호를 합산해 기준 이상이면 켜지는 모습과 같습니다. 각 스위치의 중요도가 다르고 최종 합이 문턱을 넘을 때만 반응합니다.",
+      "example": "# 맥컬록-피츠 뉴런 예시: Python 3에서 실행 가능한 코드\ninputs = [1, 0, 1]\nweights = [0.5, 0.2, 0.7]\nthreshold = 1.0\nprint(int(sum(x*w for x, w in zip(inputs, weights)) >= threshold))",
+      "tip": "맥컬록-피츠 뉴런을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "912",
+    "term": "다층 퍼셉트론(MLP)",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "다층 퍼셉트론은 입력층, 하나 이상의 은닉층, 출력층으로 이루어진 완전 연결 신경망입니다. 비선형 활성화 함수를 사용해 단순 선형 모델보다 복잡한 관계를 학습할 수 있습니다.",
+    "hint": "다층 퍼셉트론",
+    "detail": {
+      "easy": "다층 퍼셉트론(MLP)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "여러 단계의 심사대를 지나며 지원자의 특징을 점점 다른 기준으로 해석하는 채용 절차와 같습니다. 첫 단계의 정보가 다음 단계에서 조합되어 최종 판단이 됩니다.",
+      "example": "# 다층 퍼셉트론(MLP) 예시: Python 3에서 실행 가능한 코드\nx = [1.0, 2.0]\nhidden = [max(0, x[0] + x[1]), max(0, x[0] - x[1])]\nout = sum(hidden)\nprint(out)",
+      "tip": "다층 퍼셉트론(MLP)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "913",
+    "term": "순전파(Forward Pass)",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "순전파는 입력 데이터가 신경망의 각 층을 차례로 지나 예측값을 만드는 계산 과정입니다. 학습과 추론 모두에서 모델 출력을 얻기 위해 먼저 수행됩니다.",
+    "hint": "순전파",
+    "detail": {
+      "easy": "순전파(Forward Pass)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "공장 라인에서 원재료가 여러 기계를 지나 완제품이 되는 흐름과 같습니다. 각 기계가 입력을 바꿔 다음 단계로 넘기고 마지막에 결과가 나옵니다.",
+      "example": "# 순전파(Forward Pass) 예시: Python 3에서 실행 가능한 코드\nx = 3\nh = x * 2 + 1\ny = h - 4\nprint(y)",
+      "tip": "순전파(Forward Pass)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "914",
+    "term": "역전파(Backpropagation)",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "역전파는 손실이 각 파라미터에 얼마나 영향을 받았는지 뒤쪽 층부터 앞쪽 층으로 계산하는 알고리즘입니다. 그래디언트를 이용해 가중치를 업데이트할 수 있게 합니다.",
+    "hint": "역전파",
+    "detail": {
+      "easy": "역전파(Backpropagation)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "완성품 불량 원인을 마지막 조립 단계부터 거꾸로 추적해 어느 부품 공정이 문제였는지 찾는 과정과 같습니다. 책임 신호가 뒤에서 앞으로 전달됩니다.",
+      "example": "# 역전파(Backpropagation) 예시: Python 3에서 실행 가능한 코드\nx, w, target = 2.0, 3.0, 10.0\npred = x * w\ngrad_w = 2 * (pred - target) * x\nprint(grad_w)",
+      "tip": "역전파(Backpropagation)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "915",
+    "term": "연쇄 법칙(Chain Rule)",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "연쇄 법칙은 합성 함수의 미분을 각 단계 미분의 곱으로 계산하는 미적분 규칙입니다. 역전파가 깊은 신경망의 그래디언트를 층별로 구할 수 있는 수학적 기반입니다.",
+    "hint": "연쇄 법칙",
+    "detail": {
+      "easy": "연쇄 법칙(Chain Rule)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "여러 톱니바퀴가 맞물린 장치에서 마지막 바퀴 변화가 첫 바퀴 변화와 어떻게 연결되는지 각 연결 비율을 곱해 계산하는 것과 같습니다.",
+      "example": "# 연쇄 법칙(Chain Rule) 예시: Python 3에서 실행 가능한 코드\ndx_dz = 2.0\ndy_dx = 3.0\ndy_dz = dy_dx * dx_dz\nprint(dy_dz)",
+      "tip": "연쇄 법칙(Chain Rule)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "916",
+    "term": "활성화 함수 비교",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "활성화 함수 비교는 Sigmoid, Tanh, ReLU 계열처럼 뉴런 출력 변환 방식의 특성과 용도를 구분하는 일입니다. 출력 범위, 기울기, 계산 비용에 따라 학습 안정성과 표현력이 달라집니다.",
+    "hint": "활성화 함수 비교",
+    "detail": {
+      "easy": "활성화 함수 비교은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "같은 물을 통과시키는 밸브라도 완전히 막는 밸브, 부드럽게 조절하는 밸브, 일정 이상만 제한하는 밸브가 다른 역할을 하는 것과 같습니다.",
+      "example": "# 활성화 함수 비교 예시: Python 3에서 실행 가능한 코드\nimport math\nx = 1.5\nrelu = max(0, x)\nsigmoid = 1 / (1 + math.exp(-x))\nprint(relu, round(sigmoid, 3))",
+      "tip": "활성화 함수 비교을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "917",
+    "term": "ReLU6",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "ReLU6는 입력을 0과 6 사이로 잘라 내는 활성화 함수입니다. 모바일 네트워크처럼 양자화와 안정적인 범위 제한이 중요한 모델에서 자주 사용됩니다.",
+    "hint": "ReLU6",
+    "detail": {
+      "easy": "ReLU6은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "수도꼭지 물줄기를 0보다 아래로는 막고 6단계 이상으로는 더 세지지 않게 제한하는 장치와 같습니다. 값이 지나치게 커지는 것을 막습니다.",
+      "example": "# ReLU6 예시: Python 3에서 실행 가능한 코드\ndef relu6(x):\n    return min(6, max(0, x))\nprint([relu6(v) for v in [-2, 3, 9]])",
+      "tip": "ReLU6을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "918",
+    "term": "Leaky ReLU",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "Leaky ReLU는 음수 입력을 완전히 0으로 만들지 않고 작은 기울기로 통과시키는 ReLU 변형입니다. 죽은 뉴런 문제를 줄이는 데 도움이 됩니다.",
+    "hint": "Leaky ReLU",
+    "detail": {
+      "easy": "Leaky ReLU은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "닫힌 문 아래 틈으로도 아주 약한 바람은 지나가게 두는 환기구와 같습니다. 음수 구간에서도 신호가 완전히 끊기지 않습니다.",
+      "example": "# Leaky ReLU 예시: Python 3에서 실행 가능한 코드\ndef leaky_relu(x, a=0.01):\n    return x if x > 0 else a * x\nprint([leaky_relu(v) for v in [-2, 0, 3]])",
+      "tip": "Leaky ReLU을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "919",
+    "term": "GELU",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "GELU는 입력값을 확률적으로 부드럽게 게이트하는 형태의 활성화 함수입니다. Transformer 계열 모델에서 자주 쓰이며 ReLU보다 완만한 비선형성을 제공합니다.",
+    "hint": "GELU",
+    "detail": {
+      "easy": "GELU은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "문을 갑자기 열고 닫는 대신 손님 점수에 따라 부드럽게 통과 폭을 조절하는 자동문과 같습니다. 경계가 딱 끊기지 않습니다.",
+      "example": "# GELU 예시: Python 3에서 실행 가능한 코드\nimport math\ndef gelu(x):\n    return 0.5 * x * (1 + math.tanh((2 / math.pi) ** 0.5 * (x + 0.044715 * x ** 3)))\nprint(round(gelu(1.0), 3))",
+      "tip": "GELU을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "920",
+    "term": "Sigmoid",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "Sigmoid는 입력을 0과 1 사이 값으로 변환하는 S자 형태의 활성화 함수입니다. 확률처럼 해석할 수 있어 이진 분류 출력층에 자주 사용됩니다.",
+    "hint": "Sigmoid",
+    "detail": {
+      "easy": "Sigmoid은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "온도 조절기가 낮은 온도에서는 거의 꺼지고 높은 온도에서는 거의 켜지되 중간 구간에서 부드럽게 변하는 모습과 같습니다.",
+      "example": "# Sigmoid 예시: Python 3에서 실행 가능한 코드\nimport math\ndef sigmoid(x):\n    return 1 / (1 + math.exp(-x))\nprint(round(sigmoid(0), 2))",
+      "tip": "Sigmoid을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "921",
+    "term": "Tanh",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "Tanh는 입력을 -1과 1 사이 값으로 변환하는 활성화 함수입니다. 출력이 0을 중심으로 분포해 Sigmoid보다 중간층 학습에 유리한 경우가 있습니다.",
+    "hint": "Tanh",
+    "detail": {
+      "easy": "Tanh은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "저울 바늘이 왼쪽 음수와 오른쪽 양수 방향으로 모두 움직이지만 양끝에는 한계가 있는 모습과 같습니다. 중심은 0입니다.",
+      "example": "# Tanh 예시: Python 3에서 실행 가능한 코드\nimport math\nprint(round(math.tanh(1.0), 3))",
+      "tip": "Tanh을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "922",
+    "term": "Softmax",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "Softmax는 여러 점수를 각 클래스 확률처럼 합이 1이 되도록 변환하는 함수입니다. 다중 클래스 분류의 출력층에서 클래스별 상대 가능성을 표현합니다.",
+    "hint": "Softmax",
+    "detail": {
+      "easy": "Softmax은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "여러 후보의 점수를 전체 투표 비율로 바꾸는 개표 방식과 같습니다. 한 후보의 비율이 커지면 다른 후보들의 비율은 상대적으로 줄어듭니다.",
+      "example": "# Softmax 예시: Python 3에서 실행 가능한 코드\nimport math\nscores = [1.0, 2.0, 3.0]\nexps = [math.exp(x) for x in scores]\nprint([round(e / sum(exps), 3) for e in exps])",
+      "tip": "Softmax을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "923",
+    "term": "합성곱 신경망(CNN)",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "합성곱 신경망은 작은 필터를 입력 위로 움직이며 지역 패턴을 추출하는 신경망 구조입니다. 이미지, 음성, 격자형 데이터에서 위치 주변의 특징을 학습하는 데 강합니다.",
+    "hint": "합성곱 신경망",
+    "detail": {
+      "easy": "합성곱 신경망(CNN)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "돋보기를 그림 위에서 조금씩 옮기며 모서리, 무늬, 질감을 찾아내는 검사와 같습니다. 같은 돋보기를 여러 위치에 반복 적용합니다.",
+      "example": "# 합성곱 신경망(CNN) 예시: Python 3에서 실행 가능한 코드\nimage = [1, 2, 3, 4]\nkernel = [1, -1]\nfeatures = [image[i]*kernel[0] + image[i+1]*kernel[1] for i in range(len(image)-1)]\nprint(features)",
+      "tip": "합성곱 신경망(CNN)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "924",
+    "term": "합성곱 연산",
+    "category": "딥러닝",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 14,
+    "definition": "합성곱 연산은 필터와 입력의 겹치는 부분을 곱해 더하면서 새로운 특징 값을 만드는 계산입니다. 필터가 이동할 때마다 지역 패턴에 대한 응답이 생성됩니다.",
+    "hint": "합성곱 연산",
+    "detail": {
+      "easy": "합성곱 연산은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "도장을 종이 위에 찍으며 각 위치의 무늬가 도장 모양과 얼마나 맞는지 확인하는 작업과 같습니다. 위치마다 맞는 정도가 숫자로 남습니다.",
+      "example": "# 합성곱 연산 예시: Python 3에서 실행 가능한 코드\nwindow = [2, 4, 6]\nkernel = [1, 0, -1]\nprint(sum(a*b for a, b in zip(window, kernel)))",
+      "tip": "합성곱 연산을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "925",
+    "term": "필터(커널)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "필터 또는 커널은 합성곱에서 입력의 작은 영역과 곱해지는 가중치 묶음입니다. 특정 방향의 모서리, 질감, 색 변화 같은 패턴을 감지하도록 학습됩니다.",
+    "hint": "필터",
+    "detail": {
+      "easy": "필터(커널)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "사진 위에 올리는 작은 투명 자와 같습니다. 자의 눈금 모양에 따라 가로선, 세로선, 밝기 변화 같은 다른 특징이 드러납니다.",
+      "example": "# 필터(커널) 예시: Python 3에서 실행 가능한 코드\nkernel = [[1, 0], [0, -1]]\npatch = [[5, 2], [1, 3]]\nvalue = sum(kernel[i][j] * patch[i][j] for i in range(2) for j in range(2))\nprint(value)",
+      "tip": "필터(커널)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "926",
+    "term": "특징 맵",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "특징 맵은 필터가 입력 전체를 훑으며 만든 응답 값들의 배열입니다. 특정 필터가 찾는 패턴이 입력의 어느 위치에서 강하게 나타나는지 보여줍니다.",
+    "hint": "특징 맵",
+    "detail": {
+      "easy": "특징 맵은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "금속 탐지기가 모래밭을 지나며 위치별 신호 세기를 지도에 표시한 결과와 같습니다. 밝은 곳은 해당 패턴이 강한 위치입니다.",
+      "example": "# 특징 맵 예시: Python 3에서 실행 가능한 코드\nresponses = [0.1, 2.4, 0.3, 1.8]\nstrong = [i for i, v in enumerate(responses) if v > 1.0]\nprint(strong)",
+      "tip": "특징 맵을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "927",
+    "term": "패딩",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "패딩은 입력 가장자리에 0이나 특정 값을 덧대어 합성곱 후 크기 감소를 조절하는 방법입니다. 가장자리 정보가 과하게 사라지지 않도록 도와줍니다.",
+    "hint": "패딩",
+    "detail": {
+      "easy": "패딩은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "액자에 여백을 넣어 그림 가장자리도 붓질할 공간을 확보하는 것과 같습니다. 여백이 없으면 가장자리 처리가 어려워집니다.",
+      "example": "# 패딩 예시: Python 3에서 실행 가능한 코드\narr = [1, 2, 3]\npadded = [0] + arr + [0]\nprint(padded)",
+      "tip": "패딩을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "928",
+    "term": "스트라이드",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "스트라이드는 합성곱 필터가 한 번에 이동하는 칸 수입니다. 값이 클수록 출력 크기가 작아지고 더 거칠게 입력을 훑습니다.",
+    "hint": "스트라이드",
+    "detail": {
+      "easy": "스트라이드은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "스캐너가 문서를 한 줄씩 읽을지 두 줄씩 건너뛰며 읽을지 정하는 간격과 같습니다. 간격이 커지면 빠르지만 세부가 줄어듭니다.",
+      "example": "# 스트라이드 예시: Python 3에서 실행 가능한 코드\narr = [1, 2, 3, 4, 5]\nstride = 2\nprint(arr[::stride])",
+      "tip": "스트라이드을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "929",
+    "term": "풀링(Pooling)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "풀링은 작은 영역의 값을 하나로 요약해 특징 맵의 크기를 줄이는 연산입니다. 위치 변화에 덜 민감하게 만들고 계산량을 줄이는 효과가 있습니다.",
+    "hint": "풀링",
+    "detail": {
+      "easy": "풀링(Pooling)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "넓은 지역의 날씨를 동네별 대표 온도 하나로 요약하는 지도와 같습니다. 세부 위치는 줄지만 큰 흐름은 남습니다.",
+      "example": "# 풀링(Pooling) 예시: Python 3에서 실행 가능한 코드\nvalues = [1, 5, 2, 4]\npooled = [max(values[:2]), max(values[2:])]\nprint(pooled)",
+      "tip": "풀링(Pooling)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "930",
+    "term": "최대 풀링",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "최대 풀링은 영역 안의 값 중 가장 큰 값을 대표값으로 선택하는 풀링 방법입니다. 가장 강하게 나타난 특징을 보존하는 데 초점을 둡니다.",
+    "hint": "최대 풀링",
+    "detail": {
+      "easy": "최대 풀링은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "여러 마이크 중 가장 큰 소리를 낸 마이크 신호만 대표로 기록하는 방식과 같습니다. 약한 잡음보다 강한 특징을 남깁니다.",
+      "example": "# 최대 풀링 예시: Python 3에서 실행 가능한 코드\nwindow = [0.2, 0.9, 0.4]\nprint(max(window))",
+      "tip": "최대 풀링을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "931",
+    "term": "평균 풀링",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "평균 풀링은 영역 안의 값들의 평균을 대표값으로 선택하는 풀링 방법입니다. 전체적인 배경이나 부드러운 요약이 필요할 때 사용됩니다.",
+    "hint": "평균 풀링",
+    "detail": {
+      "easy": "평균 풀링은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "한 반의 시험 점수를 한 명의 최고점이 아니라 평균 점수로 요약하는 방식과 같습니다. 영역 전체 분위기를 반영합니다.",
+      "example": "# 평균 풀링 예시: Python 3에서 실행 가능한 코드\nwindow = [2, 4, 6]\nprint(sum(window) / len(window))",
+      "tip": "평균 풀링을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "932",
+    "term": "완전 연결층(FC Layer)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "완전 연결층은 이전 층의 모든 입력 노드가 다음 층의 모든 출력 노드와 연결되는 층입니다. 추출된 특징을 조합해 최종 분류나 회귀 결과를 만드는 데 자주 사용됩니다.",
+    "hint": "완전 연결층",
+    "detail": {
+      "easy": "완전 연결층(FC Layer)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "회의에 참석한 모든 부서 의견이 최종 결정권자 각각에게 전달되는 구조와 같습니다. 모든 입력이 모든 판단에 영향을 줄 수 있습니다.",
+      "example": "# 완전 연결층(FC Layer) 예시: Python 3에서 실행 가능한 코드\ninputs = [1, 2]\nweights = [[0.5, 1.0], [1.5, -0.5]]\noutputs = [sum(x*w for x, w in zip(inputs, row)) for row in weights]\nprint(outputs)",
+      "tip": "완전 연결층(FC Layer)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "933",
+    "term": "ResNet",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "ResNet은 입력을 여러 층 뒤의 출력에 더하는 잔차 연결을 사용한 깊은 CNN 구조입니다. 깊은 모델에서도 그래디언트 흐름을 개선해 학습을 쉽게 만듭니다.",
+    "hint": "ResNet",
+    "detail": {
+      "easy": "ResNet은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "긴 산길에 우회 통로를 만들어 중간 구간을 건너뛰어도 목적지에 도달할 수 있게 한 길과 같습니다. 정보가 막히지 않고 뒤쪽까지 전달됩니다.",
+      "example": "# ResNet 예시: Python 3에서 실행 가능한 코드\nx = 2\nblock_output = x * 3\nresidual_output = block_output + x\nprint(residual_output)",
+      "tip": "ResNet을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "934",
+    "term": "VGG",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "VGG는 작은 3x3 합성곱 필터를 깊게 쌓는 단순하고 규칙적인 CNN 아키텍처입니다. 구조가 이해하기 쉬워 특징 추출 백본과 교육용 기준 모델로 많이 쓰입니다.",
+    "hint": "VGG",
+    "detail": {
+      "easy": "VGG은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "같은 크기의 벽돌을 여러 층 차곡차곡 쌓아 높은 건물을 만드는 방식과 같습니다. 부품은 단순하지만 깊이가 표현력을 만듭니다.",
+      "example": "# VGG 예시: Python 3에서 실행 가능한 코드\nlayers = [\"conv3x3\", \"conv3x3\", \"pool\"]\nprint(\" -> \".join(layers))",
+      "tip": "VGG을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "935",
+    "term": "Inception",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "Inception은 여러 크기의 합성곱과 풀링을 병렬로 적용한 뒤 결과를 합치는 CNN 구조입니다. 다양한 크기의 패턴을 한 층에서 동시에 포착하려는 설계입니다.",
+    "hint": "Inception",
+    "detail": {
+      "easy": "Inception은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "사진을 돋보기, 망원경, 광각렌즈로 동시에 보고 결과를 합치는 관찰 방식과 같습니다. 작은 무늬와 큰 형태를 함께 봅니다.",
+      "example": "# Inception 예시: Python 3에서 실행 가능한 코드\nbranches = {\"1x1\": 4, \"3x3\": 6, \"pool\": 2}\nprint(sum(branches.values()))",
+      "tip": "Inception을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "936",
+    "term": "EfficientNet",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "EfficientNet은 네트워크 깊이, 너비, 입력 해상도를 균형 있게 확장하는 CNN 계열 모델입니다. 정확도와 계산 효율 사이의 균형을 체계적으로 맞추는 데 초점을 둡니다.",
+    "hint": "EfficientNet",
+    "detail": {
+      "easy": "EfficientNet은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "식당을 확장할 때 주방만 키우지 않고 좌석 수, 직원 수, 재료 보관 공간을 함께 비율 맞춰 늘리는 방식과 같습니다.",
+      "example": "# EfficientNet 예시: Python 3에서 실행 가능한 코드\ndepth, width, resolution = 1.2, 1.1, 1.15\ncompound = depth * width * resolution\nprint(round(compound, 3))",
+      "tip": "EfficientNet을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "937",
+    "term": "순환 신경망(RNN)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "순환 신경망은 이전 시점의 은닉 상태를 현재 입력과 함께 사용해 순서 데이터를 처리하는 신경망입니다. 문장, 시계열, 음성처럼 시간 흐름이 있는 데이터에 사용됩니다.",
+    "hint": "순환 신경망",
+    "detail": {
+      "easy": "순환 신경망(RNN)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "일기를 읽을 때 앞 문장의 내용을 기억하며 다음 문장을 해석하는 독자와 같습니다. 현재 판단이 과거 맥락에 영향을 받습니다.",
+      "example": "# 순환 신경망(RNN) 예시: Python 3에서 실행 가능한 코드\nstate = 0\nfor x in [1, 2, 3]:\n    state = state * 0.5 + x\nprint(state)",
+      "tip": "순환 신경망(RNN)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "938",
+    "term": "LSTM",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "LSTM은 입력, 출력, 망각 게이트와 셀 상태를 사용해 장기 의존성을 더 잘 보존하는 RNN 구조입니다. 긴 시퀀스에서 정보가 쉽게 사라지는 문제를 완화합니다.",
+    "hint": "LSTM",
+    "detail": {
+      "easy": "LSTM은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "중요한 메모는 장기 보관함에 넣고 불필요한 메모는 버리도록 문지기가 관리하는 수첩과 같습니다. 오래 기억할 정보와 잊을 정보를 나눕니다.",
+      "example": "# LSTM 예시: Python 3에서 실행 가능한 코드\ncell = 0.0\nforget, inp, candidate = 0.8, 0.5, 2.0\ncell = forget * cell + inp * candidate\nprint(cell)",
+      "tip": "LSTM을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "939",
+    "term": "GRU",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "GRU는 업데이트 게이트와 리셋 게이트를 사용해 정보를 유지하거나 갱신하는 RNN 구조입니다. LSTM보다 구조가 단순하면서도 장기 의존성 처리에 강합니다.",
+    "hint": "GRU",
+    "detail": {
+      "easy": "GRU은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "두 개의 밸브로 오래된 물을 얼마나 남기고 새 물을 얼마나 섞을지 조절하는 물탱크와 같습니다. 필요한 만큼만 기억을 바꿉니다.",
+      "example": "# GRU 예시: Python 3에서 실행 가능한 코드\nstate = 1.0\nupdate = 0.3\ncandidate = 4.0\nnew_state = (1 - update) * state + update * candidate\nprint(new_state)",
+      "tip": "GRU을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "940",
+    "term": "게이트 메커니즘",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "게이트 메커니즘은 신경망 내부에서 어떤 정보를 통과시키고 어떤 정보를 막을지 학습하는 조절 장치입니다. LSTM, GRU, attention 변형 등에서 정보 흐름을 제어합니다.",
+    "hint": "게이트 메커니즘",
+    "detail": {
+      "easy": "게이트 메커니즘은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "건물 출입문마다 자동문 센서가 있어 필요한 사람만 통과시키는 보안 시스템과 같습니다. 모든 신호가 그대로 지나가지 않습니다.",
+      "example": "# 게이트 메커니즘 예시: Python 3에서 실행 가능한 코드\nsignal = 10\ngate = 0.25\nprint(signal * gate)",
+      "tip": "게이트 메커니즘을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "941",
+    "term": "기울기 소실(RNN)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "기울기 소실(RNN)은 긴 시퀀스에서 역전파 신호가 반복 곱셈을 거치며 작아져 초기 시점 학습이 어려워지는 현상입니다. RNN이 긴 문맥을 잘 못 배우는 주요 원인 중 하나입니다.",
+    "hint": "기울기 소실",
+    "detail": {
+      "easy": "기울기 소실(RNN)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "긴 줄 끝에서 시작한 전달 소리가 사람을 지날 때마다 작아져 맨 앞에서는 거의 들리지 않는 상황과 같습니다. 오래전 정보에 대한 수정 신호가 약해집니다.",
+      "example": "# 기울기 소실(RNN) 예시: Python 3에서 실행 가능한 코드\ngrad = 1.0\nfor _ in range(6):\n    grad *= 0.2\nprint(grad)",
+      "tip": "기울기 소실(RNN)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "942",
+    "term": "양방향 RNN",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "양방향 RNN은 시퀀스를 앞에서 뒤로, 뒤에서 앞으로 각각 처리한 정보를 함께 사용하는 구조입니다. 현재 위치를 해석할 때 과거와 미래 문맥을 모두 활용할 수 있습니다.",
+    "hint": "양방향 RNN",
+    "detail": {
+      "easy": "양방향 RNN은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "문장을 읽을 때 앞부분을 읽은 기억과 뒷부분을 미리 본 힌트를 함께 사용해 가운데 단어 뜻을 판단하는 것과 같습니다.",
+      "example": "# 양방향 RNN 예시: Python 3에서 실행 가능한 코드\nforward = [\"나는\", \"밥을\"]\nbackward = [\"먹었다\", \"밥을\"]\nprint(forward[-1], backward[-1])",
+      "tip": "양방향 RNN을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "943",
+    "term": "시계열 예측",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "시계열 예측은 시간 순서로 관측된 데이터를 이용해 미래 값을 예측하는 작업입니다. 매출, 기온, 트래픽처럼 과거 패턴과 추세가 중요한 데이터에 적용됩니다.",
+    "hint": "시계열 예측",
+    "detail": {
+      "easy": "시계열 예측은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "지난 며칠의 파도 높이를 보고 내일 배를 띄워도 될지 예상하는 항해사와 같습니다. 순서와 계절성이 판단에 들어갑니다.",
+      "example": "# 시계열 예측 예시: Python 3에서 실행 가능한 코드\nseries = [10, 12, 13, 15]\nnext_value = series[-1] + (series[-1] - series[-2])\nprint(next_value)",
+      "tip": "시계열 예측을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "944",
+    "term": "자동 인코더(Autoencoder)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "자동 인코더는 입력을 낮은 차원의 표현으로 압축한 뒤 다시 원래 입력을 복원하도록 학습하는 신경망입니다. 차원 축소, 이상 탐지, 노이즈 제거에 사용됩니다.",
+    "hint": "자동 인코더",
+    "detail": {
+      "easy": "자동 인코더(Autoencoder)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "긴 문서를 짧은 요약 메모로 줄였다가 그 메모를 보고 원문에 가깝게 다시 쓰는 훈련과 같습니다. 핵심 정보를 압축 표현에 담아야 합니다.",
+      "example": "# 자동 인코더(Autoencoder) 예시: Python 3에서 실행 가능한 코드\nx = [1, 0, 1, 0]\nencoded = [sum(x[:2]), sum(x[2:])]\ndecoded = [encoded[0], encoded[0], encoded[1], encoded[1]]\nprint(encoded, decoded)",
+      "tip": "자동 인코더(Autoencoder)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "945",
+    "term": "변분 오토인코더(VAE)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "변분 오토인코더는 입력을 확률 분포의 잠재 변수로 인코딩하고 그 분포에서 샘플링해 데이터를 생성하는 모델입니다. 연속적인 잠재 공간을 학습해 새로운 샘플 생성을 가능하게 합니다.",
+    "hint": "변분 오토인코더",
+    "detail": {
+      "easy": "변분 오토인코더(VAE)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "초상화를 한 장의 좌표가 아니라 가능한 얼굴 특징 범위로 기록한 뒤 그 범위에서 새 얼굴을 그리는 화가와 같습니다.",
+      "example": "# 변분 오토인코더(VAE) 예시: Python 3에서 실행 가능한 코드\nmu, log_var = 0.0, -1.0\nepsilon = 0.5\nz = mu + epsilon * (2.71828 ** (0.5 * log_var))\nprint(round(z, 3))",
+      "tip": "변분 오토인코더(VAE)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "946",
+    "term": "잠재 공간(Latent Space)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "잠재 공간은 모델이 데이터의 핵심 특성을 압축해 표현하는 숨은 벡터 공간입니다. 가까운 점들은 보통 의미나 형태가 비슷한 샘플을 나타냅니다.",
+    "hint": "잠재 공간",
+    "detail": {
+      "easy": "잠재 공간(Latent Space)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "도시의 실제 주소 대신 분위기, 가격대, 거리감 같은 좌표로 카페를 배치한 비밀 지도와 같습니다. 가까운 좌표의 카페는 성격이 비슷합니다.",
+      "example": "# 잠재 공간(Latent Space) 예시: Python 3에서 실행 가능한 코드\nz1 = (0.1, 0.2)\nz2 = (0.2, 0.25)\ndist = sum((a-b)**2 for a, b in zip(z1, z2)) ** 0.5\nprint(round(dist, 3))",
+      "tip": "잠재 공간(Latent Space)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "947",
+    "term": "GAN(생성적 적대 신경망)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "GAN은 생성자와 판별자가 경쟁하며 실제 같은 데이터를 만들어 내도록 학습하는 생성 모델입니다. 생성자는 속이려 하고 판별자는 진짜와 가짜를 구분하려 하면서 함께 발전합니다.",
+    "hint": "GAN",
+    "detail": {
+      "easy": "GAN(생성적 적대 신경망)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "위조 지폐 제작자와 감별사가 서로 실력을 겨루는 과정과 같습니다. 제작자가 더 정교해지면 감별사도 더 까다로워집니다.",
+      "example": "# GAN(생성적 적대 신경망) 예시: Python 3에서 실행 가능한 코드\nfake_score = 0.4\nreal_score = 0.9\ngenerator_wants = fake_score > 0.5\nprint(generator_wants, real_score)",
+      "tip": "GAN(생성적 적대 신경망)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "948",
+    "term": "GAN 생성자 네트워크",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "GAN 생성자 네트워크는 무작위 노이즈나 조건 입력을 받아 실제 데이터처럼 보이는 샘플을 만드는 신경망입니다. 판별자를 속일 수 있도록 점점 더 그럴듯한 출력을 학습합니다.",
+    "hint": "GAN 생성자 네트워크",
+    "detail": {
+      "easy": "GAN 생성자 네트워크은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "빈 캔버스와 몇 개의 주사위 숫자를 받아 실제 사진 같은 그림을 그리려는 화가와 같습니다. 감별사의 지적을 들으며 그림 실력을 고칩니다.",
+      "example": "# GAN 생성자 네트워크 예시: Python 3에서 실행 가능한 코드\nnoise = [0.2, 0.8]\nfake_sample = [round(n * 2 - 1, 2) for n in noise]\nprint(fake_sample)",
+      "tip": "GAN 생성자 네트워크을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "949",
+    "term": "판별자",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "판별자는 GAN에서 입력 샘플이 실제 데이터인지 생성자가 만든 가짜인지 판단하는 신경망입니다. 생성자에게 학습 신호를 제공하는 비평가 역할을 합니다.",
+    "hint": "판별자",
+    "detail": {
+      "easy": "판별자은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "미술품 감정사가 진품과 모작을 구분하는 역할과 같습니다. 감정이 날카로울수록 모작 제작자도 더 정교해져야 합니다.",
+      "example": "# 판별자 예시: Python 3에서 실행 가능한 코드\nsample_score = 0.73\nprint(\"real\" if sample_score > 0.5 else \"fake\")",
+      "tip": "판별자을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "950",
+    "term": "모드 붕괴",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "모드 붕괴는 GAN 생성자가 다양한 데이터를 만들지 못하고 일부 유형의 샘플만 반복 생성하는 문제입니다. 판별자를 속이는 쉬운 패턴에 갇힐 때 발생합니다.",
+    "hint": "모드 붕괴",
+    "detail": {
+      "easy": "모드 붕괴은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "제빵사가 손님을 만족시킨다는 이유로 매번 같은 빵만 굽고 다른 메뉴를 모두 잊어버리는 상황과 같습니다. 품질은 있어 보여도 다양성이 사라집니다.",
+      "example": "# 모드 붕괴 예시: Python 3에서 실행 가능한 코드\nsamples = [\"cat\", \"cat\", \"cat\"]\nprint(len(set(samples)) == 1)",
+      "tip": "모드 붕괴을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "951",
+    "term": "디퓨전 모델",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "디퓨전 모델은 데이터에 노이즈를 점진적으로 더하는 과정과 그 노이즈를 거꾸로 제거하는 과정을 학습하는 생성 모델입니다. 이미지 생성에서 높은 품질과 안정성으로 널리 사용됩니다.",
+    "hint": "디퓨전 모델",
+    "detail": {
+      "easy": "디퓨전 모델은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "깨끗한 그림에 먼지를 조금씩 뿌리는 법을 배운 뒤, 먼지 낀 그림을 단계적으로 닦아 원래 그림처럼 복원하는 작업과 같습니다.",
+      "example": "# 디퓨전 모델 예시: Python 3에서 실행 가능한 코드\nx = 1.0\nnoise = 0.3\nnoisy = x + noise\ndenoised = noisy - noise\nprint(noisy, denoised)",
+      "tip": "디퓨전 모델을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "952",
+    "term": "노이즈 제거 과정",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "노이즈 제거 과정은 디퓨전 모델이 무작위 노이즈에서 시작해 단계별로 잡음을 줄이며 데이터 샘플을 만들어 가는 절차입니다. 각 단계는 더 깨끗한 샘플을 예측하도록 학습됩니다.",
+    "hint": "노이즈 제거 과정",
+    "detail": {
+      "easy": "노이즈 제거 과정은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "흐릿한 라디오 잡음 속에서 다이얼을 조금씩 맞춰 선명한 음악을 되찾는 과정과 같습니다. 한 번에 완성하지 않고 여러 번 정리합니다.",
+      "example": "# 노이즈 제거 과정 예시: Python 3에서 실행 가능한 코드\nvalue = 1.5\nfor noise_est in [0.3, 0.15, 0.05]:\n    value -= noise_est\nprint(round(value, 2))",
+      "tip": "노이즈 제거 과정을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "953",
+    "term": "스코어 매칭",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "스코어 매칭은 데이터 분포의 로그 밀도 기울기를 학습하는 방법입니다. 디퓨전과 스코어 기반 생성 모델에서 샘플을 높은 확률 영역으로 이동시키는 방향을 제공합니다.",
+    "hint": "스코어 매칭",
+    "detail": {
+      "easy": "스코어 매칭은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "안개 낀 산에서 정상으로 가는 경사 방향만 알려 주는 나침반을 배우는 것과 같습니다. 정확한 지도 대신 어느 쪽으로 가야 밀도가 높은지 익힙니다.",
+      "example": "# 스코어 매칭 예시: Python 3에서 실행 가능한 코드\nx = 2.0\nscore = -x  # 표준 정규분포 로그밀도의 기울기\nprint(score)",
+      "tip": "스코어 매칭을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "954",
+    "term": "그래프 신경망(GNN)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "그래프 신경망은 정점과 간선으로 이루어진 그래프 데이터에서 이웃 정보를 집계해 노드나 그래프 표현을 학습하는 신경망입니다. 소셜 네트워크, 분자 구조, 추천 시스템에 사용됩니다.",
+    "hint": "그래프 신경망",
+    "detail": {
+      "easy": "그래프 신경망(GNN)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "친구들의 의견을 듣고 자기 생각을 갱신하는 모임과 같습니다. 한 사람의 판단은 연결된 이웃들의 정보에 영향을 받습니다.",
+      "example": "# 그래프 신경망(GNN) 예시: Python 3에서 실행 가능한 코드\nfeatures = {\"A\": 1, \"B\": 3, \"C\": 5}\nneighbors = {\"A\": [\"B\", \"C\"]}\nagg = sum(features[n] for n in neighbors[\"A\"]) / len(neighbors[\"A\"])\nprint(agg)",
+      "tip": "그래프 신경망(GNN)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "955",
+    "term": "메시지 패싱",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "메시지 패싱은 GNN에서 노드들이 이웃 노드로부터 정보를 받아 자신의 표현을 갱신하는 절차입니다. 여러 번 반복하면 더 먼 이웃의 정보까지 반영할 수 있습니다.",
+    "hint": "메시지 패싱",
+    "detail": {
+      "easy": "메시지 패싱은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "동네 주민들이 옆집 소식을 전달받고 다시 자기 집 게시판을 업데이트하는 방식과 같습니다. 라운드가 늘면 소식이 더 멀리 퍼집니다.",
+      "example": "# 메시지 패싱 예시: Python 3에서 실행 가능한 코드\nmessages = [2, 4, 6]\nnode_state = sum(messages) / len(messages)\nprint(node_state)",
+      "tip": "메시지 패싱을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "956",
+    "term": "전이 학습(Transfer Learning)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "전이 학습은 한 작업이나 데이터에서 학습한 지식을 다른 관련 작업에 활용하는 방법입니다. 데이터가 적은 작업에서도 사전 학습된 표현을 이용해 성능을 높일 수 있습니다.",
+    "hint": "전이 학습",
+    "detail": {
+      "easy": "전이 학습(Transfer Learning)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "피아노를 배운 사람이 기타를 처음 배울 때 리듬감과 악보 읽기 능력을 가져가는 것과 같습니다. 완전히 처음부터 시작하지 않습니다.",
+      "example": "# 전이 학습(Transfer Learning) 예시: Python 3에서 실행 가능한 코드\npretrained_features = [0.4, 0.8]\nnew_head_weight = [1.0, -0.5]\nprint(sum(a*b for a, b in zip(pretrained_features, new_head_weight)))",
+      "tip": "전이 학습(Transfer Learning)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "957",
+    "term": "사전학습 모델(Pretrained Model)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "사전학습 모델은 큰 데이터셋이나 일반 작업에서 미리 학습된 모델입니다. 새 작업에서는 이 모델을 초기값이나 특징 추출기로 사용해 학습 비용을 줄입니다.",
+    "hint": "사전학습 모델",
+    "detail": {
+      "easy": "사전학습 모델(Pretrained Model)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "기본 체력을 이미 갖춘 선수를 특정 종목에 맞게 훈련시키는 것과 같습니다. 출발점이 좋아 적은 훈련으로도 빨리 적응합니다.",
+      "example": "# 사전학습 모델(Pretrained Model) 예시: Python 3에서 실행 가능한 코드\nmodel = {\"backbone\": \"frozen\", \"head\": \"new\"}\nprint(model[\"backbone\"])",
+      "tip": "사전학습 모델(Pretrained Model)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "958",
+    "term": "파인튜닝(Fine-tuning)",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "파인튜닝은 사전학습 모델의 일부 또는 전체 파라미터를 새 작업 데이터에 맞게 추가 학습하는 과정입니다. 일반 지식을 특정 도메인에 맞게 조정합니다.",
+    "hint": "파인튜닝",
+    "detail": {
+      "easy": "파인튜닝(Fine-tuning)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "기성 정장을 몸에 맞게 소매와 허리를 조금씩 고치는 작업과 같습니다. 전체를 새로 만들지 않고 기존 구조를 조정합니다.",
+      "example": "# 파인튜닝(Fine-tuning) 예시: Python 3에서 실행 가능한 코드\nweights = [1.0, 2.0]\nupdates = [-0.01, 0.02]\nprint([w + u for w, u in zip(weights, updates)])",
+      "tip": "파인튜닝(Fine-tuning)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "959",
+    "term": "특징 추출",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "특징 추출은 원본 데이터에서 모델이나 규칙이 사용하기 좋은 표현을 뽑아내는 과정입니다. 딥러닝에서는 사전학습된 백본의 중간 출력이 특징으로 쓰이기도 합니다.",
+    "hint": "특징 추출",
+    "detail": {
+      "easy": "특징 추출은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "원석에서 보석의 색, 크기, 투명도 같은 판단에 필요한 항목만 기록하는 감정서 작성과 같습니다. 원본 전체보다 핵심 신호를 뽑습니다.",
+      "example": "# 특징 추출 예시: Python 3에서 실행 가능한 코드\ntext = \"deep learning\"\nfeatures = {\"length\": len(text), \"spaces\": text.count(\" \")}\nprint(features)",
+      "tip": "특징 추출을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "960",
+    "term": "도메인 적응",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "도메인 적응은 학습 데이터와 실제 적용 데이터의 분포 차이를 줄이도록 모델을 조정하는 방법입니다. 실험실 데이터로 학습한 모델을 현장 데이터에 맞출 때 필요합니다.",
+    "hint": "도메인 적응",
+    "detail": {
+      "easy": "도메인 적응은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "실내 연습장에서 잘하던 운전자가 비 오는 실제 도로에 맞춰 운전 습관을 바꾸는 것과 같습니다. 환경 차이를 보정해야 합니다.",
+      "example": "# 도메인 적응 예시: Python 3에서 실행 가능한 코드\nsource_mean = 10\ntarget_mean = 13\nvalue = 15\nadapted = value - (target_mean - source_mean)\nprint(adapted)",
+      "tip": "도메인 적응을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "961",
+    "term": "제로샷 학습",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "제로샷 학습은 특정 클래스의 학습 예시를 보지 않고도 설명, 속성, 언어 지식 등을 이용해 그 클래스를 예측하는 방법입니다. 새 라벨에 대한 일반화 능력을 평가합니다.",
+    "hint": "제로샷 학습",
+    "detail": {
+      "easy": "제로샷 학습은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "한 번도 본 적 없는 동물을 설명만 듣고 그림 속에서 찾아내는 상황과 같습니다. 직접 예시는 없지만 개념 설명을 활용합니다.",
+      "example": "# 제로샷 학습 예시: Python 3에서 실행 가능한 코드\ndescription = {\"zebra\": {\"stripe\", \"animal\"}}\nimage_tags = {\"stripe\", \"animal\", \"grass\"}\nprint(description[\"zebra\"] <= image_tags)",
+      "tip": "제로샷 학습을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "962",
+    "term": "원샷 학습",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "원샷 학습은 클래스당 하나 또는 극소수 예시만 보고 새 샘플을 분류하는 학습 방식입니다. 얼굴 인식이나 희귀 객체 인식처럼 데이터가 매우 적은 상황에 쓰입니다.",
+    "hint": "원샷 학습",
+    "detail": {
+      "easy": "원샷 학습은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "새 직원의 얼굴 사진 한 장만 보고 다음 날 그 사람을 알아보는 일과 같습니다. 많은 반복 예시 없이 핵심 차이를 기억해야 합니다.",
+      "example": "# 원샷 학습 예시: Python 3에서 실행 가능한 코드\nknown = {\"A\": (1, 2)}\nquery = (1.1, 2.1)\ndist = sum((a-b)**2 for a, b in zip(known[\"A\"], query))\nprint(dist < 0.1)",
+      "tip": "원샷 학습을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "963",
+    "term": "메타 학습",
+    "category": "딥러닝",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 14,
+    "definition": "메타 학습은 여러 학습 과제를 경험하며 새 과제를 빠르게 배우는 방법을 학습하는 접근입니다. 적은 데이터로 빠르게 적응하는 모델을 만드는 데 초점을 둡니다.",
+    "hint": "메타 학습",
+    "detail": {
+      "easy": "메타 학습은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "여러 악기를 배운 사람이 새 악기를 잡았을 때 연습법 자체를 알고 있어 빨리 적응하는 것과 같습니다. 지식뿐 아니라 배우는 방법을 배웁니다.",
+      "example": "# 메타 학습 예시: Python 3에서 실행 가능한 코드\ntasks_seen = [\"분류\", \"회귀\", \"랭킹\"]\nnew_task = \"분류\"\nprint(new_task in tasks_seen)",
+      "tip": "메타 학습을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "964",
+    "term": "지식 증류(Knowledge Distillation)",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "지식 증류는 큰 교사 모델의 출력이나 중간 지식을 작은 학생 모델에 전달해 학습시키는 방법입니다. 추론 비용을 줄이면서 성능을 유지하려는 모델 압축 기법입니다.",
+    "hint": "지식 증류",
+    "detail": {
+      "easy": "지식 증류(Knowledge Distillation)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "전문 셰프가 긴 조리 경험을 간단한 레시피와 팁으로 견습생에게 전수하는 과정과 같습니다. 견습생은 모든 시행착오를 직접 겪지 않습니다.",
+      "example": "# 지식 증류(Knowledge Distillation) 예시: Python 3에서 실행 가능한 코드\nteacher_probs = [0.7, 0.2, 0.1]\nstudent_probs = [0.6, 0.3, 0.1]\ngap = sum(abs(a-b) for a, b in zip(teacher_probs, student_probs))\nprint(gap)",
+      "tip": "지식 증류(Knowledge Distillation)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "965",
+    "term": "가지치기(Pruning)",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "가지치기는 중요도가 낮은 가중치, 뉴런, 채널을 제거해 모델을 작고 빠르게 만드는 기법입니다. 성능 손실을 최소화하면서 계산량과 메모리를 줄이는 데 사용합니다.",
+    "hint": "가지치기",
+    "detail": {
+      "easy": "가지치기(Pruning)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "나무의 불필요한 잔가지를 잘라 햇빛과 영양이 중요한 가지에 가도록 하는 작업과 같습니다. 구조는 가벼워지지만 핵심 모양은 유지합니다.",
+      "example": "# 가지치기(Pruning) 예시: Python 3에서 실행 가능한 코드\nweights = [0.9, 0.01, -0.4, 0.02]\nkept = [w for w in weights if abs(w) >= 0.05]\nprint(kept)",
+      "tip": "가지치기(Pruning)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "966",
+    "term": "양자화(Quantization)",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "양자화는 모델 가중치나 활성값을 낮은 정밀도의 숫자로 표현해 메모리와 계산 비용을 줄이는 기법입니다. 모바일이나 엣지 장치 배포에서 중요합니다.",
+    "hint": "양자화",
+    "detail": {
+      "easy": "양자화(Quantization)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "정밀한 색상표를 256색 팔레트로 줄여 그림 파일 크기를 낮추는 것과 같습니다. 약간의 표현 손실과 효율 향상을 맞바꿉니다.",
+      "example": "# 양자화(Quantization) 예시: Python 3에서 실행 가능한 코드\nvalue = 0.73\nquantized = round(value * 255)\nrestored = quantized / 255\nprint(quantized, round(restored, 3))",
+      "tip": "양자화(Quantization)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "967",
+    "term": "모델 압축",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "모델 압축은 가지치기, 양자화, 지식 증류 등을 사용해 모델 크기와 추론 비용을 줄이는 작업입니다. 성능을 크게 잃지 않으면서 배포 가능성을 높입니다.",
+    "hint": "모델 압축",
+    "detail": {
+      "easy": "모델 압축은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "여행 가방에서 꼭 필요한 물건만 남기고 부피를 줄여 기내 반입이 가능하게 만드는 과정과 같습니다. 가볍지만 쓸모는 유지해야 합니다.",
+      "example": "# 모델 압축 예시: Python 3에서 실행 가능한 코드\noriginal_mb = 120\ncompressed_mb = 35\nprint(round(compressed_mb / original_mb, 2))",
+      "tip": "모델 압축을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "968",
+    "term": "하드웨어 가속(GPU/TPU)",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "하드웨어 가속은 GPU나 TPU처럼 행렬 연산에 특화된 장치를 사용해 딥러닝 계산을 빠르게 수행하는 방법입니다. 대규모 병렬 연산이 많은 신경망 학습과 추론에 효과적입니다.",
+    "hint": "하드웨어 가속",
+    "detail": {
+      "easy": "하드웨어 가속(GPU/TPU)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "한 사람이 계산기를 두드리는 대신 수백 명이 같은 형식의 계산을 동시에 나눠 하는 작업장과 같습니다. 반복 계산이 많을수록 이점이 큽니다.",
+      "example": "# 하드웨어 가속(GPU/TPU) 예시: Python 3에서 실행 가능한 코드\nops_cpu = 10\nparallel_units = 5\nprint(ops_cpu / parallel_units)",
+      "tip": "하드웨어 가속(GPU/TPU)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "969",
+    "term": "CUDA",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "CUDA는 NVIDIA GPU에서 범용 병렬 계산을 수행하기 위한 프로그래밍 플랫폼입니다. 딥러닝 프레임워크가 GPU 연산을 실행하는 기반 기술로 자주 사용됩니다.",
+    "hint": "CUDA",
+    "detail": {
+      "easy": "CUDA은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "공장 안의 수많은 작업대에 일을 나눠 주는 작업 지시 언어와 같습니다. 같은 계산을 여러 작업대에서 동시에 처리하게 합니다.",
+      "example": "# CUDA 예시: Python 3에서 실행 가능한 코드\ngpu_available = True\ndevice = \"cuda\" if gpu_available else \"cpu\"\nprint(device)",
+      "tip": "CUDA을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "970",
+    "term": "텐서 연산",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "텐서 연산은 스칼라, 벡터, 행렬을 일반화한 다차원 배열에 대한 계산입니다. 딥러닝 모델의 입력, 가중치, 활성값 대부분이 텐서로 표현됩니다.",
+    "hint": "텐서 연산",
+    "detail": {
+      "easy": "텐서 연산은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "여러 층으로 쌓인 스프레드시트 묶음에 같은 계산을 한 번에 적용하는 것과 같습니다. 숫자 묶음의 차원이 늘어도 규칙적으로 처리합니다.",
+      "example": "# 텐서 연산 예시: Python 3에서 실행 가능한 코드\nmatrix = [[1, 2], [3, 4]]\nscaled = [[x * 2 for x in row] for row in matrix]\nprint(scaled)",
+      "tip": "텐서 연산을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "971",
+    "term": "자동 미분(Autograd)",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "자동 미분은 계산 과정을 기록해 출력이 입력이나 파라미터에 대해 어떻게 변하는지 자동으로 미분하는 기술입니다. 딥러닝 프레임워크가 역전파 그래디언트를 계산하는 핵심 기능입니다.",
+    "hint": "자동 미분",
+    "detail": {
+      "easy": "자동 미분(Autograd)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "회계 장부에 모든 거래 과정을 적어 두었다가 최종 잔액이 어느 거래에 얼마나 영향을 받았는지 자동으로 추적하는 것과 같습니다.",
+      "example": "# 자동 미분(Autograd) 예시: Python 3에서 실행 가능한 코드\nx = 3.0\ny = x * x\ngrad = 2 * x\nprint(y, grad)",
+      "tip": "자동 미분(Autograd)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "972",
+    "term": "계산 그래프",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "계산 그래프는 연산을 노드로, 데이터 흐름을 간선으로 표현한 그래프입니다. 순전파 계산과 역전파 미분 경로를 명확하게 나타냅니다.",
+    "hint": "계산 그래프",
+    "detail": {
+      "easy": "계산 그래프은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "요리 레시피를 재료와 조리 단계가 연결된 흐름도로 그린 것과 같습니다. 마지막 음식에서 거꾸로 올라가면 어떤 단계가 영향을 줬는지 보입니다.",
+      "example": "# 계산 그래프 예시: Python 3에서 실행 가능한 코드\ngraph = {\"x\": [\"mul\"], \"w\": [\"mul\"], \"mul\": [\"loss\"]}\nprint(graph[\"mul\"])",
+      "tip": "계산 그래프을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "973",
+    "term": "정적 그래프",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "정적 그래프는 실행 전에 계산 그래프 구조를 먼저 정의하고 고정한 뒤 실행하는 방식입니다. 최적화와 배포에는 유리하지만 동적인 제어 흐름 표현은 상대적으로 번거로울 수 있습니다.",
+    "hint": "정적 그래프",
+    "detail": {
+      "easy": "정적 그래프은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "공연 전에 무대 동선을 완전히 대본으로 정해 두고 그대로 진행하는 방식과 같습니다. 준비된 동선은 최적화하기 쉽지만 즉흥 변경은 어렵습니다.",
+      "example": "# 정적 그래프 예시: Python 3에서 실행 가능한 코드\ngraph_defined = True\nif graph_defined:\n    print(\"run fixed graph\")",
+      "tip": "정적 그래프을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "974",
+    "term": "동적 그래프",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "동적 그래프는 코드가 실행되는 순간의 제어 흐름에 따라 계산 그래프가 만들어지는 방식입니다. 디버깅과 조건부 모델 작성이 쉽고 PyTorch에서 대표적으로 사용됩니다.",
+    "hint": "동적 그래프",
+    "detail": {
+      "easy": "동적 그래프은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "요리사가 손님의 반응을 보며 즉석에서 다음 조리 단계를 정하는 방식과 같습니다. 실행 중 상황에 따라 흐름이 바뀔 수 있습니다.",
+      "example": "# 동적 그래프 예시: Python 3에서 실행 가능한 코드\nx = 3\nops = []\nif x > 0:\n    ops.append(\"relu\")\nprint(ops)",
+      "tip": "동적 그래프을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "975",
+    "term": "PyTorch 기초",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "PyTorch 기초는 텐서, 자동 미분, 모듈, 옵티마이저를 사용해 동적 그래프 방식으로 모델을 만드는 기본 개념입니다. 연구와 실험에서 직관적인 Python 코드 흐름이 장점입니다.",
+    "hint": "PyTorch 기초",
+    "detail": {
+      "easy": "PyTorch 기초은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "블록을 즉석에서 조립하며 바로 전원을 넣어 테스트할 수 있는 실험 키트와 같습니다. 만들고 실행하고 고치는 흐름이 가깝습니다.",
+      "example": "# PyTorch 기초 예시: Python 3에서 실행 가능한 코드\ntensor = [1.0, 2.0, 3.0]\nresult = [x * 2 for x in tensor]\nprint(result)",
+      "tip": "PyTorch 기초을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "976",
+    "term": "TensorFlow 기초",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "TensorFlow 기초는 텐서 계산, Keras 모델 구성, 그래프 최적화와 배포 기능을 사용하는 딥러닝 개발 개념입니다. 연구뿐 아니라 서비스 배포와 모바일 실행에도 많이 활용됩니다.",
+    "hint": "TensorFlow 기초",
+    "detail": {
+      "easy": "TensorFlow 기초은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "설계도 기반으로 생산 라인을 만들고 여러 환경에 배포하는 공장 시스템과 같습니다. 모델을 만들고 저장하고 운영하는 도구가 함께 제공됩니다.",
+      "example": "# TensorFlow 기초 예시: Python 3에서 실행 가능한 코드\nlayers = [\"Dense\", \"ReLU\", \"Dense\"]\nprint(\" -> \".join(layers))",
+      "tip": "TensorFlow 기초을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "977",
+    "term": "신경 아키텍처 탐색(NAS)",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "신경 아키텍처 탐색은 모델 구조 후보를 자동으로 탐색해 성능과 효율이 좋은 신경망 설계를 찾는 방법입니다. 사람이 직접 층 조합을 고르는 비용을 줄입니다.",
+    "hint": "신경 아키텍처 탐색",
+    "detail": {
+      "easy": "신경 아키텍처 탐색(NAS)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "건축가가 가능한 설계도를 모두 손으로 그리지 않고 프로그램이 여러 건물 구조를 제안하고 시험해 보는 방식과 같습니다.",
+      "example": "# 신경 아키텍처 탐색(NAS) 예시: Python 3에서 실행 가능한 코드\ncandidates = [\"small_cnn\", \"res_block\", \"mobile_block\"]\nscores = [0.82, 0.86, 0.84]\nprint(candidates[scores.index(max(scores))])",
+      "tip": "신경 아키텍처 탐색(NAS)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "978",
+    "term": "혼합 정밀도 훈련(Mixed Precision)",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "혼합 정밀도 훈련은 FP16 같은 낮은 정밀도와 FP32 같은 높은 정밀도를 함께 사용해 학습 속도와 메모리 효율을 높이는 방법입니다. 손실 스케일링으로 수치 안정성을 보완합니다.",
+    "hint": "혼합 정밀도 훈련",
+    "detail": {
+      "easy": "혼합 정밀도 훈련(Mixed Precision)은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "초안은 얇은 연필로 빠르게 그리고 중요한 치수만 정밀 펜으로 확인하는 설계 작업과 같습니다. 빠르지만 필요한 정확도는 지킵니다.",
+      "example": "# 혼합 정밀도 훈련(Mixed Precision) 예시: Python 3에서 실행 가능한 코드\nfp32_value = 1.234567\nfp16_like = round(fp32_value, 3)\nprint(fp16_like)",
+      "tip": "혼합 정밀도 훈련(Mixed Precision)을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "979",
+    "term": "그래디언트 누적",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "그래디언트 누적은 여러 미니배치의 그래디언트를 더한 뒤 한 번에 파라미터를 업데이트하는 기법입니다. 메모리가 부족할 때 큰 배치 효과를 흉내 낼 수 있습니다.",
+    "hint": "그래디언트 누적",
+    "detail": {
+      "easy": "그래디언트 누적은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "작은 장바구니로 여러 번 물건을 모은 뒤 계산대에서는 한 번에 결제하는 방식과 같습니다. 한 번에 큰 카트를 들 수 없어도 누적 총량을 맞춥니다.",
+      "example": "# 그래디언트 누적 예시: Python 3에서 실행 가능한 코드\ngrads = [0.1, 0.2, -0.05]\naccumulated = sum(grads)\nprint(accumulated)",
+      "tip": "그래디언트 누적을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  },
+  {
+    "id": "980",
+    "term": "그래디언트 체크포인팅",
+    "category": "딥러닝",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 14,
+    "definition": "그래디언트 체크포인팅은 순전파 중간 활성값 일부만 저장하고 나머지는 역전파 때 다시 계산해 메모리를 절약하는 기법입니다. 계산 시간은 늘지만 큰 모델 학습이 가능해집니다.",
+    "hint": "그래디언트 체크포인팅",
+    "detail": {
+      "easy": "그래디언트 체크포인팅은 딥러닝 모델의 구조, 학습, 추론 과정을 이해하는 데 필요한 핵심 개념입니다.",
+      "analogy": "등산길의 모든 지점을 사진으로 남기지 않고 중요한 쉼터만 기록한 뒤 필요하면 구간을 다시 걸어 확인하는 방식과 같습니다. 저장 공간 대신 시간을 씁니다.",
+      "example": "# 그래디언트 체크포인팅 예시: Python 3에서 실행 가능한 코드\nsaved_points = [\"layer1\", \"layer4\"]\nrecomputed = [\"layer2\", \"layer3\"]\nprint(saved_points, recomputed)",
+      "tip": "그래디언트 체크포인팅을 다룰 때는 텐서 모양, 그래디언트 흐름, 학습 안정성을 함께 점검하세요."
+    }
+  }
+]

@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1961",
+    "term": "데이터 엔지니어링 역할",
+    "category": "데이터 엔지니어링",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 엔지니어링 역할: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터엔지니어링역할",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 엔지니어링 역할을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 엔지니어링 역할\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 엔지니어링 역할은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1962",
+    "term": "배치 처리 vs 스트림 처리",
+    "category": "데이터 엔지니어링",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 29,
+    "definition": "배치 처리 vs 스트림 처리: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "배치처리스트림처리",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 배치 처리 vs 스트림 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"배치 처리 vs 스트림 처리\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "배치 처리 vs 스트림 처리은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1963",
+    "term": "람다 아키텍처",
+    "category": "데이터 엔지니어링",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 29,
+    "definition": "람다 아키텍처: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "람다아키텍처",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 람다 아키텍처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"람다 아키텍처\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "람다 아키텍처은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1964",
+    "term": "카파 아키텍처",
+    "category": "데이터 엔지니어링",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 29,
+    "definition": "카파 아키텍처: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "카파아키텍처",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 카파 아키텍처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"카파 아키텍처\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "카파 아키텍처은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1965",
+    "term": "데이터 플로우 모델",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 플로우 모델: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터플로우모델",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 플로우 모델을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 플로우 모델\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 플로우 모델을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1966",
+    "term": "Apache Spark 기초",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "Apache Spark 기초: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "기초",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Apache Spark 기초을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Apache Spark 기초\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Apache Spark 기초을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1967",
+    "term": "RDD",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "RDD: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "RDD",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. RDD을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"RDD\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "RDD을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1968",
+    "term": "DataFrame(Spark)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "DataFrame(Spark): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "DataFrame(",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. DataFrame(Spark)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"DataFrame(Spark)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "DataFrame(Spark)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1969",
+    "term": "Spark SQL",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "Spark SQL: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "SparkSQL",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Spark SQL을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Spark SQL\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Spark SQL을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1970",
+    "term": "Spark 스트리밍",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "Spark 스트리밍: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "스트리밍",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Spark 스트리밍을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Spark 스트리밍\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Spark 스트리밍을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1971",
+    "term": "Flink 개요",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "Flink 개요: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "개요",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Flink 개요을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Flink 개요\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Flink 개요을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1972",
+    "term": "Kafka Streams",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "Kafka Streams: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "KafkaStrea",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Kafka Streams을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Kafka Streams\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Kafka Streams을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1973",
+    "term": "데이터 직렬화(Avro/Parquet/ORC)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 직렬화(Avro/Parquet/ORC): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터직렬화",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 직렬화(Avro/Parquet/ORC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 직렬화(Avro/Parquet/ORC)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 직렬화(Avro/Parquet/ORC)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1974",
+    "term": "컬럼 기반 포맷(Parquet)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "컬럼 기반 포맷(Parquet): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "컬럼기반포맷",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 컬럼 기반 포맷(Parquet)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컬럼 기반 포맷(Parquet)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컬럼 기반 포맷(Parquet)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1975",
+    "term": "행 기반 포맷 비교",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "행 기반 포맷 비교: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "행기반포맷비교",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 행 기반 포맷 비교을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"행 기반 포맷 비교\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "행 기반 포맷 비교을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1976",
+    "term": "압축 코덱(Snappy/Zstd)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "압축 코덱(Snappy/Zstd): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "압축코덱",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 압축 코덱(Snappy/Zstd)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"압축 코덱(Snappy/Zstd)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "압축 코덱(Snappy/Zstd)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1977",
+    "term": "데이터 레이크하우스",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 레이크하우스: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터레이크하우스",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 레이크하우스을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 레이크하우스\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 레이크하우스을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1978",
+    "term": "Delta Lake",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "Delta Lake: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "DeltaLake",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Delta Lake을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Delta Lake\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Delta Lake을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1979",
+    "term": "Apache Iceberg",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "Apache Iceberg: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "ApacheIceb",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Apache Iceberg을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Apache Iceberg\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Apache Iceberg을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1980",
+    "term": "Apache Hudi",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "Apache Hudi: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "ApacheHudi",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Apache Hudi을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Apache Hudi\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Apache Hudi을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1981",
+    "term": "ACID on 데이터 레이크",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "데이터레이크",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. ACID on 데이터 레이크을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ACID on 데이터 레이크\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ACID on 데이터 레이크을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1982",
+    "term": "타임 트래블(Time Travel)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "타임 트래블(Time Travel): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "타임트래블",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 타임 트래블(Time Travel)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"타임 트래블(Time Travel)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "타임 트래블(Time Travel)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1983",
+    "term": "스키마 진화(데이터 레이크)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "스키마 진화(데이터 레이크): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "스키마진화",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 스키마 진화(데이터 레이크)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스키마 진화(데이터 레이크)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스키마 진화(데이터 레이크)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1984",
+    "term": "파티션 진화",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "파티션 진화: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "파티션진화",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 파티션 진화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"파티션 진화\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "파티션 진화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1985",
+    "term": "데이터 스큐(Data Skew)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 스큐(Data Skew): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터스큐",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 스큐(Data Skew)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 스큐(Data Skew)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 스큐(Data Skew)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1986",
+    "term": "셔플 최적화",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "셔플 최적화: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "셔플최적화",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 셔플 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"셔플 최적화\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "셔플 최적화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1987",
+    "term": "조인 최적화(브로드캐스트 조인)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "공통 열이나 조건을 기준으로 둘 이상의 테이블 행을 결합해 하나의 결과로 조회하는 SQL 기능입니다. 회원 정보와 주문 목록을 함께 볼 때 사용합니다.",
+    "hint": "조인최적화",
+    "detail": {
+      "easy": "표와 표를 이어 붙이는 조회",
+      "analogy": "행사 참석자 명단과 결제 명단을 이름이나 번호로 맞춰 한 장의 목록으로 합치는 일과 같습니다. 조인은 떨어진 표의 관련 정보를 조건에 맞춰 붙입니다. 조인 최적화(브로드캐스트 조인)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"조인 최적화(브로드캐스트 조인)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "조인 최적화(브로드캐스트 조인)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1988",
+    "term": "동적 파티션 프루닝",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "동적 파티션 프루닝: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "동적파티션프루닝",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 동적 파티션 프루닝을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"동적 파티션 프루닝\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "동적 파티션 프루닝을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1989",
+    "term": "적응형 쿼리 실행(AQE)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "적응형 쿼리 실행(AQE): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "적응형쿼리실행",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 적응형 쿼리 실행(AQE)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"적응형 쿼리 실행(AQE)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "적응형 쿼리 실행(AQE)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1990",
+    "term": "데이터 품질 프레임워크(Great Expectations)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 품질 프레임워크(Great Expectations): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터품질프레임워크",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 품질 프레임워크(Great Expectations)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 품질 프레임워크(Great Expectations)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 품질 프레임워크(Great Expectations)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1991",
+    "term": "데이터 계약(Data Contract)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 계약(Data Contract): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터계약",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 계약(Data Contract)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 계약(Data Contract)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 계약(Data Contract)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1992",
+    "term": "스트림-테이블 이중성",
+    "category": "데이터 엔지니어링",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 29,
+    "definition": "스트림-테이블 이중성: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "스트림테이블이중성",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 스트림-테이블 이중성을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스트림-테이블 이중성\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스트림-테이블 이중성을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1993",
+    "term": "CDC(변경 데이터 캡처)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "CDC(변경 데이터 캡처): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "CDC(변경데이터캡",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. CDC(변경 데이터 캡처)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CDC(변경 데이터 캡처)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CDC(변경 데이터 캡처)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1994",
+    "term": "Debezium",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "Debezium: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "Debezium",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Debezium을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Debezium\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Debezium은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1995",
+    "term": "데이터 메시(Data Mesh)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 메시(Data Mesh): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터메시",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 메시(Data Mesh)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 메시(Data Mesh)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 메시(Data Mesh)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1996",
+    "term": "도메인 소유 데이터",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "도메인 소유 데이터: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "도메인소유데이터",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 도메인 소유 데이터을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"도메인 소유 데이터\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "도메인 소유 데이터은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1997",
+    "term": "셀프 서비스 플랫폼",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "셀프 서비스 플랫폼: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "셀프서비스플랫폼",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 셀프 서비스 플랫폼을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"셀프 서비스 플랫폼\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "셀프 서비스 플랫폼은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1998",
+    "term": "데이터 오너십",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 오너십: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터오너십",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 오너십을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 오너십\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 오너십은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1999",
+    "term": "데이터 제품",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 제품: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터제품",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 제품을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 제품\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 제품은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2000",
+    "term": "스트리밍 SQL",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "스트리밍 SQL: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "스트리밍",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 스트리밍 SQL을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스트리밍 SQL\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스트리밍 SQL은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2001",
+    "term": "이벤트 시간 vs 처리 시간",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "이벤트 시간 vs 처리 시간: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "이벤트시간처리시간",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 이벤트 시간 vs 처리 시간을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이벤트 시간 vs 처리 시간\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이벤트 시간 vs 처리 시간은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2002",
+    "term": "워터마크(Watermark)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "워터마크(Watermark): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "워터마크",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 워터마크(Watermark)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"워터마크(Watermark)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "워터마크(Watermark)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2003",
+    "term": "늦은 도착 데이터(Late Data)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "늦은 도착 데이터(Late Data): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "늦은도착데이터",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 늦은 도착 데이터(Late Data)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"늦은 도착 데이터(Late Data)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "늦은 도착 데이터(Late Data)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2004",
+    "term": "윈도우 연산(Tumbling/Sliding/Session)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "윈도우 연산(Tumbling/Sliding/Session): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "윈도우연산",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 윈도우 연산(Tumbling/Sliding/Session)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"윈도우 연산(Tumbling/Sliding/Session)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "윈도우 연산(Tumbling/Sliding/Session)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2005",
+    "term": "상태 저장 스트림 처리",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "상태 저장 스트림 처리: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "상태저장스트림처리",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 상태 저장 스트림 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"상태 저장 스트림 처리\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "상태 저장 스트림 처리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2006",
+    "term": "상태 백엔드",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "상태 백엔드: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "상태백엔드",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 상태 백엔드을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"상태 백엔드\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "상태 백엔드은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2007",
+    "term": "체크포인트(Flink)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "체크포인트(Flink): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "체크포인트",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 체크포인트(Flink)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"체크포인트(Flink)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "체크포인트(Flink)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2008",
+    "term": "정확히 한 번(스트리밍)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "정확히 한 번(스트리밍): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "정확히한번",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 정확히 한 번(스트리밍)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"정확히 한 번(스트리밍)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "정확히 한 번(스트리밍)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2009",
+    "term": "실시간 대시보드 아키텍처",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "실시간 대시보드 아키텍처: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "실시간대시보드아키텍",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 실시간 대시보드 아키텍처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"실시간 대시보드 아키텍처\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "실시간 대시보드 아키텍처은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2010",
+    "term": "OLAP 엔진(ClickHouse/Druid)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "OLAP 엔진(ClickHouse/Druid): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "엔진",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. OLAP 엔진(ClickHouse/Druid)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"OLAP 엔진(ClickHouse/Druid)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "OLAP 엔진(ClickHouse/Druid)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2011",
+    "term": "실체화 뷰(Materialized View)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "실체화 뷰(Materialized View): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "실체화뷰",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 실체화 뷰(Materialized View)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"실체화 뷰(Materialized View)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "실체화 뷰(Materialized View)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2012",
+    "term": "Kafka Connect",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "Kafka Connect: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "KafkaConne",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Kafka Connect을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Kafka Connect\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Kafka Connect은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2013",
+    "term": "Source Connector",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "Source Connector: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "SourceConn",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Source Connector을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Source Connector\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Source Connector은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2014",
+    "term": "Sink Connector",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "Sink Connector: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "SinkConnec",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Sink Connector을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Sink Connector\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Sink Connector은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2015",
+    "term": "스키마 레지스트리(Confluent)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "스키마 레지스트리(Confluent): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "스키마레지스트리",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 스키마 레지스트리(Confluent)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스키마 레지스트리(Confluent)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스키마 레지스트리(Confluent)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2016",
+    "term": "토픽 보존 정책",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "토픽 보존 정책: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "토픽보존정책",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 토픽 보존 정책을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"토픽 보존 정책\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "토픽 보존 정책은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2017",
+    "term": "컴팩션 정책(Log Compaction)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "컴팩션 정책(Log Compaction): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "컴팩션정책",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 컴팩션 정책(Log Compaction)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컴팩션 정책(Log Compaction)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컴팩션 정책(Log Compaction)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2018",
+    "term": "오프셋 커밋 전략",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "오프셋커밋전략",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 오프셋 커밋 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"오프셋 커밋 전략\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "오프셋 커밋 전략은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2019",
+    "term": "재처리(Reprocessing)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "재처리(Reprocessing): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "재처리",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 재처리(Reprocessing)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"재처리(Reprocessing)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "재처리(Reprocessing)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2020",
+    "term": "역추적(Backfilling)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "역추적(Backfilling): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "역추적",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 역추적(Backfilling)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"역추적(Backfilling)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "역추적(Backfilling)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2021",
+    "term": "멱등 프로듀서(Idempotent Producer)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "멱등 프로듀서(Idempotent Producer): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "멱등프로듀서",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 멱등 프로듀서(Idempotent Producer)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"멱등 프로듀서(Idempotent Producer)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "멱등 프로듀서(Idempotent Producer)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2022",
+    "term": "트랜잭션 프로듀서(Kafka)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "트랜잭션프로듀서",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 트랜잭션 프로듀서(Kafka)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"트랜잭션 프로듀서(Kafka)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "트랜잭션 프로듀서(Kafka)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2023",
+    "term": "스트림-스트림 조인",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "공통 열이나 조건을 기준으로 둘 이상의 테이블 행을 결합해 하나의 결과로 조회하는 SQL 기능입니다. 회원 정보와 주문 목록을 함께 볼 때 사용합니다.",
+    "hint": "스트림스트림조인",
+    "detail": {
+      "easy": "표와 표를 이어 붙이는 조회",
+      "analogy": "행사 참석자 명단과 결제 명단을 이름이나 번호로 맞춰 한 장의 목록으로 합치는 일과 같습니다. 조인은 떨어진 표의 관련 정보를 조건에 맞춰 붙입니다. 스트림-스트림 조인을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스트림-스트림 조인\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스트림-스트림 조인은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2024",
+    "term": "스트림-테이블 조인",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "공통 열이나 조건을 기준으로 둘 이상의 테이블 행을 결합해 하나의 결과로 조회하는 SQL 기능입니다. 회원 정보와 주문 목록을 함께 볼 때 사용합니다.",
+    "hint": "스트림테이블조인",
+    "detail": {
+      "easy": "표와 표를 이어 붙이는 조회",
+      "analogy": "행사 참석자 명단과 결제 명단을 이름이나 번호로 맞춰 한 장의 목록으로 합치는 일과 같습니다. 조인은 떨어진 표의 관련 정보를 조건에 맞춰 붙입니다. 스트림-테이블 조인을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스트림-테이블 조인\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스트림-테이블 조인은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2025",
+    "term": "상태 저장 연산(Stateful)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "상태 저장 연산(Stateful): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "상태저장연산",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 상태 저장 연산(Stateful)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"상태 저장 연산(Stateful)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "상태 저장 연산(Stateful)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2026",
+    "term": "이벤트 주도 아키텍처(데이터)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "이벤트 주도 아키텍처(데이터): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "이벤트주도아키텍처",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 이벤트 주도 아키텍처(데이터)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이벤트 주도 아키텍처(데이터)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이벤트 주도 아키텍처(데이터)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2027",
+    "term": "데이터 오케스트레이션(Airflow)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 오케스트레이션(Airflow): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터오케스트레이션",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 오케스트레이션(Airflow)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 오케스트레이션(Airflow)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 오케스트레이션(Airflow)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2028",
+    "term": "Apache Airflow",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "Apache Airflow: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "ApacheAirf",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. Apache Airflow을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Apache Airflow\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Apache Airflow은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2029",
+    "term": "DAG(워크플로 정의)",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "DAG(워크플로 정의): 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "DAG(워크플로정의",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. DAG(워크플로 정의)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"DAG(워크플로 정의)\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "DAG(워크플로 정의)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "2030",
+    "term": "데이터 계보(Data Lineage) 추적",
+    "category": "데이터 엔지니어링",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 29,
+    "definition": "데이터 계보(Data Lineage) 추적: 대량 데이터를 안정적으로 수집, 변환, 저장, 처리하고 분석 시스템으로 전달하기 위한 데이터 플랫폼 개념입니다. 배치와 스트리밍 파이프라인을 모두 다룹니다.",
+    "hint": "데이터계보추적",
+    "detail": {
+      "easy": "많은 데이터를 흐르게 하는 방법",
+      "analogy": "도시 상수도처럼 물을 모으고 정수하고 필요한 곳으로 보내는 관로가 필요합니다. 데이터 엔지니어링은 데이터가 끊기지 않고 올바른 형태로 흐르게 합니다. 데이터 계보(Data Lineage) 추적을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 계보(Data Lineage) 추적\"\ncategory = \"데이터 엔지니어링\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 계보(Data Lineage) 추적은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

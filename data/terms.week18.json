@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1191",
+    "term": "위협 모델링",
+    "category": "보안",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 18,
+    "definition": "위협 모델링: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "위협모델링",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 위협 모델링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"위협 모델링\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "위협 모델링은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1192",
+    "term": "STRIDE 모델",
+    "category": "보안",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 18,
+    "definition": "STRIDE 모델: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "모델",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. STRIDE 모델을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"STRIDE 모델\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "STRIDE 모델은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1193",
+    "term": "공격 표면(Attack Surface)",
+    "category": "보안",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 18,
+    "definition": "공격 표면(Attack Surface): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "공격표면",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 공격 표면(Attack Surface)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"공격 표면(Attack Surface)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "공격 표면(Attack Surface)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1194",
+    "term": "취약점(Vulnerability)",
+    "category": "보안",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 18,
+    "definition": "취약점(Vulnerability): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "취약점",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 취약점(Vulnerability)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"취약점(Vulnerability)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "취약점(Vulnerability)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1195",
+    "term": "익스플로잇(Exploit)",
+    "category": "보안",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 18,
+    "definition": "익스플로잇(Exploit): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "익스플로잇",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 익스플로잇(Exploit)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"익스플로잇(Exploit)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "익스플로잇(Exploit)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1196",
+    "term": "패치 관리",
+    "category": "보안",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 18,
+    "definition": "패치 관리: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "패치관리",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 패치 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"패치 관리\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "패치 관리은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1197",
+    "term": "제로데이 취약점",
+    "category": "보안",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 18,
+    "definition": "제로데이 취약점: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "제로데이취약점",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 제로데이 취약점을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"제로데이 취약점\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "제로데이 취약점은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1198",
+    "term": "CVE",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "CVE: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "CVE",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. CVE을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CVE\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CVE을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1199",
+    "term": "CVSS 점수",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "CVSS 점수: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "점수",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. CVSS 점수을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CVSS 점수\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CVSS 점수을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1200",
+    "term": "버그 바운티",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "버그 바운티: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "버그바운티",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 버그 바운티을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"버그 바운티\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "버그 바운티을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1201",
+    "term": "침투 테스트(Pentest)",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "침투 테스트(Pentest): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "침투테스트",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 침투 테스트(Pentest)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"침투 테스트(Pentest)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "침투 테스트(Pentest)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1202",
+    "term": "레드팀/블루팀",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "레드팀/블루팀: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "레드팀블루팀",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 레드팀/블루팀을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"레드팀/블루팀\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "레드팀/블루팀을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1203",
+    "term": "OWASP Top 10 상세",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "OWASP Top 10 상세: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "상세",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. OWASP Top 10 상세을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"OWASP Top 10 상세\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "OWASP Top 10 상세을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1204",
+    "term": "인젝션 공격 종류",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "인젝션 공격 종류: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "인젝션공격종류",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 인젝션 공격 종류을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인젝션 공격 종류\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인젝션 공격 종류을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1205",
+    "term": "SSRF(서버 사이드 요청 위조)",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "SSRF(서버 사이드 요청 위조): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "SSRF(서버사이드",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. SSRF(서버 사이드 요청 위조)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SSRF(서버 사이드 요청 위조)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SSRF(서버 사이드 요청 위조)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1206",
+    "term": "XXE(XML 외부 엔티티)",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "XXE(XML 외부 엔티티): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "XXE(XML외부엔",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. XXE(XML 외부 엔티티)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"XXE(XML 외부 엔티티)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "XXE(XML 외부 엔티티)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1207",
+    "term": "IDOR(직접 객체 참조)",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "IDOR(직접 객체 참조): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "IDOR(직접객체참",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. IDOR(직접 객체 참조)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"IDOR(직접 객체 참조)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "IDOR(직접 객체 참조)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1208",
+    "term": "불안전한 역직렬화",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "불안전한 역직렬화: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "불안전한역직렬화",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 불안전한 역직렬화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"불안전한 역직렬화\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "불안전한 역직렬화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1209",
+    "term": "구성 오류",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "구성 오류: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "구성오류",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 구성 오류을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"구성 오류\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "구성 오류을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1210",
+    "term": "로깅 부재",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "로깅 부재: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "로깅부재",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 로깅 부재을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"로깅 부재\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "로깅 부재을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1211",
+    "term": "공급망 공격",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "공급망 공격: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "공급망공격",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 공급망 공격을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"공급망 공격\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "공급망 공격을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1212",
+    "term": "의존성 취약점",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "의존성 취약점: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "의존성취약점",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 의존성 취약점을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"의존성 취약점\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "의존성 취약점을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1213",
+    "term": "npm audit",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "npm audit: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "npmaudit",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. npm audit을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"npm audit\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "npm audit을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1214",
+    "term": "컨테이너 보안",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "컨테이너 보안: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "컨테이너보안",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 컨테이너 보안을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컨테이너 보안\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컨테이너 보안을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1215",
+    "term": "런타임 보호",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "런타임 보호: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "런타임보호",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 런타임 보호을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"런타임 보호\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "런타임 보호을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1216",
+    "term": "네트워크 분리",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "네트워크 분리: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "네트워크분리",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 네트워크 분리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"네트워크 분리\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "네트워크 분리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1217",
+    "term": "마이크로 세그멘테이션",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "마이크로 세그멘테이션: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "마이크로세그멘테이션",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 마이크로 세그멘테이션을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"마이크로 세그멘테이션\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "마이크로 세그멘테이션을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1218",
+    "term": "웹 방화벽(WAF)",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "웹 방화벽(WAF): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "웹방화벽",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 웹 방화벽(WAF)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"웹 방화벽(WAF)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "웹 방화벽(WAF)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1219",
+    "term": "IDS/IPS",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "IDS/IPS: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "IDS/IPS",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. IDS/IPS을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"IDS/IPS\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "IDS/IPS을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1220",
+    "term": "SIEM",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "SIEM: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "SIEM",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. SIEM을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SIEM\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SIEM을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1221",
+    "term": "포렌식",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "포렌식: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "포렌식",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 포렌식을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"포렌식\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "포렌식을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1222",
+    "term": "인시던트 대응",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "인시던트 대응: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "인시던트대응",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 인시던트 대응을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인시던트 대응\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인시던트 대응을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1223",
+    "term": "사이버 킬 체인",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "사이버 킬 체인: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "사이버킬체인",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 사이버 킬 체인을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"사이버 킬 체인\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "사이버 킬 체인을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1224",
+    "term": "MITRE ATT&CK",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "MITRE ATT&CK: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "&",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. MITRE ATT&CK을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"MITRE ATT&CK\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "MITRE ATT&CK을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1225",
+    "term": "피싱 공격",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "피싱 공격: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "피싱공격",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 피싱 공격을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피싱 공격\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피싱 공격을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1226",
+    "term": "소셜 엔지니어링",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "소셜 엔지니어링: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "소셜엔지니어링",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 소셜 엔지니어링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"소셜 엔지니어링\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "소셜 엔지니어링을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1227",
+    "term": "랜섬웨어",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "랜섬웨어: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "랜섬웨어",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 랜섬웨어을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"랜섬웨어\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "랜섬웨어을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1228",
+    "term": "APT 공격",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "APT 공격: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "공격",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. APT 공격을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"APT 공격\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "APT 공격을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1229",
+    "term": "DDoS 방어",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "DDoS 방어: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "방어",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. DDoS 방어을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"DDoS 방어\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "DDoS 방어을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1230",
+    "term": "봇넷",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "봇넷: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "봇넷",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 봇넷을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"봇넷\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "봇넷을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1231",
+    "term": "허니팟",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "허니팟: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "허니팟",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 허니팟을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"허니팟\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "허니팟을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1232",
+    "term": "침해 지표(IOC)",
+    "category": "보안",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 18,
+    "definition": "침해 지표(IOC): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "침해지표",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 침해 지표(IOC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"침해 지표(IOC)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "침해 지표(IOC)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1233",
+    "term": "암호화 키 관리",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "암호화 키 관리: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "암호화키관리",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 암호화 키 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"암호화 키 관리\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "암호화 키 관리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1234",
+    "term": "HSM(하드웨어 보안 모듈)",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "HSM(하드웨어 보안 모듈): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "HSM(하드웨어보안",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. HSM(하드웨어 보안 모듈)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"HSM(하드웨어 보안 모듈)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "HSM(하드웨어 보안 모듈)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1235",
+    "term": "키 에스크로",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "키 에스크로: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "키에스크로",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 키 에스크로을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"키 에스크로\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "키 에스크로은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1236",
+    "term": "코드 서명",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "코드 서명: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "코드서명",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 코드 서명을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"코드 서명\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "코드 서명은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1237",
+    "term": "바이너리 분석",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "바이너리 분석: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "바이너리분석",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 바이너리 분석을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"바이너리 분석\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "바이너리 분석은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1238",
+    "term": "리버스 엔지니어링",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "리버스 엔지니어링: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "리버스엔지니어링",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 리버스 엔지니어링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리버스 엔지니어링\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리버스 엔지니어링은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1239",
+    "term": "메모리 안전성",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "메모리 안전성: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "메모리안전성",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 메모리 안전성을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"메모리 안전성\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "메모리 안전성은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1240",
+    "term": "버퍼 오버플로",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "버퍼 오버플로: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "버퍼오버플로",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 버퍼 오버플로을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"버퍼 오버플로\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "버퍼 오버플로은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1241",
+    "term": "힙 스프레이",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "힙 스프레이: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "힙스프레이",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 힙 스프레이을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"힙 스프레이\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "힙 스프레이은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1242",
+    "term": "형식 문자열 취약점",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "형식 문자열 취약점: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "형식문자열취약점",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 형식 문자열 취약점을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"형식 문자열 취약점\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "형식 문자열 취약점은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1243",
+    "term": "경쟁 조건(Race Condition)",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "경쟁 조건(Race Condition): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "경쟁조건",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 경쟁 조건(Race Condition)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"경쟁 조건(Race Condition)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "경쟁 조건(Race Condition)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1244",
+    "term": "TOCTOU",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "TOCTOU: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "TOCTOU",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. TOCTOU을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"TOCTOU\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "TOCTOU은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1245",
+    "term": "샌드박스",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "샌드박스: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "샌드박스",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 샌드박스을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"샌드박스\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "샌드박스은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1246",
+    "term": "격리 실행",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "격리실행",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 격리 실행을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"격리 실행\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "격리 실행은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1247",
+    "term": "컨테이너 탈출",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "컨테이너 탈출: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "컨테이너탈출",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 컨테이너 탈출을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컨테이너 탈출\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컨테이너 탈출은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1248",
+    "term": "권한 상승(Linux)",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "권한 상승(Linux): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "권한상승",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 권한 상승(Linux)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"권한 상승(Linux)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "권한 상승(Linux)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1249",
+    "term": "Capabilities",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "Capabilities: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "Capabiliti",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. Capabilities을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Capabilities\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Capabilities은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1250",
+    "term": "SELinux",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "SELinux: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "SELinux",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. SELinux을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SELinux\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SELinux은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1251",
+    "term": "AppArmor",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "AppArmor: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "AppArmor",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. AppArmor을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"AppArmor\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "AppArmor은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1252",
+    "term": "보안 기준선(Hardening)",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "보안 기준선(Hardening): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "보안기준선",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 보안 기준선(Hardening)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"보안 기준선(Hardening)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "보안 기준선(Hardening)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1253",
+    "term": "CIS Benchmark",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "CIS Benchmark: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "CISBenchma",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. CIS Benchmark을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CIS Benchmark\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CIS Benchmark은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1254",
+    "term": "스테가노그래피",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "스테가노그래피: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "스테가노그래피",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 스테가노그래피을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스테가노그래피\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스테가노그래피은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1255",
+    "term": "타이밍 공격(Timing Attack)",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "타이밍 공격(Timing Attack): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "타이밍공격",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 타이밍 공격(Timing Attack)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"타이밍 공격(Timing Attack)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "타이밍 공격(Timing Attack)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1256",
+    "term": "사이드 채널 공격",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "사이드 채널 공격: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "사이드채널공격",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 사이드 채널 공격을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"사이드 채널 공격\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "사이드 채널 공격은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1257",
+    "term": "전력 분석 공격",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "전력 분석 공격: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "전력분석공격",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 전력 분석 공격을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"전력 분석 공격\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "전력 분석 공격은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1258",
+    "term": "내부자 위협(Insider Threat)",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "내부자 위협(Insider Threat): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "내부자위협",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 내부자 위협(Insider Threat)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"내부자 위협(Insider Threat)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "내부자 위협(Insider Threat)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1259",
+    "term": "디지털 포렌식 기법",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "디지털 포렌식 기법: 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "디지털포렌식기법",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 디지털 포렌식 기법을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"디지털 포렌식 기법\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "디지털 포렌식 기법은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1260",
+    "term": "취약점 공개 정책(Responsible Disclosure)",
+    "category": "보안",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 18,
+    "definition": "취약점 공개 정책(Responsible Disclosure): 시스템을 공격 관점에서 분석하고 취약점을 발견, 방어, 대응, 복구하기 위한 보안 심화 개념입니다. 실제 침해 사고를 줄이고 피해를 제한하는 데 쓰입니다.",
+    "hint": "취약점공개정책",
+    "detail": {
+      "easy": "공격을 예측하고 막는 방법",
+      "analogy": "건물 보안 점검에서 출입구, 창문, 비상 대응 매뉴얼을 모두 확인하는 것과 같습니다. 보안 심화 개념은 공격자가 들어올 길과 막는 방법을 함께 봅니다. 취약점 공개 정책(Responsible Disclosure)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"취약점 공개 정책(Responsible Disclosure)\"\ncategory = \"보안\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "취약점 공개 정책(Responsible Disclosure)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1121",
+    "term": "SOLID 원칙(전체)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "SOLID는 객체지향 설계를 더 이해하기 쉽고 변경에 강하게 만들기 위한 다섯 가지 원칙의 묶음입니다. SRP, OCP, LSP, ISP, DIP를 함께 적용해 결합도를 낮추고 확장성을 높입니다.",
+    "hint": "SOLID 원칙",
+    "detail": {
+      "easy": "SOLID 원칙(전체)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "건물을 오래 쓰기 위해 전기, 배관, 출입구, 기초, 방 배치를 각각 지키는 건축 기준과 같습니다. 기준 하나만 좋아도 전체 건물이 유지보수되지는 않습니다.",
+      "example": "# SOLID 원칙(전체) 예시: Python 3에서 실행 가능한 코드\nprinciples = [\"SRP\", \"OCP\", \"LSP\", \"ISP\", \"DIP\"]\nprint(len(principles), principles[0])",
+      "tip": "SOLID 원칙(전체)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1122",
+    "term": "단일 책임 원칙(SRP)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "단일 책임 원칙은 하나의 모듈이나 클래스가 변경될 이유를 하나만 갖도록 설계하라는 원칙입니다. 서로 다른 이유로 바뀌는 기능을 한곳에 섞으면 수정 영향이 커집니다.",
+    "hint": "단일 책임 원칙",
+    "detail": {
+      "easy": "단일 책임 원칙(SRP)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "회계 담당자에게 요리와 배달까지 맡기지 않는 조직과 같습니다. 역할이 섞이면 한 업무 변화가 전혀 다른 업무까지 흔듭니다.",
+      "example": "# 단일 책임 원칙(SRP) 예시: Python 3에서 실행 가능한 코드\nclass ReportPrinter:\n    def print_report(self, text):\n        return text.upper()\nprint(ReportPrinter().print_report(\"sales\"))",
+      "tip": "단일 책임 원칙(SRP)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1123",
+    "term": "개방-폐쇄 원칙(OCP)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "개방-폐쇄 원칙은 기존 코드는 수정에 닫혀 있고 새 기능 추가에는 열려 있어야 한다는 원칙입니다. 조건문을 계속 고치기보다 확장 지점을 만들어 변경 범위를 줄입니다.",
+    "hint": "개방-폐쇄 원칙",
+    "detail": {
+      "easy": "개방-폐쇄 원칙(OCP)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "멀티탭에 새 기기를 꽂을 수 있지만 벽 속 배선을 매번 뜯지 않는 구조와 같습니다. 확장은 쉽게 하고 핵심 구조는 안정적으로 둡니다.",
+      "example": "# 개방-폐쇄 원칙(OCP) 예시: Python 3에서 실행 가능한 코드\ndef price(amount, discount):\n    return discount(amount)\nprint(price(100, lambda x: x * 0.9))",
+      "tip": "개방-폐쇄 원칙(OCP)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1124",
+    "term": "리스코프 치환 원칙(LSP)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "리스코프 치환 원칙은 부모 타입을 사용하는 코드가 자식 타입으로 바뀌어도 올바르게 동작해야 한다는 원칙입니다. 하위 타입은 상위 타입의 약속을 깨지 않아야 합니다.",
+    "hint": "리스코프 치환 원칙",
+    "detail": {
+      "easy": "리스코프 치환 원칙(LSP)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "같은 콘센트 규격을 쓰는 전자기기는 어떤 제품을 꽂아도 전원을 안전하게 받아야 하는 것과 같습니다. 겉모양만 맞고 규격을 어기면 문제가 생깁니다.",
+      "example": "# 리스코프 치환 원칙(LSP) 예시: Python 3에서 실행 가능한 코드\nclass Bird:\n    def move(self): return \"move\"\nclass Penguin(Bird):\n    def move(self): return \"swim\"\nprint(Penguin().move())",
+      "tip": "리스코프 치환 원칙(LSP)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1125",
+    "term": "인터페이스 분리 원칙(ISP)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "인터페이스 분리 원칙은 사용자가 필요 없는 메서드에 의존하지 않도록 작은 인터페이스로 나누라는 원칙입니다. 큰 인터페이스는 구현체에 불필요한 부담과 변경 영향을 줍니다.",
+    "hint": "인터페이스 분리 원칙",
+    "detail": {
+      "easy": "인터페이스 분리 원칙(ISP)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "복합기 전체 리모컨을 모든 사람에게 주기보다 프린트 버튼만 필요한 사람에게 작은 리모컨을 주는 것과 같습니다. 필요한 기능만 알면 됩니다.",
+      "example": "# 인터페이스 분리 원칙(ISP) 예시: Python 3에서 실행 가능한 코드\nclass Printable:\n    def print_page(self):\n        return \"printed\"\nprint(Printable().print_page())",
+      "tip": "인터페이스 분리 원칙(ISP)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1126",
+    "term": "의존성 역전 원칙(DIP)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "의존성 역전 원칙은 고수준 정책이 저수준 구현이 아니라 추상화에 의존해야 한다는 원칙입니다. 구현체를 바꿔도 핵심 비즈니스 규칙이 흔들리지 않게 합니다.",
+    "hint": "의존성 역전 원칙",
+    "detail": {
+      "easy": "의존성 역전 원칙(DIP)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "전등 스위치가 특정 전구 회사가 아니라 표준 소켓 규격에 맞춰진 것과 같습니다. 전구를 바꿔도 스위치 설계는 그대로입니다.",
+      "example": "# 의존성 역전 원칙(DIP) 예시: Python 3에서 실행 가능한 코드\nclass Storage:\n    def save(self, value): return f\"save {value}\"\ndef process(storage):\n    return storage.save(\"order\")\nprint(process(Storage()))",
+      "tip": "의존성 역전 원칙(DIP)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1127",
+    "term": "의존성 주입(DI)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "의존성 주입은 객체가 필요한 의존 객체를 직접 만들지 않고 외부에서 전달받는 방식입니다. 테스트와 교체가 쉬워지고 결합도가 낮아집니다.",
+    "hint": "의존성 주입",
+    "detail": {
+      "easy": "의존성 주입(DI)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "요리사가 직접 농장을 운영하지 않고 필요한 재료를 공급받아 요리하는 방식과 같습니다. 재료 공급처를 바꿔도 조리법은 유지됩니다.",
+      "example": "# 의존성 주입(DI) 예시: Python 3에서 실행 가능한 코드\nclass Service:\n    def __init__(self, db): self.db = db\n    def get(self): return self.db[\"name\"]\nprint(Service({\"name\": \"test\"}).get())",
+      "tip": "의존성 주입(DI)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1128",
+    "term": "제어의 역전(IoC)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "제어의 역전은 객체 생성과 호출 흐름의 제어권을 애플리케이션 코드가 아니라 프레임워크나 컨테이너가 갖는 구조입니다. 개발자는 규칙에 맞춰 구성 요소를 제공하고 실행 흐름은 외부가 조율합니다.",
+    "hint": "제어의 역전",
+    "detail": {
+      "easy": "제어의 역전(IoC)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "식당 직원이 손님을 직접 찾아다니지 않고 호출 벨 시스템이 순서대로 일을 배정하는 것과 같습니다. 작업 흐름의 주도권이 바뀝니다.",
+      "example": "# 제어의 역전(IoC) 예시: Python 3에서 실행 가능한 코드\nhandlers = []\ndef register(fn): handlers.append(fn)\nregister(lambda: \"run\")\nprint(handlers[0]())",
+      "tip": "제어의 역전(IoC)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1129",
+    "term": "IoC 컨테이너",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "IoC 컨테이너는 객체 생성, 의존성 연결, 수명주기 관리를 대신 수행하는 도구입니다. 설정에 따라 필요한 구현체를 만들고 주입해 애플리케이션 조립을 자동화합니다.",
+    "hint": "IoC 컨테이너",
+    "detail": {
+      "easy": "IoC 컨테이너은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "공연 대기실에서 배우와 소품을 순서에 맞춰 무대에 올려 보내는 무대 매니저와 같습니다. 각 배우가 직접 모든 소품을 찾지 않습니다.",
+      "example": "# IoC 컨테이너 예시: Python 3에서 실행 가능한 코드\ncontainer = {\"config\": {\"debug\": True}}\ndef resolve(name): return container[name]\nprint(resolve(\"config\")[\"debug\"])",
+      "tip": "IoC 컨테이너을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1130",
+    "term": "정적 팩토리 메서드",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "정적 팩토리 메서드는 생성자를 직접 호출하지 않고 의미 있는 이름의 정적 메서드로 객체를 만드는 방식입니다. 생성 의도를 드러내고 캐싱이나 하위 타입 선택 같은 로직을 숨길 수 있습니다.",
+    "hint": "정적 팩토리 메서드",
+    "detail": {
+      "easy": "정적 팩토리 메서드은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "커피 주문에서 “아이스로 주세요”라는 메뉴 버튼이 내부 제조 절차를 감추는 것과 같습니다. 손님은 컵과 얼음 배합 과정을 직접 알 필요가 없습니다.",
+      "example": "# 정적 팩토리 메서드 예시: Python 3에서 실행 가능한 코드\nclass User:\n    def __init__(self, name): self.name = name\n    @staticmethod\n    def guest(): return User(\"guest\")\nprint(User.guest().name)",
+      "tip": "정적 팩토리 메서드을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1131",
+    "term": "추상 팩토리 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "추상 팩토리 패턴은 관련된 객체 제품군을 구체 클래스에 의존하지 않고 생성하도록 하는 패턴입니다. 테마나 플랫폼별 UI 구성처럼 함께 맞아야 하는 객체들을 일관되게 만들 때 사용합니다.",
+    "hint": "추상 팩토리 패턴",
+    "detail": {
+      "easy": "추상 팩토리 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "가구 세트를 주문하면 같은 스타일의 의자와 책상이 함께 오는 것과 같습니다. 의자만 현대식이고 책상은 고전식인 조합을 피합니다.",
+      "example": "# 추상 팩토리 패턴 예시: Python 3에서 실행 가능한 코드\nclass DarkFactory:\n    def button(self): return \"dark button\"\n    def dialog(self): return \"dark dialog\"\nf = DarkFactory()\nprint(f.button(), f.dialog())",
+      "tip": "추상 팩토리 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1132",
+    "term": "빌더 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "빌더 패턴은 복잡한 객체를 단계별 설정으로 조립하는 생성 패턴입니다. 생성자 인자가 많거나 선택 옵션이 많을 때 읽기 쉬운 객체 생성을 돕습니다.",
+    "hint": "빌더 패턴",
+    "detail": {
+      "easy": "빌더 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "샌드위치 가게에서 빵, 소스, 토핑을 차례로 고르며 완성품을 만드는 방식과 같습니다. 모든 선택을 한 줄 주문으로 외우지 않아도 됩니다.",
+      "example": "# 빌더 패턴 예시: Python 3에서 실행 가능한 코드\nclass QueryBuilder:\n    def __init__(self): self.parts = []\n    def where(self, text): self.parts.append(text); return self\n    def build(self): return \" AND \".join(self.parts)\nprint(QueryBuilder().where(\"age > 20\").where(\"active\").build())",
+      "tip": "빌더 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1133",
+    "term": "싱글톤 수명주기",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "싱글톤 수명주기는 애플리케이션 전체에서 하나의 인스턴스만 생성하고 재사용하는 객체의 생성과 종료 범위를 말합니다. 전역 상태가 되기 쉬우므로 공유 자원과 테스트 격리를 신중히 다뤄야 합니다.",
+    "hint": "싱글톤 수명주기",
+    "detail": {
+      "easy": "싱글톤 수명주기은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "건물 전체에서 하나뿐인 안내 데스크와 같습니다. 모두가 같은 데스크를 쓰면 편하지만, 데스크 상태가 꼬이면 모든 방문객에게 영향이 갑니다.",
+      "example": "# 싱글톤 수명주기 예시: Python 3에서 실행 가능한 코드\nclass Config:\n    _instance = None\n    @classmethod\n    def get(cls):\n        cls._instance = cls._instance or Config(); return cls._instance\nprint(Config.get() is Config.get())",
+      "tip": "싱글톤 수명주기을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1134",
+    "term": "프로토타입 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "easy",
+    "phase": 3,
+    "week": 17,
+    "definition": "프로토타입 패턴은 기존 객체를 복제해 새 객체를 만드는 생성 패턴입니다. 생성 비용이 크거나 비슷한 객체를 반복해서 만들 때 유용합니다.",
+    "hint": "프로토타입 패턴",
+    "detail": {
+      "easy": "프로토타입 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "이미 완성된 서류 양식을 복사해 이름과 날짜만 바꿔 새 문서를 만드는 방식과 같습니다. 처음부터 서식을 다시 만들지 않습니다.",
+      "example": "# 프로토타입 패턴 예시: Python 3에서 실행 가능한 코드\nimport copy\nbase = {\"role\": \"user\", \"permissions\": [\"read\"]}\nclone = copy.deepcopy(base)\nclone[\"role\"] = \"admin\"\nprint(base, clone)",
+      "tip": "프로토타입 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1135",
+    "term": "객체 어댑터",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "객체 어댑터는 기존 객체를 감싸 클라이언트가 기대하는 인터페이스로 변환하는 패턴입니다. 상속보다 조합을 사용해 호환되지 않는 API를 연결합니다.",
+    "hint": "객체 어댑터",
+    "detail": {
+      "easy": "객체 어댑터은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "해외 콘센트에 국내 플러그를 꽂을 수 있게 해 주는 여행용 어댑터와 같습니다. 기기와 벽 콘센트는 그대로 두고 중간에서 모양을 맞춥니다.",
+      "example": "# 객체 어댑터 예시: Python 3에서 실행 가능한 코드\nclass Old:\n    def specific(self): return \"old\"\nclass Adapter:\n    def __init__(self, old): self.old = old\n    def request(self): return self.old.specific()\nprint(Adapter(Old()).request())",
+      "tip": "객체 어댑터을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1136",
+    "term": "브리지 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "브리지 패턴은 추상화 계층과 구현 계층을 분리해 각각 독립적으로 확장할 수 있게 하는 구조 패턴입니다. 기능 종류와 실행 방식이 함께 폭발적으로 늘어나는 상황을 줄입니다.",
+    "hint": "브리지 패턴",
+    "detail": {
+      "easy": "브리지 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "리모컨 종류와 TV 브랜드를 따로 바꿀 수 있게 표준 신호로 연결하는 것과 같습니다. 리모컨과 TV를 모든 조합으로 새로 만들 필요가 없습니다.",
+      "example": "# 브리지 패턴 예시: Python 3에서 실행 가능한 코드\nclass Device:\n    def on(self): return \"device on\"\nclass Remote:\n    def __init__(self, device): self.device = device\n    def press(self): return self.device.on()\nprint(Remote(Device()).press())",
+      "tip": "브리지 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1137",
+    "term": "컴포지트 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "컴포지트 패턴은 개별 객체와 객체 묶음을 같은 인터페이스로 다루게 하는 구조 패턴입니다. 트리 구조의 파일, UI, 조직도처럼 부분과 전체를 동일하게 처리할 때 유용합니다.",
+    "hint": "컴포지트 패턴",
+    "detail": {
+      "easy": "컴포지트 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "폴더와 파일을 모두 “열기” 대상으로 다루는 파일 탐색기와 같습니다. 폴더는 내부 항목을 다시 열고 파일은 자기 내용을 보여 줍니다.",
+      "example": "# 컴포지트 패턴 예시: Python 3에서 실행 가능한 코드\ntree = {\"name\": \"root\", \"children\": [{\"name\": \"file\", \"children\": []}]}\ndef count(node): return 1 + sum(count(c) for c in node[\"children\"])\nprint(count(tree))",
+      "tip": "컴포지트 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1138",
+    "term": "동적 데코레이션",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "동적 데코레이션은 객체를 감싸 기능을 런타임에 추가하거나 변경하는 방식입니다. 원본 객체 코드를 고치지 않고 로깅, 캐싱, 권한 검사 같은 부가기능을 붙일 수 있습니다.",
+    "hint": "동적 데코레이션",
+    "detail": {
+      "easy": "동적 데코레이션은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "기본 케이크에 초콜릿 코팅과 과일 토핑을 겹겹이 올리는 것과 같습니다. 케이크 본체는 그대로지만 겉 기능이 추가됩니다.",
+      "example": "# 동적 데코레이션 예시: Python 3에서 실행 가능한 코드\ndef base(): return \"data\"\ndef logged(fn):\n    return lambda: \"log:\" + fn()\nprint(logged(base)())",
+      "tip": "동적 데코레이션을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1139",
+    "term": "서브시스템 파사드",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "서브시스템 파사드는 복잡한 내부 구성 요소들을 단순한 진입점 하나로 감싸는 구조 패턴입니다. 클라이언트는 내부 순서와 세부 API를 몰라도 필요한 작업을 수행할 수 있습니다.",
+    "hint": "서브시스템 파사드",
+    "detail": {
+      "easy": "서브시스템 파사드은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "호텔 프런트에 요청하면 청소, 수리, 예약 부서가 뒤에서 움직이는 것과 같습니다. 투숙객은 각 부서 번호를 따로 알 필요가 없습니다.",
+      "example": "# 서브시스템 파사드 예시: Python 3에서 실행 가능한 코드\nclass Facade:\n    def checkout(self):\n        return [\"pay\", \"receipt\", \"close\"]\nprint(Facade().checkout())",
+      "tip": "서브시스템 파사드을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1140",
+    "term": "플라이웨이트 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "플라이웨이트 패턴은 많은 객체가 공유할 수 있는 내부 상태를 분리해 메모리 사용을 줄이는 패턴입니다. 문자 렌더링, 아이콘, 게임 오브젝트처럼 반복 객체가 많을 때 유용합니다.",
+    "hint": "플라이웨이트 패턴",
+    "detail": {
+      "easy": "플라이웨이트 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "같은 도장 틀 하나로 여러 종이에 반복해서 찍는 방식과 같습니다. 매번 새 도장을 만들지 않고 위치와 색 같은 외부 정보만 따로 둡니다.",
+      "example": "# 플라이웨이트 패턴 예시: Python 3에서 실행 가능한 코드\nshared_shape = {\"glyph\": \"A\"}\nchars = [(shared_shape, 0), (shared_shape, 10)]\nprint(chars[0][0] is chars[1][0])",
+      "tip": "플라이웨이트 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1141",
+    "term": "프록시 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "프록시 패턴은 실제 객체 대신 대리 객체를 두어 접근 제어, 지연 로딩, 캐싱, 원격 호출을 처리하는 패턴입니다. 클라이언트는 실제 객체처럼 사용하지만 중간에 추가 동작이 들어갑니다.",
+    "hint": "프록시 패턴",
+    "detail": {
+      "easy": "프록시 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "비서가 사장에게 바로 연결하기 전에 일정과 권한을 확인하는 것과 같습니다. 요청자는 같은 창구를 쓰지만 실제 접근은 통제됩니다.",
+      "example": "# 프록시 패턴 예시: Python 3에서 실행 가능한 코드\nclass Proxy:\n    def __init__(self): self.loaded = False\n    def get(self):\n        self.loaded = True; return \"real data\"\nprint(Proxy().get())",
+      "tip": "프록시 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1142",
+    "term": "책임 연쇄 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "책임 연쇄 패턴은 요청을 처리할 수 있는 객체가 나올 때까지 여러 처리자에게 순서대로 넘기는 패턴입니다. 필터, 승인 단계, 이벤트 처리에서 사용됩니다.",
+    "hint": "책임 연쇄 패턴",
+    "detail": {
+      "easy": "책임 연쇄 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "고객 문의가 1차 상담, 기술팀, 관리자 순서로 넘어가는 절차와 같습니다. 각 단계는 자기가 처리할 수 있으면 멈추고 아니면 다음으로 넘깁니다.",
+      "example": "# 책임 연쇄 패턴 예시: Python 3에서 실행 가능한 코드\nhandlers = [lambda x: None, lambda x: \"handled\" if x > 0 else None]\nfor h in handlers:\n    result = h(1)\n    if result: break\nprint(result)",
+      "tip": "책임 연쇄 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1143",
+    "term": "커맨드 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "커맨드 패턴은 요청을 객체로 캡슐화해 실행, 취소, 큐잉, 로깅을 쉽게 만드는 행동 패턴입니다. 버튼 클릭, 작업 큐, undo 기능에 적합합니다.",
+    "hint": "커맨드 패턴",
+    "detail": {
+      "easy": "커맨드 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "할 일 카드를 만들어 담당자가 나중에 실행하거나 취소할 수 있게 하는 방식과 같습니다. 요청 내용이 카드 안에 들어 있습니다.",
+      "example": "# 커맨드 패턴 예시: Python 3에서 실행 가능한 코드\nclass AddCommand:\n    def __init__(self, x): self.x = x\n    def execute(self): return self.x + 1\nprint(AddCommand(3).execute())",
+      "tip": "커맨드 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1144",
+    "term": "이터레이터 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "이터레이터 패턴은 컬렉션 내부 구조를 드러내지 않고 요소를 순서대로 접근하게 하는 패턴입니다. 배열, 트리, 파일 목록처럼 다양한 구조를 같은 방식으로 순회할 수 있습니다.",
+    "hint": "이터레이터 패턴",
+    "detail": {
+      "easy": "이터레이터 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "박물관 안내 동선이 전시실 구조를 몰라도 다음 작품으로 차례로 안내해 주는 것과 같습니다. 관람객은 내부 보관 방식을 알 필요가 없습니다.",
+      "example": "# 이터레이터 패턴 예시: Python 3에서 실행 가능한 코드\nitems = iter([1, 2, 3])\nprint(next(items))\nprint(next(items))",
+      "tip": "이터레이터 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1145",
+    "term": "중재자 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "중재자 패턴은 객체들이 서로 직접 통신하지 않고 중재자를 통해 상호작용하게 하는 패턴입니다. 복잡한 다대다 의존성을 줄이고 협력 규칙을 한곳에 모읍니다.",
+    "hint": "중재자 패턴",
+    "detail": {
+      "easy": "중재자 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "항공기들이 서로 직접 말하지 않고 관제탑을 통해 이착륙 순서를 조율하는 것과 같습니다. 관제탑이 충돌을 줄입니다.",
+      "example": "# 중재자 패턴 예시: Python 3에서 실행 가능한 코드\nclass Mediator:\n    def send(self, msg): return f\"broadcast {msg}\"\nprint(Mediator().send(\"ready\"))",
+      "tip": "중재자 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1146",
+    "term": "메멘토 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "메멘토 패턴은 객체의 내부 상태를 캡슐화해 저장하고 나중에 복원할 수 있게 하는 패턴입니다. 편집기의 되돌리기 기능처럼 이전 상태로 안전하게 돌아갈 때 사용합니다.",
+    "hint": "메멘토 패턴",
+    "detail": {
+      "easy": "메멘토 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "게임 저장 슬롯처럼 현재 위치와 아이템을 저장해 두었다가 실패하면 그 시점으로 돌아가는 것과 같습니다. 내부 상태를 외부가 직접 뜯어보지 않습니다.",
+      "example": "# 메멘토 패턴 예시: Python 3에서 실행 가능한 코드\nstate = {\"text\": \"hello\"}\nsnapshot = state.copy()\nstate[\"text\"] = \"bye\"\nstate = snapshot\nprint(state[\"text\"])",
+      "tip": "메멘토 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1147",
+    "term": "이벤트 리스너 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "이벤트 리스너 패턴은 특정 이벤트가 발생했을 때 등록된 리스너들이 알림을 받고 반응하는 구조입니다. 발행자와 구독자의 결합을 줄이고 UI나 도메인 이벤트 처리에 사용됩니다.",
+    "hint": "이벤트 리스너 패턴",
+    "detail": {
+      "easy": "이벤트 리스너 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "문 앞 초인종을 누르면 거실, 주방, 경비실의 벨이 각자 울리는 것과 같습니다. 누른 사람은 누가 들을지 직접 알 필요가 없습니다.",
+      "example": "# 이벤트 리스너 패턴 예시: Python 3에서 실행 가능한 코드\nlisteners = []\nlisteners.append(lambda e: print(\"got\", e))\nfor listener in listeners:\n    listener(\"click\")",
+      "tip": "이벤트 리스너 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1148",
+    "term": "상태 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "상태 패턴은 객체의 상태에 따라 행동이 달라질 때 상태별 객체로 분리하는 패턴입니다. 큰 조건문을 줄이고 상태 전환 규칙을 명확하게 만듭니다.",
+    "hint": "상태 패턴",
+    "detail": {
+      "easy": "상태 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "자판기가 대기 중, 돈 받음, 품절 상태마다 버튼 동작이 달라지는 것과 같습니다. 같은 버튼이라도 현재 상태가 행동을 결정합니다.",
+      "example": "# 상태 패턴 예시: Python 3에서 실행 가능한 코드\nstate = \"paid\"\naction = {\"idle\": \"insert coin\", \"paid\": \"select item\"}[state]\nprint(action)",
+      "tip": "상태 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1149",
+    "term": "정책 객체 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "정책 객체 패턴은 알고리즘이나 규칙을 객체로 분리해 런타임에 교체할 수 있게 하는 방식입니다. 할인, 정렬, 검증 규칙처럼 변하는 정책을 캡슐화합니다.",
+    "hint": "정책 객체 패턴",
+    "detail": {
+      "easy": "정책 객체 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "배송 방식을 일반, 빠른, 새벽배송 카드 중 하나로 끼워 넣는 주문 시스템과 같습니다. 주문 흐름은 같고 배송 정책만 바뀝니다.",
+      "example": "# 정책 객체 패턴 예시: Python 3에서 실행 가능한 코드\ndef regular(x): return x\ndef discount(x): return x * 0.9\npolicy = discount\nprint(policy(100))",
+      "tip": "정책 객체 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1150",
+    "term": "템플릿 메서드 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "템플릿 메서드 패턴은 알고리즘의 큰 순서를 상위 클래스에 두고 일부 단계를 하위 클래스가 바꾸게 하는 패턴입니다. 공통 흐름은 유지하면서 세부 구현만 확장합니다.",
+    "hint": "템플릿 메서드 패턴",
+    "detail": {
+      "easy": "템플릿 메서드 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "요리 수업에서 손질, 조리, 담기 순서는 같지만 재료별 조리법만 다른 레시피 틀과 같습니다. 전체 순서는 선생님이 정합니다.",
+      "example": "# 템플릿 메서드 패턴 예시: Python 3에서 실행 가능한 코드\nclass Task:\n    def run(self): return [\"prepare\", self.step(), \"finish\"]\n    def step(self): return \"custom\"\nprint(Task().run())",
+      "tip": "템플릿 메서드 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1151",
+    "term": "방문자 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "방문자 패턴은 객체 구조를 바꾸지 않고 새로운 연산을 추가하기 위해 방문자 객체를 전달하는 패턴입니다. 복잡한 객체 트리에 여러 작업을 추가할 때 유용합니다.",
+    "hint": "방문자 패턴",
+    "detail": {
+      "easy": "방문자 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "박물관 전시품은 그대로 두고 감정사, 청소 담당, 사진작가가 차례로 방문해 각자 다른 작업을 하는 것과 같습니다.",
+      "example": "# 방문자 패턴 예시: Python 3에서 실행 가능한 코드\nitems = [{\"type\": \"book\", \"price\": 10}]\ndef visitor(item): return item[\"price\"] * 2\nprint([visitor(i) for i in items])",
+      "tip": "방문자 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1152",
+    "term": "인터페이스 vs 추상 클래스",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "인터페이스는 보통 구현해야 할 계약을 정의하고, 추상 클래스는 공통 구현과 계약을 함께 제공할 수 있는 기반 타입입니다. 언어별 차이는 있지만 역할 분리와 재사용 범위가 핵심 차이입니다.",
+    "hint": "인터페이스 vs 추상 클래스",
+    "detail": {
+      "easy": "인터페이스 vs 추상 클래스은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "인터페이스가 “이 버튼들이 있어야 한다”는 규격표라면 추상 클래스는 일부 부품이 이미 조립된 반제품과 같습니다. 하나는 약속, 하나는 공통 기반에 가깝습니다.",
+      "example": "# 인터페이스 vs 추상 클래스 예시: Python 3에서 실행 가능한 코드\nclass Base:\n    def shared(self): return \"common\"\n    def required(self): raise NotImplementedError\nprint(Base().shared())",
+      "tip": "인터페이스 vs 추상 클래스을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1153",
+    "term": "덕 타이핑",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "덕 타이핑은 객체의 실제 타입 이름보다 필요한 메서드나 행동을 갖고 있는지를 기준으로 사용하는 방식입니다. Python처럼 동적 언어에서 자주 쓰이며 유연하지만 런타임 오류에 주의해야 합니다.",
+    "hint": "덕 타이핑",
+    "detail": {
+      "easy": "덕 타이핑은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "오리처럼 걷고 오리처럼 꽥꽥거리면 오리로 다루겠다는 판단과 같습니다. 신분증보다 실제 행동을 봅니다.",
+      "example": "# 덕 타이핑 예시: Python 3에서 실행 가능한 코드\nclass FileLike:\n    def read(self): return \"data\"\ndef load(obj): return obj.read()\nprint(load(FileLike()))",
+      "tip": "덕 타이핑을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1154",
+    "term": "믹스인(Mixin)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "믹스인은 주된 상속 계층과 별개로 작은 기능 묶음을 클래스에 섞어 넣기 위한 클래스입니다. 여러 클래스에 공통 부가기능을 재사용할 때 사용합니다.",
+    "hint": "믹스인",
+    "detail": {
+      "easy": "믹스인(Mixin)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "기본 음료에 샷 추가, 휘핑 추가 같은 옵션을 섞는 것과 같습니다. 음료의 정체성을 바꾸기보다 특정 기능을 덧붙입니다.",
+      "example": "# 믹스인(Mixin) 예시: Python 3에서 실행 가능한 코드\nclass JsonMixin:\n    def to_json(self): return str(self.__dict__)\nclass User(JsonMixin):\n    def __init__(self): self.name = \"Kim\"\nprint(User().to_json())",
+      "tip": "믹스인(Mixin)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1155",
+    "term": "컴포지션 vs 상속",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "컴포지션은 객체가 다른 객체를 포함해 기능을 조합하는 방식이고, 상속은 기존 타입을 확장해 관계를 표현하는 방식입니다. 유연한 교체가 필요하면 컴포지션이 더 안전한 경우가 많습니다.",
+    "hint": "컴포지션 vs 상속",
+    "detail": {
+      "easy": "컴포지션 vs 상속은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "자동차를 “엔진을 가진 물건”으로 조립하는 것과 “자동차는 엔진의 하위 종류”라고 말하는 차이와 같습니다. 포함 관계와 종류 관계를 구분해야 합니다.",
+      "example": "# 컴포지션 vs 상속 예시: Python 3에서 실행 가능한 코드\nclass Engine:\n    def start(self): return \"start\"\nclass Car:\n    def __init__(self): self.engine = Engine()\nprint(Car().engine.start())",
+      "tip": "컴포지션 vs 상속을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1156",
+    "term": "다이아몬드 문제",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "다이아몬드 문제는 다중 상속에서 두 부모가 같은 조상으로부터 상속받을 때 메서드 해석 순서가 모호해지는 문제입니다. 언어는 MRO 같은 규칙으로 이를 해결합니다.",
+    "hint": "다이아몬드 문제",
+    "detail": {
+      "easy": "다이아몬드 문제은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "가족 행사에서 같은 조부모의 규칙을 두 부모가 각각 다르게 전달했을 때 어느 규칙을 따를지 헷갈리는 상황과 같습니다.",
+      "example": "# 다이아몬드 문제 예시: Python 3에서 실행 가능한 코드\nclass A: pass\nclass B(A): pass\nclass C(A): pass\nclass D(B, C): pass\nprint([cls.__name__ for cls in D.mro()])",
+      "tip": "다이아몬드 문제을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1157",
+    "term": "메서드 오버로딩",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "메서드 오버로딩은 같은 이름의 메서드를 매개변수 타입이나 개수에 따라 여러 형태로 정의하는 기능입니다. 언어에 따라 직접 지원 여부가 다르며 호출 인자에 맞는 구현이 선택됩니다.",
+    "hint": "메서드 오버로딩",
+    "detail": {
+      "easy": "메서드 오버로딩은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "같은 “예약하기” 창구가 한 명 예약, 단체 예약, 날짜 미정 예약을 입력 양식에 따라 다르게 처리하는 것과 같습니다.",
+      "example": "# 메서드 오버로딩 예시: Python 3에서 실행 가능한 코드\ndef add(a, b=0, c=0):\n    return a + b + c\nprint(add(1), add(1, 2), add(1, 2, 3))",
+      "tip": "메서드 오버로딩을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1158",
+    "term": "메서드 오버라이딩",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "메서드 오버라이딩은 하위 클래스가 상위 클래스의 메서드를 같은 이름으로 다시 정의해 동작을 바꾸는 기능입니다. 다형성을 통해 같은 호출이 객체 종류에 따라 다르게 동작합니다.",
+    "hint": "메서드 오버라이딩",
+    "detail": {
+      "easy": "메서드 오버라이딩은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "회사 공통 인사말 양식은 같지만 각 지점장이 자기 지점 상황에 맞게 내용을 바꾸는 것과 같습니다. 호출 이름은 같고 실행 내용이 다릅니다.",
+      "example": "# 메서드 오버라이딩 예시: Python 3에서 실행 가능한 코드\nclass Animal:\n    def speak(self): return \"...\"\nclass Dog(Animal):\n    def speak(self): return \"woof\"\nprint(Dog().speak())",
+      "tip": "메서드 오버라이딩을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1159",
+    "term": "동적 디스패치",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "동적 디스패치는 런타임 객체의 실제 타입에 따라 호출할 메서드 구현을 결정하는 방식입니다. 다형성을 가능하게 하며 상위 타입 변수로 하위 객체를 다룰 수 있게 합니다.",
+    "hint": "동적 디스패치",
+    "detail": {
+      "easy": "동적 디스패치은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "콜센터 대표번호로 전화하면 실제 문의 종류에 따라 적절한 상담원에게 연결되는 것과 같습니다. 겉 호출은 같지만 실제 담당자가 달라집니다.",
+      "example": "# 동적 디스패치 예시: Python 3에서 실행 가능한 코드\nclass A:\n    def f(self): return \"A\"\nclass B(A):\n    def f(self): return \"B\"\nobj = B()\nprint(obj.f())",
+      "tip": "동적 디스패치을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1160",
+    "term": "공변성/반공변성",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "공변성과 반공변성은 제네릭 타입 사이의 하위 타입 관계가 타입 매개변수 관계를 어떻게 따라가는지 설명합니다. 생산자는 공변, 소비자는 반공변으로 생각하면 이해하기 쉽습니다.",
+    "hint": "공변성/반공변성",
+    "detail": {
+      "easy": "공변성/반공변성은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "과일 상자를 꺼내기만 할 때는 사과 상자를 과일 상자처럼 다뤄도 되지만, 과일을 넣는 상자라면 바나나를 넣을 수 있어 문제가 되는 것과 같습니다.",
+      "example": "# 공변성/반공변성 예시: Python 3에서 실행 가능한 코드\nanimals = [\"dog\", \"cat\"]\ndef read_only(items):\n    return items[0]\nprint(read_only(animals))",
+      "tip": "공변성/반공변성을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1161",
+    "term": "제네릭(Generics)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "제네릭은 타입을 매개변수로 받아 같은 구조나 알고리즘을 여러 타입에 재사용하게 하는 기능입니다. 컨테이너, 함수, 클래스의 타입 안전성을 높입니다.",
+    "hint": "제네릭",
+    "detail": {
+      "easy": "제네릭(Generics)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "상자 설계도에 “내용물 T”라고 적어 장난감 상자, 책 상자, 과일 상자로 모두 쓰는 것과 같습니다. 상자 구조는 같고 내용물 타입만 바뀝니다.",
+      "example": "# 제네릭(Generics) 예시: Python 3에서 실행 가능한 코드\ndef first(items):\n    return items[0]\nprint(first([1, 2]), first([\"a\", \"b\"]))",
+      "tip": "제네릭(Generics)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1162",
+    "term": "타입 파라미터",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "타입 파라미터는 제네릭에서 실제 타입이 들어갈 자리를 나타내는 변수입니다. T, K, V처럼 이름 붙여 컨테이너나 함수가 다양한 타입에 대해 동작하게 합니다.",
+    "hint": "타입 파라미터",
+    "detail": {
+      "easy": "타입 파라미터은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "요리법의 “재료 X” 칸과 같습니다. 실제로는 닭고기나 두부가 들어갈 수 있지만 조리 절차는 같은 틀을 사용합니다.",
+      "example": "# 타입 파라미터 예시: Python 3에서 실행 가능한 코드\nT = \"int\"\nBox = {\"type_parameter\": T, \"value\": 3}\nprint(Box)",
+      "tip": "타입 파라미터을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1163",
+    "term": "제네릭 타입 추론",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "제네릭 타입 추론은 컴파일러나 도구가 함수 인자와 반환값을 보고 타입 파라미터를 자동으로 결정하는 기능입니다. 개발자가 모든 타입을 명시하지 않아도 타입 안전성을 유지하게 돕습니다.",
+    "hint": "제네릭 타입 추론",
+    "detail": {
+      "easy": "제네릭 타입 추론은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "택배 직원이 상자 안 물건을 보고 깨짐주의 스티커가 필요한지 알아서 붙이는 것과 같습니다. 사용자가 매번 설명하지 않아도 문맥으로 판단합니다.",
+      "example": "# 제네릭 타입 추론 예시: Python 3에서 실행 가능한 코드\ndef identity(x): return x\nvalue = identity(10)\nprint(type(value).__name__)",
+      "tip": "제네릭 타입 추론을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1164",
+    "term": "구조적 타이핑",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "구조적 타이핑은 타입의 이름보다 필요한 필드와 메서드 구조가 맞는지를 기준으로 호환성을 판단하는 방식입니다. 같은 모양을 가진 객체를 같은 역할로 사용할 수 있습니다.",
+    "hint": "구조적 타이핑",
+    "detail": {
+      "easy": "구조적 타이핑은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "출입증 이름은 달라도 같은 규격의 QR 코드가 있으면 게이트를 통과시키는 방식과 같습니다. 이름표보다 구조가 중요합니다.",
+      "example": "# 구조적 타이핑 예시: Python 3에서 실행 가능한 코드\ndef has_name(obj):\n    return \"name\" in obj\nprint(has_name({\"name\": \"Kim\"}))",
+      "tip": "구조적 타이핑을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1165",
+    "term": "명목적 타이핑",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "명목적 타이핑은 타입의 구조가 같아도 선언된 타입 이름이나 상속 관계를 기준으로 호환성을 판단하는 방식입니다. Java, C# 같은 언어의 클래스 타입 체계에서 흔합니다.",
+    "hint": "명목적 타이핑",
+    "detail": {
+      "easy": "명목적 타이핑은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "두 카드가 모양이 같아도 공식 회원증으로 발급된 카드만 입장시키는 규칙과 같습니다. 겉구조보다 이름과 소속이 중요합니다.",
+      "example": "# 명목적 타이핑 예시: Python 3에서 실행 가능한 코드\nclass UserId(int): pass\nuid = UserId(3)\nprint(isinstance(uid, int))",
+      "tip": "명목적 타이핑을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1166",
+    "term": "불변 객체(Immutable)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "불변 객체는 생성된 뒤 내부 상태가 바뀌지 않는 객체입니다. 공유해도 예상치 못한 변경이 없어 동시성, 캐싱, 값 비교에 유리합니다.",
+    "hint": "불변 객체",
+    "detail": {
+      "easy": "불변 객체(Immutable)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "한 번 인쇄된 영수증처럼 발급 후 내용을 고칠 수 없는 문서와 같습니다. 새 내용이 필요하면 새 영수증을 발급해야 합니다.",
+      "example": "# 불변 객체(Immutable) 예시: Python 3에서 실행 가능한 코드\npoint = (1, 2)\nnew_point = (point[0] + 1, point[1])\nprint(point, new_point)",
+      "tip": "불변 객체(Immutable)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1167",
+    "term": "값 객체(Value Object)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "값 객체는 고유 식별자보다 속성 값 자체로 동등성을 판단하는 도메인 객체입니다. 금액, 좌표, 날짜 범위처럼 불변으로 다루는 경우가 많습니다.",
+    "hint": "값 객체",
+    "detail": {
+      "easy": "값 객체(Value Object)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "같은 액면가와 통화를 가진 지폐가 어느 지폐인지보다 값이 같다는 점이 중요한 상황과 같습니다. 정체성보다 값이 핵심입니다.",
+      "example": "# 값 객체(Value Object) 예시: Python 3에서 실행 가능한 코드\na = (\"KRW\", 1000)\nb = (\"KRW\", 1000)\nprint(a == b)",
+      "tip": "값 객체(Value Object)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1168",
+    "term": "엔티티 객체",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "엔티티 객체는 속성이 바뀌어도 고유 식별자로 정체성을 유지하는 도메인 객체입니다. 사용자, 주문, 계좌처럼 생애주기와 ID가 중요한 개념을 표현합니다.",
+    "hint": "엔티티 객체",
+    "detail": {
+      "easy": "엔티티 객체은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "사람이 머리 모양이나 주소를 바꿔도 주민등록번호로 같은 사람임을 식별하는 것과 같습니다. 속성보다 정체성이 먼저입니다.",
+      "example": "# 엔티티 객체 예시: Python 3에서 실행 가능한 코드\nuser = {\"id\": 7, \"name\": \"Kim\"}\nuser[\"name\"] = \"Lee\"\nprint(user[\"id\"])",
+      "tip": "엔티티 객체을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1169",
+    "term": "애그리게이트",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "애그리게이트는 도메인 객체 묶음을 일관성 경계로 다루는 DDD 개념입니다. 외부에서는 애그리게이트 루트를 통해서만 내부 객체를 변경하게 해 규칙을 보호합니다.",
+    "hint": "애그리게이트",
+    "detail": {
+      "easy": "애그리게이트은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "주문서와 주문 항목들을 하나의 봉투로 묶고, 봉투 앞면의 주문 번호를 통해서만 수정하는 것과 같습니다. 내부 항목을 아무나 따로 바꾸지 않습니다.",
+      "example": "# 애그리게이트 예시: Python 3에서 실행 가능한 코드\norder = {\"id\": 1, \"items\": []}\ndef add_item(order, item):\n    order[\"items\"].append(item)\nadd_item(order, \"book\")\nprint(order)",
+      "tip": "애그리게이트을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1170",
+    "term": "도메인 이벤트",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "도메인 이벤트는 도메인에서 의미 있는 일이 발생했음을 나타내는 메시지입니다. 주문 완료, 결제 실패처럼 다른 로직이나 시스템이 반응해야 하는 사건을 표현합니다.",
+    "hint": "도메인 이벤트",
+    "detail": {
+      "easy": "도메인 이벤트은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "가게에서 “결제가 완료됨”이라는 종을 울리면 포장팀과 알림팀이 각자 움직이는 것과 같습니다. 사건이 후속 행동을 촉발합니다.",
+      "example": "# 도메인 이벤트 예시: Python 3에서 실행 가능한 코드\nevent = {\"type\": \"OrderPaid\", \"order_id\": 1}\nprint(event[\"type\"])",
+      "tip": "도메인 이벤트을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1171",
+    "term": "리포지토리 패턴",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "리포지토리 패턴은 도메인 객체를 저장소에서 조회하고 저장하는 로직을 컬렉션처럼 추상화하는 패턴입니다. 도메인 로직이 SQL이나 외부 저장소 세부사항에 직접 의존하지 않게 합니다.",
+    "hint": "리포지토리 패턴",
+    "detail": {
+      "easy": "리포지토리 패턴은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "사서에게 책 제목을 말하면 창고 위치를 몰라도 책을 가져다주는 도서관 데스크와 같습니다. 이용자는 보관 방식을 알 필요가 없습니다.",
+      "example": "# 리포지토리 패턴 예시: Python 3에서 실행 가능한 코드\nclass Repo:\n    def __init__(self): self.data = {}\n    def save(self, obj): self.data[obj[\"id\"]] = obj\nrepo = Repo(); repo.save({\"id\": 1})\nprint(repo.data[1])",
+      "tip": "리포지토리 패턴을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1172",
+    "term": "유비쿼터스 언어",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "유비쿼터스 언어는 개발자와 도메인 전문가가 같은 의미로 사용하는 공통 용어 체계입니다. 코드, 문서, 회의에서 같은 단어를 써야 모델과 비즈니스 이해가 어긋나지 않습니다.",
+    "hint": "유비쿼터스 언어",
+    "detail": {
+      "easy": "유비쿼터스 언어은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "주방과 홀 직원이 같은 메뉴 이름을 써야 주문이 틀리지 않는 식당과 같습니다. 한쪽은 “아메리카노”, 다른 쪽은 “검은 물”이라고 하면 혼란이 생깁니다.",
+      "example": "# 유비쿼터스 언어 예시: Python 3에서 실행 가능한 코드\nterms = {\"Order\": \"고객의 구매 요청\"}\nprint(terms[\"Order\"])",
+      "tip": "유비쿼터스 언어을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1173",
+    "term": "경계 컨텍스트(Bounded Context)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "medium",
+    "phase": 3,
+    "week": 17,
+    "definition": "경계 컨텍스트는 특정 도메인 모델과 용어가 유효한 명확한 경계입니다. 같은 단어라도 컨텍스트가 다르면 의미와 규칙이 달라질 수 있습니다.",
+    "hint": "경계 컨텍스트",
+    "detail": {
+      "easy": "경계 컨텍스트(Bounded Context)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "병원에서 “차트”와 음악 학원에서 “차트”가 다른 뜻인 것과 같습니다. 어느 부서 안에서 쓰는 말인지 경계를 정해야 합니다.",
+      "example": "# 경계 컨텍스트(Bounded Context) 예시: Python 3에서 실행 가능한 코드\ncontexts = {\"billing\": \"Account=청구 계정\", \"auth\": \"Account=로그인 계정\"}\nprint(contexts[\"billing\"])",
+      "tip": "경계 컨텍스트(Bounded Context)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1174",
+    "term": "도메인 서비스",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "도메인 서비스는 특정 엔티티나 값 객체 하나에 자연스럽게 속하지 않는 도메인 규칙을 담는 서비스입니다. 비즈니스 의미가 있는 계산이나 조율을 표현합니다.",
+    "hint": "도메인 서비스",
+    "detail": {
+      "easy": "도메인 서비스은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "여러 부서가 함께 확인해야 하는 대출 심사위원회와 같습니다. 한 사람의 소유 업무가 아니라 도메인 규칙 자체가 중심입니다.",
+      "example": "# 도메인 서비스 예시: Python 3에서 실행 가능한 코드\ndef transfer(from_acc, to_acc, amount):\n    from_acc[\"balance\"] -= amount\n    to_acc[\"balance\"] += amount\na={\"balance\":10}; b={\"balance\":0}\ntransfer(a,b,3); print(a,b)",
+      "tip": "도메인 서비스을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1175",
+    "term": "응용 서비스",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "응용 서비스는 사용자 요청을 받아 트랜잭션, 권한, 도메인 객체 호출, 저장소 접근을 조율하는 계층입니다. 핵심 도메인 규칙 자체보다는 유스케이스 흐름을 담당합니다.",
+    "hint": "응용 서비스",
+    "detail": {
+      "easy": "응용 서비스은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "여행사가 항공권, 호텔, 결제를 순서대로 예약해 주지만 비행기 운항 규칙 자체를 만들지는 않는 것과 같습니다. 절차 조율이 역할입니다.",
+      "example": "# 응용 서비스 예시: Python 3에서 실행 가능한 코드\ndef place_order(repo, order):\n    repo.append(order)\n    return \"ok\"\norders = []\nprint(place_order(orders, {\"id\": 1}), orders)",
+      "tip": "응용 서비스을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1176",
+    "term": "도메인 주도 설계(DDD) 개요",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "도메인 주도 설계는 복잡한 비즈니스 도메인을 중심으로 소프트웨어 모델과 코드를 설계하는 접근입니다. 도메인 전문가와 협력해 언어, 경계, 모델을 코드에 반영합니다.",
+    "hint": "도메인 주도 설계 개요",
+    "detail": {
+      "easy": "도메인 주도 설계(DDD) 개요은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "도시 지도를 그릴 때 도로 모양만 보는 것이 아니라 실제 사람들이 어떤 목적으로 이동하는지 이해하고 구역을 나누는 것과 같습니다.",
+      "example": "# 도메인 주도 설계(DDD) 개요 예시: Python 3에서 실행 가능한 코드\ndomain_model = {\"Order\": [\"pay\", \"ship\"], \"Customer\": [\"join\"]}\nprint(domain_model.keys())",
+      "tip": "도메인 주도 설계(DDD) 개요을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1177",
+    "term": "함수형 프로그래밍 원칙",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "함수형 프로그래밍 원칙은 순수 함수, 불변 데이터, 함수 조합을 중심으로 부작용을 줄이는 설계 방식입니다. 상태 변화가 적어 테스트와 동시성 추론이 쉬워집니다.",
+    "hint": "함수형 프로그래밍 원칙",
+    "detail": {
+      "easy": "함수형 프로그래밍 원칙은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "요리 과정에서 재료를 직접 망가뜨리지 않고 단계마다 새 접시에 결과를 담아 넘기는 방식과 같습니다. 이전 상태가 보존됩니다.",
+      "example": "# 함수형 프로그래밍 원칙 예시: Python 3에서 실행 가능한 코드\nnums = [1, 2, 3]\nsquared = list(map(lambda x: x*x, nums))\nprint(nums, squared)",
+      "tip": "함수형 프로그래밍 원칙을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1178",
+    "term": "순수 함수(Pure Function)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "순수 함수는 같은 입력에 항상 같은 출력을 내고 외부 상태를 바꾸지 않는 함수입니다. 테스트하기 쉽고 호출 순서에 따른 예기치 않은 결과가 줄어듭니다.",
+    "hint": "순수 함수",
+    "detail": {
+      "easy": "순수 함수(Pure Function)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "동전 교환기처럼 1000원을 넣으면 언제나 같은 동전 조합이 나오고 주변 장부를 몰래 바꾸지 않는 장치와 같습니다.",
+      "example": "# 순수 함수(Pure Function) 예시: Python 3에서 실행 가능한 코드\ndef add(a, b):\n    return a + b\nprint(add(2, 3), add(2, 3))",
+      "tip": "순수 함수(Pure Function)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1179",
+    "term": "참조 투명성",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "참조 투명성은 표현식을 그 결과값으로 바꿔도 프로그램 의미가 달라지지 않는 성질입니다. 순수 함수와 불변 값이 많을수록 참조 투명성을 얻기 쉽습니다.",
+    "hint": "참조 투명성",
+    "detail": {
+      "easy": "참조 투명성은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "레시피에서 “2+3숟가락”을 “5숟가락”으로 바꿔 적어도 요리 결과가 같아야 하는 것과 같습니다. 계산식과 값이 교체 가능합니다.",
+      "example": "# 참조 투명성 예시: Python 3에서 실행 가능한 코드\ndef double(x): return x * 2\na = double(3)\nb = 6\nprint(a == b)",
+      "tip": "참조 투명성을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1180",
+    "term": "함수 합성(Function Composition)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "함수 합성은 한 함수의 출력을 다른 함수의 입력으로 연결해 더 큰 동작을 만드는 방식입니다. 작은 순수 함수를 조합하면 복잡한 로직을 읽기 쉽게 만들 수 있습니다.",
+    "hint": "함수 합성",
+    "detail": {
+      "easy": "함수 합성(Function Composition)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "세탁, 건조, 접기를 각각 맡은 기계를 컨베이어로 이어 옷 정리 라인을 만드는 것과 같습니다. 작은 단계가 하나의 흐름이 됩니다.",
+      "example": "# 함수 합성(Function Composition) 예시: Python 3에서 실행 가능한 코드\ndef trim(s): return s.strip()\ndef shout(s): return s.upper()\nprint(shout(trim(\" hi \")))",
+      "tip": "함수 합성(Function Composition)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1181",
+    "term": "커링(Currying)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "커링은 여러 인자를 받는 함수를 한 번에 하나의 인자만 받는 함수들의 연쇄로 바꾸는 기법입니다. 일부 인자를 미리 고정하거나 함수 조합을 쉽게 만들 때 사용합니다.",
+    "hint": "커링",
+    "detail": {
+      "easy": "커링(Currying)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "주문을 한 번에 받지 않고 먼저 메뉴, 다음에 크기, 마지막에 옵션을 차례로 받는 키오스크와 같습니다. 각 단계가 다음 입력을 기다립니다.",
+      "example": "# 커링(Currying) 예시: Python 3에서 실행 가능한 코드\ndef add(a):\n    return lambda b: a + b\nadd_five = add(5)\nprint(add_five(3))",
+      "tip": "커링(Currying)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1182",
+    "term": "부분 적용(Partial Application)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "부분 적용은 함수의 일부 인자를 미리 채워 새 함수를 만드는 기법입니다. 반복되는 설정값을 고정해 더 구체적인 함수를 만들 수 있습니다.",
+    "hint": "부분 적용",
+    "detail": {
+      "easy": "부분 적용(Partial Application)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "배송 주문서에 출발 창고를 미리 적어 둔 양식을 만들어 매번 목적지만 쓰는 것과 같습니다. 일부 칸이 이미 채워져 있습니다.",
+      "example": "# 부분 적용(Partial Application) 예시: Python 3에서 실행 가능한 코드\nfrom functools import partial\ndef power(base, exp): return base ** exp\nsquare = partial(power, exp=2)\nprint(square(4))",
+      "tip": "부분 적용(Partial Application)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1183",
+    "term": "모나드(Monad) 개념",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "모나드는 값을 특정 문맥에 담고, 그 문맥을 유지하며 연산을 연결하는 추상화입니다. 실패 가능성, 비동기, 리스트 처리 같은 효과를 일관된 방식으로 조합하게 돕습니다.",
+    "hint": "모나드 개념",
+    "detail": {
+      "easy": "모나드(Monad) 개념은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "택배 상자 안의 물건을 꺼내지 않고 상자째 다음 작업대로 넘기며 라벨과 배송 상태를 함께 유지하는 방식과 같습니다. 물건과 문맥이 같이 움직입니다.",
+      "example": "# 모나드(Monad) 개념 예시: Python 3에서 실행 가능한 코드\ndef maybe(value, fn):\n    return None if value is None else fn(value)\nprint(maybe(3, lambda x: x + 1))",
+      "tip": "모나드(Monad) 개념을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1184",
+    "term": "펑터(Functor)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "펑터는 컨테이너나 문맥 안의 값을 꺼내지 않고 함수를 적용할 수 있는 구조입니다. map 연산으로 내부 값은 바꾸지만 바깥 구조는 유지합니다.",
+    "hint": "펑터",
+    "detail": {
+      "easy": "펑터(Functor)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "선물 상자를 열지 않고 포장지 바깥에서 “가격표 붙이기” 같은 작업 지시를 전달하는 것과 같습니다. 상자라는 구조는 그대로 남습니다.",
+      "example": "# 펑터(Functor) 예시: Python 3에서 실행 가능한 코드\nbox = [1, 2, 3]\nmapped = list(map(lambda x: x * 10, box))\nprint(mapped)",
+      "tip": "펑터(Functor)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1185",
+    "term": "불변 데이터 구조",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "불변 데이터 구조는 변경 연산이 기존 구조를 직접 바꾸지 않고 새 구조를 반환하는 자료구조입니다. 구조 공유를 활용하면 이전 버전을 보존하면서도 메모리 낭비를 줄일 수 있습니다.",
+    "hint": "불변 데이터 구조",
+    "detail": {
+      "easy": "불변 데이터 구조은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "수정된 계약서를 만들 때 원본 문서를 지우지 않고 바뀐 페이지만 새로 끼워 별도 사본을 만드는 것과 같습니다.",
+      "example": "# 불변 데이터 구조 예시: Python 3에서 실행 가능한 코드\nold = (1, 2, 3)\nnew = old + (4,)\nprint(old, new)",
+      "tip": "불변 데이터 구조을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1186",
+    "term": "액터 모델(Actor Model)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "액터 모델은 독립된 액터들이 메시지를 주고받으며 상태를 캡슐화하는 동시성 모델입니다. 공유 메모리 대신 메시지 전달로 병렬 처리를 설계합니다.",
+    "hint": "액터 모델",
+    "detail": {
+      "easy": "액터 모델(Actor Model)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "각 부서가 자기 사무실 안의 장부를 직접 관리하고 다른 부서와는 공문으로만 소통하는 조직과 같습니다. 남의 장부를 직접 고치지 않습니다.",
+      "example": "# 액터 모델(Actor Model) 예시: Python 3에서 실행 가능한 코드\nmailbox = []\nmailbox.append((\"increment\", 1))\nstate = 0\nfor msg, v in mailbox:\n    if msg == \"increment\": state += v\nprint(state)",
+      "tip": "액터 모델(Actor Model)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1187",
+    "term": "반응형 프로그래밍(Rx)",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "반응형 프로그래밍은 시간에 따라 흐르는 이벤트 스트림을 조합하고 변환해 비동기 동작을 처리하는 방식입니다. 사용자 입력, 네트워크 응답, 센서 데이터처럼 연속 이벤트에 적합합니다.",
+    "hint": "반응형 프로그래밍",
+    "detail": {
+      "easy": "반응형 프로그래밍(Rx)은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "강물에 떠내려오는 물건을 필터와 분류대가 순서대로 처리하는 모습과 같습니다. 데이터는 한 번에 오는 목록이 아니라 흐름으로 도착합니다.",
+      "example": "# 반응형 프로그래밍(Rx) 예시: Python 3에서 실행 가능한 코드\nevents = [1, 2, 3, 4]\neven_doubled = [x * 2 for x in events if x % 2 == 0]\nprint(even_doubled)",
+      "tip": "반응형 프로그래밍(Rx)을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1188",
+    "term": "이벤트 주도 설계",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "이벤트 주도 설계는 상태 변화나 비즈니스 사건을 이벤트로 발행하고 이를 구독한 구성 요소가 반응하도록 만드는 설계입니다. 서비스 간 결합을 줄이고 비동기 확장을 쉽게 합니다.",
+    "hint": "이벤트 주도 설계",
+    "detail": {
+      "easy": "이벤트 주도 설계은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "매장에서 주문 완료 종이 울리면 주방, 포장, 알림 담당이 각자 움직이는 구조와 같습니다. 주문자는 각 담당자를 직접 호출하지 않습니다.",
+      "example": "# 이벤트 주도 설계 예시: Python 3에서 실행 가능한 코드\nevents = []\nevents.append({\"type\": \"OrderCreated\"})\nprint(events[0][\"type\"])",
+      "tip": "이벤트 주도 설계을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1189",
+    "term": "메시지 주도 시스템",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "메시지 주도 시스템은 구성 요소들이 메시지를 통해 통신하고 작업을 비동기적으로 처리하는 시스템입니다. 탄력성, 부하 완충, 장애 격리를 얻기 위해 큐와 브로커를 사용합니다.",
+    "hint": "메시지 주도 시스템",
+    "detail": {
+      "easy": "메시지 주도 시스템은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "서류함에 업무 요청서를 넣으면 담당자가 자기 속도에 맞춰 처리하는 사무 흐름과 같습니다. 요청자와 처리자가 동시에 붙어 있을 필요가 없습니다.",
+      "example": "# 메시지 주도 시스템 예시: Python 3에서 실행 가능한 코드\nqueue = [\"resize\", \"email\"]\nwhile queue:\n    print(\"handle\", queue.pop(0))",
+      "tip": "메시지 주도 시스템을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  },
+  {
+    "id": "1190",
+    "term": "공유 가변 상태 문제",
+    "category": "객체지향 프로그래밍",
+    "difficulty": "hard",
+    "phase": 3,
+    "week": 17,
+    "definition": "공유 가변 상태 문제는 여러 코드나 스레드가 같은 변경 가능한 데이터를 동시에 읽고 쓰면서 예측하기 어려운 오류가 생기는 문제입니다. 잠금, 불변성, 메시지 전달로 줄일 수 있습니다.",
+    "hint": "공유 가변 상태 문제",
+    "detail": {
+      "easy": "공유 가변 상태 문제은 객체지향 설계와 타입 모델링에서 변경에 강한 코드를 만들기 위한 핵심 개념입니다.",
+      "analogy": "여러 직원이 같은 화이트보드 숫자를 동시에 지우고 다시 쓰면 최종 숫자가 누구 계산인지 알기 어려운 상황과 같습니다.",
+      "example": "# 공유 가변 상태 문제 예시: Python 3에서 실행 가능한 코드\ncounter = 0\nfor _ in range(3):\n    counter += 1\nprint(counter)",
+      "tip": "공유 가변 상태 문제을 적용할 때는 책임, 결합도, 테스트 용이성, 실제 변경 방향을 함께 확인하세요."
+    }
+  }
+]

@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1611",
+    "term": "서비스 계정(Service Account)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 24,
+    "definition": "서비스 계정(Service Account): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "서비스계정",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 서비스 계정(Service Account)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"서비스 계정(Service Account)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "서비스 계정(Service Account)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1612",
+    "term": "IRSA",
+    "category": "클라우드 / 인프라",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 24,
+    "definition": "IRSA: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "IRSA",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. IRSA을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"IRSA\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "IRSA은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1613",
+    "term": "Workload Identity",
+    "category": "클라우드 / 인프라",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 24,
+    "definition": "Workload Identity: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "WorkloadId",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. Workload Identity을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Workload Identity\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Workload Identity은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1614",
+    "term": "클라우드 IAM 심화",
+    "category": "클라우드 / 인프라",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 24,
+    "definition": "클라우드 IAM 심화: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "클라우드심화",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 클라우드 IAM 심화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클라우드 IAM 심화\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클라우드 IAM 심화은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1615",
+    "term": "리소스 기반 정책",
+    "category": "클라우드 / 인프라",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 24,
+    "definition": "리소스 기반 정책: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "리소스기반정책",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 리소스 기반 정책을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리소스 기반 정책\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리소스 기반 정책은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1616",
+    "term": "SCP(서비스 제어 정책)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 24,
+    "definition": "SCP(서비스 제어 정책): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "SCP(서비스제어정",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. SCP(서비스 제어 정책)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SCP(서비스 제어 정책)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SCP(서비스 제어 정책)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1617",
+    "term": "조직 단위(OU)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 24,
+    "definition": "조직 단위(OU): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "조직단위",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 조직 단위(OU)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"조직 단위(OU)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "조직 단위(OU)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1618",
+    "term": "랜딩 존(Landing Zone)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "랜딩 존(Landing Zone): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "랜딩존",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 랜딩 존(Landing Zone)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"랜딩 존(Landing Zone)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "랜딩 존(Landing Zone)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1619",
+    "term": "계정 팩토리",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "계정 팩토리: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "계정팩토리",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 계정 팩토리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"계정 팩토리\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "계정 팩토리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1620",
+    "term": "FinOps",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "FinOps: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "FinOps",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. FinOps을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"FinOps\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "FinOps을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1621",
+    "term": "클라우드 비용 할당",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "클라우드 비용 할당: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "클라우드비용할당",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 클라우드 비용 할당을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클라우드 비용 할당\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클라우드 비용 할당을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1622",
+    "term": "예약 인스턴스 vs Savings Plans",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "예약 인스턴스 vs Savings Plans: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "예약인스턴스",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 예약 인스턴스 vs Savings Plans을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"예약 인스턴스 vs Savings Plans\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "예약 인스턴스 vs Savings Plans을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1623",
+    "term": "컴퓨트 옵티마이저",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "컴퓨트 옵티마이저: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "컴퓨트옵티마이저",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 컴퓨트 옵티마이저을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컴퓨트 옵티마이저\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컴퓨트 옵티마이저을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1624",
+    "term": "비용 이상 탐지",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "비용 이상 탐지: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "비용이상탐지",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 비용 이상 탐지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"비용 이상 탐지\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "비용 이상 탐지을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1625",
+    "term": "태깅 전략",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "태깅 전략: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "태깅전략",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 태깅 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"태깅 전략\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "태깅 전략을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1626",
+    "term": "클라우드 네이티브 패턴",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "클라우드 네이티브 패턴: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "클라우드네이티브패턴",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 클라우드 네이티브 패턴을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클라우드 네이티브 패턴\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클라우드 네이티브 패턴을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1627",
+    "term": "12 요소 앱",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "12 요소 앱: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "요소앱",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 12 요소 앱을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"12 요소 앱\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "12 요소 앱을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1628",
+    "term": "컨테이너 오케스트레이션 심화",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "컨테이너 오케스트레이션 심화: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "컨테이너오케스트레이",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 컨테이너 오케스트레이션 심화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컨테이너 오케스트레이션 심화\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컨테이너 오케스트레이션 심화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1629",
+    "term": "노드 어피니티",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "노드 어피니티: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "노드어피니티",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 노드 어피니티을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"노드 어피니티\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "노드 어피니티을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1630",
+    "term": "테인트/톨러레이션",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "테인트/톨러레이션: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "테인트톨러레이션",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 테인트/톨러레이션을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테인트/톨러레이션\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테인트/톨러레이션을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1631",
+    "term": "리소스 쿼터",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "리소스 쿼터: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "리소스쿼터",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 리소스 쿼터을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리소스 쿼터\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리소스 쿼터을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1632",
+    "term": "HPA(수평 파드 자동 확장)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "HPA(수평 파드 자동 확장): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "HPA(수평파드자동",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. HPA(수평 파드 자동 확장)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"HPA(수평 파드 자동 확장)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "HPA(수평 파드 자동 확장)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1633",
+    "term": "VPA(수직 파드 자동 확장)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "VPA(수직 파드 자동 확장): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "VPA(수직파드자동",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. VPA(수직 파드 자동 확장)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"VPA(수직 파드 자동 확장)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "VPA(수직 파드 자동 확장)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1634",
+    "term": "KEDA(이벤트 기반 자동 확장)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "KEDA(이벤트 기반 자동 확장): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "KEDA(이벤트기반",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. KEDA(이벤트 기반 자동 확장)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"KEDA(이벤트 기반 자동 확장)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "KEDA(이벤트 기반 자동 확장)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1635",
+    "term": "클러스터 오토스케일러",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "클러스터 오토스케일러: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "클러스터오토스케일러",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 클러스터 오토스케일러을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클러스터 오토스케일러\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클러스터 오토스케일러을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1636",
+    "term": "서비스 계정 토큰",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "서비스 계정 토큰: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "서비스계정토큰",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 서비스 계정 토큰을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"서비스 계정 토큰\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "서비스 계정 토큰을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1637",
+    "term": "OPA(정책 엔진)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "OPA(정책 엔진): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "OPA(정책엔진)",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. OPA(정책 엔진)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"OPA(정책 엔진)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "OPA(정책 엔진)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1638",
+    "term": "Kyverno",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "Kyverno: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "Kyverno",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. Kyverno을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Kyverno\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Kyverno을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1639",
+    "term": "이미지 스캔(Trivy)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "이미지 스캔(Trivy): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "이미지스캔",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 이미지 스캔(Trivy)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이미지 스캔(Trivy)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이미지 스캔(Trivy)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1640",
+    "term": "런타임 보안(Falco)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "런타임 보안(Falco): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "런타임보안",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 런타임 보안(Falco)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"런타임 보안(Falco)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "런타임 보안(Falco)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1641",
+    "term": "네트워크 정책(K8s)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "네트워크 정책(K8s): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "네트워크정책",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 네트워크 정책(K8s)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"네트워크 정책(K8s)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "네트워크 정책(K8s)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1642",
+    "term": "Pod 보안 표준",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "Pod 보안 표준: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "보안표준",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. Pod 보안 표준을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Pod 보안 표준\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Pod 보안 표준을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1643",
+    "term": "시크릿 관리(Vault)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "시크릿 관리(Vault): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "시크릿관리",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 시크릿 관리(Vault)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"시크릿 관리(Vault)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "시크릿 관리(Vault)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1644",
+    "term": "External Secrets Operator",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "External Secrets Operator: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "ExternalSe",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. External Secrets Operator을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"External Secrets Operator\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "External Secrets Operator을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1645",
+    "term": "GitOps 심화",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "GitOps 심화: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "심화",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. GitOps 심화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"GitOps 심화\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "GitOps 심화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1646",
+    "term": "플럭스CD",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "플럭스CD: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "플럭스",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 플럭스CD을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"플럭스CD\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "플럭스CD을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1647",
+    "term": "드리프트 감지",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "드리프트 감지: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "드리프트감지",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 드리프트 감지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"드리프트 감지\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "드리프트 감지을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1648",
+    "term": "멀티클러스터 관리",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "멀티클러스터 관리: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "멀티클러스터관리",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 멀티클러스터 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"멀티클러스터 관리\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "멀티클러스터 관리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1649",
+    "term": "클러스터 페더레이션",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "클러스터 페더레이션: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "클러스터페더레이션",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 클러스터 페더레이션을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클러스터 페더레이션\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클러스터 페더레이션을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1650",
+    "term": "서비스 메시 심화",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "서비스 메시 심화: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "서비스메시심화",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 서비스 메시 심화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"서비스 메시 심화\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "서비스 메시 심화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1651",
+    "term": "웨스트-이스트 트래픽",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "웨스트-이스트 트래픽: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "웨스트이스트트래픽",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 웨스트-이스트 트래픽을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"웨스트-이스트 트래픽\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "웨스트-이스트 트래픽을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1652",
+    "term": "상호 TLS(mTLS) 구현",
+    "category": "클라우드 / 인프라",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 24,
+    "definition": "상호 TLS(mTLS) 구현: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "상호구현",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 상호 TLS(mTLS) 구현을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"상호 TLS(mTLS) 구현\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "상호 TLS(mTLS) 구현을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1653",
+    "term": "옵저버빌리티 플랫폼",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "옵저버빌리티 플랫폼: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "옵저버빌리티플랫폼",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 옵저버빌리티 플랫폼을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"옵저버빌리티 플랫폼\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "옵저버빌리티 플랫폼은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1654",
+    "term": "OpenTelemetry",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "OpenTelemetry: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "OpenTeleme",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. OpenTelemetry을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"OpenTelemetry\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "OpenTelemetry은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1655",
+    "term": "분산 추적 구현",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "분산 추적 구현: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "분산추적구현",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 분산 추적 구현을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 추적 구현\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 추적 구현은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1656",
+    "term": "eBPF",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "eBPF: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "eBPF",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. eBPF을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"eBPF\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "eBPF은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1657",
+    "term": "클라우드 마이그레이션 전략(6R)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "클라우드 마이그레이션 전략(6R): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "클라우드마이그레이션",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 클라우드 마이그레이션 전략(6R)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클라우드 마이그레이션 전략(6R)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클라우드 마이그레이션 전략(6R)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1658",
+    "term": "리호스팅",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "리호스팅: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "리호스팅",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 리호스팅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리호스팅\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리호스팅은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1659",
+    "term": "리플랫포밍",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "리플랫포밍: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "리플랫포밍",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 리플랫포밍을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리플랫포밍\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리플랫포밍은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1660",
+    "term": "리아키텍처링",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "리아키텍처링: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "리아키텍처링",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 리아키텍처링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리아키텍처링\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리아키텍처링은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1661",
+    "term": "클라우드 탈출 전략",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "클라우드 탈출 전략: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "클라우드탈출전략",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 클라우드 탈출 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클라우드 탈출 전략\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클라우드 탈출 전략은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1662",
+    "term": "벤더 종속(Lock-in) 최소화",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "벤더 종속(Lock-in) 최소화: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "벤더종속최소화",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 벤더 종속(Lock-in) 최소화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"벤더 종속(Lock-in) 최소화\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "벤더 종속(Lock-in) 최소화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1663",
+    "term": "오픈소스 대안 선택",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "오픈소스 대안 선택: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "오픈소스대안선택",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 오픈소스 대안 선택을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"오픈소스 대안 선택\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "오픈소스 대안 선택은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1664",
+    "term": "AWS EKS",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "AWS EKS: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "AWSEKS",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. AWS EKS을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"AWS EKS\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "AWS EKS은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1665",
+    "term": "GKE(Google Kubernetes Engine)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "GKE(Google Kubernetes Engine): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "GKE(Google",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. GKE(Google Kubernetes Engine)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"GKE(Google Kubernetes Engine)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "GKE(Google Kubernetes Engine)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1666",
+    "term": "AKS(Azure Kubernetes)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "AKS(Azure Kubernetes): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "AKS(AzureK",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. AKS(Azure Kubernetes)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"AKS(Azure Kubernetes)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "AKS(Azure Kubernetes)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1667",
+    "term": "클라우드 런(Cloud Run)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "클라우드 런(Cloud Run): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "클라우드런",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 클라우드 런(Cloud Run)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클라우드 런(Cloud Run)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클라우드 런(Cloud Run)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1668",
+    "term": "Lambda 계층(Layer)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "Lambda 계층(Layer): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "계층",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. Lambda 계층(Layer)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Lambda 계층(Layer)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Lambda 계층(Layer)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1669",
+    "term": "EventBridge",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "EventBridge: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "EventBridg",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. EventBridge을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"EventBridge\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "EventBridge은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1670",
+    "term": "Step Functions",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "Step Functions: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "StepFuncti",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. Step Functions을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Step Functions\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Step Functions은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1671",
+    "term": "AWS Glue",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "AWS Glue: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "AWSGlue",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. AWS Glue을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"AWS Glue\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "AWS Glue은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1672",
+    "term": "AWS Athena",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "AWS Athena: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "AWSAthena",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. AWS Athena을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"AWS Athena\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "AWS Athena은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1673",
+    "term": "AWS Redshift",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "AWS Redshift: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "AWSRedshif",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. AWS Redshift을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"AWS Redshift\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "AWS Redshift은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1674",
+    "term": "Kinesis 스트리밍",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "Kinesis 스트리밍: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "스트리밍",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. Kinesis 스트리밍을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Kinesis 스트리밍\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Kinesis 스트리밍은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1675",
+    "term": "서버리스 데이터베이스",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "서버리스 데이터베이스: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "서버리스데이터베이스",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 서버리스 데이터베이스을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"서버리스 데이터베이스\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "서버리스 데이터베이스은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1676",
+    "term": "글로벌 데이터베이스",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "글로벌 데이터베이스: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "글로벌데이터베이스",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 글로벌 데이터베이스을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"글로벌 데이터베이스\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "글로벌 데이터베이스은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1677",
+    "term": "크로스 리전 복제(DB)",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "크로스 리전 복제(DB): 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "크로스리전복제",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 크로스 리전 복제(DB)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"크로스 리전 복제(DB)\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "크로스 리전 복제(DB)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1678",
+    "term": "Lambda 콜드 스타트",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "Lambda 콜드 스타트: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "콜드스타트",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. Lambda 콜드 스타트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Lambda 콜드 스타트\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Lambda 콜드 스타트은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1679",
+    "term": "프로비저닝된 동시성",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "프로비저닝된 동시성: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "프로비저닝된동시성",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 프로비저닝된 동시성을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"프로비저닝된 동시성\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "프로비저닝된 동시성은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1680",
+    "term": "클라우드 함수 최적화",
+    "category": "클라우드 / 인프라",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 24,
+    "definition": "클라우드 함수 최적화: 서버, 네트워크, 저장소, 데이터베이스, 권한, 배포 자동화 같은 인프라 자원을 클라우드에서 구성하고 운영하기 위한 개념입니다. 필요할 때 자원을 만들고 확장하며 비용과 안정성을 함께 관리합니다.",
+    "hint": "클라우드함수최적화",
+    "detail": {
+      "easy": "인터넷으로 빌려 쓰는 인프라",
+      "analogy": "직접 발전기를 사지 않고 전기를 필요한 만큼 쓰는 것과 비슷합니다. 클라우드는 서버와 저장소를 소유하기보다 필요한 만큼 빌려 쓰고 관리 기준을 정합니다. 클라우드 함수 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클라우드 함수 최적화\"\ncategory = \"클라우드 / 인프라\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클라우드 함수 최적화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

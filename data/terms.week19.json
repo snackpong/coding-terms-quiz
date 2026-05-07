@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1261",
+    "term": "DevOps 문화",
+    "category": "DevOps / CI-CD",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 19,
+    "definition": "DevOps 문화: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "문화",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. DevOps 문화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"DevOps 문화\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "DevOps 문화은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1262",
+    "term": "SRE(사이트 신뢰성 엔지니어링)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 19,
+    "definition": "SRE(사이트 신뢰성 엔지니어링): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "SRE(사이트신뢰성",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. SRE(사이트 신뢰성 엔지니어링)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SRE(사이트 신뢰성 엔지니어링)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SRE(사이트 신뢰성 엔지니어링)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1263",
+    "term": "에러 예산(Error Budget)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 19,
+    "definition": "에러 예산(Error Budget): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "에러예산",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 에러 예산(Error Budget)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"에러 예산(Error Budget)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "에러 예산(Error Budget)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1264",
+    "term": "변경 실패율",
+    "category": "DevOps / CI-CD",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 19,
+    "definition": "변경 실패율: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "변경실패율",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 변경 실패율을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"변경 실패율\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "변경 실패율은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1265",
+    "term": "배포 빈도",
+    "category": "DevOps / CI-CD",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 19,
+    "definition": "배포 빈도: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "배포빈도",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 배포 빈도을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"배포 빈도\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "배포 빈도은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1266",
+    "term": "복구 시간(MTTR)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 19,
+    "definition": "복구 시간(MTTR): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "복구시간",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 복구 시간(MTTR)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"복구 시간(MTTR)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "복구 시간(MTTR)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1267",
+    "term": "지속적 통합(CI)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 19,
+    "definition": "지속적 통합(CI): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "지속적통합",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 지속적 통합(CI)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"지속적 통합(CI)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "지속적 통합(CI)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1268",
+    "term": "지속적 전달(CD)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "지속적 전달(CD): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "지속적전달",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 지속적 전달(CD)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"지속적 전달(CD)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "지속적 전달(CD)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1269",
+    "term": "지속적 배포(CD 심화)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "지속적 배포(CD 심화): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "지속적배포",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 지속적 배포(CD 심화)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"지속적 배포(CD 심화)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "지속적 배포(CD 심화)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1270",
+    "term": "파이프라인 스테이지",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "파이프라인 스테이지: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "파이프라인스테이지",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 파이프라인 스테이지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"파이프라인 스테이지\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "파이프라인 스테이지을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1271",
+    "term": "빌드 스테이지",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "빌드 스테이지: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "빌드스테이지",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 빌드 스테이지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"빌드 스테이지\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "빌드 스테이지을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1272",
+    "term": "테스트 스테이지",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "테스트 스테이지: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "테스트스테이지",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 테스트 스테이지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테스트 스테이지\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테스트 스테이지을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1273",
+    "term": "배포 스테이지",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "배포 스테이지: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "배포스테이지",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 배포 스테이지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"배포 스테이지\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "배포 스테이지을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1274",
+    "term": "GitHub Actions",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "GitHub Actions: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "GitHubActi",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. GitHub Actions을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"GitHub Actions\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "GitHub Actions을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1275",
+    "term": "GitLab CI",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "GitLab CI: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "GitLabCI",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. GitLab CI을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"GitLab CI\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "GitLab CI을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1276",
+    "term": "Jenkins",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "Jenkins: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Jenkins",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Jenkins을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Jenkins\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Jenkins을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1277",
+    "term": "아티팩트(Artifact)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "아티팩트(Artifact): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "아티팩트",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 아티팩트(Artifact)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"아티팩트(Artifact)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "아티팩트(Artifact)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1278",
+    "term": "컨테이너 레지스트리",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "컨테이너 레지스트리: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "컨테이너레지스트리",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 컨테이너 레지스트리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컨테이너 레지스트리\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컨테이너 레지스트리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1279",
+    "term": "Docker 기초",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "Docker 기초: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "기초",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Docker 기초을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Docker 기초\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Docker 기초을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1280",
+    "term": "Dockerfile",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "Dockerfile: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Dockerfile",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Dockerfile을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Dockerfile\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Dockerfile을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1281",
+    "term": "도커 레이어",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "도커 레이어: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "도커레이어",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 도커 레이어을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"도커 레이어\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "도커 레이어을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1282",
+    "term": "멀티 스테이지 빌드",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "멀티 스테이지 빌드: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "멀티스테이지빌드",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 멀티 스테이지 빌드을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"멀티 스테이지 빌드\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "멀티 스테이지 빌드을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1283",
+    "term": "도커 컴포즈",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "도커 컴포즈: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "도커컴포즈",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 도커 컴포즈을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"도커 컴포즈\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "도커 컴포즈을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1284",
+    "term": "쿠버네티스(K8s) 개요",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "쿠버네티스(K8s) 개요: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "쿠버네티스개요",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 쿠버네티스(K8s) 개요을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"쿠버네티스(K8s) 개요\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "쿠버네티스(K8s) 개요을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1285",
+    "term": "Pod",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "Pod: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Pod",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Pod을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Pod\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Pod을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1286",
+    "term": "Deployment",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "Deployment: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Deployment",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Deployment을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Deployment\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Deployment을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1287",
+    "term": "Service(K8s)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "Service(K8s): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Service(K8",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Service(K8s)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Service(K8s)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Service(K8s)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1288",
+    "term": "Ingress",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "Ingress: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Ingress",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Ingress을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Ingress\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Ingress을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1289",
+    "term": "ConfigMap",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "ConfigMap: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "ConfigMap",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. ConfigMap을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ConfigMap\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ConfigMap을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1290",
+    "term": "Secret(K8s)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "Secret(K8s): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Secret(K8s",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Secret(K8s)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Secret(K8s)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Secret(K8s)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1291",
+    "term": "Namespace",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "Namespace: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Namespace",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Namespace을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Namespace\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Namespace을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1292",
+    "term": "롤링 업데이트",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "롤링 업데이트: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "롤링업데이트",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 롤링 업데이트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"롤링 업데이트\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "롤링 업데이트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1293",
+    "term": "카나리 배포",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "카나리 배포: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "카나리배포",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 카나리 배포을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"카나리 배포\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "카나리 배포을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1294",
+    "term": "블루-그린 배포",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "블루-그린 배포: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "블루그린배포",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 블루-그린 배포을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"블루-그린 배포\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "블루-그린 배포을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1295",
+    "term": "피처 플래그(Feature Flag)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "피처 플래그(Feature Flag): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "피처플래그",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 피처 플래그(Feature Flag)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피처 플래그(Feature Flag)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피처 플래그(Feature Flag)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1296",
+    "term": "A/B 테스트",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "A/B 테스트: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "테스트",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. A/B 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"A/B 테스트\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "A/B 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1297",
+    "term": "샤도우 트래픽",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "샤도우 트래픽: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "샤도우트래픽",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 샤도우 트래픽을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"샤도우 트래픽\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "샤도우 트래픽을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1298",
+    "term": "모니터링 vs 옵저버빌리티",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "모니터링 vs 옵저버빌리티: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "모니터링옵저버빌리티",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 모니터링 vs 옵저버빌리티을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모니터링 vs 옵저버빌리티\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모니터링 vs 옵저버빌리티을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1299",
+    "term": "메트릭(Metric)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "메트릭(Metric): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "메트릭",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 메트릭(Metric)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"메트릭(Metric)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "메트릭(Metric)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1300",
+    "term": "로그(Log)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "로그(Log): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "로그",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 로그(Log)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"로그(Log)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "로그(Log)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1301",
+    "term": "트레이스(Trace)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "트레이스(Trace): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "트레이스",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 트레이스(Trace)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"트레이스(Trace)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "트레이스(Trace)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1302",
+    "term": "분산 추적",
+    "category": "DevOps / CI-CD",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 19,
+    "definition": "분산 추적: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "분산추적",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 분산 추적을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 추적\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 추적을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1303",
+    "term": "Jaeger",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "Jaeger: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Jaeger",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Jaeger을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Jaeger\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Jaeger은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1304",
+    "term": "Prometheus",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "Prometheus: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Prometheus",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Prometheus을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Prometheus\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Prometheus은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1305",
+    "term": "Grafana",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "Grafana: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Grafana",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Grafana을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Grafana\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Grafana은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1306",
+    "term": "알람 피로",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "알람 피로: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "알람피로",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 알람 피로을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"알람 피로\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "알람 피로은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1307",
+    "term": "SLO",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "SLO: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "SLO",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. SLO을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SLO\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SLO은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1308",
+    "term": "SLI",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "SLI: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "SLI",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. SLI을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SLI\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SLI은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1309",
+    "term": "SLA",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "SLA: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "SLA",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. SLA을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SLA\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SLA은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1310",
+    "term": "포스트모템",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "포스트모템: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "포스트모템",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 포스트모템을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"포스트모템\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "포스트모템은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1311",
+    "term": "불변 인프라",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "불변 인프라: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "불변인프라",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 불변 인프라을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"불변 인프라\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "불변 인프라은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1312",
+    "term": "GitOps",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "GitOps: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "GitOps",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. GitOps을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"GitOps\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "GitOps은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1313",
+    "term": "ArgoCD",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "ArgoCD: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "ArgoCD",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. ArgoCD을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ArgoCD\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ArgoCD은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1314",
+    "term": "Flux",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "Flux: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Flux",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Flux을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Flux\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Flux은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1315",
+    "term": "헬름(Helm)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "헬름(Helm): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "헬름",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 헬름(Helm)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"헬름(Helm)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "헬름(Helm)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1316",
+    "term": "오퍼레이터(Kubernetes Operator)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "오퍼레이터(Kubernetes Operator): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "오퍼레이터",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 오퍼레이터(Kubernetes Operator)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"오퍼레이터(Kubernetes Operator)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "오퍼레이터(Kubernetes Operator)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1317",
+    "term": "서비스 메시(Service Mesh)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "서비스 메시(Service Mesh): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "서비스메시",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 서비스 메시(Service Mesh)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"서비스 메시(Service Mesh)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "서비스 메시(Service Mesh)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1318",
+    "term": "Istio",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "Istio: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "Istio",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. Istio을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Istio\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Istio은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1319",
+    "term": "사이드카 프록시",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "사이드카 프록시: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "사이드카프록시",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 사이드카 프록시을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"사이드카 프록시\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "사이드카 프록시은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1320",
+    "term": "mTLS",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "mTLS: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "mTLS",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. mTLS을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"mTLS\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "mTLS은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1321",
+    "term": "트래픽 미러링",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "트래픽 미러링: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "트래픽미러링",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 트래픽 미러링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"트래픽 미러링\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "트래픽 미러링은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1322",
+    "term": "카오스 엔지니어링",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "카오스 엔지니어링: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "카오스엔지니어링",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 카오스 엔지니어링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"카오스 엔지니어링\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "카오스 엔지니어링은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1323",
+    "term": "환경 분리(Dev/Staging/Prod)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "환경 분리(Dev/Staging/Prod): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "환경분리",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 환경 분리(Dev/Staging/Prod)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"환경 분리(Dev/Staging/Prod)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "환경 분리(Dev/Staging/Prod)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1324",
+    "term": "트렁크 기반 개발",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "트렁크 기반 개발: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "트렁크기반개발",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 트렁크 기반 개발을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"트렁크 기반 개발\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "트렁크 기반 개발은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1325",
+    "term": "모노레포(Monorepo)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "모노레포(Monorepo): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "모노레포",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 모노레포(Monorepo)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"모노레포(Monorepo)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "모노레포(Monorepo)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1326",
+    "term": "폴리레포(Polyrepo)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "폴리레포(Polyrepo): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "폴리레포",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 폴리레포(Polyrepo)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"폴리레포(Polyrepo)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "폴리레포(Polyrepo)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1327",
+    "term": "의존성 자동 업데이트(Dependabot)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "의존성 자동 업데이트(Dependabot): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "의존성자동업데이트",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 의존성 자동 업데이트(Dependabot)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"의존성 자동 업데이트(Dependabot)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "의존성 자동 업데이트(Dependabot)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1328",
+    "term": "배포 파이프라인 최적화",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "배포 파이프라인 최적화: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "배포파이프라인최적화",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 배포 파이프라인 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"배포 파이프라인 최적화\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "배포 파이프라인 최적화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1329",
+    "term": "컨테이너 이미지 스캔",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "컨테이너 이미지 스캔: 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "컨테이너이미지스캔",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 컨테이너 이미지 스캔을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"컨테이너 이미지 스캔\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "컨테이너 이미지 스캔은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1330",
+    "term": "비밀 스캔(Secret Scanning)",
+    "category": "DevOps / CI-CD",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 19,
+    "definition": "비밀 스캔(Secret Scanning): 개발, 테스트, 배포, 운영을 자동화하고 서비스 신뢰성을 높이기 위한 문화와 도구, 운영 지표입니다. 코드 변경을 빠르고 안전하게 사용자에게 전달하는 데 쓰입니다.",
+    "hint": "비밀스캔",
+    "detail": {
+      "easy": "개발부터 운영까지 자동으로 잇는 방법",
+      "analogy": "공장에서 제품을 만들고 검사하고 포장하고 배송하는 라인이 연결돼 있으면 실수가 줄어듭니다. DevOps와 CI/CD는 소프트웨어 변경에도 그런 흐름을 만듭니다. 비밀 스캔(Secret Scanning)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"비밀 스캔(Secret Scanning)\"\ncategory = \"DevOps / CI-CD\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "비밀 스캔(Secret Scanning)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

@@ -485,7 +485,7 @@ function updateTermStat(termId, isCorrect) {
 // ── 데이터 로딩 ────────────────────────────────────────────
 async function init() {
   initFirebase();
-  const weeks = [1, 2, 3, 4, 5];
+  const weeks = Array.from({ length: 30 }, (_, i) => i + 1);
   const results = await Promise.all(
     weeks.map(w => fetch(`data/terms.week${w}.json`).then(r => r.json()))
   );

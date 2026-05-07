@@ -254,6 +254,37 @@
   .choice-btn.dont-know { grid-column: 1; }
   .home-title { font-size: 32px; }
   .cats-grid { grid-template-columns: 1fr; }
+  .today-summary-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Charge topbar: prevent title overflow on narrow mobile ── */
+@media (max-width: 600px) {
+  .charge-topbar {
+    gap: 10px;
+  }
+  .charge-topbar > div:not(.charge-top-actions) {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+  }
+  .charge-kicker {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .charge-topbar h2 {
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .charge-top-actions {
+    flex-shrink: 0;
+  }
+  .charge-small-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
 }
 
 /* ═══════════════════════════════════════════════════

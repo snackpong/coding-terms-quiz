@@ -484,7 +484,7 @@ function scheduleFinishChargeGame(result) {
   if (game.finished || game.finishing) return;
   game.finishing = true;
   document.getElementById('charge-next-btn').style.display = 'none';
-  window.setTimeout(() => finishChargeGame(result), 760);
+  window.setTimeout(() => finishChargeGame(result), 1100);
 }
 
 function finishChargeGame(result) {
@@ -527,6 +527,10 @@ function finishChargeGame(result) {
     const terms = [...new Set(game.wrongTerms)].slice(0, 6);
     wrongList.innerHTML = terms.map(t => `<span class="res-wrong-term">${t}</span>`).join('');
     wrongSection.style.display = terms.length > 0 ? 'block' : 'none';
+  }
+  const retryBtn = document.getElementById('btn-result-retry');
+  if (retryBtn) {
+    retryBtn.textContent = complete ? '한 번 더 도전 →' : fail ? '다시 도전 →' : '다시 하기 →';
   }
   overlay.className = `charge-result-overlay ${complete ? 'result-complete' : fail ? 'result-fail' : 'result-done'}`;
   overlay.style.display = 'flex';

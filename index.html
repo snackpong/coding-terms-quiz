@@ -179,29 +179,33 @@
   <div id="screen-review" class="screen utility-screen">
     <main class="utility-container">
       <div class="utility-kicker">REVIEW</div>
-      <h2 class="utility-title">복습 센터</h2>
-      <p class="utility-copy">틀린 문제와 맞힌 문제를 다시 확인하는 공간입니다.</p>
-      <div class="utility-grid">
-        <button id="review-wrong-start" class="utility-card utility-card-wrong">
-          <span class="material-symbols-outlined">error</span>
-          <strong id="review-wrong-total">0</strong>
-          <em>틀린 문제 복습</em>
-        </button>
-        <button id="review-correct-start" class="utility-card utility-card-correct">
-          <span class="material-symbols-outlined">check_circle</span>
-          <strong id="review-correct-total">0</strong>
-          <em>맞힌 문제 복습</em>
-        </button>
-        <button id="review-weak-start" class="utility-card utility-card-weak">
-          <span class="material-symbols-outlined">psychology</span>
-          <strong id="review-weak-total">0</strong>
-          <em>약점 용어 복습</em>
-        </button>
-        <button id="review-note-start" class="utility-card utility-card-note">
-          <span class="material-symbols-outlined">menu_book</span>
-          <strong id="review-note-total">0</strong>
-          <em>오답 노트</em>
-        </button>
+      <div class="review-body">
+        <div class="review-intro">
+          <h2 class="utility-title">복습 센터</h2>
+          <p class="utility-copy">틀린 문제와 맞힌 문제를 다시 확인하는 공간입니다.</p>
+        </div>
+        <div class="utility-grid review-cards">
+          <button id="review-wrong-start" class="utility-card utility-card-wrong">
+            <span class="material-symbols-outlined">error</span>
+            <strong id="review-wrong-total">0</strong>
+            <em>틀린 문제 복습</em>
+          </button>
+          <button id="review-correct-start" class="utility-card utility-card-correct">
+            <span class="material-symbols-outlined">check_circle</span>
+            <strong id="review-correct-total">0</strong>
+            <em>맞힌 문제 복습</em>
+          </button>
+          <button id="review-weak-start" class="utility-card utility-card-weak">
+            <span class="material-symbols-outlined">psychology</span>
+            <strong id="review-weak-total">0</strong>
+            <em>약점 용어 복습</em>
+          </button>
+          <button id="review-note-start" class="utility-card utility-card-note">
+            <span class="material-symbols-outlined">menu_book</span>
+            <strong id="review-note-total">0</strong>
+            <em>오답 노트</em>
+          </button>
+        </div>
       </div>
     </main>
   </div>

@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "351",
+    "term": "기본 키",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터베이스 테이블에서 각 행을 고유하게 식별하는 열입니다. 중복과 NULL을 허용하지 않으며 회원 테이블의 user_id처럼 한 행을 정확히 찾을 때 사용합니다.",
+    "hint": "고유식별자",
+    "detail": {
+      "easy": "행마다 하나뿐인 번호",
+      "analogy": "학교 명부에서 이름이 같은 학생이 있어도 학번은 겹치지 않습니다. 기본 키는 그 학번처럼 한 행을 절대 헷갈리지 않게 구분하는 값입니다.",
+      "example": "-- SQLite에서 실행 가능한 예시\nDROP TABLE IF EXISTS users;\nCREATE TABLE users (\n  user_id INTEGER PRIMARY KEY,\n  email TEXT UNIQUE NOT NULL,\n  name TEXT NOT NULL\n);\nINSERT INTO users (email, name) VALUES ('a@example.com', 'Ada');\nSELECT user_id, email, name FROM users;",
+      "tip": "기본 키는 변경 가능성이 낮은 값을 쓰는 것이 좋습니다. 이메일처럼 바뀔 수 있는 값은 후보 키로는 가능해도 기본 키로는 신중히 선택하세요."
+    }
+  },
+  {
+    "id": "352",
+    "term": "외래 키",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "한 테이블의 열이 다른 테이블의 기본 키를 참조하도록 만든 관계 제약입니다. 주문의 user_id가 users.user_id를 가리키면 존재하지 않는 회원의 주문을 막을 수 있습니다.",
+    "hint": "테이블연결",
+    "detail": {
+      "easy": "다른 표의 행을 가리키는 값",
+      "analogy": "택배 상자에 주문번호가 붙어 있으면 그 번호로 주문 내역을 찾아갈 수 있습니다. 외래 키는 한 표의 값으로 다른 표의 정확한 행을 찾아가게 해 줍니다.",
+      "example": "-- SQLite에서 외래 키를 켭니다.\nPRAGMA foreign_keys = ON;\nCREATE TABLE users (user_id INTEGER PRIMARY KEY, name TEXT NOT NULL);\nCREATE TABLE orders (\n  order_id INTEGER PRIMARY KEY,\n  user_id INTEGER NOT NULL,\n  FOREIGN KEY (user_id) REFERENCES users(user_id)\n);\nINSERT INTO users VALUES (1, 'Ada');\nINSERT INTO orders VALUES (100, 1);\nSELECT * FROM orders;",
+      "tip": "외래 키를 실제 DB에서 강제할지 애플리케이션에서만 관리할지 결정해야 합니다. 무결성이 중요하면 DB 제약으로 보장하는 편이 안전합니다."
+    }
+  },
+  {
+    "id": "353",
+    "term": "고유 키",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "한 열 또는 열 조합의 값이 테이블 안에서 중복되지 않도록 보장하는 키입니다. 이메일, 주민등록번호처럼 기본 키는 아니지만 유일해야 하는 값에 사용합니다.",
+    "hint": "중복금지",
+    "detail": {
+      "easy": "같은 값을 두 번 못 넣게 하는 약속",
+      "analogy": "공연장 좌석 번호는 한 공연 안에서 두 사람에게 동시에 배정될 수 없습니다. 고유 키는 데이터에서도 같은 값이 두 행에 배정되지 않게 막습니다.",
+      "example": "CREATE TABLE users (\n  id INTEGER PRIMARY KEY,\n  email TEXT NOT NULL UNIQUE\n);\nINSERT INTO users VALUES (1, 'a@example.com');\n-- 아래 INSERT는 같은 이메일이라 실패합니다.\n-- INSERT INTO users VALUES (2, 'a@example.com');\nSELECT * FROM users;",
+      "tip": "UNIQUE 제약의 NULL 처리 방식은 DBMS마다 차이가 있습니다. 여러 NULL 허용 여부가 중요한 설계라면 사용하는 DB의 동작을 확인하세요."
+    }
+  },
+  {
+    "id": "354",
+    "term": "복합 키",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "두 개 이상의 열을 묶어 한 행을 고유하게 식별하는 키입니다. 수강 신청 테이블에서 student_id와 course_id를 함께 써야 한 신청을 구분할 수 있습니다.",
+    "hint": "열묶음키",
+    "detail": {
+      "easy": "여러 칸을 합쳐 만든 식별자",
+      "analogy": "아파트 주소는 동 번호와 호수가 함께 있어야 정확합니다. 복합 키도 하나의 값만으로 부족할 때 여러 값을 합쳐 한 대상을 구분합니다.",
+      "example": "CREATE TABLE enrollments (\n  student_id INTEGER NOT NULL,\n  course_id INTEGER NOT NULL,\n  enrolled_at TEXT NOT NULL,\n  PRIMARY KEY (student_id, course_id)\n);\nINSERT INTO enrollments VALUES (1, 101, '2026-05-06');\nSELECT * FROM enrollments WHERE student_id = 1 AND course_id = 101;",
+      "tip": "복합 키는 조인 조건과 인덱스 순서에 영향을 줍니다. 자주 조회하는 조건의 열 순서를 함께 고려하세요."
+    }
+  },
+  {
+    "id": "355",
+    "term": "인덱스",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "테이블의 특정 열 값을 빠르게 찾기 위해 별도로 정렬하거나 구조화해 둔 검색 보조 자료입니다. 조회는 빨라질 수 있지만 INSERT, UPDATE, DELETE 때 유지 비용이 추가됩니다.",
+    "hint": "빠른검색",
+    "detail": {
+      "easy": "책 뒤의 찾아보기",
+      "analogy": "두꺼운 책에서 단어를 찾을 때 처음부터 읽지 않고 색인을 봅니다. 인덱스는 데이터베이스가 모든 행을 훑지 않고 필요한 위치로 가게 하는 색인입니다.",
+      "example": "CREATE TABLE logs (id INTEGER PRIMARY KEY, level TEXT, message TEXT);\nCREATE INDEX idx_logs_level ON logs(level);\nINSERT INTO logs (level, message) VALUES ('ERROR', 'disk full');\nSELECT * FROM logs WHERE level = 'ERROR';",
+      "tip": "모든 열에 인덱스를 만들면 쓰기 성능과 저장 공간이 나빠집니다. WHERE, JOIN, ORDER BY에 자주 쓰이는 열부터 검토하세요."
+    }
+  },
+  {
+    "id": "356",
+    "term": "테이블",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "관계형 데이터베이스에서 같은 종류의 데이터를 행과 열로 저장하는 기본 단위입니다. 예를 들어 users 테이블은 회원 한 명을 한 행으로 저장합니다.",
+    "hint": "행열저장",
+    "detail": {
+      "easy": "데이터를 담는 표",
+      "analogy": "엑셀 시트 하나가 고객 목록, 상품 목록처럼 한 종류의 정보를 담는 것과 같습니다. 테이블도 정해진 열에 맞춰 같은 종류의 행을 모읍니다.",
+      "example": "CREATE TABLE products (\n  product_id INTEGER PRIMARY KEY,\n  name TEXT NOT NULL,\n  price INTEGER NOT NULL\n);\nINSERT INTO products VALUES (1, 'keyboard', 30000);\nSELECT * FROM products;",
+      "tip": "한 테이블에는 하나의 주제만 담는 것이 유지보수에 좋습니다. 회원 정보와 주문 정보를 한 테이블에 섞으면 중복과 수정 오류가 늘어납니다."
+    }
+  },
+  {
+    "id": "357",
+    "term": "행(레코드)",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "테이블에서 하나의 실제 데이터 묶음을 나타내는 가로 단위입니다. users 테이블의 한 행은 한 명의 회원 정보를 담습니다.",
+    "hint": "한건데이터",
+    "detail": {
+      "easy": "표에서 가로 한 줄",
+      "analogy": "출석부에서 학생 한 명이 한 줄을 차지합니다. 행은 데이터베이스 표에서 한 대상에 대한 정보를 한 줄로 묶은 것입니다.",
+      "example": "CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);\nINSERT INTO users VALUES (1, 'Ada', 32);\n-- 아래 SELECT 결과의 한 줄이 하나의 행입니다.\nSELECT * FROM users;",
+      "tip": "행 하나가 무엇을 의미하는지 분명해야 합니다. 같은 테이블에서 어떤 행은 회원, 어떤 행은 주문을 뜻하게 만들면 설계가 흐려집니다."
+    }
+  },
+  {
+    "id": "358",
+    "term": "열(컬럼)",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "테이블에서 각 행이 공통으로 가지는 속성을 나타내는 세로 단위입니다. users 테이블의 email 열은 모든 회원의 이메일 값을 담습니다.",
+    "hint": "속성칸",
+    "detail": {
+      "easy": "표에서 세로 한 칸의 이름",
+      "analogy": "학생 명부의 이름, 학번, 반처럼 각 칸 제목이 정해져 있습니다. 열은 모든 행이 같은 의미로 사용하는 데이터 항목입니다.",
+      "example": "CREATE TABLE users (\n  id INTEGER PRIMARY KEY,\n  name TEXT,\n  email TEXT\n);\nINSERT INTO users VALUES (1, 'Ada', 'a@example.com');\nSELECT email FROM users;",
+      "tip": "열 이름은 의미가 드러나게 지으세요. value1, value2 같은 이름은 쿼리와 유지보수를 어렵게 만듭니다."
+    }
+  },
+  {
+    "id": "359",
+    "term": "스키마",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터베이스에 어떤 테이블, 열, 데이터 타입, 제약조건이 있는지 정의한 구조입니다. 즉 데이터가 어떤 모양으로 저장될지 정한 설계도입니다.",
+    "hint": "DB설계도",
+    "detail": {
+      "easy": "데이터베이스의 설계도",
+      "analogy": "집을 짓기 전에 방 위치와 배관을 도면에 정합니다. 스키마는 데이터베이스에서 테이블과 열의 배치를 정한 도면입니다.",
+      "example": "-- 이 CREATE TABLE 문이 간단한 스키마 정의입니다.\nCREATE TABLE posts (\n  post_id INTEGER PRIMARY KEY,\n  title TEXT NOT NULL,\n  created_at TEXT DEFAULT CURRENT_TIMESTAMP\n);",
+      "tip": "스키마 변경은 애플리케이션 코드와 함께 배포 계획을 세워야 합니다. 큰 테이블의 ALTER는 잠금이나 긴 실행 시간을 만들 수 있습니다."
+    }
+  },
+  {
+    "id": "360",
+    "term": "제약조건",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터가 정해진 규칙을 어기지 못하도록 데이터베이스가 강제하는 조건입니다. NOT NULL, UNIQUE, CHECK, FOREIGN KEY 같은 규칙이 대표적입니다.",
+    "hint": "입력규칙",
+    "detail": {
+      "easy": "잘못된 값을 막는 규칙",
+      "analogy": "도서관 회원증 번호에는 빈칸이 있을 수 없고 같은 번호를 두 명이 쓸 수 없습니다. 제약조건은 이런 규칙을 DB가 직접 지키게 합니다.",
+      "example": "CREATE TABLE accounts (\n  id INTEGER PRIMARY KEY,\n  email TEXT NOT NULL UNIQUE,\n  balance INTEGER CHECK (balance >= 0)\n);\nINSERT INTO accounts VALUES (1, 'a@example.com', 1000);\nSELECT * FROM accounts;",
+      "tip": "중요한 데이터 규칙은 애플리케이션 검증만 믿지 말고 DB 제약조건으로도 보호하세요."
+    }
+  },
+  {
+    "id": "361",
+    "term": "함수 종속성",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "한 열의 값이 정해지면 다른 열의 값도 하나로 결정되는 관계입니다. 예를 들어 student_id가 정해지면 student_name이 하나로 결정된다면 student_name은 student_id에 함수 종속됩니다.",
+    "hint": "값결정관계",
+    "detail": {
+      "easy": "한 값이 다른 값을 정하는 관계",
+      "analogy": "학생 번호를 알면 그 학생의 이름을 정확히 찾을 수 있습니다. 함수 종속성은 어떤 값이 다른 값을 결정하는 이런 데이터 관계를 말합니다.",
+      "example": "CREATE TABLE customers (customer_id INTEGER PRIMARY KEY, name TEXT);\nCREATE TABLE orders (order_id INTEGER PRIMARY KEY, customer_id INTEGER, amount INTEGER);\nINSERT INTO customers VALUES (1, 'Ada');\nINSERT INTO orders VALUES (10, 1, 5000);\nSELECT customers.name, orders.amount FROM orders JOIN customers USING (customer_id);",
+      "tip": "함수 종속성을 제대로 파악해야 정규화가 가능합니다. 테이블을 나누기 전 어떤 열이 어떤 열을 결정하는지 먼저 적어 보세요."
+    }
+  },
+  {
+    "id": "362",
+    "term": "1정규형",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "테이블의 각 칸이 더 쪼갤 수 없는 단일 값을 가지도록 만든 상태입니다. 한 열에 전화번호 여러 개를 쉼표로 넣는 구조는 1정규형에 어긋납니다.",
+    "hint": "원자값",
+    "detail": {
+      "easy": "한 칸에 값 하나만 넣기",
+      "analogy": "한 사물함 칸에 여러 사람의 물건을 섞어 넣으면 찾기 어렵습니다. 1정규형은 한 칸에 하나의 의미 있는 값만 두게 합니다.",
+      "example": "CREATE TABLE user_phones (\n  user_id INTEGER NOT NULL,\n  phone TEXT NOT NULL,\n  PRIMARY KEY (user_id, phone)\n);\nINSERT INTO user_phones VALUES (1, '010-1111-2222');\nINSERT INTO user_phones VALUES (1, '010-3333-4444');\nSELECT * FROM user_phones;",
+      "tip": "콤마로 여러 값을 저장하면 검색과 제약조건 적용이 어려워집니다. 반복 값은 별도 행으로 분리하세요."
+    }
+  },
+  {
+    "id": "363",
+    "term": "2정규형",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "1정규형을 만족하면서 기본 키의 일부에만 의존하는 열을 분리한 상태입니다. 복합 키 테이블에서 학생 이름이 student_id에만 의존하면 별도 학생 테이블로 빼야 합니다.",
+    "hint": "부분의존제거",
+    "detail": {
+      "easy": "복합 키의 일부에만 기대는 값을 빼기",
+      "analogy": "동호회 가입 명단에 회원번호와 모임번호를 함께 쓰면서 회원 주소를 매번 적으면 주소가 반복됩니다. 2정규형은 회원에게만 속한 정보는 회원 명부에 따로 둡니다.",
+      "example": "CREATE TABLE students (student_id INTEGER PRIMARY KEY, name TEXT NOT NULL);\nCREATE TABLE enrollments (student_id INTEGER, course_id INTEGER, PRIMARY KEY (student_id, course_id));\nINSERT INTO students VALUES (1, 'Ada');\nINSERT INTO enrollments VALUES (1, 101);\nSELECT students.name, enrollments.course_id FROM enrollments JOIN students USING (student_id);",
+      "tip": "2정규형은 복합 키를 쓰는 테이블에서 특히 확인해야 합니다. 키 일부만 알아도 결정되는 열은 분리 대상입니다."
+    }
+  },
+  {
+    "id": "364",
+    "term": "3정규형",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "2정규형을 만족하면서 기본 키가 아닌 열이 다른 일반 열에 의존하지 않도록 분리한 상태입니다. 우편번호가 지역명을 결정한다면 지역명은 별도 테이블로 관리할 수 있습니다.",
+    "hint": "이행의존제거",
+    "detail": {
+      "easy": "일반 칸이 다른 일반 칸을 설명하지 않게 나누기",
+      "analogy": "학생 명부에 반 번호와 담임 이름을 매번 같이 적으면 담임이 바뀔 때 여러 줄을 고쳐야 합니다. 3정규형은 반 정보처럼 따로 관리할 수 있는 내용을 분리합니다.",
+      "example": "CREATE TABLE zip_codes (zip TEXT PRIMARY KEY, city TEXT NOT NULL);\nCREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, zip TEXT);\nINSERT INTO zip_codes VALUES ('12345', 'Seoul');\nINSERT INTO users VALUES (1, 'Ada', '12345');\nSELECT users.name, zip_codes.city FROM users JOIN zip_codes USING (zip);",
+      "tip": "3정규형은 데이터 갱신 오류를 크게 줄입니다. 같은 설명 값이 여러 행에 반복되면 분리 가능성을 검토하세요."
+    }
+  },
+  {
+    "id": "365",
+    "term": "역정규화",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "조회 성능이나 단순한 읽기 구조를 위해 의도적으로 중복 데이터를 저장하는 설계입니다. 주문 목록에 고객명을 함께 저장하면 조인을 줄일 수 있지만 고객명 변경 시 동기화가 필요합니다.",
+    "hint": "의도적중복",
+    "detail": {
+      "easy": "빠르게 읽으려고 일부러 중복 저장",
+      "analogy": "자주 보는 연락처를 휴대폰 즐겨찾기에 따로 복사해 두면 빨리 걸 수 있습니다. 대신 원래 번호가 바뀌면 즐겨찾기도 고쳐야 합니다.",
+      "example": "CREATE TABLE order_summaries (\n  order_id INTEGER PRIMARY KEY,\n  customer_id INTEGER,\n  customer_name TEXT,\n  total INTEGER\n);\nINSERT INTO order_summaries VALUES (10, 1, 'Ada', 5000);\nSELECT customer_name, total FROM order_summaries;",
+      "tip": "역정규화는 성능 측정 후 적용하세요. 중복 데이터가 생기는 순간 갱신 규칙과 검증 작업도 같이 필요합니다."
+    }
+  },
+  {
+    "id": "366",
+    "term": "트랜잭션 경계",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "트랜잭션이 어디서 시작되고 어디서 커밋 또는 롤백되는지 정한 범위입니다. 주문 생성, 재고 차감, 결제 기록 저장을 한 경계 안에 둘지 나눌지 결정합니다.",
+    "hint": "거래범위",
+    "detail": {
+      "easy": "한 번에 묶어 처리할 작업 범위",
+      "analogy": "영수증 한 장에 어떤 물건까지 함께 계산할지 정하는 것과 같습니다. 트랜잭션 경계는 어떤 DB 작업들을 한 묶음으로 성공시킬지 정합니다.",
+      "example": "CREATE TABLE accounts (id INTEGER PRIMARY KEY, balance INTEGER);\nINSERT INTO accounts VALUES (1, 10000), (2, 5000);\nBEGIN TRANSACTION;\nUPDATE accounts SET balance = balance - 1000 WHERE id = 1;\nUPDATE accounts SET balance = balance + 1000 WHERE id = 2;\nCOMMIT;\nSELECT * FROM accounts;",
+      "tip": "트랜잭션 경계가 너무 넓으면 잠금 시간이 길어지고, 너무 좁으면 데이터가 반쯤만 반영될 수 있습니다. 업무적으로 반드시 함께 성공해야 하는 단위를 기준으로 잡으세요."
+    }
+  },
+  {
+    "id": "367",
+    "term": "ACID",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "트랜잭션이 안전하게 처리되기 위한 네 가지 성질인 원자성, 일관성, 격리성, 지속성을 뜻합니다. 금융 거래처럼 데이터 정확성이 중요한 작업의 기준입니다.",
+    "hint": "거래4원칙",
+    "detail": {
+      "easy": "트랜잭션을 안전하게 하는 네 가지 약속",
+      "analogy": "택배 접수는 물건 등록, 운송장 발급, 결제 기록이 모두 맞아야 하고 접수 후 기록이 사라지면 안 됩니다. ACID는 데이터 거래에서도 그런 안전 조건을 묶은 약속입니다.",
+      "example": "CREATE TABLE ledger (id INTEGER PRIMARY KEY, amount INTEGER NOT NULL);\nBEGIN;\nINSERT INTO ledger VALUES (1, 1000);\n-- COMMIT 후에는 변경 내용이 확정되어 지속됩니다.\nCOMMIT;\nSELECT SUM(amount) AS total FROM ledger;",
+      "tip": "ACID가 강할수록 데이터 안전성은 높지만 처리량이나 지연 시간과 trade-off가 생길 수 있습니다."
+    }
+  },
+  {
+    "id": "368",
+    "term": "커밋 로그",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터베이스나 저장 시스템이 확정된 변경 내용을 순서대로 기록해 복구와 복제에 활용하는 로그입니다. 장애가 나도 로그를 재생해 커밋된 변경을 되살릴 수 있습니다.",
+    "hint": "확정기록",
+    "detail": {
+      "easy": "저장 확정 내용을 남긴 기록",
+      "analogy": "은행 거래가 끝날 때마다 거래 내역 장부에 시간순으로 남기는 것과 같습니다. 커밋 로그는 데이터 변경이 확정된 순서를 기록해 나중에 복구할 근거를 제공합니다.",
+      "example": "CREATE TABLE notes (id INTEGER PRIMARY KEY, body TEXT);\nBEGIN;\nINSERT INTO notes VALUES (1, 'saved');\nCOMMIT;\nSELECT * FROM notes;",
+      "tip": "커밋 로그는 복구와 복제의 핵심 자료입니다. 로그 보존 기간, 디스크 용량, 백업 정책을 함께 관리해야 합니다."
+    }
+  },
+  {
+    "id": "369",
+    "term": "롤백",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "트랜잭션 안에서 수행한 변경 사항을 취소하고 시작 전 상태로 되돌리는 명령입니다. 중간 작업이 실패했을 때 데이터가 반쯤 바뀌는 것을 막습니다.",
+    "hint": "변경취소",
+    "detail": {
+      "easy": "작업 전으로 되돌리기",
+      "analogy": "그림을 그리다 마음에 들지 않으면 저장하지 않고 닫아 원래 그림을 유지할 수 있습니다. 롤백은 데이터 변경을 확정하지 않고 되돌리는 동작입니다.",
+      "example": "CREATE TABLE notes (id INTEGER PRIMARY KEY, body TEXT);\nBEGIN;\nINSERT INTO notes VALUES (1, 'temporary');\nROLLBACK;\n-- 롤백했으므로 결과가 비어 있습니다.\nSELECT * FROM notes;",
+      "tip": "예외 처리 코드에서 롤백을 빠뜨리면 연결이 열린 트랜잭션을 붙잡을 수 있습니다. 실패 경로를 반드시 테스트하세요."
+    }
+  },
+  {
+    "id": "370",
+    "term": "데이터베이스(DB)",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "여러 사용자가 데이터를 안정적으로 저장, 검색, 수정할 수 있도록 조직화한 데이터 모음과 관리 시스템입니다. 애플리케이션의 회원, 주문, 로그 같은 핵심 데이터를 보관합니다.",
+    "hint": "데이터저장소",
+    "detail": {
+      "easy": "데이터를 정리해 저장하는 곳",
+      "analogy": "회사의 중앙 문서 보관실에는 서류를 넣고 찾고 수정하는 규칙이 있습니다. 데이터베이스는 애플리케이션 데이터의 중앙 보관실 역할을 합니다.",
+      "example": "-- SQLite 파일 하나도 작은 데이터베이스로 사용할 수 있습니다.\nCREATE TABLE todos (id INTEGER PRIMARY KEY, title TEXT, done INTEGER);\nINSERT INTO todos VALUES (1, 'DB 공부', 0);\nSELECT * FROM todos;",
+      "tip": "DB는 단순 파일 저장소가 아니라 동시성, 무결성, 복구를 함께 책임집니다. 데이터 중요도에 맞는 백업과 권한 설정이 필요합니다."
+    }
+  },
+  {
+    "id": "371",
+    "term": "관계형 데이터베이스(RDBMS)",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터를 테이블 형태로 저장하고 SQL과 관계 모델을 사용해 데이터를 조회·관리하는 데이터베이스 관리 시스템입니다. PostgreSQL, MySQL, SQLite가 대표적입니다.",
+    "hint": "테이블DB",
+    "detail": {
+      "easy": "표 여러 개로 관리하는 데이터베이스",
+      "analogy": "여러 엑셀 시트를 고객, 주문, 상품으로 나누고 공통 번호로 연결해 쓰는 것과 비슷합니다. RDBMS는 이런 표와 관계를 엄격한 규칙으로 관리합니다.",
+      "example": "CREATE TABLE customers (id INTEGER PRIMARY KEY, name TEXT);\nCREATE TABLE orders (id INTEGER PRIMARY KEY, customer_id INTEGER, total INTEGER);\nINSERT INTO customers VALUES (1, 'Ada');\nINSERT INTO orders VALUES (10, 1, 3000);\nSELECT name, total FROM customers JOIN orders ON customers.id = orders.customer_id;",
+      "tip": "관계가 명확하고 트랜잭션이 중요한 업무 데이터에는 RDBMS가 좋은 기본 선택입니다."
+    }
+  },
+  {
+    "id": "372",
+    "term": "비관계형 데이터베이스(NoSQL)",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "테이블과 SQL 중심의 관계형 모델에 고정되지 않고 문서, 키-값, 와이드 컬럼, 그래프 등 다양한 형태로 데이터를 저장하는 데이터베이스입니다.",
+    "hint": "유연한DB",
+    "detail": {
+      "easy": "표 말고 다른 모양으로 저장하는 DB",
+      "analogy": "서류를 반드시 표 양식에 맞추지 않고 폴더, 메모장, 카드 상자처럼 용도별로 보관하는 것과 같습니다. NoSQL은 데이터 모양에 맞는 저장 방식을 고릅니다.",
+      "example": "-- Python dict로 문서형 저장의 느낌을 보여 주는 실행 예시\ndocument = {\"user_id\": 1, \"name\": \"Ada\", \"tags\": [\"db\", \"nosql\"]}\nprint(document[\"name\"])  # Ada",
+      "tip": "NoSQL은 유연하지만 조인, 트랜잭션, 쿼리 방식이 제품마다 크게 다릅니다. 접근 패턴을 먼저 정하고 선택하세요."
+    }
+  },
+  {
+    "id": "373",
+    "term": "질의 처리기",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "SQL 같은 질의를 파싱하고 최적화한 뒤 실행 계획에 따라 결과를 만들어 내는 데이터베이스 내부 구성요소입니다. 사용자가 보낸 SELECT 문은 질의 처리기를 거쳐 실행됩니다.",
+    "hint": "쿼리엔진",
+    "detail": {
+      "easy": "DB 질문을 해석하고 실행하는 장치",
+      "analogy": "식당 주방장이 주문서를 읽고 조리 순서를 정한 뒤 요리사에게 일을 나누는 것과 같습니다. 질의 처리기는 SQL을 읽고 가장 알맞은 실행 방법을 고릅니다.",
+      "example": "CREATE TABLE books (id INTEGER PRIMARY KEY, title TEXT);\nINSERT INTO books VALUES (1, 'Database Basics');\n-- 아래 SELECT 문이 조회 쿼리입니다.\nSELECT title FROM books WHERE id = 1;",
+      "tip": "질의 처리기의 선택은 통계와 인덱스 상태에 크게 영향을 받습니다. 느린 쿼리는 실행 계획과 통계 최신 여부를 함께 확인하세요."
+    }
+  },
+  {
+    "id": "374",
+    "term": "뷰(View)",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "하나 이상의 테이블을 기반으로 만든 저장된 SELECT 쿼리입니다. 실제 데이터를 따로 복사하지 않고 자주 쓰는 조회 형태를 이름으로 재사용할 수 있습니다.",
+    "hint": "저장된조회",
+    "detail": {
+      "easy": "이름 붙인 조회 결과",
+      "analogy": "원본 장부를 복사하지 않고 필요한 항목만 보이게 만든 맞춤 화면과 같습니다. 뷰는 복잡한 조회를 간단한 이름으로 보여 줍니다.",
+      "example": "CREATE TABLE orders (id INTEGER PRIMARY KEY, amount INTEGER);\nINSERT INTO orders VALUES (1, 1000), (2, 2000);\nCREATE VIEW expensive_orders AS SELECT * FROM orders WHERE amount >= 1500;\nSELECT * FROM expensive_orders;",
+      "tip": "뷰는 권한 분리와 쿼리 재사용에 유용합니다. 다만 복잡한 뷰를 겹겹이 쌓으면 성능 원인을 찾기 어려워질 수 있습니다."
+    }
+  },
+  {
+    "id": "375",
+    "term": "저장 프로시저",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터베이스 안에 저장해 두고 호출할 수 있는 절차형 SQL 코드 묶음입니다. 여러 쿼리와 조건 처리를 DB 가까이에서 실행할 때 사용합니다.",
+    "hint": "DB내함수",
+    "detail": {
+      "easy": "DB 안에 저장한 작업 묶음",
+      "analogy": "은행 창구의 정해진 업무 절차처럼 입금 확인, 수수료 계산, 기록 저장을 순서대로 처리합니다. 저장 프로시저는 이런 절차를 DB 안에 이름 붙여 둔 것입니다.",
+      "example": "-- SQLite는 저장 프로시저 문법이 없어 Python 함수로 호출 개념을 보입니다.\ndef add_tax(price):\n    # DB 저장 프로시저처럼 재사용되는 계산 절차\n    return int(price * 1.1)\n\nprint(add_tax(1000))  # 1100",
+      "tip": "저장 프로시저는 네트워크 왕복을 줄일 수 있지만 비즈니스 로직이 DB에 묶일 수 있습니다. 배포와 테스트 전략을 함께 정하세요."
+    }
+  },
+  {
+    "id": "376",
+    "term": "트리거",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "INSERT, UPDATE, DELETE 같은 특정 이벤트가 발생했을 때 데이터베이스가 자동으로 실행하는 코드입니다. 감사 로그 기록이나 파생 값 갱신에 사용합니다.",
+    "hint": "자동실행",
+    "detail": {
+      "easy": "DB 변화에 반응해 자동 실행",
+      "analogy": "현관문이 열리면 자동으로 조명이 켜지는 센서와 같습니다. 트리거는 데이터가 바뀌는 순간 미리 정한 작업을 자동으로 실행합니다.",
+      "example": "CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);\nCREATE TABLE audit_logs (message TEXT);\nCREATE TRIGGER log_user_insert AFTER INSERT ON users\nBEGIN INSERT INTO audit_logs VALUES ('user inserted'); END;\nINSERT INTO users VALUES (1, 'Ada');\nSELECT * FROM audit_logs;",
+      "tip": "트리거는 보이지 않는 부작용을 만들 수 있습니다. 사용한다면 이름, 목적, 실행 시점을 문서화하고 테스트에 포함하세요."
+    }
+  },
+  {
+    "id": "377",
+    "term": "ERD",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "엔터티, 속성, 관계를 그림으로 표현한 데이터베이스 설계 다이어그램입니다. 테이블을 만들기 전에 회원, 주문, 상품이 어떻게 연결되는지 설명할 때 사용합니다.",
+    "hint": "관계그림",
+    "detail": {
+      "easy": "테이블 관계를 그린 지도",
+      "analogy": "가족관계도는 사람들 사이의 관계를 선으로 보여 줍니다. ERD는 데이터의 대상과 관계를 선과 상자로 보여 주는 설계도입니다.",
+      "example": "-- ERD의 users 1:N orders 관계를 SQL로 옮긴 예시\nCREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);\nCREATE TABLE orders (id INTEGER PRIMARY KEY, user_id INTEGER, total INTEGER);\nSELECT \"users 1:N orders\" AS erd_relation;",
+      "tip": "ERD는 완성 문서가 아니라 대화 도구입니다. 개발자, 기획자, 데이터 담당자가 같은 용어로 구조를 검토하게 해 줍니다."
+    }
+  },
+  {
+    "id": "378",
+    "term": "카디널리티",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "관계에서는 한 엔터티가 다른 엔터티와 몇 개까지 연결될 수 있는지를 뜻하고, 인덱스에서는 열 값의 고유한 정도를 뜻하기도 합니다. 예를 들어 회원과 주문은 보통 1:N 카디널리티입니다.",
+    "hint": "관계개수",
+    "detail": {
+      "easy": "서로 몇 개씩 연결되는지",
+      "analogy": "한 선생님이 여러 학생을 맡을 수 있지만 한 학생은 한 담임만 가질 수 있습니다. 카디널리티는 이런 연결 개수의 규칙을 말합니다.",
+      "example": "CREATE TABLE users (id INTEGER PRIMARY KEY);\nCREATE TABLE orders (id INTEGER PRIMARY KEY, user_id INTEGER);\nINSERT INTO users VALUES (1);\nINSERT INTO orders VALUES (10, 1), (11, 1);\nSELECT user_id, COUNT(*) AS order_count FROM orders GROUP BY user_id;",
+      "tip": "카디널리티를 잘못 잡으면 테이블 구조와 조인 결과가 틀어집니다. ERD 단계에서 1:1, 1:N, N:M을 명확히 확인하세요."
+    }
+  },
+  {
+    "id": "379",
+    "term": "참조 무결성",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "외래 키가 가리키는 대상 행이 실제로 존재하도록 보장하는 데이터 정확성 규칙입니다. 존재하지 않는 회원 ID로 주문을 만들 수 없게 하는 것이 예입니다.",
+    "hint": "참조보장",
+    "detail": {
+      "easy": "가리키는 데이터가 꼭 있게 하기",
+      "analogy": "초대장에 적힌 좌석 번호가 실제 공연장에 존재해야 합니다. 참조 무결성은 데이터가 가리키는 대상이 허공이 되지 않게 막습니다.",
+      "example": "PRAGMA foreign_keys = ON;\nCREATE TABLE parents (id INTEGER PRIMARY KEY);\nCREATE TABLE children (id INTEGER PRIMARY KEY, parent_id INTEGER REFERENCES parents(id));\nINSERT INTO parents VALUES (1);\nINSERT INTO children VALUES (10, 1);\nSELECT * FROM children;",
+      "tip": "참조 무결성을 DB가 강제하면 버그가 조용히 쌓이는 것을 막을 수 있습니다. 대량 삭제나 마이그레이션 때는 참조 순서를 주의하세요."
+    }
+  },
+  {
+    "id": "380",
+    "term": "도메인 제약",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "열에 들어갈 수 있는 값의 범위나 형식을 제한하는 규칙입니다. 나이는 0 이상, 상태는 PAID/CANCELLED 중 하나처럼 허용 가능한 값의 도메인을 정합니다.",
+    "hint": "값범위제한",
+    "detail": {
+      "easy": "들어갈 수 있는 값의 범위를 정하기",
+      "analogy": "대회 참가 신청서에서 나이, 체급, 지역 입력 범위가 정해져 있는 것과 같습니다. 도메인 제약은 데이터 칸에 들어갈 수 있는 값을 미리 제한합니다.",
+      "example": "CREATE TABLE metrics (\n  id INTEGER PRIMARY KEY,\n  name TEXT,\n  value REAL\n);\nINSERT INTO metrics VALUES (1, 'cpu', 73.5);\nSELECT name, value + 1 FROM metrics;",
+      "tip": "도메인 제약은 CHECK, ENUM, 참조 테이블 등으로 표현할 수 있습니다. 값 목록이 자주 바뀌면 참조 테이블이 더 유연합니다."
+    }
+  },
+  {
+    "id": "381",
+    "term": "NULL 전파",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "SQL 연산에서 NULL이 포함되면 계산 결과나 비교 결과도 NULL 또는 UNKNOWN으로 이어지는 현상입니다. 예를 들어 가격 + NULL은 알 수 없는 값이 됩니다.",
+    "hint": "NULL확산",
+    "detail": {
+      "easy": "모르는 값이 계산 결과까지 퍼짐",
+      "analogy": "요리 재료 중 하나의 양을 모르면 전체 칼로리도 정확히 계산할 수 없습니다. NULL 전파는 모르는 값이 다른 계산 결과까지 모르게 만드는 현상입니다.",
+      "example": "CREATE TABLE profiles (id INTEGER PRIMARY KEY, nickname TEXT);\nINSERT INTO profiles VALUES (1, NULL);\nINSERT INTO profiles VALUES (2, \"neo\");\nSELECT * FROM profiles WHERE nickname IS NULL;",
+      "tip": "NULL 전파 때문에 조건식이 예상보다 행을 덜 반환할 수 있습니다. COALESCE나 IS NULL 조건으로 의도를 명확히 표현하세요."
+    }
+  },
+  {
+    "id": "382",
+    "term": "기본값(DEFAULT)",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "INSERT할 때 특정 열의 값을 생략하면 자동으로 채워지는 값입니다. 생성일을 현재 시각으로 넣거나 상태를 active로 시작할 때 사용합니다.",
+    "hint": "자동초기값",
+    "detail": {
+      "easy": "값을 안 넣으면 대신 들어가는 값",
+      "analogy": "온라인 가입 양식에서 국가가 기본으로 대한민국으로 선택되어 있는 것과 같습니다. 기본값은 사용자가 따로 지정하지 않았을 때 들어가는 초기값입니다.",
+      "example": "CREATE TABLE posts (\n  id INTEGER PRIMARY KEY,\n  title TEXT NOT NULL,\n  created_at TEXT DEFAULT CURRENT_TIMESTAMP\n);\nINSERT INTO posts (id, title) VALUES (1, 'hello');\nSELECT title, created_at FROM posts;",
+      "tip": "기본값은 누락을 줄이지만 잘못된 의미를 숨길 수도 있습니다. 정말 자동으로 채워도 되는 값인지 확인하세요."
+    }
+  },
+  {
+    "id": "383",
+    "term": "1:N 관계",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "한 행이 다른 테이블의 여러 행과 연결될 수 있는 관계입니다. 회원 한 명이 여러 주문을 가질 수 있는 구조가 대표적입니다.",
+    "hint": "하나대여럿",
+    "detail": {
+      "easy": "하나가 여러 개를 가질 수 있는 관계",
+      "analogy": "한 담임 선생님이 여러 학생을 맡는 관계와 같습니다. 한쪽은 하나지만 반대쪽에는 여러 항목이 연결됩니다.",
+      "example": "CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);\nCREATE TABLE orders (id INTEGER PRIMARY KEY, user_id INTEGER);\nINSERT INTO users VALUES (1, 'Ada');\nINSERT INTO orders VALUES (10, 1), (11, 1);\nSELECT users.name, COUNT(orders.id) FROM users JOIN orders ON users.id = orders.user_id GROUP BY users.id;",
+      "tip": "1:N 관계에서는 N쪽 테이블에 외래 키를 둡니다. 회원과 주문이라면 주문 테이블이 user_id를 가집니다."
+    }
+  },
+  {
+    "id": "384",
+    "term": "N:M 관계",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "양쪽 테이블의 여러 행이 서로 여러 개씩 연결될 수 있는 관계입니다. 학생과 강의처럼 한 학생이 여러 강의를 듣고 한 강의에도 여러 학생이 참여할 수 있습니다.",
+    "hint": "여럿대여럿",
+    "detail": {
+      "easy": "양쪽 모두 여러 개로 연결",
+      "analogy": "동아리와 학생 관계처럼 한 학생은 여러 동아리에 가입하고 한 동아리에도 여러 학생이 있습니다. N:M 관계는 중간 명단이 필요합니다.",
+      "example": "CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT);\nCREATE TABLE courses (id INTEGER PRIMARY KEY, title TEXT);\nCREATE TABLE student_courses (student_id INTEGER, course_id INTEGER, PRIMARY KEY (student_id, course_id));\nINSERT INTO students VALUES (1, 'Ada');\nINSERT INTO courses VALUES (101, 'DB');\nINSERT INTO student_courses VALUES (1, 101);\nSELECT * FROM student_courses;",
+      "tip": "N:M 관계는 보통 연결 테이블로 풀어냅니다. 연결 자체의 날짜나 상태도 이 중간 테이블에 둘 수 있습니다."
+    }
+  },
+  {
+    "id": "385",
+    "term": "데이터베이스 커넥션",
+    "category": "데이터베이스 기초",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 6,
+    "definition": "애플리케이션과 데이터베이스 서버 사이에 쿼리를 주고받기 위해 맺는 연결입니다. 커넥션을 통해 인증, 쿼리 실행, 결과 수신이 이루어집니다.",
+    "hint": "DB연결",
+    "detail": {
+      "easy": "앱과 DB를 잇는 통로",
+      "analogy": "상담원과 전화 연결이 되어야 질문하고 답을 들을 수 있습니다. 데이터베이스 커넥션은 애플리케이션이 DB와 대화하는 전화선입니다.",
+      "example": "-- Python 표준 sqlite3 커넥션 예시\nimport sqlite3\nconn = sqlite3.connect(\":memory:\")\nconn.execute(\"CREATE TABLE t (id INTEGER)\")\nconn.execute(\"INSERT INTO t VALUES (1)\")\nprint(conn.execute(\"SELECT id FROM t\").fetchone()[0])\nconn.close()",
+      "tip": "커넥션은 비용이 있는 자원입니다. 사용 후 반납하거나 풀을 통해 관리하지 않으면 DB 연결 한도를 쉽게 소진합니다."
+    }
+  },
+  {
+    "id": "386",
+    "term": "커넥션 풀",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "DB 커넥션을 미리 여러 개 만들어 두고 요청마다 빌려 쓰고 반납하게 하는 관리 방식입니다. 매번 새 연결을 만드는 비용을 줄이고 동시 접속 수를 제어합니다.",
+    "hint": "연결재사용",
+    "detail": {
+      "easy": "DB 연결을 모아 두고 돌려쓰기",
+      "analogy": "렌터카 회사가 차를 여러 대 준비해 두고 손님에게 빌려준 뒤 돌려받는 것과 같습니다. 커넥션 풀은 DB 연결을 빌려주고 회수합니다.",
+      "example": "-- 간단한 커넥션 풀 동작을 리스트로 표현한 Python 예시\npool = [\"conn1\", \"conn2\"]\nconn = pool.pop()\nprint(f\"사용 중: {conn}\")\npool.append(conn)  # 작업 후 반납\nprint(pool)",
+      "tip": "풀 크기는 무조건 크게 잡지 마세요. 애플리케이션 인스턴스 수와 DB 최대 연결 수를 함께 계산해야 합니다."
+    }
+  },
+  {
+    "id": "387",
+    "term": "실행 계획(EXPLAIN)",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터베이스가 쿼리를 실행하기 위해 어떤 인덱스, 조인 순서, 스캔 방식을 선택했는지 보여 주는 계획입니다. 느린 쿼리의 원인을 찾을 때 사용합니다.",
+    "hint": "쿼리계획",
+    "detail": {
+      "easy": "DB가 쿼리를 푸는 순서표",
+      "analogy": "내비게이션이 목적지까지 어떤 도로를 탈지 경로를 보여 줍니다. 실행 계획은 DB가 데이터를 찾기 위해 선택한 경로를 보여 줍니다.",
+      "example": "CREATE TABLE users (id INTEGER PRIMARY KEY, email TEXT);\nCREATE INDEX idx_users_email ON users(email);\nEXPLAIN QUERY PLAN SELECT * FROM users WHERE email = 'a@example.com';",
+      "tip": "EXPLAIN 결과는 DBMS마다 다릅니다. 실제 실행 시간과 읽은 행 수까지 함께 봐야 정확히 판단할 수 있습니다."
+    }
+  },
+  {
+    "id": "388",
+    "term": "잠금(Lock)",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "동시에 여러 트랜잭션이 같은 데이터를 수정하거나 읽을 때 충돌을 막기 위해 DB가 자원 사용을 제한하는 장치입니다. 행, 테이블, 페이지 단위로 잠금이 걸릴 수 있습니다.",
+    "hint": "동시성제어",
+    "detail": {
+      "easy": "한 번에 한쪽만 고치게 막기",
+      "analogy": "회의실을 예약한 동안 다른 사람이 같은 회의실을 쓸 수 없습니다. 잠금은 데이터 수정 중에 다른 작업이 끼어들어 꼬이지 않게 막습니다.",
+      "example": "-- 트랜잭션이 열린 동안 수정 대상에 잠금이 걸릴 수 있습니다.\nCREATE TABLE inventory (id INTEGER PRIMARY KEY, stock INTEGER);\nINSERT INTO inventory VALUES (1, 10);\nBEGIN;\nUPDATE inventory SET stock = stock - 1 WHERE id = 1;\nCOMMIT;",
+      "tip": "잠금 범위가 넓고 오래 지속되면 대기와 장애가 늘어납니다. 필요한 행만 짧게 수정하도록 쿼리를 설계하세요."
+    }
+  },
+  {
+    "id": "389",
+    "term": "교착상태(Deadlock)",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "두 개 이상의 트랜잭션이 서로 상대가 가진 잠금을 기다리며 더 이상 진행하지 못하는 상태입니다. DB는 보통 한 트랜잭션을 강제로 중단해 교착상태를 해소합니다.",
+    "hint": "서로대기",
+    "detail": {
+      "easy": "서로 양보를 기다려 멈춘 상태",
+      "analogy": "좁은 골목에서 두 차가 마주 보고 들어와 둘 다 상대가 비켜 주기만 기다리는 상황과 같습니다. 교착상태는 트랜잭션들이 서로의 잠금을 기다리며 멈춘 것입니다.",
+      "example": "-- 실제 교착상태는 두 세션이 필요하므로 순서를 주석으로 보입니다.\n-- 세션 A: row 1 잠금 후 row 2 대기\n-- 세션 B: row 2 잠금 후 row 1 대기\nprint(\"deadlock은 보통 DB가 한 트랜잭션을 취소해 해결합니다.\")",
+      "tip": "항상 같은 순서로 자원을 잠그면 교착상태 가능성이 줄어듭니다. 재시도 로직도 함께 준비하세요."
+    }
+  },
+  {
+    "id": "390",
+    "term": "격리 수준",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "동시에 실행되는 트랜잭션들이 서로의 변경 사항을 어느 정도 볼 수 있는지 정하는 규칙입니다. READ COMMITTED, REPEATABLE READ, SERIALIZABLE 등이 있습니다.",
+    "hint": "동시성단계",
+    "detail": {
+      "easy": "다른 작업을 얼마나 볼지 정하는 단계",
+      "analogy": "시험 중 옆 사람 답안지를 볼 수 있는 정도를 규칙으로 정한다고 생각하면 됩니다. 격리 수준은 트랜잭션이 다른 트랜잭션의 중간 결과를 볼 수 있는 범위를 정합니다.",
+      "example": "-- DBMS별 문법이 다릅니다. PostgreSQL 예시:\n-- BEGIN TRANSACTION ISOLATION LEVEL SERIALIZABLE;\n-- UPDATE accounts SET balance = balance - 100 WHERE id = 1;\n-- COMMIT;\nprint(\"격리 수준은 DBMS 문서를 확인해 설정합니다.\")",
+      "tip": "격리 수준이 높으면 이상 현상은 줄지만 대기와 충돌이 늘 수 있습니다. 업무 정확성과 처리량 사이의 균형을 잡아야 합니다."
+    }
+  },
+  {
+    "id": "391",
+    "term": "파티셔닝",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "큰 테이블을 날짜, 범위, 해시 같은 기준으로 여러 물리적 조각으로 나누어 저장하는 방식입니다. 최근 데이터만 자주 조회하거나 오래된 데이터를 쉽게 보관·삭제할 때 유용합니다.",
+    "hint": "테이블분할",
+    "detail": {
+      "easy": "큰 표를 기준별로 쪼개기",
+      "analogy": "영수증을 한 상자에 모두 넣지 않고 연도별 파일철에 나누면 찾고 버리기 쉽습니다. 파티셔닝은 큰 테이블을 관리하기 쉬운 조각으로 나눕니다.",
+      "example": "-- SQLite에는 파티셔닝 문법이 없어 월별 테이블로 개념을 보입니다.\nCREATE TABLE logs_2026_05 (id INTEGER PRIMARY KEY, message TEXT);\nCREATE TABLE logs_2026_06 (id INTEGER PRIMARY KEY, message TEXT);\nINSERT INTO logs_2026_05 VALUES (1, 'login');\nSELECT * FROM logs_2026_05;",
+      "tip": "파티션 키는 주요 조회 조건과 맞아야 효과가 있습니다. 잘못 나누면 오히려 쿼리와 운영이 복잡해집니다."
+    }
+  },
+  {
+    "id": "392",
+    "term": "샤딩",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터를 여러 데이터베이스 서버에 나누어 저장해 부하와 저장 용량을 분산하는 방식입니다. 사용자 ID 해시로 서로 다른 샤드에 사용자를 배치하는 식입니다.",
+    "hint": "서버분산",
+    "detail": {
+      "easy": "데이터를 여러 DB 서버에 나눠 담기",
+      "analogy": "전국 고객 서류를 한 지점에 몰아두지 않고 지역 지점별로 나누어 보관하는 것과 같습니다. 샤딩은 데이터와 부하를 여러 서버에 나눕니다.",
+      "example": "-- Python으로 사용자 ID를 샤드 번호에 배정하는 예시\ndef shard_for(user_id, shard_count):\n    return user_id % shard_count\n\nfor user_id in [1, 2, 3, 4]:\n    print(user_id, \"-> shard\", shard_for(user_id, 2))",
+      "tip": "샤딩 후에는 조인, 트랜잭션, 리밸런싱이 어려워집니다. 단일 DB와 읽기 복제로 버틸 수 있는지 먼저 검토하세요."
+    }
+  },
+  {
+    "id": "393",
+    "term": "복제(Replication)",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "한 데이터베이스의 데이터를 다른 서버에 복사해 같은 데이터를 유지하는 방식입니다. 읽기 부하 분산, 장애 대비, 백업 용도로 사용합니다.",
+    "hint": "데이터복사",
+    "detail": {
+      "easy": "DB 사본을 다른 서버에 두기",
+      "analogy": "중요 문서를 본사와 지사 금고에 복사해 두면 한 곳에 문제가 생겨도 문서를 잃지 않습니다. 복제는 데이터베이스 사본을 계속 맞춰 두는 일입니다.",
+      "example": "-- 복제 자체는 DB 서버 설정이 필요하므로 상태를 코드로 표현합니다.\nprimary = {\"user_count\": 10}\nreplica = primary.copy()\nprint(replica[\"user_count\"])  # 복제본에서 읽기",
+      "tip": "비동기 복제는 지연이 생길 수 있습니다. 방금 쓴 데이터를 즉시 읽어야 하는 기능은 primary에서 읽는 전략이 필요합니다."
+    }
+  },
+  {
+    "id": "394",
+    "term": "데이터 마이그레이션",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터를 새 스키마, 새 시스템, 새 저장소로 옮기거나 변환하는 작업입니다. 컬럼 추가, 테이블 분리, 기존 값 보정 같은 변경을 포함합니다.",
+    "hint": "데이터이동",
+    "detail": {
+      "easy": "데이터를 새 구조로 옮기기",
+      "analogy": "이사할 때 짐을 새 집 구조에 맞게 다시 분류하고 배치합니다. 데이터 마이그레이션도 기존 데이터를 새 구조에 맞게 옮기고 확인합니다.",
+      "example": "CREATE TABLE old_users (id INTEGER PRIMARY KEY, full_name TEXT);\nINSERT INTO old_users VALUES (1, 'Ada Lovelace');\nCREATE TABLE new_users (id INTEGER PRIMARY KEY, name TEXT);\nINSERT INTO new_users SELECT id, full_name FROM old_users;\nSELECT * FROM new_users;",
+      "tip": "마이그레이션은 되돌리기 계획과 검증 쿼리가 중요합니다. 운영 데이터는 백업 후 작은 단위로 진행하세요."
+    }
+  },
+  {
+    "id": "395",
+    "term": "시퀀스(Sequence)",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "숫자를 순서대로 생성해 기본 키나 번호 값으로 사용할 수 있게 하는 데이터베이스 객체입니다. 여러 트랜잭션이 동시에 요청해도 중복 없는 번호를 받을 수 있습니다.",
+    "hint": "번호생성기",
+    "detail": {
+      "easy": "차례대로 번호를 주는 장치",
+      "analogy": "은행 대기표 기계가 손님마다 다음 번호를 뽑아 줍니다. 시퀀스는 데이터베이스에서 다음 번호를 안전하게 발급합니다.",
+      "example": "-- SQLite는 INTEGER PRIMARY KEY가 자동 번호처럼 동작합니다.\nCREATE TABLE tickets (ticket_no INTEGER PRIMARY KEY, title TEXT);\nINSERT INTO tickets (title) VALUES ('first');\nINSERT INTO tickets (title) VALUES ('second');\nSELECT ticket_no, title FROM tickets;",
+      "tip": "시퀀스 번호는 롤백되어도 건너뛸 수 있습니다. 번호가 연속이어야 한다는 요구와 고유 식별자 요구를 구분하세요."
+    }
+  },
+  {
+    "id": "396",
+    "term": "AUTO_INCREMENT",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "새 행을 INSERT할 때 숫자 기본 키 값을 자동으로 1씩 증가시켜 채우는 기능입니다. MySQL의 AUTO_INCREMENT, SQLite의 INTEGER PRIMARY KEY가 비슷한 용도로 쓰입니다.",
+    "hint": "자동번호",
+    "detail": {
+      "easy": "새 줄마다 번호 자동 증가",
+      "analogy": "접수 창구에서 손님이 올 때마다 대기번호가 자동으로 하나씩 올라갑니다. AUTO_INCREMENT는 새 행에 다음 번호를 붙입니다.",
+      "example": "CREATE TABLE users (\n  id INTEGER PRIMARY KEY AUTOINCREMENT,\n  name TEXT NOT NULL\n);\nINSERT INTO users (name) VALUES ('Ada');\nINSERT INTO users (name) VALUES ('Bob');\nSELECT * FROM users;",
+      "tip": "자동 증가 값은 외부에 의미 있는 순번으로 노출하지 않는 편이 좋습니다. 삭제나 롤백 때문에 번호가 비어 보일 수 있습니다."
+    }
+  },
+  {
+    "id": "397",
+    "term": "체크 제약조건",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "열 값이 지정한 논리 조건을 만족해야만 저장되도록 하는 제약조건입니다. 나이는 0 이상, 수량은 음수가 아니어야 한다는 규칙을 DB가 검사합니다.",
+    "hint": "조건검사",
+    "detail": {
+      "easy": "값이 조건을 통과해야 저장",
+      "analogy": "놀이기구 탑승 전에 키 제한을 확인하는 것과 같습니다. 체크 제약조건은 데이터가 정해진 기준을 통과해야 들어오게 합니다.",
+      "example": "CREATE TABLE products (\n  id INTEGER PRIMARY KEY,\n  name TEXT,\n  price INTEGER CHECK (price >= 0)\n);\nINSERT INTO products VALUES (1, 'book', 12000);\nSELECT * FROM products;",
+      "tip": "CHECK는 단순하고 변하지 않는 규칙에 적합합니다. 다른 테이블을 봐야 하는 복잡한 검증은 별도 로직이 필요할 수 있습니다."
+    }
+  },
+  {
+    "id": "398",
+    "term": "유니크 제약조건",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "특정 열 또는 열 조합의 값이 테이블 안에서 중복되지 않도록 강제하는 제약조건입니다. 계정 이메일이나 상품 코드처럼 중복되면 안 되는 값에 사용합니다.",
+    "hint": "UNIQUE",
+    "detail": {
+      "easy": "같은 값 저장 금지",
+      "analogy": "회사 사원번호는 두 직원이 동시에 쓸 수 없습니다. 유니크 제약조건은 이런 중복 금지 규칙을 데이터베이스가 직접 지키게 합니다.",
+      "example": "CREATE TABLE employees (\n  id INTEGER PRIMARY KEY,\n  employee_no TEXT UNIQUE NOT NULL\n);\nINSERT INTO employees VALUES (1, 'E001');\nSELECT * FROM employees;",
+      "tip": "유니크 제약조건은 중복 검사 쿼리보다 안전합니다. 동시 요청이 들어와도 DB가 최종적으로 중복을 막아 줍니다."
+    }
+  },
+  {
+    "id": "399",
+    "term": "인덱스 스캔",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "쿼리 조건에 맞는 행을 찾기 위해 테이블 전체가 아니라 인덱스 구조를 먼저 탐색하는 실행 방식입니다. 조건에 맞는 데이터가 적을 때 효율적입니다.",
+    "hint": "색인탐색",
+    "detail": {
+      "easy": "인덱스를 보고 찾기",
+      "analogy": "책 뒤 색인에서 단어가 나온 쪽 번호를 찾은 뒤 해당 쪽만 펼치는 방식입니다. 인덱스 스캔은 필요한 행의 위치를 인덱스로 좁혀 갑니다.",
+      "example": "CREATE TABLE customers (id INTEGER PRIMARY KEY, phone TEXT, name TEXT);\nCREATE INDEX idx_customers_phone ON customers(phone);\nINSERT INTO customers VALUES (1, '010-1111-2222', 'Ada');\nSELECT name FROM customers WHERE phone = '010-1111-2222';",
+      "tip": "인덱스가 있어도 조건 선택도가 낮으면 인덱스 스캔이 유리하지 않을 수 있습니다. 실행 계획과 실제 행 수를 함께 확인하세요."
+    }
+  },
+  {
+    "id": "400",
+    "term": "풀 테이블 스캔",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "쿼리를 처리하기 위해 테이블의 모든 행을 처음부터 끝까지 읽는 실행 방식입니다. 인덱스가 없거나 대부분의 행을 읽어야 할 때 선택될 수 있습니다.",
+    "hint": "전체읽기",
+    "detail": {
+      "easy": "표 전체를 훑어 찾기",
+      "analogy": "전화번호부에서 색인을 쓰지 못해 모든 이름을 한 줄씩 확인하는 것과 같습니다. 풀 테이블 스캔은 테이블 전체를 읽어 조건에 맞는 행을 찾습니다.",
+      "example": "CREATE TABLE logs (id INTEGER PRIMARY KEY, message TEXT);\nINSERT INTO logs VALUES (1, 'hello');\n-- message에 인덱스가 없으면 전체를 읽을 가능성이 큽니다.\nEXPLAIN QUERY PLAN SELECT * FROM logs WHERE message = 'hello';",
+      "tip": "작은 테이블에서는 풀 테이블 스캔이 더 빠를 수도 있습니다. 큰 테이블에서 자주 발생하면 인덱스나 쿼리 조건을 검토하세요."
+    }
+  },
+  {
+    "id": "401",
+    "term": "데이터 무결성",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터가 정확하고 일관되며 의도한 규칙을 지키는 상태를 뜻합니다. 중복 금지, 참조 관계 유지, 잘못된 값 차단이 모두 무결성 관리에 포함됩니다.",
+    "hint": "정확일관",
+    "detail": {
+      "easy": "데이터가 맞고 깨지지 않은 상태",
+      "analogy": "회계 장부에서 합계와 거래 내역이 맞아야 믿을 수 있습니다. 데이터 무결성은 DB 안의 값들이 서로 모순되지 않고 정확한 상태입니다.",
+      "example": "CREATE TABLE accounts (\n  id INTEGER PRIMARY KEY,\n  email TEXT UNIQUE NOT NULL,\n  balance INTEGER CHECK (balance >= 0)\n);\nINSERT INTO accounts VALUES (1, 'a@example.com', 100);\nSELECT * FROM accounts;",
+      "tip": "무결성은 입력 검증, 제약조건, 트랜잭션, 백업이 함께 지켜야 합니다. 한 층만 믿으면 장애 때 데이터가 깨질 수 있습니다."
+    }
+  },
+  {
+    "id": "402",
+    "term": "기본 키 충돌",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "새로 넣거나 수정하려는 행의 기본 키 값이 이미 테이블에 존재해 고유성 규칙을 위반하는 상황입니다. 같은 id로 두 회원을 만들려고 할 때 발생합니다.",
+    "hint": "PK중복",
+    "detail": {
+      "easy": "같은 기본 키를 또 쓰는 오류",
+      "analogy": "이미 배정된 좌석 번호를 다른 관객에게 다시 주면 충돌이 생깁니다. 기본 키 충돌은 한 행만 가져야 할 식별자를 두 행이 쓰려는 상황입니다.",
+      "example": "CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);\nINSERT INTO users VALUES (1, 'Ada');\n-- 아래 문장은 기본 키 1이 이미 있어 실패합니다.\n-- INSERT INTO users VALUES (1, 'Bob');\nSELECT * FROM users;",
+      "tip": "분산 시스템에서는 자동 증가 ID만으로 충돌을 피하기 어려울 수 있습니다. UUID, ULID, 시퀀스 전략을 상황에 맞게 선택하세요."
+    }
+  },
+  {
+    "id": "403",
+    "term": "외래 키 충돌",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "외래 키 값이 참조 대상 테이블에 존재하지 않거나, 참조 중인 행을 삭제·수정하려 할 때 발생하는 무결성 위반입니다.",
+    "hint": "FK오류",
+    "detail": {
+      "easy": "없는 대상을 가리키는 오류",
+      "analogy": "택배 송장에 적힌 주문번호가 주문 시스템에 없으면 배송을 진행할 수 없습니다. 외래 키 충돌은 데이터가 존재하지 않는 대상을 가리킬 때 생깁니다.",
+      "example": "PRAGMA foreign_keys = ON;\nCREATE TABLE users (id INTEGER PRIMARY KEY);\nCREATE TABLE orders (id INTEGER PRIMARY KEY, user_id INTEGER REFERENCES users(id));\n-- users에 id 99가 없으므로 아래 문장은 실패합니다.\n-- INSERT INTO orders VALUES (1, 99);\nSELECT \"foreign key check\" AS status;",
+      "tip": "외래 키 충돌은 데이터 입력 순서나 삭제 정책 문제일 때가 많습니다. 부모 데이터를 먼저 만들고 자식 데이터를 넣는 흐름을 지키세요."
+    }
+  },
+  {
+    "id": "404",
+    "term": "CASCADE 삭제",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "부모 행이 삭제될 때 그 행을 참조하는 자식 행도 자동으로 함께 삭제되도록 하는 외래 키 동작입니다. 회원 삭제 시 해당 회원의 세션도 함께 지울 때 사용할 수 있습니다.",
+    "hint": "연쇄삭제",
+    "detail": {
+      "easy": "관련 데이터도 함께 삭제",
+      "analogy": "폴더를 삭제하면 안에 있던 파일도 같이 지워지는 것과 같습니다. CASCADE 삭제는 부모 데이터가 사라질 때 연결된 자식 데이터도 따라 지웁니다.",
+      "example": "PRAGMA foreign_keys = ON;\nCREATE TABLE users (id INTEGER PRIMARY KEY);\nCREATE TABLE sessions (id INTEGER PRIMARY KEY, user_id INTEGER REFERENCES users(id) ON DELETE CASCADE);\nINSERT INTO users VALUES (1);\nINSERT INTO sessions VALUES (10, 1);\nDELETE FROM users WHERE id = 1;\nSELECT * FROM sessions;",
+      "tip": "CASCADE는 편리하지만 실수로 대량 삭제를 만들 수 있습니다. 중요한 데이터에는 소프트 삭제나 제한 삭제가 더 적합할 수 있습니다."
+    }
+  },
+  {
+    "id": "405",
+    "term": "소프트 삭제",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "행을 실제로 삭제하지 않고 deleted_at이나 is_deleted 같은 표시만 남겨 삭제된 것처럼 처리하는 방식입니다. 복구와 감사 기록이 필요할 때 사용합니다.",
+    "hint": "표시삭제",
+    "detail": {
+      "easy": "지우지 않고 지운 표시만 하기",
+      "analogy": "문서를 파쇄하지 않고 보관함에 넣고 “폐기 예정” 스티커를 붙이는 것과 같습니다. 소프트 삭제는 데이터는 남겨 두고 화면이나 조회에서 숨깁니다.",
+      "example": "CREATE TABLE posts (id INTEGER PRIMARY KEY, title TEXT, deleted_at TEXT);\nINSERT INTO posts VALUES (1, 'hello', NULL);\nUPDATE posts SET deleted_at = '2026-05-06' WHERE id = 1;\nSELECT * FROM posts WHERE deleted_at IS NULL;",
+      "tip": "소프트 삭제를 쓰면 모든 조회에 삭제 조건이 필요합니다. 유니크 제약과 보관 기간 정책도 함께 설계하세요."
+    }
+  },
+  {
+    "id": "406",
+    "term": "하드 삭제",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "행을 데이터베이스에서 실제로 제거하는 삭제 방식입니다. DELETE 실행 후 백업이나 로그가 없다면 일반 조회로는 데이터를 되돌릴 수 없습니다.",
+    "hint": "실제삭제",
+    "detail": {
+      "easy": "데이터를 진짜로 지우기",
+      "analogy": "종이 문서를 파쇄기에 넣으면 책상에서 치우는 수준이 아니라 실제로 사라집니다. 하드 삭제는 데이터베이스 행을 실제로 제거합니다.",
+      "example": "CREATE TABLE posts (id INTEGER PRIMARY KEY, title TEXT);\nINSERT INTO posts VALUES (1, 'hello');\nDELETE FROM posts WHERE id = 1;\nSELECT * FROM posts;",
+      "tip": "개인정보 삭제처럼 실제 삭제가 필요한 경우가 있습니다. 다만 운영 실수를 대비해 권한, 백업, 확인 절차를 갖추세요."
+    }
+  },
+  {
+    "id": "407",
+    "term": "스냅샷",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "특정 시점의 데이터 상태를 그대로 보존한 사본입니다. 백업, 복구, 테스트 환경 구성, 일관된 읽기 작업에 사용합니다.",
+    "hint": "시점사본",
+    "detail": {
+      "easy": "그 순간의 데이터 사진",
+      "analogy": "화이트보드를 지우기 전에 사진을 찍어 두면 나중에 그 순간 내용을 볼 수 있습니다. 스냅샷은 데이터베이스 상태를 특정 시점으로 찍어 둔 것입니다.",
+      "example": "-- Python으로 특정 시점 사본을 만드는 예시\ncurrent_data = {\"users\": 10, \"orders\": 3}\nsnapshot = current_data.copy()\ncurrent_data[\"orders\"] = 4\nprint(snapshot)  # 이전 시점 유지",
+      "tip": "스냅샷은 백업과 비슷해 보이지만 보존 위치와 장애 격리 수준이 다를 수 있습니다. 같은 스토리지 장애에 함께 사라지지 않는지 확인하세요."
+    }
+  },
+  {
+    "id": "408",
+    "term": "백업",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "장애, 실수, 데이터 손상에 대비해 데이터를 별도 위치에 복사해 보관하는 작업입니다. 전체 백업, 증분 백업, 로그 백업 같은 방식이 있습니다.",
+    "hint": "복사보관",
+    "detail": {
+      "easy": "잃어버릴 때를 대비한 사본",
+      "analogy": "중요한 계약서를 원본 금고와 다른 장소의 사본 금고에 나눠 보관하는 것과 같습니다. 백업은 문제가 생겼을 때 돌아갈 사본을 준비하는 일입니다.",
+      "example": "-- SQLite 파일 백업은 파일 복사로도 가능합니다. Python 예시:\nimport shutil\nsource = \"app.db\"\nbackup = \"app.backup.db\"\nprint(f\"{source} -> {backup} 로 백업한다고 가정합니다.\")",
+      "tip": "백업은 생성보다 복구 테스트가 더 중요합니다. 정기적으로 실제 복구가 가능한지 확인하세요."
+    }
+  },
+  {
+    "id": "409",
+    "term": "복구(Recovery)",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "백업, 로그, 복제본 등을 사용해 장애나 실수 이전의 정상 데이터 상태로 되돌리는 과정입니다. 목표 시점과 손실 허용 범위에 따라 절차가 달라집니다.",
+    "hint": "되살리기",
+    "detail": {
+      "easy": "백업으로 데이터 되돌리기",
+      "analogy": "컴퓨터가 고장 났을 때 저장해 둔 복원 지점으로 되돌리는 것과 같습니다. 복구는 데이터베이스를 다시 사용할 수 있는 상태로 돌립니다.",
+      "example": "-- 복구 절차를 Python 함수로 표현한 예시\ndef recover(backup_name):\n    return f\"{backup_name}에서 데이터를 복구합니다.\"\n\nprint(recover(\"daily-backup\"))",
+      "tip": "복구 목표는 RTO와 RPO로 정리하세요. 백업 주기만 정하고 복구 시간 목표를 정하지 않으면 장애 때 판단이 늦어집니다."
+    }
+  },
+  {
+    "id": "410",
+    "term": "데이터베이스 캐싱",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "자주 읽는 쿼리 결과나 데이터를 더 빠른 저장소에 임시로 저장해 DB 부하와 응답 시간을 줄이는 기법입니다. Redis에 상품 상세 정보를 저장하는 방식이 흔합니다.",
+    "hint": "조회임시저장",
+    "detail": {
+      "easy": "자주 보는 데이터를 가까이 두기",
+      "analogy": "자주 쓰는 공구를 창고가 아니라 책상 위에 올려두면 매번 가지러 갈 필요가 없습니다. 캐싱은 자주 읽는 데이터를 더 가까운 곳에 둡니다.",
+      "example": "-- Python dict로 캐시 동작을 표현합니다.\ncache = {}\ndef get_user(user_id):\n    if user_id not in cache:\n        cache[user_id] = {\"name\": \"Ada\"}  # DB 조회 결과라고 가정\n    return cache[user_id]\n\nprint(get_user(1))",
+      "tip": "캐시는 무효화 전략이 핵심입니다. 데이터가 바뀌었는데 캐시가 그대로면 사용자에게 오래된 값을 보여 줄 수 있습니다."
+    }
+  },
+  {
+    "id": "411",
+    "term": "읽기 전용 복제본",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "원본 데이터베이스의 데이터를 복제받아 SELECT 같은 읽기 작업만 처리하는 DB 서버입니다. 읽기 부하 분산과 분석 쿼리 분리에 사용합니다.",
+    "hint": "읽기사본",
+    "detail": {
+      "easy": "읽기만 하는 DB 사본",
+      "analogy": "원본 문서는 편집 담당자만 고치고, 다른 사람들은 복사본을 보며 확인하는 것과 같습니다. 읽기 전용 복제본은 조회를 사본에서 처리하게 합니다.",
+      "example": "primary = {\"users\": [\"Ada\"]}\nread_replica = {\"users\": list(primary[\"users\"])}\nprint(read_replica[\"users\"])  # 읽기 전용 조회라고 가정",
+      "tip": "읽기 전용 복제본은 복제 지연이 있을 수 있습니다. 쓰자마자 읽어야 하는 화면은 원본 DB 조회가 필요할 수 있습니다."
+    }
+  },
+  {
+    "id": "412",
+    "term": "마스터-슬레이브",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "한 DB 서버가 쓰기를 담당하고 하나 이상의 복제 서버가 데이터를 따라가며 읽기를 처리하는 복제 구조를 가리키던 용어입니다. 최근에는 primary-replica라는 표현을 더 많이 씁니다.",
+    "hint": "주복제구조",
+    "detail": {
+      "easy": "쓰기 원본과 읽기 사본 구조",
+      "analogy": "원본 장부는 본점에서만 수정하고 지점들은 복사본을 받아 조회하는 구조와 같습니다. primary-replica 구조는 쓰기와 읽기 역할을 나눕니다.",
+      "example": "primary = {\"role\": \"write\", \"version\": 2}\nreplica = {\"role\": \"read\", \"version\": primary[\"version\"]}\nprint(primary[\"role\"], replica[\"role\"])",
+      "tip": "문서와 코드에서는 가능하면 primary-replica 용어를 사용하세요. 구조 자체보다 장애 조치와 복제 지연 대응이 더 중요합니다."
+    }
+  },
+  {
+    "id": "413",
+    "term": "데이터 웨어하우스",
+    "category": "데이터베이스 기초",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 6,
+    "definition": "분석과 리포팅을 위해 여러 시스템의 데이터를 모아 정제하고 장기간 저장하는 대규모 데이터 저장소입니다. 운영 DB보다 집계와 분석 쿼리에 최적화됩니다.",
+    "hint": "분석저장소",
+    "detail": {
+      "easy": "분석용 큰 데이터 창고",
+      "analogy": "여러 매장의 판매 기록을 본사 창고에 모아 월별 매출 보고서를 만드는 것과 같습니다. 데이터 웨어하우스는 분석을 위해 흩어진 데이터를 모읍니다.",
+      "example": "CREATE TABLE sales_summary (month TEXT PRIMARY KEY, total INTEGER);\nINSERT INTO sales_summary VALUES ('2026-05', 150000);\nSELECT month, total FROM sales_summary;",
+      "tip": "웨어하우스는 실시간 거래 처리보다 분석 질의에 맞춰 설계합니다. 원천 데이터의 품질과 적재 주기가 결과 신뢰도를 좌우합니다."
+    }
+  },
+  {
+    "id": "414",
+    "term": "OLTP",
+    "category": "데이터베이스 기초",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 6,
+    "definition": "온라인 트랜잭션 처리를 뜻하며 짧고 빈번한 INSERT, UPDATE, SELECT를 빠르고 안전하게 처리하는 업무 시스템 유형입니다. 주문 생성, 결제, 계좌 이체가 대표적입니다.",
+    "hint": "거래처리",
+    "detail": {
+      "easy": "실시간 업무 거래 처리",
+      "analogy": "편의점 계산대는 손님 한 명의 결제를 빠르게 처리해야 합니다. OLTP 시스템은 이런 작은 거래를 많이, 정확하게 처리하는 데 초점을 둡니다.",
+      "example": "CREATE TABLE orders (id INTEGER PRIMARY KEY, status TEXT, total INTEGER);\nBEGIN;\nINSERT INTO orders VALUES (1, 'PAID', 3000);\nCOMMIT;\nSELECT * FROM orders WHERE id = 1;",
+      "tip": "OLTP 테이블은 정합성과 빠른 단건 조회가 중요합니다. 분석용 대량 집계는 별도 시스템으로 분리하는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "415",
+    "term": "OLAP",
+    "category": "데이터베이스 기초",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 6,
+    "definition": "온라인 분석 처리를 뜻하며 대량 데이터를 집계, 비교, 분석하는 질의에 최적화된 시스템 유형입니다. 월별 매출, 사용자 행동 분석, 리포트 생성에 사용합니다.",
+    "hint": "분석처리",
+    "detail": {
+      "easy": "많은 데이터를 모아 분석",
+      "analogy": "계산대가 개별 결제를 처리한다면 본사 분석팀은 한 달치 영수증을 모아 추세를 봅니다. OLAP은 많은 데이터를 묶어 큰 질문에 답합니다.",
+      "example": "CREATE TABLE sales (day TEXT, region TEXT, amount INTEGER);\nINSERT INTO sales VALUES ('2026-05-01', 'KR', 1000), ('2026-05-02', 'KR', 2000);\nSELECT region, SUM(amount) AS total FROM sales GROUP BY region;",
+      "tip": "OLAP 쿼리를 운영 DB에서 직접 많이 돌리면 서비스 성능에 영향을 줄 수 있습니다. 분석 전용 저장소를 고려하세요."
+    }
+  },
+  {
+    "id": "416",
+    "term": "컬럼 기반 저장",
+    "category": "데이터베이스 기초",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 6,
+    "definition": "데이터를 행 단위가 아니라 열 단위로 모아 저장하는 방식입니다. 특정 열만 읽어 집계하는 분석 쿼리에서 디스크 I/O를 줄일 수 있습니다.",
+    "hint": "열단위저장",
+    "detail": {
+      "easy": "같은 열끼리 모아 저장",
+      "analogy": "설문지를 사람별로 보관하지 않고 모든 사람의 나이 답변, 지역 답변을 항목별로 따로 모아 두는 것과 같습니다. 컬럼 기반 저장은 필요한 열만 빠르게 읽게 합니다.",
+      "example": "-- Python으로 열 단위 저장 형태를 표현합니다.\ncolumns = {\n    \"name\": [\"Ada\", \"Bob\"],\n    \"age\": [32, 29]\n}\nprint(sum(columns[\"age\"]) / len(columns[\"age\"]))",
+      "tip": "컬럼 기반 저장은 분석에 강하지만 단건 전체 행을 자주 수정하는 OLTP에는 불리할 수 있습니다."
+    }
+  },
+  {
+    "id": "417",
+    "term": "행 기반 저장",
+    "category": "데이터베이스 기초",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 6,
+    "definition": "한 행의 여러 열 값을 물리적으로 가까이 저장하는 방식입니다. 특정 행 전체를 자주 읽거나 수정하는 트랜잭션 처리에 적합합니다.",
+    "hint": "행단위저장",
+    "detail": {
+      "easy": "한 줄 데이터를 같이 저장",
+      "analogy": "고객 한 명의 신청서를 종이 한 장으로 보관하면 그 사람 정보를 한 번에 보기 쉽습니다. 행 기반 저장은 한 대상의 여러 속성을 함께 읽기 좋습니다.",
+      "example": "-- Python으로 행 단위 저장 형태를 표현합니다.\nrows = [\n    {\"name\": \"Ada\", \"age\": 32},\n    {\"name\": \"Bob\", \"age\": 29}\n]\nprint(rows[0][\"name\"], rows[0][\"age\"])",
+      "tip": "대부분의 전통적 RDBMS는 행 기반 저장을 기본으로 합니다. 분석 집계가 많아지면 컬럼 기반 저장소를 함께 고려하세요."
+    }
+  },
+  {
+    "id": "418",
+    "term": "와이드 컬럼 스토어",
+    "category": "데이터베이스 기초",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 6,
+    "definition": "행마다 매우 많은 컬럼을 가질 수 있고 컬럼 패밀리 단위로 데이터를 저장하는 NoSQL 계열 저장소입니다. Cassandra, HBase가 대표적이며 대규모 분산 쓰기에 자주 쓰입니다.",
+    "hint": "컬럼패밀리",
+    "detail": {
+      "easy": "넓은 표를 분산 저장하는 방식",
+      "analogy": "학생별 파일에 과목별 기록이 필요한 만큼만 추가되는 큰 파일철을 생각하면 됩니다. 와이드 컬럼 스토어는 행마다 다른 컬럼 구성을 넓게 담을 수 있습니다.",
+      "example": "-- Python dict로 와이드 컬럼 형태를 표현합니다.\nrow = {\n    \"user_id\": \"u1\",\n    \"profile:name\": \"Ada\",\n    \"stats:login_count\": 42\n}\nprint(row[\"stats:login_count\"])",
+      "tip": "와이드 컬럼 스토어는 조회 패턴에 맞춘 키 설계가 중요합니다. RDBMS처럼 자유로운 조인을 기대하면 안 됩니다."
+    }
+  },
+  {
+    "id": "419",
+    "term": "문서 데이터베이스",
+    "category": "데이터베이스 기초",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 6,
+    "definition": "JSON이나 BSON 같은 문서 형태로 데이터를 저장하는 NoSQL 데이터베이스입니다. MongoDB처럼 사용자 프로필, 설정, 이벤트처럼 구조가 유연한 데이터를 다룰 때 사용합니다.",
+    "hint": "JSON저장",
+    "detail": {
+      "easy": "문서 모양으로 저장하는 DB",
+      "analogy": "사람마다 작성 항목이 조금씩 다른 지원서를 파일로 보관하는 것과 같습니다. 문서 데이터베이스는 고정된 표보다 유연한 문서 구조를 저장합니다.",
+      "example": "-- Python dict가 문서 데이터의 모양과 비슷합니다.\nuser_doc = {\n    \"name\": \"Ada\",\n    \"skills\": [\"SQL\", \"Python\"],\n    \"active\": True\n}\nprint(user_doc[\"skills\"][0])",
+      "tip": "문서 DB는 구조 변경이 유연하지만 중복 데이터 관리가 필요합니다. 자주 함께 읽는 데이터를 문서 안에 둘지 참조로 둘지 판단하세요."
+    }
+  },
+  {
+    "id": "420",
+    "term": "키-값 저장소",
+    "category": "데이터베이스 기초",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 6,
+    "definition": "고유한 키 하나로 값을 저장하고 조회하는 가장 단순한 형태의 NoSQL 저장소입니다. Redis처럼 세션, 캐시, 설정 값을 빠르게 읽고 쓸 때 많이 사용합니다.",
+    "hint": "키로조회",
+    "detail": {
+      "easy": "이름표로 값을 바로 찾는 저장소",
+      "analogy": "물품 보관함 번호를 알면 안의 물건을 바로 꺼낼 수 있습니다. 키-값 저장소는 키를 알고 있을 때 값을 매우 빠르게 찾는 방식입니다.",
+      "example": "-- Python dict는 키-값 저장소의 기본 동작을 보여 줍니다.\nstore = {}\nstore[\"session:u1\"] = {\"user_id\": 1, \"logged_in\": True}\nprint(store[\"session:u1\"][\"logged_in\"])",
+      "tip": "키-값 저장소는 키를 모르면 검색이 어렵습니다. 키 네이밍 규칙과 만료 시간 정책을 처음부터 정하세요."
+    }
+  }
+]

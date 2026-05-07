@@ -1,0 +1,536 @@
+/* ═══════════════════════════════════════════════
+   JARVIS Part 2 — Term Detail · Animations · Games · Modal
+   ═══════════════════════════════════════════════ */
+
+.term-detail {
+  margin-top: 20px;
+  border-top: 1px solid rgba(10,22,40,0.14);
+  padding-top: 18px;
+}
+
+.term-detail summary {
+  width: fit-content;
+  max-width: 100%;
+  cursor: pointer;
+  color: var(--j-cyan);
+  background: rgba(0,200,255,0.07);
+  border: 1px solid rgba(0,200,255,0.24);
+  padding: 14px 20px;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.term-detail summary::-webkit-details-marker {
+  display: none;
+}
+
+.term-detail summary::after {
+  content: ' +';
+  color: var(--j-gold);
+}
+
+.term-detail[open] summary::after {
+  content: ' -';
+}
+
+.term-detail-body {
+  margin-top: 18px;
+  display: grid;
+  gap: 16px;
+  color: #263b52;
+  font-size: 28px;
+  line-height: 1.62;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.term-detail-body p {
+  margin: 0;
+}
+
+.result-hint .term-detail {
+  margin-top: 18px;
+  max-width: 1040px;
+}
+
+.result-hint .term-detail-body {
+  color: inherit;
+  font-size: 26px;
+}
+
+@media (min-width: 981px) {
+  .result-hint .term-detail {
+    position: fixed;
+    right: 28px;
+    top: 116px;
+    width: min(34vw, 520px);
+    max-height: calc(100vh - 156px);
+    margin-top: 0;
+    padding: 18px;
+    overflow-y: auto;
+    z-index: 9997;
+    background: rgba(244,250,255,0.96);
+    border: 1px solid var(--j-border);
+    border-left: 3px solid var(--j-cyan);
+    box-shadow: 0 0 22px rgba(0,200,255,0.14);
+  }
+
+  .result-hint .term-detail summary {
+    width: 100%;
+  }
+
+  .result-hint .term-detail-body {
+    font-size: 22px;
+    line-height: 1.55;
+  }
+
+  #screen-quiz:has(.result-footer.show) .quiz-scrollable {
+    padding-right: calc(min(34vw, 520px) + 56px) !important;
+  }
+
+  #screen-quiz:has(.result-footer.show) .question-card,
+  #screen-quiz:has(.result-footer.show) .choices-label,
+  #screen-quiz:has(.result-footer.show) .choices {
+    max-width: 860px !important;
+    margin-left: 0 !important;
+  }
+}
+
+.result-footer {
+  align-items: flex-start !important;
+  max-height: min(42vh, 360px);
+  overflow-y: auto;
+}
+
+.result-next-btn {
+  align-self: flex-start;
+}
+
+@media (max-width: 980px) {
+  body[data-active-screen="screen-home"] .circuit-backdrop {
+    z-index: 0 !important;
+  }
+
+  body[data-active-screen="screen-home"] .ai-bot {
+    right: 4px !important;
+    top: 108px !important;
+    width: 220px !important;
+    opacity: 0.2 !important;
+  }
+
+  body[data-active-screen="screen-home"] .circuit-trace,
+  body[data-active-screen="screen-home"] .circuit-node {
+    opacity: 0.22 !important;
+  }
+
+  .result-footer {
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 48vh;
+  }
+
+  .result-body {
+    flex: 1 1 calc(100% - 54px);
+  }
+
+  .result-next-btn {
+    margin-left: 54px;
+  }
+
+  .term-detail summary {
+    font-size: 20px;
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .result-footer {
+    padding: 12px 16px 18px;
+  }
+
+  .result-next-btn {
+    width: calc(100% - 54px);
+    justify-content: center;
+  }
+
+  .term-detail-body {
+    font-size: 22px;
+    line-height: 1.58;
+  }
+}
+
+/* ══════════════════════════════════════════
+   JARVIS Electric — Scan beam + glow effects
+   ══════════════════════════════════════════ */
+
+@keyframes jarvis-scan {
+  0%   { top: 58px; opacity: 0; }
+  5%   { opacity: 0.85; }
+  93%  { opacity: 0.85; }
+  100% { top: 100vh; opacity: 0; }
+}
+
+@keyframes jarvis-xp-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(0,200,255,0.55), 0 0 2px rgba(0,200,255,0.9) !important; }
+  50%       { box-shadow: 0 0 22px rgba(0,200,255,0.95), 0 0 6px rgba(0,200,255,1) !important; }
+}
+
+@keyframes jarvis-blink {
+  0%, 86%, 100% { opacity: 1; }
+  93% { opacity: 0.15; }
+}
+
+/* Scan beam — fixed, aligned with content column */
+body[data-active-screen="screen-home"] #screen-home::before {
+  content: '' !important;
+  display: block !important;
+  position: fixed !important;
+  left: max(0px, calc(50% - 370px)) !important;
+  right: max(0px, calc(50% - 370px)) !important;
+  height: 1.5px !important;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(0,200,255,0.55) 20%,
+    rgba(0,200,255,0.9) 50%,
+    rgba(0,200,255,0.55) 80%,
+    transparent 100%
+  ) !important;
+  pointer-events: none !important;
+  z-index: 9998 !important;
+  animation: jarvis-scan 12s ease-in-out infinite !important;
+  animation-delay: 1s !important;
+  top: 58px !important;
+}
+
+@media (max-width: 980px) {
+  body[data-active-screen="screen-home"] #screen-home::before {
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+/* ── Home robot: wide float animation ── */
+@keyframes botFloatJarvis {
+  0%   { transform: translate3d(0,    0px,   0) rotate(-3deg) scale(1);     }
+  18%  { transform: translate3d(-55px, -80px,  0) rotate(4deg)  scale(1.04); }
+  38%  { transform: translate3d(45px,  -130px, 0) rotate(7deg)  scale(1.07); }
+  55%  { transform: translate3d(70px,  -55px,  0) rotate(-2deg) scale(1.03); }
+  74%  { transform: translate3d(-35px, -105px, 0) rotate(5deg)  scale(1.05); }
+  90%  { transform: translate3d(25px,  -30px,  0) rotate(-4deg) scale(1.02); }
+  100% { transform: translate3d(0,    0px,   0) rotate(-3deg) scale(1);     }
+}
+
+/* XP bar glow breathe */
+.level-xp-fill { animation: jarvis-xp-glow 2.2s ease-in-out infinite !important; }
+
+/* Section // blink */
+.section-title::before { animation: jarvis-blink 6s ease-in-out infinite !important; }
+
+/* ══════════════════════════════════════════
+   Games screen — layout + card sizing
+   ══════════════════════════════════════════ */
+
+/* Flatten to single-column flex so items stack in DOM order */
+#screen-games .utility-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  max-width: 1200px !important;
+}
+
+/* DOM order: kicker → title → copy → week-row → cards */
+#screen-games .utility-kicker { order: 1 !important; }
+#screen-games .utility-title  {
+  order: 2 !important;
+  margin-top: 10px !important;
+  font-size: 52px !important;
+  line-height: 1.1 !important;
+}
+#screen-games .utility-copy {
+  order: 3 !important;
+  margin-top: 10px !important;
+  font-size: 20px !important;
+}
+#screen-games .game-week-row {
+  order: 4 !important;
+  margin-top: 40px !important;
+  padding: 18px 24px !important;
+  border-radius: 0 !important;
+  border: 1px solid var(--j-border) !important;
+  background: var(--j-glass) !important;
+  box-shadow: none !important;
+}
+#screen-games .utility-grid {
+  order: 5 !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 32px !important;
+  margin-top: 32px !important;
+}
+
+/* Card proportions — 2x */
+#screen-games .utility-card {
+  min-height: 320px !important;
+  padding: 44px 40px !important;
+  border-radius: 0 !important;
+}
+
+#screen-games .utility-card .material-symbols-outlined {
+  font-size: 56px !important;
+}
+
+#screen-games .game-card-charge strong {
+  font-family: 'Noto Sans KR', sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0 !important;
+}
+
+#screen-games .utility-card em {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  word-break: keep-all !important;
+}
+
+/* Week selector buttons */
+#screen-games .game-week-label {
+  font-family: 'Space Grotesk', monospace !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  color: rgba(10,22,40,0.5) !important;
+}
+
+#screen-games .game-week-btn {
+  border-radius: 0 !important;
+  font-family: 'Space Grotesk', monospace !important;
+  border: 1px solid var(--j-border) !important;
+  background: transparent !important;
+  color: var(--j-navy) !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  padding: 10px 24px !important;
+  box-shadow: none !important;
+}
+
+#screen-games .game-week-btn:hover {
+  border-color: var(--j-cyan) !important;
+  color: var(--j-cyan) !important;
+  background: transparent !important;
+}
+
+/* ── Review screen: REVIEW 바로 아래 intro(왼쪽) + cards(오른쪽) ── */
+#screen-review .utility-container {
+  display: block !important;
+}
+.review-body {
+  display: grid !important;
+  grid-template-columns: minmax(160px, 0.36fr) 1fr !important;
+  gap: 28px !important;
+  align-items: start !important;
+  margin-top: 14px !important;
+}
+.review-intro .utility-title {
+  margin-top: 0 !important;
+}
+.review-intro .utility-copy {
+  margin-top: 10px !important;
+  max-width: none !important;
+}
+.review-cards {
+  grid-area: auto !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  margin-top: 0 !important;
+}
+@media (max-width: 560px) {
+  .review-body {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+#screen-games .game-week-btn.selected {
+  background: var(--j-navy) !important;
+  border-color: var(--j-cyan) !important;
+  color: #fff !important;
+  box-shadow: 0 0 10px rgba(0,200,255,0.2) !important;
+}
+
+/* ══════════════════════════════════════════
+   자세히 알기 — Question card button
+   ══════════════════════════════════════════ */
+
+.detail-open-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 7px 16px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--j-cyan);
+  background: transparent;
+  border: 1px solid rgba(0,200,255,0.38);
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.18s, border-color 0.18s;
+}
+
+.detail-open-btn:hover {
+  background: rgba(0,200,255,0.08);
+  border-color: var(--j-cyan);
+  box-shadow: 0 0 14px rgba(0,200,255,0.22);
+}
+
+/* ══════════════════════════════════════════
+   자세히 알기 — Slide-up Modal
+   ══════════════════════════════════════════ */
+
+.detail-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9500;
+  background: rgba(10,22,40,0.68);
+  backdrop-filter: blur(6px);
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.detail-modal.open { display: flex; }
+
+@keyframes jarvis-slide-up {
+  from { transform: translateY(36px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.detail-panel {
+  width: 100%;
+  max-width: 1080px;
+  max-height: 92vh;
+  background: var(--j-navy);
+  border: 1px solid var(--j-cyan);
+  border-bottom: none;
+  border-top: 4px solid var(--j-cyan);
+  overflow-y: auto;
+  box-shadow: 0 -28px 64px rgba(0,200,255,0.22);
+  animation: jarvis-slide-up 0.28s ease-out;
+}
+
+.detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 34px 44px 26px;
+  border-bottom: 1px solid rgba(0,200,255,0.18);
+  position: sticky;
+  top: 0;
+  background: var(--j-navy);
+  z-index: 1;
+}
+
+.detail-header-left { display: flex; flex-direction: column; gap: 10px; }
+
+.detail-category-tag {
+  display: inline-block;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--j-cyan);
+  background: rgba(0,200,255,0.1);
+  border: 1px solid rgba(0,200,255,0.3);
+  padding: 5px 14px;
+}
+
+.detail-term-name {
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.detail-close-btn {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.5);
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  font-family: 'Space Grotesk', monospace;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.detail-close-btn:hover {
+  border-color: var(--j-cyan);
+  color: var(--j-cyan);
+}
+
+.detail-body {
+  padding: 36px 44px 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.detail-section { display: flex; flex-direction: column; gap: 14px; }
+
+.detail-section-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(0,200,255,0.7);
+}
+
+.detail-section-text {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.88);
+  margin: 0;
+}
+
+.detail-code-block {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 18px;
+  line-height: 1.75;
+  color: rgba(0,220,255,0.9);
+  background: rgba(0,0,0,0.45);
+  border: 1px solid rgba(0,200,255,0.18);
+  border-left: 3px solid var(--j-cyan);
+  padding: 22px 26px;
+  margin: 0;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.detail-tip-block {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 19px;
+  line-height: 1.85;
+  color: rgba(245,210,80,0.95) !important;
+  background: rgba(240,173,0,0.07);
+  border: 1px solid rgba(240,173,0,0.22);
+  border-left: 3px solid var(--j-gold);
+  padding: 19px 24px;
+}

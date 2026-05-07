@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1891",
+    "term": "테스트 피라미드",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 28,
+    "definition": "테스트 피라미드: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "테스트피라미드",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 테스트 피라미드을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테스트 피라미드\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테스트 피라미드은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1892",
+    "term": "단위 테스트(Unit Test)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 28,
+    "definition": "단위 테스트(Unit Test): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "단위테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 단위 테스트(Unit Test)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"단위 테스트(Unit Test)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "단위 테스트(Unit Test)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1893",
+    "term": "통합 테스트(Integration Test)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 28,
+    "definition": "통합 테스트(Integration Test): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "통합테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 통합 테스트(Integration Test)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"통합 테스트(Integration Test)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "통합 테스트(Integration Test)은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1894",
+    "term": "E2E 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 28,
+    "definition": "E2E 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. E2E 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"E2E 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "E2E 테스트은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1895",
+    "term": "계약 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "계약 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "계약테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 계약 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"계약 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "계약 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1896",
+    "term": "스모크 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "스모크 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "스모크테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 스모크 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스모크 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스모크 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1897",
+    "term": "회귀 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "회귀 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "회귀테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 회귀 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"회귀 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "회귀 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1898",
+    "term": "성능 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "성능 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "성능테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 성능 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"성능 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "성능 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1899",
+    "term": "부하 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "부하 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "부하테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 부하 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"부하 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "부하 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1900",
+    "term": "스트레스 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "스트레스 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "스트레스테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 스트레스 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스트레스 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스트레스 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1901",
+    "term": "소크 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "소크 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "소크테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 소크 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"소크 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "소크 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1902",
+    "term": "스파이크 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "스파이크 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "스파이크테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 스파이크 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스파이크 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스파이크 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1903",
+    "term": "카오스 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "카오스 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "카오스테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 카오스 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"카오스 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "카오스 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1904",
+    "term": "뮤테이션 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "뮤테이션 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "뮤테이션테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 뮤테이션 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"뮤테이션 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "뮤테이션 테스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1905",
+    "term": "속성 기반 테스트(Property-based)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "속성 기반 테스트(Property-based): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "속성기반테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 속성 기반 테스트(Property-based)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"속성 기반 테스트(Property-based)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "속성 기반 테스트(Property-based)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1906",
+    "term": "테스트 더블(Test Double)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "테스트 더블(Test Double): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "테스트더블",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 테스트 더블(Test Double)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테스트 더블(Test Double)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테스트 더블(Test Double)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1907",
+    "term": "목(Mock)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "목(Mock): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "목",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 목(Mock)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"목(Mock)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "목(Mock)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1908",
+    "term": "스텁(Stub)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "스텁(Stub): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "스텁",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 스텁(Stub)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스텁(Stub)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스텁(Stub)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1909",
+    "term": "스파이(Spy)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "스파이(Spy): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "스파이",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 스파이(Spy)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스파이(Spy)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스파이(Spy)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1910",
+    "term": "페이크(Fake)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "페이크(Fake): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "페이크",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 페이크(Fake)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"페이크(Fake)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "페이크(Fake)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1911",
+    "term": "테스트 픽스처",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "테스트 픽스처: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "테스트픽스처",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 테스트 픽스처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테스트 픽스처\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테스트 픽스처을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1912",
+    "term": "테스트 격리",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "테스트격리",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 테스트 격리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테스트 격리\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테스트 격리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1913",
+    "term": "테스트 가독성",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "테스트 가독성: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "테스트가독성",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 테스트 가독성을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테스트 가독성\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테스트 가독성을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1914",
+    "term": "Given-When-Then",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "Given-When-Then: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "Given-When",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. Given-When-Then을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Given-When-Then\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Given-When-Then을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1915",
+    "term": "AAA(Arrange-Act-Assert)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "AAA(Arrange-Act-Assert): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "AAA(Arrang",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. AAA(Arrange-Act-Assert)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"AAA(Arrange-Act-Assert)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "AAA(Arrange-Act-Assert)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1916",
+    "term": "테스트 커버리지",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "테스트 커버리지: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "테스트커버리지",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 테스트 커버리지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테스트 커버리지\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테스트 커버리지을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1917",
+    "term": "브랜치 커버리지",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "브랜치 커버리지: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "브랜치커버리지",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 브랜치 커버리지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"브랜치 커버리지\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "브랜치 커버리지을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1918",
+    "term": "돌연변이 점수(Mutation Score)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "돌연변이 점수(Mutation Score): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "돌연변이점수",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 돌연변이 점수(Mutation Score)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"돌연변이 점수(Mutation Score)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "돌연변이 점수(Mutation Score)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1919",
+    "term": "코드 리뷰 원칙",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "코드 리뷰 원칙: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "코드리뷰원칙",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 코드 리뷰 원칙을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"코드 리뷰 원칙\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "코드 리뷰 원칙을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1920",
+    "term": "PR 크기 최적화",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "PR 크기 최적화: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "크기최적화",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. PR 크기 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"PR 크기 최적화\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "PR 크기 최적화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1921",
+    "term": "리뷰 체크리스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "리뷰 체크리스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "리뷰체크리스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 리뷰 체크리스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리뷰 체크리스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리뷰 체크리스트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1922",
+    "term": "정적 분석",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 28,
+    "definition": "정적 분석: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "정적분석",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 정적 분석을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"정적 분석\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "정적 분석을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1923",
+    "term": "린팅(Linting)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "린팅(Linting): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "린팅",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 린팅(Linting)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"린팅(Linting)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "린팅(Linting)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1924",
+    "term": "포맷팅",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "포맷팅: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "포맷팅",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 포맷팅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"포맷팅\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "포맷팅은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1925",
+    "term": "타입 검사",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "타입 검사: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "타입검사",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 타입 검사을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"타입 검사\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "타입 검사은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1926",
+    "term": "코드 복잡도(Cyclomatic)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "코드 복잡도(Cyclomatic): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "코드복잡도",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 코드 복잡도(Cyclomatic)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"코드 복잡도(Cyclomatic)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "코드 복잡도(Cyclomatic)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1927",
+    "term": "중복 코드 탐지",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "중복 코드 탐지: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "중복코드탐지",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 중복 코드 탐지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"중복 코드 탐지\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "중복 코드 탐지은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1928",
+    "term": "기술 부채 측정",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "기술 부채 측정: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "기술부채측정",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 기술 부채 측정을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"기술 부채 측정\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "기술 부채 측정은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1929",
+    "term": "리팩터링 기법",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "리팩터링 기법: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "리팩터링기법",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 리팩터링 기법을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리팩터링 기법\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리팩터링 기법은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1930",
+    "term": "메서드 추출",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "메서드 추출: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "메서드추출",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 메서드 추출을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"메서드 추출\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "메서드 추출은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1931",
+    "term": "인라인 메서드",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "인라인 메서드: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "인라인메서드",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 인라인 메서드을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인라인 메서드\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인라인 메서드은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1932",
+    "term": "변수 추출",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "변수 추출: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "변수추출",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 변수 추출을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"변수 추출\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "변수 추출은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1933",
+    "term": "조건문 단순화",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "조건문 단순화: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "조건문단순화",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 조건문 단순화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"조건문 단순화\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "조건문 단순화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1934",
+    "term": "가드 절(Guard Clause)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "가드 절(Guard Clause): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "가드절",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 가드 절(Guard Clause)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"가드 절(Guard Clause)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "가드 절(Guard Clause)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1935",
+    "term": "상태 패턴으로 분기 제거",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "상태 패턴으로 분기 제거: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "상태패턴으로분기제거",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 상태 패턴으로 분기 제거을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"상태 패턴으로 분기 제거\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "상태 패턴으로 분기 제거은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1936",
+    "term": "레거시 코드 개선",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "레거시 코드 개선: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "레거시코드개선",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 레거시 코드 개선을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"레거시 코드 개선\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "레거시 코드 개선은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1937",
+    "term": "특성 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "특성 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "특성테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 특성 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"특성 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "특성 테스트은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1938",
+    "term": "시스템 이해를 위한 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "시스템 이해를 위한 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "시스템이해를위한테스",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 시스템 이해를 위한 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"시스템 이해를 위한 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "시스템 이해를 위한 테스트은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1939",
+    "term": "코드 고정(Seam)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "코드 고정(Seam): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "코드고정",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 코드 고정(Seam)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"코드 고정(Seam)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "코드 고정(Seam)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1940",
+    "term": "점진적 개선",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "점진적 개선: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "점진적개선",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 점진적 개선을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"점진적 개선\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "점진적 개선은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1941",
+    "term": "보이 스카우트 규칙",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "보이 스카우트 규칙: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "보이스카우트규칙",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 보이 스카우트 규칙을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"보이 스카우트 규칙\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "보이 스카우트 규칙은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1942",
+    "term": "변경 불안 극복",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "변경 불안 극복: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "변경불안극복",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 변경 불안 극복을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"변경 불안 극복\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "변경 불안 극복은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1943",
+    "term": "문서화(코드 주석 원칙)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "문서화(코드 주석 원칙): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "문서화",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 문서화(코드 주석 원칙)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"문서화(코드 주석 원칙)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "문서화(코드 주석 원칙)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1944",
+    "term": "API 문서화",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "API 문서화: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "문서화",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. API 문서화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"API 문서화\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "API 문서화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1945",
+    "term": "아키텍처 결정 기록(ADR)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "아키텍처 결정 기록(ADR): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "아키텍처결정기록",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 아키텍처 결정 기록(ADR)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"아키텍처 결정 기록(ADR)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "아키텍처 결정 기록(ADR)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1946",
+    "term": "시퀀스 다이어그램",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "시퀀스 다이어그램: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "시퀀스다이어그램",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 시퀀스 다이어그램을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"시퀀스 다이어그램\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "시퀀스 다이어그램은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1947",
+    "term": "C4 모델",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "C4 모델: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "모델",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. C4 모델을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"C4 모델\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "C4 모델은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1948",
+    "term": "도구 체인 자동화",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "도구 체인 자동화: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "도구체인자동화",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 도구 체인 자동화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"도구 체인 자동화\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "도구 체인 자동화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1949",
+    "term": "테스트 주도 개발(TDD)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "테스트 주도 개발(TDD): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "테스트주도개발",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 테스트 주도 개발(TDD)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테스트 주도 개발(TDD)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테스트 주도 개발(TDD)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1950",
+    "term": "행동 주도 개발(BDD)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "행동 주도 개발(BDD): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "행동주도개발",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 행동 주도 개발(BDD)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"행동 주도 개발(BDD)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "행동 주도 개발(BDD)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1951",
+    "term": "인수 테스트 주도 개발(ATDD)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "인수 테스트 주도 개발(ATDD): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "인수테스트주도개발",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 인수 테스트 주도 개발(ATDD)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인수 테스트 주도 개발(ATDD)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인수 테스트 주도 개발(ATDD)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1952",
+    "term": "탐색적 테스팅",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "탐색적 테스팅: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "탐색적테스팅",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 탐색적 테스팅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"탐색적 테스팅\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "탐색적 테스팅은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1953",
+    "term": "세션 기반 테스팅",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "세션 기반 테스팅: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "세션기반테스팅",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 세션 기반 테스팅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"세션 기반 테스팅\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "세션 기반 테스팅은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1954",
+    "term": "리스크 기반 테스팅",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "리스크 기반 테스팅: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "리스크기반테스팅",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 리스크 기반 테스팅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리스크 기반 테스팅\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리스크 기반 테스팅은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1955",
+    "term": "테스트 오라클",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "테스트 오라클: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "테스트오라클",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 테스트 오라클을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테스트 오라클\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테스트 오라클은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1956",
+    "term": "동등 분할(Equivalence Partitioning)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "동등 분할(Equivalence Partitioning): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "동등분할",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 동등 분할(Equivalence Partitioning)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"동등 분할(Equivalence Partitioning)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "동등 분할(Equivalence Partitioning)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1957",
+    "term": "경계값 분석(Boundary Value)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "경계값 분석(Boundary Value): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "경계값분석",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 경계값 분석(Boundary Value)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"경계값 분석(Boundary Value)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "경계값 분석(Boundary Value)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1958",
+    "term": "결정 테이블(Decision Table)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "결정 테이블(Decision Table): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "결정테이블",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 결정 테이블(Decision Table)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"결정 테이블(Decision Table)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "결정 테이블(Decision Table)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1959",
+    "term": "상태 전이 테스트",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "상태 전이 테스트: 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "상태전이테스트",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 상태 전이 테스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"상태 전이 테스트\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "상태 전이 테스트은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1960",
+    "term": "페어와이즈 테스팅(Pairwise)",
+    "category": "코드 품질 / 테스트",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 28,
+    "definition": "페어와이즈 테스팅(Pairwise): 코드가 의도대로 동작하고 변경하기 쉬운 상태를 유지하도록 검증, 리뷰, 분석, 리팩터링하는 품질 관리 개념입니다. 결함을 빨리 발견하고 유지보수 비용을 줄입니다.",
+    "hint": "페어와이즈테스팅",
+    "detail": {
+      "easy": "코드를 믿고 고치기 위한 방법",
+      "analogy": "건물을 짓고 수평계, 안전검사, 도면 검토를 반복하는 것과 같습니다. 코드 품질 활동은 프로그램이 기울지 않고 오래 버티게 확인합니다. 페어와이즈 테스팅(Pairwise)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"페어와이즈 테스팅(Pairwise)\"\ncategory = \"코드 품질 / 테스트\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "페어와이즈 테스팅(Pairwise)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

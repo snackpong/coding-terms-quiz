@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1471",
+    "term": "클린 아키텍처",
+    "category": "백엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 22,
+    "definition": "클린 아키텍처: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "클린아키텍처",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 클린 아키텍처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클린 아키텍처\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클린 아키텍처은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1472",
+    "term": "헥사고날 아키텍처",
+    "category": "백엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 22,
+    "definition": "헥사고날 아키텍처: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "헥사고날아키텍처",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 헥사고날 아키텍처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"헥사고날 아키텍처\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "헥사고날 아키텍처은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1473",
+    "term": "포트와 어댑터",
+    "category": "백엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 22,
+    "definition": "포트와 어댑터: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "포트와어댑터",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 포트와 어댑터을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"포트와 어댑터\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "포트와 어댑터은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1474",
+    "term": "레이어드 아키텍처",
+    "category": "백엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 22,
+    "definition": "레이어드 아키텍처: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "레이어드아키텍처",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 레이어드 아키텍처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"레이어드 아키텍처\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "레이어드 아키텍처은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1475",
+    "term": "도메인 레이어",
+    "category": "백엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 22,
+    "definition": "도메인 레이어: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "도메인레이어",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 도메인 레이어을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"도메인 레이어\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "도메인 레이어은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1476",
+    "term": "응용 레이어",
+    "category": "백엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 22,
+    "definition": "응용 레이어: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "응용레이어",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 응용 레이어을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"응용 레이어\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "응용 레이어은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1477",
+    "term": "인프라 레이어",
+    "category": "백엔드",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 22,
+    "definition": "인프라 레이어: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "인프라레이어",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 인프라 레이어을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인프라 레이어\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인프라 레이어은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1478",
+    "term": "트랜잭션 스크립트",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "트랜잭션스크립트",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 트랜잭션 스크립트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"트랜잭션 스크립트\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "트랜잭션 스크립트을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1479",
+    "term": "액티브 레코드 패턴",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "액티브 레코드 패턴: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "액티브레코드패턴",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 액티브 레코드 패턴을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"액티브 레코드 패턴\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "액티브 레코드 패턴을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1480",
+    "term": "ORM 심화",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "ORM 심화: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "심화",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. ORM 심화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ORM 심화\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ORM 심화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1481",
+    "term": "N+1 문제",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "N+1 문제: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "문제",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. N+1 문제을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"N+1 문제\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "N+1 문제을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1482",
+    "term": "즉시 로딩 vs 지연 로딩",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "즉시 로딩 vs 지연 로딩: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "즉시로딩지연로딩",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 즉시 로딩 vs 지연 로딩을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"즉시 로딩 vs 지연 로딩\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "즉시 로딩 vs 지연 로딩을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1483",
+    "term": "쿼리 빌더",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "쿼리 빌더: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "쿼리빌더",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 쿼리 빌더을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"쿼리 빌더\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "쿼리 빌더을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1484",
+    "term": "마이그레이션 관리",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "마이그레이션 관리: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "마이그레이션관리",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 마이그레이션 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"마이그레이션 관리\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "마이그레이션 관리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1485",
+    "term": "시드 데이터",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "시드 데이터: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "시드데이터",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 시드 데이터을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"시드 데이터\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "시드 데이터을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1486",
+    "term": "연결 풀 튜닝",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "연결 풀 튜닝: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "연결풀튜닝",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 연결 풀 튜닝을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"연결 풀 튜닝\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "연결 풀 튜닝을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1487",
+    "term": "데이터베이스 샤딩(앱 레벨)",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "데이터베이스 샤딩(앱 레벨): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "데이터베이스샤딩",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 데이터베이스 샤딩(앱 레벨)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터베이스 샤딩(앱 레벨)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터베이스 샤딩(앱 레벨)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1488",
+    "term": "CQRS 구현",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "CQRS 구현: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "구현",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. CQRS 구현을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CQRS 구현\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CQRS 구현을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1489",
+    "term": "이벤트 소싱 구현",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "이벤트 소싱 구현: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "이벤트소싱구현",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 이벤트 소싱 구현을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이벤트 소싱 구현\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이벤트 소싱 구현을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1490",
+    "term": "아웃박스 패턴",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "아웃박스 패턴: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "아웃박스패턴",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 아웃박스 패턴을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"아웃박스 패턴\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "아웃박스 패턴을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1491",
+    "term": "사가 패턴(분산 트랜잭션)",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "사가패턴",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 사가 패턴(분산 트랜잭션)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"사가 패턴(분산 트랜잭션)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "사가 패턴(분산 트랜잭션)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1492",
+    "term": "보상 트랜잭션",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "보상트랜잭션",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 보상 트랜잭션을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"보상 트랜잭션\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "보상 트랜잭션을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1493",
+    "term": "이중 쓰기 문제",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "이중 쓰기 문제: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "이중쓰기문제",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 이중 쓰기 문제을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이중 쓰기 문제\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이중 쓰기 문제을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1494",
+    "term": "멱등성 구현",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "멱등성 구현: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "멱등성구현",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 멱등성 구현을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"멱등성 구현\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "멱등성 구현을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1495",
+    "term": "낙관적 잠금",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "낙관적 잠금: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "낙관적잠금",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 낙관적 잠금을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"낙관적 잠금\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "낙관적 잠금을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1496",
+    "term": "비관적 잠금",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "비관적 잠금: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "비관적잠금",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 비관적 잠금을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"비관적 잠금\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "비관적 잠금을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1497",
+    "term": "버전 필드",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "버전 필드: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "버전필드",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 버전 필드을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"버전 필드\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "버전 필드을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1498",
+    "term": "배치 처리",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "배치 처리: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "배치처리",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 배치 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"배치 처리\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "배치 처리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1499",
+    "term": "청크 처리",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "청크 처리: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "청크처리",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 청크 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"청크 처리\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "청크 처리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1500",
+    "term": "스케줄링(cron)",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "스케줄링(cron): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "스케줄링",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 스케줄링(cron)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스케줄링(cron)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스케줄링(cron)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1501",
+    "term": "큐 기반 처리",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "큐 기반 처리: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "큐기반처리",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 큐 기반 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"큐 기반 처리\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "큐 기반 처리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1502",
+    "term": "작업자 풀(Worker Pool)",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "작업자 풀(Worker Pool): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "작업자풀",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 작업자 풀(Worker Pool)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"작업자 풀(Worker Pool)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "작업자 풀(Worker Pool)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1503",
+    "term": "백프레셔(Backpressure)",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "백프레셔(Backpressure): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "백프레셔",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 백프레셔(Backpressure)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"백프레셔(Backpressure)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "백프레셔(Backpressure)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1504",
+    "term": "속도 제한 구현(Token Bucket)",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "속도 제한 구현(Token Bucket): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "속도제한구현",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 속도 제한 구현(Token Bucket)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"속도 제한 구현(Token Bucket)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "속도 제한 구현(Token Bucket)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1505",
+    "term": "속도 제한(Leaky Bucket)",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "속도 제한(Leaky Bucket): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "속도제한",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 속도 제한(Leaky Bucket)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"속도 제한(Leaky Bucket)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "속도 제한(Leaky Bucket)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1506",
+    "term": "API 캐싱 전략",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "API 캐싱 전략: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "캐싱전략",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. API 캐싱 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"API 캐싱 전략\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "API 캐싱 전략을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1507",
+    "term": "HTTP 캐싱",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "HTTP 캐싱: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "캐싱",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. HTTP 캐싱을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"HTTP 캐싱\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "HTTP 캐싱을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1508",
+    "term": "ETag 구현",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "ETag 구현: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "구현",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. ETag 구현을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"ETag 구현\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "ETag 구현을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1509",
+    "term": "조건부 요청",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "조건부 요청: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "조건부요청",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 조건부 요청을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"조건부 요청\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "조건부 요청을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1510",
+    "term": "스트리밍 응답",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "스트리밍 응답: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "스트리밍응답",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 스트리밍 응답을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스트리밍 응답\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스트리밍 응답을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1511",
+    "term": "청크 전송 인코딩",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "청크 전송 인코딩: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "청크전송인코딩",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 청크 전송 인코딩을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"청크 전송 인코딩\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "청크 전송 인코딩을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1512",
+    "term": "파일 업로드(멀티파트)",
+    "category": "백엔드",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 22,
+    "definition": "파일 업로드(멀티파트): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "파일업로드",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 파일 업로드(멀티파트)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"파일 업로드(멀티파트)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "파일 업로드(멀티파트)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1513",
+    "term": "대용량 파일 처리",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "대용량 파일 처리: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "대용량파일처리",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 대용량 파일 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"대용량 파일 처리\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "대용량 파일 처리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1514",
+    "term": "이메일 발송 큐",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "이메일 발송 큐: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "이메일발송큐",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 이메일 발송 큐을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이메일 발송 큐\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이메일 발송 큐은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1515",
+    "term": "알림 서비스",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "알림 서비스: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "알림서비스",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 알림 서비스을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"알림 서비스\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "알림 서비스은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1516",
+    "term": "웹훅 발송",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "웹훅 발송: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "웹훅발송",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 웹훅 발송을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"웹훅 발송\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "웹훅 발송은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1517",
+    "term": "재시도 큐",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "재시도 큐: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "재시도큐",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 재시도 큐을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"재시도 큐\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "재시도 큐은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1518",
+    "term": "데드 레터 큐(DLQ)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "데드 레터 큐(DLQ): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "데드레터큐",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 데드 레터 큐(DLQ)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데드 레터 큐(DLQ)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데드 레터 큐(DLQ)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1519",
+    "term": "오케스트레이션 vs 코레오그래피",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "오케스트레이션 vs 코레오그래피: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "오케스트레이션코레오",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 오케스트레이션 vs 코레오그래피을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"오케스트레이션 vs 코레오그래피\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "오케스트레이션 vs 코레오그래피은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1520",
+    "term": "분산 설정 관리",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "분산 설정 관리: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "분산설정관리",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 분산 설정 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 설정 관리\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 설정 관리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1521",
+    "term": "피처 토글",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "피처 토글: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "피처토글",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 피처 토글을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"피처 토글\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "피처 토글은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1522",
+    "term": "테넌시(Multi-tenancy)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "테넌시(Multi-tenancy): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "테넌시",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 테넌시(Multi-tenancy)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"테넌시(Multi-tenancy)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "테넌시(Multi-tenancy)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1523",
+    "term": "데이터 격리 전략",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "데이터격리전략",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 데이터 격리 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 격리 전략\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 격리 전략은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1524",
+    "term": "gRPC 개요",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "gRPC 개요: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "개요",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. gRPC 개요을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"gRPC 개요\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "gRPC 개요은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1525",
+    "term": "단방향 스트리밍(gRPC)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "단방향 스트리밍(gRPC): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "단방향스트리밍",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 단방향 스트리밍(gRPC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"단방향 스트리밍(gRPC)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "단방향 스트리밍(gRPC)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1526",
+    "term": "양방향 스트리밍(gRPC)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "양방향 스트리밍(gRPC): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "양방향스트리밍",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 양방향 스트리밍(gRPC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"양방향 스트리밍(gRPC)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "양방향 스트리밍(gRPC)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1527",
+    "term": "프로토콜 버퍼(Protobuf)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "프로토콜 버퍼(Protobuf): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "프로토콜버퍼",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 프로토콜 버퍼(Protobuf)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"프로토콜 버퍼(Protobuf)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "프로토콜 버퍼(Protobuf)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1528",
+    "term": "인터셉터(gRPC)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "인터셉터(gRPC): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "인터셉터",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 인터셉터(gRPC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인터셉터(gRPC)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인터셉터(gRPC)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1529",
+    "term": "헬스 체크(gRPC)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "헬스 체크(gRPC): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "헬스체크",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 헬스 체크(gRPC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"헬스 체크(gRPC)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "헬스 체크(gRPC)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1530",
+    "term": "다중 테넌시 격리",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "다중테넌시격리",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 다중 테넌시 격리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"다중 테넌시 격리\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "다중 테넌시 격리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1531",
+    "term": "행 레벨 보안(RLS)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "행 레벨 보안(RLS): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "행레벨보안",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 행 레벨 보안(RLS)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"행 레벨 보안(RLS)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "행 레벨 보안(RLS)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1532",
+    "term": "읽기/쓰기 분리(앱 레벨)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "읽기/쓰기 분리(앱 레벨): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "읽기쓰기분리",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 읽기/쓰기 분리(앱 레벨)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"읽기/쓰기 분리(앱 레벨)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "읽기/쓰기 분리(앱 레벨)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1533",
+    "term": "캐시 무효화(백엔드)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "캐시 무효화(백엔드): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "캐시무효화",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 캐시 무효화(백엔드)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"캐시 무효화(백엔드)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "캐시 무효화(백엔드)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1534",
+    "term": "토큰 블랙리스트",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "토큰 블랙리스트: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "토큰블랙리스트",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 토큰 블랙리스트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"토큰 블랙리스트\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "토큰 블랙리스트은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1535",
+    "term": "리프레시 토큰 로테이션",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "리프레시 토큰 로테이션: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "리프레시토큰로테이션",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 리프레시 토큰 로테이션을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리프레시 토큰 로테이션\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리프레시 토큰 로테이션은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1536",
+    "term": "활성 탐침(Liveness Probe)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "활성 탐침(Liveness Probe): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "활성탐침",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 활성 탐침(Liveness Probe)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"활성 탐침(Liveness Probe)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "활성 탐침(Liveness Probe)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1537",
+    "term": "준비 탐침(Readiness Probe)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "준비 탐침(Readiness Probe): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "준비탐침",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 준비 탐침(Readiness Probe)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"준비 탐침(Readiness Probe)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "준비 탐침(Readiness Probe)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1538",
+    "term": "시작 탐침(Startup Probe)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "시작 탐침(Startup Probe): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "시작탐침",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 시작 탐침(Startup Probe)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"시작 탐침(Startup Probe)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "시작 탐침(Startup Probe)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1539",
+    "term": "그레이스풀 종료(백엔드)",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "그레이스풀 종료(백엔드): 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "그레이스풀종료",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 그레이스풀 종료(백엔드)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"그레이스풀 종료(백엔드)\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "그레이스풀 종료(백엔드)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1540",
+    "term": "헬스 엔드포인트 설계",
+    "category": "백엔드",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 22,
+    "definition": "헬스 엔드포인트 설계: 서버 애플리케이션의 구조, 데이터 처리, 트랜잭션, 비동기 작업, API 운영을 안정적으로 설계하기 위한 백엔드 개념입니다. 요청 처리부터 저장소와 외부 시스템 연동까지 다룹니다.",
+    "hint": "헬스엔드포인트설계",
+    "detail": {
+      "easy": "서버 내부를 튼튼하게 짜는 방법",
+      "analogy": "식당 주방에서 주문 접수, 조리, 재료 창고, 배달 대기열이 분리돼야 혼잡이 줄어듭니다. 백엔드 설계도 요청과 데이터 흐름을 역할별로 나눕니다. 헬스 엔드포인트 설계을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"헬스 엔드포인트 설계\"\ncategory = \"백엔드\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "헬스 엔드포인트 설계은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

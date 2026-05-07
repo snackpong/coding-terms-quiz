@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1541",
+    "term": "분산 시스템 개요",
+    "category": "분산 시스템",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 23,
+    "definition": "분산 시스템 개요: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "분산시스템개요",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 분산 시스템 개요을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 시스템 개요\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 시스템 개요은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1542",
+    "term": "네트워크 파티션",
+    "category": "분산 시스템",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 23,
+    "definition": "네트워크 파티션: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "네트워크파티션",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 네트워크 파티션을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"네트워크 파티션\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "네트워크 파티션은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1543",
+    "term": "노드 장애",
+    "category": "분산 시스템",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 23,
+    "definition": "노드 장애: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "노드장애",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 노드 장애을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"노드 장애\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "노드 장애은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1544",
+    "term": "부분 장애",
+    "category": "분산 시스템",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 23,
+    "definition": "부분 장애: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "부분장애",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 부분 장애을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"부분 장애\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "부분 장애은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1545",
+    "term": "비잔틴 장애",
+    "category": "분산 시스템",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 23,
+    "definition": "비잔틴 장애: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "비잔틴장애",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 비잔틴 장애을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"비잔틴 장애\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "비잔틴 장애은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1546",
+    "term": "분산 합의",
+    "category": "분산 시스템",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 23,
+    "definition": "분산 합의: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "분산합의",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 분산 합의을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 합의\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 합의은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1547",
+    "term": "Paxos 알고리즘",
+    "category": "분산 시스템",
+    "difficulty": "easy",
+    "phase": 4,
+    "week": 23,
+    "definition": "Paxos 알고리즘: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "알고리즘",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. Paxos 알고리즘을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Paxos 알고리즘\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Paxos 알고리즘은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1548",
+    "term": "Raft 알고리즘",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "Raft 알고리즘: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "알고리즘",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. Raft 알고리즘을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Raft 알고리즘\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Raft 알고리즘을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1549",
+    "term": "리더 선출",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "리더 선출: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "리더선출",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 리더 선출을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리더 선출\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리더 선출을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1550",
+    "term": "쿼럼(Quorum)",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "쿼럼(Quorum): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "쿼럼",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 쿼럼(Quorum)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"쿼럼(Quorum)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "쿼럼(Quorum)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1551",
+    "term": "2단계 커밋(2PC)",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "단계커밋",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 2단계 커밋(2PC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"2단계 커밋(2PC)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "2단계 커밋(2PC)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1552",
+    "term": "3단계 커밋",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "단계커밋",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 3단계 커밋을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"3단계 커밋\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "3단계 커밋을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1553",
+    "term": "분산 트랜잭션",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "분산트랜잭션",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 분산 트랜잭션을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 트랜잭션\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 트랜잭션을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1554",
+    "term": "글로벌 고유 ID(ULID/UUID)",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "글로벌 고유 ID(ULID/UUID): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "글로벌고유",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 글로벌 고유 ID(ULID/UUID)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"글로벌 고유 ID(ULID/UUID)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "글로벌 고유 ID(ULID/UUID)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1555",
+    "term": "스노우플레이크 ID",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "스노우플레이크 ID: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "스노우플레이크",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 스노우플레이크 ID을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스노우플레이크 ID\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스노우플레이크 ID을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1556",
+    "term": "타임스탬프 동기화",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "타임스탬프 동기화: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "타임스탬프동기화",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 타임스탬프 동기화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"타임스탬프 동기화\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "타임스탬프 동기화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1557",
+    "term": "논리적 시계",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "논리적 시계: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "논리적시계",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 논리적 시계을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"논리적 시계\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "논리적 시계을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1558",
+    "term": "람포트 시계(Lamport Clock)",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "람포트 시계(Lamport Clock): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "람포트시계",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 람포트 시계(Lamport Clock)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"람포트 시계(Lamport Clock)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "람포트 시계(Lamport Clock)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1559",
+    "term": "벡터 시계 심화",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "벡터 시계 심화: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "벡터시계심화",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 벡터 시계 심화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"벡터 시계 심화\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "벡터 시계 심화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1560",
+    "term": "CRDT(충돌 없는 복제 자료형)",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "CRDT(충돌 없는 복제 자료형): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "CRDT(충돌없는복",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. CRDT(충돌 없는 복제 자료형)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CRDT(충돌 없는 복제 자료형)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CRDT(충돌 없는 복제 자료형)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1561",
+    "term": "읽기 복구",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "읽기 복구: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "읽기복구",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 읽기 복구을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"읽기 복구\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "읽기 복구을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1562",
+    "term": "쓰기 복구",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "쓰기 복구: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "쓰기복구",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 쓰기 복구을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"쓰기 복구\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "쓰기 복구을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1563",
+    "term": "힌티드 핸드오프",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "힌티드 핸드오프: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "힌티드핸드오프",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 힌티드 핸드오프을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"힌티드 핸드오프\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "힌티드 핸드오프을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1564",
+    "term": "반엔트로피",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "반엔트로피: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "반엔트로피",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 반엔트로피을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"반엔트로피\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "반엔트로피을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1565",
+    "term": "가십 프로토콜",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "가십 프로토콜: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "가십프로토콜",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 가십 프로토콜을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"가십 프로토콜\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "가십 프로토콜을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1566",
+    "term": "멤버십 프로토콜",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "멤버십 프로토콜: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "멤버십프로토콜",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 멤버십 프로토콜을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"멤버십 프로토콜\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "멤버십 프로토콜을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1567",
+    "term": "링 토폴로지",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "링 토폴로지: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "링토폴로지",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 링 토폴로지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"링 토폴로지\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "링 토폴로지을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1568",
+    "term": "코드 버전 관리(분산)",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "코드 버전 관리(분산): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "코드버전관리",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 코드 버전 관리(분산)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"코드 버전 관리(분산)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "코드 버전 관리(분산)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1569",
+    "term": "분산 파일 시스템",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "분산 파일 시스템: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "분산파일시스템",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 분산 파일 시스템을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 파일 시스템\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 파일 시스템을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1570",
+    "term": "HDFS",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "HDFS: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "HDFS",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. HDFS을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"HDFS\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "HDFS을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1571",
+    "term": "오브젝트 스토리지 아키텍처",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "오브젝트 스토리지 아키텍처: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "오브젝트스토리지아키",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 오브젝트 스토리지 아키텍처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"오브젝트 스토리지 아키텍처\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "오브젝트 스토리지 아키텍처을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1572",
+    "term": "분산 캐시",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "분산 캐시: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "분산캐시",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 분산 캐시을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 캐시\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 캐시을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1573",
+    "term": "캐시 일관성 프로토콜",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "캐시 일관성 프로토콜: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "캐시일관성프로토콜",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 캐시 일관성 프로토콜을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"캐시 일관성 프로토콜\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "캐시 일관성 프로토콜을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1574",
+    "term": "리드-어-라이트(Read-Repair)",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "리드-어-라이트(Read-Repair): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "리드어라이트",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 리드-어-라이트(Read-Repair)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"리드-어-라이트(Read-Repair)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "리드-어-라이트(Read-Repair)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1575",
+    "term": "쓰기 증폭",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "쓰기 증폭: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "쓰기증폭",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 쓰기 증폭을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"쓰기 증폭\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "쓰기 증폭을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1576",
+    "term": "읽기 증폭",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "읽기 증폭: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "읽기증폭",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 읽기 증폭을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"읽기 증폭\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "읽기 증폭을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1577",
+    "term": "LSM 트리",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "LSM 트리: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "트리",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. LSM 트리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"LSM 트리\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "LSM 트리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1578",
+    "term": "SSTable",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "SSTable: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "SSTable",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. SSTable을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SSTable\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SSTable을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1579",
+    "term": "Compaction",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "Compaction: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "Compaction",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. Compaction을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Compaction\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Compaction을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1580",
+    "term": "Bloom Filter 활용",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "Bloom Filter 활용: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "활용",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. Bloom Filter 활용을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Bloom Filter 활용\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Bloom Filter 활용을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1581",
+    "term": "분산 메시지 큐 설계",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "분산 메시지 큐 설계: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "분산메시지큐설계",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 분산 메시지 큐 설계을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 메시지 큐 설계\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 메시지 큐 설계을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1582",
+    "term": "파티션 리밸런싱",
+    "category": "분산 시스템",
+    "difficulty": "medium",
+    "phase": 4,
+    "week": 23,
+    "definition": "파티션 리밸런싱: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "파티션리밸런싱",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 파티션 리밸런싱을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"파티션 리밸런싱\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "파티션 리밸런싱을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1583",
+    "term": "소비자 그룹",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "소비자 그룹: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "소비자그룹",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 소비자 그룹을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"소비자 그룹\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "소비자 그룹은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1584",
+    "term": "오프셋 관리",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "오프셋 관리: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "오프셋관리",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 오프셋 관리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"오프셋 관리\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "오프셋 관리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1585",
+    "term": "정확히 한 번 전달(Exactly-once)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "정확히 한 번 전달(Exactly-once): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "정확히한번전달",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 정확히 한 번 전달(Exactly-once)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"정확히 한 번 전달(Exactly-once)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "정확히 한 번 전달(Exactly-once)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1586",
+    "term": "최소 한 번 전달(At-least-once)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "최소 한 번 전달(At-least-once): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "최소한번전달",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 최소 한 번 전달(At-least-once)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"최소 한 번 전달(At-least-once)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "최소 한 번 전달(At-least-once)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1587",
+    "term": "최대 한 번 전달(At-most-once)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "최대 한 번 전달(At-most-once): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "최대한번전달",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 최대 한 번 전달(At-most-once)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"최대 한 번 전달(At-most-once)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "최대 한 번 전달(At-most-once)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1588",
+    "term": "배압(Back Pressure) 분산",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "배압(Back Pressure) 분산: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "배압분산",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 배압(Back Pressure) 분산을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"배압(Back Pressure) 분산\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "배압(Back Pressure) 분산은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1589",
+    "term": "서킷 브레이커 상태 머신",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "서킷 브레이커 상태 머신: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "서킷브레이커상태머신",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 서킷 브레이커 상태 머신을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"서킷 브레이커 상태 머신\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "서킷 브레이커 상태 머신은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1590",
+    "term": "벌크헤드 패턴",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "벌크헤드 패턴: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "벌크헤드패턴",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 벌크헤드 패턴을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"벌크헤드 패턴\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "벌크헤드 패턴은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1591",
+    "term": "타임아웃 전략",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "타임아웃 전략: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "타임아웃전략",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 타임아웃 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"타임아웃 전략\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "타임아웃 전략은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1592",
+    "term": "분산 레이트 리미팅",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "분산 레이트 리미팅: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "분산레이트리미팅",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 분산 레이트 리미팅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 레이트 리미팅\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 레이트 리미팅은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1593",
+    "term": "지역 분산 아키텍처",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "지역 분산 아키텍처: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "지역분산아키텍처",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 지역 분산 아키텍처을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"지역 분산 아키텍처\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "지역 분산 아키텍처은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1594",
+    "term": "지오 라우팅",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "지오 라우팅: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "지오라우팅",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 지오 라우팅을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"지오 라우팅\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "지오 라우팅은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1595",
+    "term": "멀티 리전 복제",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "멀티 리전 복제: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "멀티리전복제",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 멀티 리전 복제을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"멀티 리전 복제\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "멀티 리전 복제은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1596",
+    "term": "분산 해시 테이블(DHT)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "분산 해시 테이블(DHT): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "분산해시테이블",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 분산 해시 테이블(DHT)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 해시 테이블(DHT)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 해시 테이블(DHT)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1597",
+    "term": "P2P 네트워크 기초",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "P2P 네트워크 기초: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "네트워크기초",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. P2P 네트워크 기초을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"P2P 네트워크 기초\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "P2P 네트워크 기초은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1598",
+    "term": "쓰기 정족수(Write Quorum)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "쓰기 정족수(Write Quorum): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "쓰기정족수",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 쓰기 정족수(Write Quorum)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"쓰기 정족수(Write Quorum)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "쓰기 정족수(Write Quorum)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1599",
+    "term": "읽기 정족수(Read Quorum)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "읽기 정족수(Read Quorum): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "읽기정족수",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 읽기 정족수(Read Quorum)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"읽기 정족수(Read Quorum)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "읽기 정족수(Read Quorum)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1600",
+    "term": "NWR 모델",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "NWR 모델: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "모델",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. NWR 모델을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"NWR 모델\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "NWR 모델은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1601",
+    "term": "스플릿 브레인(Split Brain)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "스플릿 브레인(Split Brain): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "스플릿브레인",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 스플릿 브레인(Split Brain)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스플릿 브레인(Split Brain)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스플릿 브레인(Split Brain)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1602",
+    "term": "펜싱 토큰(Fencing Token)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "펜싱 토큰(Fencing Token): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "펜싱토큰",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 펜싱 토큰(Fencing Token)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"펜싱 토큰(Fencing Token)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "펜싱 토큰(Fencing Token)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1603",
+    "term": "분산 스냅샷",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "분산 스냅샷: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "분산스냅샷",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 분산 스냅샷을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분산 스냅샷\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분산 스냅샷은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1604",
+    "term": "체크포인트(분산)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "체크포인트(분산): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "체크포인트",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 체크포인트(분산)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"체크포인트(분산)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "체크포인트(분산)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1605",
+    "term": "상태 머신 복제",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "상태 머신 복제: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "상태머신복제",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 상태 머신 복제을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"상태 머신 복제\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "상태 머신 복제은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1606",
+    "term": "로그 기반 복제",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "로그 기반 복제: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "로그기반복제",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 로그 기반 복제을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"로그 기반 복제\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "로그 기반 복제은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1607",
+    "term": "복제 지연(Replication Lag)",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "복제 지연(Replication Lag): 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "복제지연",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 복제 지연(Replication Lag)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"복제 지연(Replication Lag)\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "복제 지연(Replication Lag)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1608",
+    "term": "데이터 복제 전략",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "데이터 복제 전략: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "데이터복제전략",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 데이터 복제 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 복제 전략\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 복제 전략은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1609",
+    "term": "동적 멤버십",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "동적 멤버십: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "동적멤버십",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 동적 멤버십을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"동적 멤버십\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "동적 멤버십은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1610",
+    "term": "네트워크 파티션 처리",
+    "category": "분산 시스템",
+    "difficulty": "hard",
+    "phase": 4,
+    "week": 23,
+    "definition": "네트워크 파티션 처리: 여러 작업을 하나의 논리적 작업 단위로 묶어 모두 성공하거나 모두 취소되게 다루는 방식입니다. 송금처럼 출금과 입금이 함께 성공해야 하는 작업에 필요합니다.",
+    "hint": "네트워크파티션처리",
+    "detail": {
+      "easy": "한 묶음으로 처리하는 작업",
+      "analogy": "은행 송금은 내 계좌에서 돈이 빠지고 상대 계좌에 들어가는 일이 함께 끝나야 합니다. 중간에 멈추면 처음 상태로 되돌리는 것이 트랜잭션의 생각입니다. 네트워크 파티션 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"네트워크 파티션 처리\"\ncategory = \"분산 시스템\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "네트워크 파티션 처리은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

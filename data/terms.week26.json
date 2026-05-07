@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "1751",
+    "term": "성능 최적화 방법론",
+    "category": "성능 최적화",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 26,
+    "definition": "성능 최적화 방법론: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "성능최적화방법론",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 성능 최적화 방법론을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"성능 최적화 방법론\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "성능 최적화 방법론은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1752",
+    "term": "프로파일링 기법",
+    "category": "성능 최적화",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 26,
+    "definition": "프로파일링 기법: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "프로파일링기법",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 프로파일링 기법을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"프로파일링 기법\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "프로파일링 기법은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1753",
+    "term": "CPU 프로파일링",
+    "category": "성능 최적화",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 26,
+    "definition": "CPU 프로파일링: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "프로파일링",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. CPU 프로파일링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CPU 프로파일링\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CPU 프로파일링은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1754",
+    "term": "메모리 프로파일링",
+    "category": "성능 최적화",
+    "difficulty": "easy",
+    "phase": 5,
+    "week": 26,
+    "definition": "메모리 프로파일링: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "메모리프로파일링",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 메모리 프로파일링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"메모리 프로파일링\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "메모리 프로파일링은 정의와 예시를 함께 기억하면 빠르게 익힐 수 있습니다. 처음에는 이름보다 어떤 상황에서 쓰는지부터 확인하세요."
+    }
+  },
+  {
+    "id": "1755",
+    "term": "I/O 프로파일링",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "I/O 프로파일링: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "프로파일링",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. I/O 프로파일링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"I/O 프로파일링\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "I/O 프로파일링을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1756",
+    "term": "화염 그래프(Flame Graph)",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "화염 그래프(Flame Graph): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "화염그래프",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 화염 그래프(Flame Graph)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"화염 그래프(Flame Graph)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "화염 그래프(Flame Graph)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1757",
+    "term": "핫 패스 찾기",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "핫 패스 찾기: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "핫패스찾기",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 핫 패스 찾기을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"핫 패스 찾기\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "핫 패스 찾기을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1758",
+    "term": "가비지 컬렉션(GC)",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "가비지 컬렉션(GC): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "가비지컬렉션",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 가비지 컬렉션(GC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"가비지 컬렉션(GC)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "가비지 컬렉션(GC)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1759",
+    "term": "GC 종류(Mark-Sweep/G1/ZGC)",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "GC 종류(Mark-Sweep/G1/ZGC): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "종류",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. GC 종류(Mark-Sweep/G1/ZGC)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"GC 종류(Mark-Sweep/G1/ZGC)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "GC 종류(Mark-Sweep/G1/ZGC)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1760",
+    "term": "GC 튜닝",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "GC 튜닝: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "튜닝",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. GC 튜닝을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"GC 튜닝\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "GC 튜닝을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1761",
+    "term": "힙 크기 설정",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "힙 크기 설정: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "힙크기설정",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 힙 크기 설정을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"힙 크기 설정\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "힙 크기 설정을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1762",
+    "term": "메모리 누수",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "메모리 누수: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "메모리누수",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 메모리 누수을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"메모리 누수\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "메모리 누수을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1763",
+    "term": "약한 참조/소프트 참조",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "약한 참조/소프트 참조: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "약한참조소프트참조",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 약한 참조/소프트 참조을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"약한 참조/소프트 참조\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "약한 참조/소프트 참조을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1764",
+    "term": "객체 풀링",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "객체 풀링: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "객체풀링",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 객체 풀링을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"객체 풀링\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "객체 풀링을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1765",
+    "term": "스택 할당 vs 힙 할당",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "스택 할당 vs 힙 할당: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "스택할당힙할당",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 스택 할당 vs 힙 할당을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스택 할당 vs 힙 할당\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스택 할당 vs 힙 할당을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1766",
+    "term": "CPU 캐시 계층",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "CPU 캐시 계층: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "캐시계층",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. CPU 캐시 계층을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CPU 캐시 계층\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CPU 캐시 계층을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1767",
+    "term": "캐시 라인",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "캐시 라인: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "캐시라인",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 캐시 라인을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"캐시 라인\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "캐시 라인을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1768",
+    "term": "데이터 지역성",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "데이터 지역성: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "데이터지역성",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 데이터 지역성을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터 지역성\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터 지역성을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1769",
+    "term": "SIMD 명령어",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "SIMD 명령어: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "명령어",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. SIMD 명령어을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"SIMD 명령어\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "SIMD 명령어을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1770",
+    "term": "벡터화",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "벡터화: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "벡터화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 벡터화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"벡터화\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "벡터화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1771",
+    "term": "병렬 처리 vs 동시 처리",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "병렬 처리 vs 동시 처리: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "병렬처리동시처리",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 병렬 처리 vs 동시 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"병렬 처리 vs 동시 처리\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "병렬 처리 vs 동시 처리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1772",
+    "term": "스레드 풀 튜닝",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "스레드 풀 튜닝: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "스레드풀튜닝",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 스레드 풀 튜닝을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스레드 풀 튜닝\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스레드 풀 튜닝을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1773",
+    "term": "논블로킹 I/O",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "논블로킹 I/O: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "논블로킹",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 논블로킹 I/O을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"논블로킹 I/O\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "논블로킹 I/O을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1774",
+    "term": "이벤트 루프 심화",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "이벤트 루프 심화: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "이벤트루프심화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 이벤트 루프 심화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이벤트 루프 심화\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이벤트 루프 심화을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1775",
+    "term": "코루틴",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "코루틴: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "코루틴",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 코루틴을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"코루틴\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "코루틴을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1776",
+    "term": "반응형 프로그래밍(Reactive)",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "반응형 프로그래밍(Reactive): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "반응형프로그래밍",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 반응형 프로그래밍(Reactive)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"반응형 프로그래밍(Reactive)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "반응형 프로그래밍(Reactive)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1777",
+    "term": "배압 처리",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "배압 처리: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "배압처리",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 배압 처리을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"배압 처리\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "배압 처리을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1778",
+    "term": "비동기 스트림",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "비동기 스트림: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "비동기스트림",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 비동기 스트림을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"비동기 스트림\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "비동기 스트림을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1779",
+    "term": "제로 카피(Zero-copy)",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "제로 카피(Zero-copy): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "제로카피",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 제로 카피(Zero-copy)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"제로 카피(Zero-copy)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "제로 카피(Zero-copy)을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1780",
+    "term": "mmap",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "mmap: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "mmap",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. mmap을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"mmap\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "mmap을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1781",
+    "term": "Direct I/O",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "Direct I/O: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "DirectI/O",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. Direct I/O을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Direct I/O\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Direct I/O을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1782",
+    "term": "네트워크 튜닝",
+    "category": "성능 최적화",
+    "difficulty": "medium",
+    "phase": 5,
+    "week": 26,
+    "definition": "네트워크 튜닝: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "네트워크튜닝",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 네트워크 튜닝을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"네트워크 튜닝\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "네트워크 튜닝을 사용할 때는 장점뿐 아니라 제약과 실패 상황을 같이 확인하세요. 실제 프로젝트에서는 작은 예제로 동작을 먼저 재현해 보는 것이 좋습니다."
+    }
+  },
+  {
+    "id": "1783",
+    "term": "TCP 소켓 버퍼",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "TCP 소켓 버퍼: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "소켓버퍼",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. TCP 소켓 버퍼을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"TCP 소켓 버퍼\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "TCP 소켓 버퍼은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1784",
+    "term": "Nagle 알고리즘",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "Nagle 알고리즘: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "알고리즘",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. Nagle 알고리즘을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"Nagle 알고리즘\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "Nagle 알고리즘은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1785",
+    "term": "TCP_NODELAY",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "TCP_NODELAY: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "TCP_NODELA",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. TCP_NODELAY을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"TCP_NODELAY\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "TCP_NODELAY은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1786",
+    "term": "HTTP 연결 재사용",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "HTTP 연결 재사용: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "연결재사용",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. HTTP 연결 재사용을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"HTTP 연결 재사용\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "HTTP 연결 재사용은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1787",
+    "term": "HTTP/2 멀티플렉싱",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "HTTP/2 멀티플렉싱: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "멀티플렉싱",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. HTTP/2 멀티플렉싱을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"HTTP/2 멀티플렉싱\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "HTTP/2 멀티플렉싱은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1788",
+    "term": "데이터베이스 성능 튜닝",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "데이터베이스 성능 튜닝: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "데이터베이스성능튜닝",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 데이터베이스 성능 튜닝을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"데이터베이스 성능 튜닝\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "데이터베이스 성능 튜닝은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1789",
+    "term": "인덱스 전략 심화",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "데이터를 더 빨리 찾기 위해 특정 열의 값을 별도 구조로 정리해 둔 검색 보조 자료입니다. 책 뒤의 찾아보기처럼 조회는 빨라지지만 쓰기 비용과 저장 공간이 늘 수 있습니다.",
+    "hint": "인덱스전략심화",
+    "detail": {
+      "easy": "빨리 찾기 위한 찾아보기",
+      "analogy": "두꺼운 책에서 단어를 찾을 때 모든 쪽을 넘기지 않고 색인을 봅니다. 인덱스는 데이터베이스가 필요한 행으로 바로 가게 하는 색인입니다. 인덱스 전략 심화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인덱스 전략 심화\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인덱스 전략 심화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1790",
+    "term": "파티션 프루닝",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "파티션 프루닝: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "파티션프루닝",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 파티션 프루닝을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"파티션 프루닝\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "파티션 프루닝은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1791",
+    "term": "통계 업데이트",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "통계 업데이트: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "통계업데이트",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 통계 업데이트을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"통계 업데이트\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "통계 업데이트은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1792",
+    "term": "쿼리 플랜 강제",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "쿼리 플랜 강제: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "쿼리플랜강제",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 쿼리 플랜 강제을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"쿼리 플랜 강제\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "쿼리 플랜 강제은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1793",
+    "term": "연결 풀 최적화",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "연결 풀 최적화: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "연결풀최적화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 연결 풀 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"연결 풀 최적화\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "연결 풀 최적화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1794",
+    "term": "N+1 해결 전략",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "N+1 해결 전략: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "해결전략",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. N+1 해결 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"N+1 해결 전략\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "N+1 해결 전략은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1795",
+    "term": "캐싱 패턴 심화(캐시 웜업)",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "캐싱 패턴 심화(캐시 웜업): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "캐싱패턴심화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 캐싱 패턴 심화(캐시 웜업)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"캐싱 패턴 심화(캐시 웜업)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "캐싱 패턴 심화(캐시 웜업)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1796",
+    "term": "사전 계산(Precomputation)",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "사전 계산(Precomputation): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "사전계산",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 사전 계산(Precomputation)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"사전 계산(Precomputation)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "사전 계산(Precomputation)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1797",
+    "term": "비동기 쓰기",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "비동기 쓰기: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "비동기쓰기",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 비동기 쓰기을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"비동기 쓰기\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "비동기 쓰기은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1798",
+    "term": "읽기 최적화 뷰",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "읽기 최적화 뷰: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "읽기최적화뷰",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 읽기 최적화 뷰을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"읽기 최적화 뷰\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "읽기 최적화 뷰은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1799",
+    "term": "검색 최적화(Elasticsearch)",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "검색 최적화(Elasticsearch): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "검색최적화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 검색 최적화(Elasticsearch)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"검색 최적화(Elasticsearch)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "검색 최적화(Elasticsearch)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1800",
+    "term": "역인덱스",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "데이터를 더 빨리 찾기 위해 특정 열의 값을 별도 구조로 정리해 둔 검색 보조 자료입니다. 책 뒤의 찾아보기처럼 조회는 빨라지지만 쓰기 비용과 저장 공간이 늘 수 있습니다.",
+    "hint": "역인덱스",
+    "detail": {
+      "easy": "빨리 찾기 위한 찾아보기",
+      "analogy": "두꺼운 책에서 단어를 찾을 때 모든 쪽을 넘기지 않고 색인을 봅니다. 인덱스는 데이터베이스가 필요한 행으로 바로 가게 하는 색인입니다. 역인덱스을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"역인덱스\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "역인덱스은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1801",
+    "term": "분석기(Analyzer)",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "분석기(Analyzer): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "분석기",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 분석기(Analyzer)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"분석기(Analyzer)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "분석기(Analyzer)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1802",
+    "term": "스코어링 알고리즘",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "스코어링 알고리즘: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "스코어링알고리즘",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 스코어링 알고리즘을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스코어링 알고리즘\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스코어링 알고리즘은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1803",
+    "term": "CDN 최적화",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "CDN 최적화: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "최적화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. CDN 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"CDN 최적화\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "CDN 최적화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1804",
+    "term": "이미지 최적화",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "이미지 최적화: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "이미지최적화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 이미지 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"이미지 최적화\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "이미지 최적화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1805",
+    "term": "지연 로딩 전략",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "지연 로딩 전략: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "지연로딩전략",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 지연 로딩 전략을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"지연 로딩 전략\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "지연 로딩 전략은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1806",
+    "term": "웹 성능 예산",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "웹 성능 예산: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "웹성능예산",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 웹 성능 예산을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"웹 성능 예산\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "웹 성능 예산은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1807",
+    "term": "성능 회귀 감지",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "성능 회귀 감지: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "성능회귀감지",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 성능 회귀 감지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"성능 회귀 감지\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "성능 회귀 감지은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1808",
+    "term": "JVM 튜닝",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "JVM 튜닝: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "튜닝",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. JVM 튜닝을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"JVM 튜닝\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "JVM 튜닝은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1809",
+    "term": "가비지 컬렉션 로그 분석",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "가비지 컬렉션 로그 분석: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "가비지컬렉션로그분석",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 가비지 컬렉션 로그 분석을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"가비지 컬렉션 로그 분석\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "가비지 컬렉션 로그 분석은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1810",
+    "term": "스레드 덤프 분석",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "스레드 덤프 분석: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "스레드덤프분석",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 스레드 덤프 분석을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"스레드 덤프 분석\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "스레드 덤프 분석은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1811",
+    "term": "힙 덤프 분석",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "힙 덤프 분석: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "힙덤프분석",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 힙 덤프 분석을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"힙 덤프 분석\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "힙 덤프 분석은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1812",
+    "term": "슬로우 쿼리 로그",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "슬로우 쿼리 로그: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "슬로우쿼리로그",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 슬로우 쿼리 로그을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"슬로우 쿼리 로그\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "슬로우 쿼리 로그은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1813",
+    "term": "인덱스 미스(Index Miss) 탐지",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "데이터를 더 빨리 찾기 위해 특정 열의 값을 별도 구조로 정리해 둔 검색 보조 자료입니다. 책 뒤의 찾아보기처럼 조회는 빨라지지만 쓰기 비용과 저장 공간이 늘 수 있습니다.",
+    "hint": "인덱스미스탐지",
+    "detail": {
+      "easy": "빨리 찾기 위한 찾아보기",
+      "analogy": "두꺼운 책에서 단어를 찾을 때 모든 쪽을 넘기지 않고 색인을 봅니다. 인덱스는 데이터베이스가 필요한 행으로 바로 가게 하는 색인입니다. 인덱스 미스(Index Miss) 탐지을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"인덱스 미스(Index Miss) 탐지\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "인덱스 미스(Index Miss) 탐지은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1814",
+    "term": "디스크 I/O 최적화",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "디스크 I/O 최적화: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "디스크최적화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 디스크 I/O 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"디스크 I/O 최적화\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "디스크 I/O 최적화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1815",
+    "term": "소켓 최적화",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "소켓 최적화: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "소켓최적화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 소켓 최적화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"소켓 최적화\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "소켓 최적화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1816",
+    "term": "성능 테스트 자동화",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "성능 테스트 자동화: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "성능테스트자동화",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 성능 테스트 자동화을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"성능 테스트 자동화\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "성능 테스트 자동화은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1817",
+    "term": "부하 생성 도구(k6/JMeter)",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "부하 생성 도구(k6/JMeter): 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "부하생성도구",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 부하 생성 도구(k6/JMeter)을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"부하 생성 도구(k6/JMeter)\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "부하 생성 도구(k6/JMeter)은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1818",
+    "term": "성능 테스트 시나리오",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "성능 테스트 시나리오: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "성능테스트시나리오",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 성능 테스트 시나리오을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"성능 테스트 시나리오\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "성능 테스트 시나리오은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1819",
+    "term": "성능 회귀 파이프라인",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "성능 회귀 파이프라인: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "성능회귀파이프라인",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 성능 회귀 파이프라인을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"성능 회귀 파이프라인\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "성능 회귀 파이프라인은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  },
+  {
+    "id": "1820",
+    "term": "클라이언트 사이드 성능 측정",
+    "category": "성능 최적화",
+    "difficulty": "hard",
+    "phase": 5,
+    "week": 26,
+    "definition": "클라이언트 사이드 성능 측정: 프로그램이나 시스템의 속도, 자원 사용량, 처리량을 측정하고 병목을 줄이는 최적화 개념입니다. 추측보다 프로파일링과 지표를 바탕으로 개선합니다.",
+    "hint": "클라이언트사이드성능",
+    "detail": {
+      "easy": "느린 곳을 찾아 빠르게 하는 방법",
+      "analogy": "출퇴근길이 막힐 때 전체 도로를 넓히기보다 가장 막히는 교차로를 먼저 찾습니다. 성능 최적화도 측정으로 병목을 찾고 효과가 큰 부분부터 손봅니다. 클라이언트 사이드 성능 측정을 배울 때도 이름만 외우기보다 어떤 문제를 줄이는지 함께 보면 오래 기억됩니다.",
+      "example": "concept = \"클라이언트 사이드 성능 측정\"\ncategory = \"성능 최적화\"\nenabled = True\n\ndef describe(name, group):\n    # 학습용으로 개념 이름과 분야를 출력합니다.\n    return f\"{group}: {name}\"\n\nif enabled:\n    print(describe(concept, category))",
+      "tip": "클라이언트 사이드 성능 측정은 작은 예제보다 장애, 확장, 보안, 비용 같은 운영 조건을 함께 놓고 판단해야 합니다. 설계 결정은 반드시 로그와 지표로 검증하세요."
+    }
+  }
+]

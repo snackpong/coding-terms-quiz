@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "491",
+    "term": "라우트 매칭",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "요청 URL과 HTTP 메서드를 등록된 라우트 규칙과 비교해 어떤 핸들러가 처리할지 결정하는 과정입니다. /users/:id 같은 패턴에서 실제 id 값을 뽑아내는 것도 포함됩니다.",
+    "hint": "경로매칭",
+    "detail": {
+      "easy": "주소를 규칙에 맞춰 담당자에게 보내기",
+      "analogy": "건물 안내 데스크가 방문 목적과 호실 번호를 보고 어느 부서로 보낼지 정하는 것과 같습니다. 라우트 매칭은 들어온 URL을 등록된 규칙과 맞춰 담당 코드를 찾습니다.",
+      "example": "// 라우트 매칭 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst routes = [{ method: \"GET\", pattern: /^\\/users\\/(\\d+)$/ }];\nconst request = { method: \"GET\", url: \"/users/42\" };\nconst matched = routes.find(r => r.method === request.method && r.pattern.test(request.url));\nconsole.log(Boolean(matched));",
+      "tip": "동적 경로가 많아지면 더 구체적인 라우트를 먼저 매칭해야 합니다. 라우트 순서와 충돌 규칙을 문서화하세요."
+    }
+  },
+  {
+    "id": "492",
+    "term": "미들웨어 체인",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "요청이 최종 핸들러에 도달하기 전에 여러 미들웨어를 순서대로 통과하는 구조입니다. 인증, 로깅, 압축, 오류 처리 같은 공통 작업을 단계별로 붙입니다.",
+    "hint": "처리사슬",
+    "detail": {
+      "easy": "요청이 여러 검문소를 차례로 지남",
+      "analogy": "공항에서 티켓 확인, 보안 검색, 출국 심사를 차례로 거친 뒤 탑승구로 가는 흐름과 같습니다. 미들웨어 체인은 요청을 여러 단계로 통과시켜 공통 처리를 분리합니다.",
+      "example": "// 미들웨어 체인 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst chain = [\n  ctx => { ctx.steps.push(\"log\"); return ctx; },\n  ctx => { ctx.steps.push(\"auth\"); return ctx; }\n];\nconst result = chain.reduce((ctx, fn) => fn(ctx), { steps: [] });\nconsole.log(result.steps.join(\" -> \"));",
+      "tip": "미들웨어 순서는 동작에 직접 영향을 줍니다. 인증보다 라우팅이 먼저인지, 오류 처리 미들웨어가 어디에 있는지 확인하세요."
+    }
+  },
+  {
+    "id": "493",
+    "term": "요청 객체(Request)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "클라이언트가 서버로 보낸 HTTP 요청 정보를 담은 객체입니다. 메서드, URL, 헤더, 쿠키, 본문, 경로 파라미터 같은 값을 읽는 데 사용합니다.",
+    "hint": "요청정보",
+    "detail": {
+      "easy": "사용자가 보낸 주문서",
+      "analogy": "음식 주문서에 메뉴, 수량, 요청사항이 적혀 있는 것처럼 요청 객체에는 클라이언트가 보낸 정보가 들어 있습니다. 서버는 이 객체를 읽고 무엇을 처리할지 결정합니다.",
+      "example": "// 요청 객체(Request) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst request = { method: \"POST\", url: \"/login\", headers: { \"content-type\": \"application/json\" }, body: { id: \"ada\" } };\nconsole.log(request.method, request.url, request.body.id);",
+      "tip": "요청 본문은 신뢰할 수 없습니다. 항상 인증, 권한, 입력 검증을 거친 뒤 사용하세요."
+    }
+  },
+  {
+    "id": "494",
+    "term": "응답 객체(Response)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "서버가 클라이언트에게 돌려보낼 상태 코드, 헤더, 본문을 구성하는 객체입니다. JSON 반환, 리다이렉션, 쿠키 설정 등에 사용합니다.",
+    "hint": "응답정보",
+    "detail": {
+      "easy": "서버가 돌려주는 영수증",
+      "analogy": "식당이 주문을 처리한 뒤 음식과 영수증을 건네는 것과 같습니다. 응답 객체는 서버가 처리 결과와 부가 정보를 클라이언트에게 전달하는 그릇입니다.",
+      "example": "// 응답 객체(Response) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst response = { status: 200, headers: { \"content-type\": \"application/json\" }, body: { ok: true } };\nconsole.log(JSON.stringify(response.body));",
+      "tip": "상태 코드와 본문 의미를 일관되게 맞추세요. 오류인데 200을 반환하면 클라이언트와 모니터링이 문제를 놓칠 수 있습니다."
+    }
+  },
+  {
+    "id": "495",
+    "term": "HTTP 메서드(GET/POST/PUT/DELETE)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "HTTP 요청이 어떤 의도의 작업인지 나타내는 동사입니다. GET은 조회, POST는 생성, PUT은 전체 교체, DELETE는 삭제에 주로 사용합니다.",
+    "hint": "HTTP동사",
+    "detail": {
+      "easy": "요청의 행동 종류",
+      "analogy": "도서관에서 조회, 대출 신청, 정보 수정, 반납 취소가 서로 다른 업무인 것과 같습니다. HTTP 메서드는 같은 주소라도 어떤 행동을 원하는지 구분합니다.",
+      "example": "// HTTP 메서드(GET/POST/PUT/DELETE) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst handlers = { GET: \"조회\", POST: \"생성\", PUT: \"전체 수정\", DELETE: \"삭제\" };\nconsole.log(handlers[\"POST\"]);",
+      "tip": "GET 요청은 서버 상태를 바꾸지 않도록 설계하세요. 메서드 의미가 지켜져야 캐시와 재시도가 안전해집니다."
+    }
+  },
+  {
+    "id": "496",
+    "term": "상태 코드(200/404/500)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "HTTP 응답 결과를 세 자리 숫자로 표현한 코드입니다. 200은 성공, 404는 리소스 없음, 500은 서버 내부 오류를 뜻합니다.",
+    "hint": "응답상태",
+    "detail": {
+      "easy": "처리 결과 번호",
+      "analogy": "택배 조회에서 배송 완료, 주소 없음, 물류센터 오류 같은 상태가 숫자 코드로 표시되는 것과 같습니다. 상태 코드는 클라이언트가 결과를 빠르게 판단하게 합니다.",
+      "example": "// 상태 코드(200/404/500) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst messages = { 200: \"OK\", 404: \"Not Found\", 500: \"Server Error\" };\nconst status = 404;\nconsole.log(messages[status]);",
+      "tip": "상태 코드는 API 계약입니다. 검증 실패는 400, 인증 실패는 401, 권한 없음은 403처럼 의미에 맞게 구분하세요."
+    }
+  },
+  {
+    "id": "497",
+    "term": "헤더(Header)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "HTTP 요청이나 응답에 붙는 메타데이터입니다. Content-Type, Authorization, Cache-Control처럼 본문 해석, 인증, 캐시 정책을 전달합니다.",
+    "hint": "메타정보",
+    "detail": {
+      "easy": "본문 옆 설명표",
+      "analogy": "택배 상자 겉면의 취급주의, 보낸 사람, 내용물 종류 라벨과 같습니다. 헤더는 본문을 어떻게 해석하고 처리할지 알려 줍니다.",
+      "example": "// 헤더(Header) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst headers = { \"content-type\": \"application/json\", authorization: \"Bearer token\" };\nconsole.log(headers[\"content-type\"]);",
+      "tip": "민감한 헤더는 로그에 그대로 남기지 마세요. Authorization, Cookie는 마스킹 대상입니다."
+    }
+  },
+  {
+    "id": "498",
+    "term": "쿠키(Cookie)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "브라우저가 특정 사이트에 대해 저장하고 이후 요청에 자동으로 함께 보내는 작은 데이터입니다. 세션 식별자, 선호 설정, 추적 값 등에 사용됩니다.",
+    "hint": "브라우저저장",
+    "detail": {
+      "easy": "사이트가 맡겨 둔 작은 메모",
+      "analogy": "놀이공원 손목밴드를 차고 있으면 매번 입장권을 다시 보여 주지 않아도 됩니다. 쿠키는 브라우저가 사이트에 다시 방문할 때 함께 들고 가는 작은 표식입니다.",
+      "example": "// 쿠키(Cookie) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst cookie = \"sessionId=abc123; theme=dark\";\nconst pairs = Object.fromEntries(cookie.split(\"; \").map(v => v.split(\"=\")));\nconsole.log(pairs.theme);",
+      "tip": "세션 쿠키에는 HttpOnly, Secure, SameSite를 적절히 설정하세요. 민감한 값을 쿠키 본문에 평문으로 넣지 마세요."
+    }
+  },
+  {
+    "id": "499",
+    "term": "세션(Session)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "사용자의 로그인 상태나 장바구니처럼 여러 요청에 걸쳐 유지해야 하는 서버 측 상태입니다. 보통 브라우저 쿠키에는 세션 ID만 저장하고 실제 데이터는 서버에 둡니다.",
+    "hint": "상태유지",
+    "detail": {
+      "easy": "서버가 기억하는 방문 기록",
+      "analogy": "헬스장 사물함 번호표를 사용자가 들고 있고 실제 짐은 사물함에 있는 것과 같습니다. 세션은 클라이언트가 가진 ID로 서버의 상태를 찾아갑니다.",
+      "example": "// 세션(Session) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst sessions = new Map();\nsessions.set(\"sid-1\", { userId: 7, loggedIn: true });\nconsole.log(sessions.get(\"sid-1\").loggedIn);",
+      "tip": "세션 저장소가 여러 서버에서 공유되는지 확인하세요. 로드 밸런싱 환경에서는 분산 세션이나 중앙 저장소가 필요합니다."
+    }
+  },
+  {
+    "id": "500",
+    "term": "CORS 자격 증명 요청",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "교차 출처 요청에서 쿠키나 인증 헤더 같은 자격 증명을 함께 보내는 CORS 요청입니다. 서버는 허용 출처를 구체적으로 지정하고 credentials 허용 헤더를 내려야 합니다.",
+    "hint": "인증CORS",
+    "detail": {
+      "easy": "다른 건물에 신분증을 들고 출입 요청",
+      "analogy": "다른 회사 건물에 방문하면서 신분증까지 제시해야 하는 상황과 같습니다. CORS 자격 증명 요청은 다른 출처로 요청하면서 쿠키나 인증 정보를 함께 보냅니다.",
+      "example": "// CORS 자격 증명 요청 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst request = { origin: \"https://app.example\", credentials: \"include\" };\nconst responseHeaders = { \"access-control-allow-origin\": request.origin, \"access-control-allow-credentials\": \"true\" };\nconsole.log(responseHeaders);",
+      "tip": "credentials 요청에서는 Access-Control-Allow-Origin에 *를 쓸 수 없습니다. 허용할 출처를 명확히 제한하세요."
+    }
+  },
+  {
+    "id": "501",
+    "term": "CSRF",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "사용자가 로그인된 상태를 악용해 공격자가 의도한 요청을 피해자 브라우저로 보내게 하는 공격입니다. 서버가 요청 출처와 토큰을 확인하지 않으면 상태 변경 요청이 위조될 수 있습니다.",
+    "hint": "요청위조",
+    "detail": {
+      "easy": "남의 도장으로 신청서 제출",
+      "analogy": "누군가가 내 이름으로 작성된 신청서를 몰래 제출하는 것과 비슷합니다. CSRF는 브라우저가 가진 로그인 쿠키를 이용해 사용자가 원하지 않은 요청을 보내게 합니다.",
+      "example": "// CSRF 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst session = { csrfToken: \"known-token\" };\nconst request = { body: { csrfToken: \"known-token\" } };\nconsole.log(request.body.csrfToken === session.csrfToken);",
+      "tip": "상태를 바꾸는 요청에는 CSRF 토큰이나 SameSite 쿠키를 적용하세요. GET으로 삭제 같은 동작을 만들지 않는 것도 중요합니다."
+    }
+  },
+  {
+    "id": "502",
+    "term": "DOM 기반 XSS",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "서버 응답이 아니라 브라우저의 JavaScript가 location.hash 같은 값을 읽어 DOM에 위험하게 삽입할 때 발생하는 XSS 유형입니다.",
+    "hint": "DOM스크립트",
+    "detail": {
+      "easy": "사용자 입력이 화면 스크립트로 변함",
+      "analogy": "게시판 종이에 적힌 문구를 안내 방송으로 그대로 읽어 버리는 상황과 같습니다. DOM 기반 XSS는 브라우저 코드가 입력을 검증 없이 화면 명령처럼 다룰 때 생깁니다.",
+      "example": "// DOM 기반 XSS 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst userInput = \"<img src=x onerror=alert(1)>\";\nconst safeText = userInput.replaceAll(\"<\", \"&lt;\").replaceAll(\">\", \"&gt;\");\nconsole.log(safeText);",
+      "tip": "사용자 입력을 innerHTML에 직접 넣지 마세요. textContent 사용, 출력 인코딩, CSP 적용을 함께 고려하세요."
+    }
+  },
+  {
+    "id": "503",
+    "term": "SQL 인젝션",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "사용자 입력이 SQL 문 구조로 해석되어 공격자가 의도하지 않은 조회나 변경을 실행하게 만드는 공격입니다. 문자열 이어 붙이기로 쿼리를 만들 때 자주 발생합니다.",
+    "hint": "SQL주입",
+    "detail": {
+      "easy": "검색어가 명령문으로 변하는 공격",
+      "analogy": "주문서의 요청사항 칸에 주방 운영 명령을 몰래 적어 넣는 것과 같습니다. SQL 인젝션은 데이터여야 할 입력이 명령으로 해석되는 문제입니다.",
+      "example": "// SQL 인젝션 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst input = \"ada@example.com\";\nconst sql = \"SELECT * FROM users WHERE email = ?\";\nconst params = [input];\nconsole.log(sql, params);",
+      "tip": "항상 파라미터 바인딩을 사용하세요. 입력값을 이스케이프하는 방식만으로 방어하려 하면 빠뜨리기 쉽습니다."
+    }
+  },
+  {
+    "id": "504",
+    "term": "입력 검증",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "외부에서 들어온 값이 형식, 범위, 길이, 허용 목록을 만족하는지 확인하는 과정입니다. 잘못된 데이터 저장과 보안 취약점을 줄입니다.",
+    "hint": "값검사",
+    "detail": {
+      "easy": "들어온 값이 규칙에 맞는지 확인",
+      "analogy": "놀이기구 탑승 전에 키와 나이를 확인하는 것과 같습니다. 입력 검증은 시스템 안으로 들어오기 전에 값이 기준을 만족하는지 확인합니다.",
+      "example": "// 입력 검증 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nfunction isValidPage(value) { return Number.isInteger(value) && value >= 1 && value <= 100; }\nconsole.log(isValidPage(3));\nconsole.log(isValidPage(-1));",
+      "tip": "클라이언트 검증은 사용자 편의용이고 서버 검증은 필수입니다. 두 곳의 규칙이 어긋나지 않게 공유하거나 테스트하세요."
+    }
+  },
+  {
+    "id": "505",
+    "term": "속도 제한(Rate Limiting)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "특정 사용자, IP, 토큰이 일정 시간 동안 보낼 수 있는 요청 수를 제한하는 보호 장치입니다. 과도한 호출, 무차별 대입, 비용 폭증을 막습니다.",
+    "hint": "요청제한",
+    "detail": {
+      "easy": "너무 자주 두드리면 잠시 막기",
+      "analogy": "은행 창구에서 한 사람이 창구를 계속 독점하지 못하게 번호표를 제한하는 것과 같습니다. 속도 제한은 서비스 자원을 공정하고 안전하게 나눕니다.",
+      "example": "// 속도 제한(Rate Limiting) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst hits = [1, 2, 3, 4];\nconst limit = 3;\nconsole.log(hits.length <= limit ? \"allow\" : \"block\");",
+      "tip": "제한 기준은 IP만으로 부족할 수 있습니다. 사용자 ID, API 키, 경로별 비용을 함께 고려하세요."
+    }
+  },
+  {
+    "id": "506",
+    "term": "API 게이트웨이",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "여러 백엔드 서비스 앞에서 인증, 라우팅, 속도 제한, 로깅, 프로토콜 변환을 처리하는 진입 지점입니다.",
+    "hint": "API관문",
+    "detail": {
+      "easy": "여러 서비스로 가는 정문",
+      "analogy": "백화점 안내 데스크가 매장 위치를 알려 주고 출입 규칙을 확인하는 것과 같습니다. API 게이트웨이는 클라이언트 요청을 알맞은 서비스로 보내고 공통 정책을 적용합니다.",
+      "example": "// API 게이트웨이 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst gateway = req => req.path.startsWith(\"/users\") ? \"user-service\" : \"default-service\";\nconsole.log(gateway({ path: \"/users/1\" }));",
+      "tip": "게이트웨이에 모든 로직을 몰아넣으면 병목과 단일 장애점이 됩니다. 공통 정책과 서비스 고유 로직을 구분하세요."
+    }
+  },
+  {
+    "id": "507",
+    "term": "로드 밸런서",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "들어오는 요청을 여러 서버에 분산해 부하를 나누고 장애 서버를 우회하는 구성요소입니다. 라운드 로빈, 최소 연결 같은 전략을 사용할 수 있습니다.",
+    "hint": "부하분산",
+    "detail": {
+      "easy": "여러 창구로 손님 나누기",
+      "analogy": "마트 계산대가 여러 개일 때 손님을 빈 계산대로 안내하는 것과 같습니다. 로드 밸런서는 요청을 여러 서버에 나누어 처리량과 가용성을 높입니다.",
+      "example": "// 로드 밸런서 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst servers = [\"app1\", \"app2\", \"app3\"];\nlet next = 0;\nfunction pick() { const server = servers[next++ % servers.length]; return server; }\nconsole.log(pick(), pick());",
+      "tip": "헬스 체크가 정확해야 죽은 서버로 요청을 보내지 않습니다. 세션 고정이 필요한지도 확인하세요."
+    }
+  },
+  {
+    "id": "508",
+    "term": "역방향 프록시(Reverse Proxy)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "클라이언트 대신 서버 앞에 서서 요청을 받아 내부 서버로 전달하는 프록시입니다. TLS 종료, 캐싱, 압축, 라우팅, 보안 필터링에 사용합니다.",
+    "hint": "서버앞대리",
+    "detail": {
+      "easy": "서버 앞 접수 창구",
+      "analogy": "회사 대표 번호로 전화하면 교환원이 내부 담당자에게 연결해 주는 것과 같습니다. 역방향 프록시는 외부 요청을 받아 내부 서버로 대신 전달합니다.",
+      "example": "// 역방향 프록시(Reverse Proxy) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst reverseProxy = req => ({ upstream: req.host === \"api.example.com\" ? \"api-server\" : \"web-server\" });\nconsole.log(reverseProxy({ host: \"api.example.com\" }).upstream);",
+      "tip": "원본 클라이언트 IP가 필요하면 X-Forwarded-For 같은 헤더 신뢰 범위를 명확히 설정하세요."
+    }
+  },
+  {
+    "id": "509",
+    "term": "정방향 프록시(Forward Proxy)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "클라이언트 앞에서 클라이언트를 대신해 외부 서버에 요청을 보내는 프록시입니다. 사내 인터넷 통제, 익명화, 캐싱에 사용됩니다.",
+    "hint": "클라앞대리",
+    "detail": {
+      "easy": "사용자 대신 밖으로 나가는 대리인",
+      "analogy": "회사 직원이 외부 사이트에 직접 가지 않고 회사 승인 창구를 거쳐 나가는 것과 같습니다. 정방향 프록시는 클라이언트의 외부 요청을 대신 보냅니다.",
+      "example": "// 정방향 프록시(Forward Proxy) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst proxyRequest = { client: \"browser\", target: \"https://example.com\" };\nconsole.log(`${proxyRequest.client} -> proxy -> ${proxyRequest.target}`);",
+      "tip": "정방향 프록시는 접근 정책과 감사 로그가 중요합니다. 민감한 트래픽을 가로채는 구성은 법적 고지도 검토해야 합니다."
+    }
+  },
+  {
+    "id": "510",
+    "term": "CDN",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "정적 파일이나 캐시 가능한 콘텐츠를 사용자와 가까운 엣지 서버에서 제공하는 네트워크입니다. 이미지, JS, CSS, 동영상 전달 지연을 줄입니다.",
+    "hint": "엣지캐시",
+    "detail": {
+      "easy": "가까운 창고에서 물건 받기",
+      "analogy": "본사 창고 대신 집 근처 물류센터에서 물건을 받으면 배송이 빨라집니다. CDN은 사용자 가까운 서버에서 콘텐츠를 전달합니다.",
+      "example": "// CDN 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst assetUrl = \"https://cdn.example.com/app.js\";\nconst isCdn = assetUrl.includes(\"cdn.\");\nconsole.log(isCdn);",
+      "tip": "CDN 캐시 무효화와 버전 파일명을 함께 설계하세요. 오래된 JS가 남으면 배포 후 오류가 생길 수 있습니다."
+    }
+  },
+  {
+    "id": "511",
+    "term": "WebSocket",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "HTTP로 시작해 연결을 업그레이드한 뒤 하나의 연결에서 클라이언트와 서버가 양방향으로 메시지를 주고받는 프로토콜입니다.",
+    "hint": "양방향연결",
+    "detail": {
+      "easy": "전화처럼 계속 열어 두는 연결",
+      "analogy": "문자를 한 번씩 보내는 대신 전화 통화를 열어 두고 서로 바로 말하는 것과 같습니다. WebSocket은 연결을 유지해 실시간 양방향 통신을 합니다.",
+      "example": "// WebSocket 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst socketState = { open: true, messages: [] };\nif (socketState.open) socketState.messages.push(\"ping\");\nconsole.log(socketState.messages);",
+      "tip": "WebSocket은 연결 수가 서버 자원을 계속 차지합니다. 인증 만료, 재연결, 백프레셔 처리를 설계해야 합니다."
+    }
+  },
+  {
+    "id": "512",
+    "term": "SSE(Server-Sent Events)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "서버가 클라이언트로 이벤트 스트림을 지속적으로 보내는 단방향 실시간 통신 방식입니다. 알림, 진행률, 실시간 로그처럼 서버에서만 밀어주면 되는 경우에 적합합니다.",
+    "hint": "서버이벤트",
+    "detail": {
+      "easy": "서버가 계속 알려주는 방송",
+      "analogy": "라디오 방송처럼 수신자는 듣고 서버는 계속 소식을 보내는 방식과 같습니다. SSE는 클라이언트가 한 번 연결하면 서버가 이벤트를 순서대로 밀어줍니다.",
+      "example": "// SSE(Server-Sent Events) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst event = `data: ${JSON.stringify({ progress: 50 })}\\n\\n`;\nconsole.log(event);",
+      "tip": "SSE는 브라우저 재연결 처리가 내장되어 편합니다. 양방향 채팅처럼 클라이언트 전송이 많으면 WebSocket이 더 적합합니다."
+    }
+  },
+  {
+    "id": "513",
+    "term": "롱 폴링",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "클라이언트가 요청을 보내면 서버가 새 데이터가 생길 때까지 응답을 지연시키고, 응답 후 다시 요청하는 방식입니다. WebSocket이 어려운 환경에서 실시간처럼 보이게 할 수 있습니다.",
+    "hint": "긴대기요청",
+    "detail": {
+      "easy": "소식이 올 때까지 전화 붙잡기",
+      "analogy": "택배 기사에게 계속 전화하는 대신 연결을 유지하다가 새 소식이 생기면 알려 달라고 하는 것과 같습니다. 롱 폴링은 응답을 늦춰 실시간성을 흉내냅니다.",
+      "example": "// 롱 폴링 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nasync function longPoll(hasEvent) { return hasEvent ? \"new-event\" : \"timeout\"; }\nlongPoll(true).then(console.log);",
+      "tip": "롱 폴링은 요청 수와 타임아웃 설정이 중요합니다. 서버 스레드를 오래 붙잡는 구조라면 확장성에 주의하세요."
+    }
+  },
+  {
+    "id": "514",
+    "term": "단방향 통신",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "데이터가 한 방향으로만 흐르는 통신 방식입니다. 서버에서 클라이언트로만 이벤트를 보내는 SSE나 방송형 알림이 예입니다.",
+    "hint": "한쪽흐름",
+    "detail": {
+      "easy": "한쪽만 말하는 통신",
+      "analogy": "안내 방송은 방송실에서 사람들에게만 전달되고 청중이 같은 채널로 답하지 않습니다. 단방향 통신은 송신자와 수신자의 역할이 분명합니다.",
+      "example": "// 단방향 통신 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst channel = { from: \"server\", to: \"client\", message: \"notice\" };\nconsole.log(`${channel.from} -> ${channel.to}: ${channel.message}`);",
+      "tip": "단방향이면 구조가 단순하지만 클라이언트 응답이 필요한 업무에는 별도 요청 경로가 필요합니다."
+    }
+  },
+  {
+    "id": "515",
+    "term": "양방향 통신",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "클라이언트와 서버가 같은 연결이나 세션에서 서로 메시지를 주고받을 수 있는 통신 방식입니다. 채팅, 협업 편집, 게임 상태 동기화에 사용됩니다.",
+    "hint": "쌍방흐름",
+    "detail": {
+      "easy": "서로 말하는 통신",
+      "analogy": "전화 통화처럼 양쪽이 같은 연결에서 바로 말하고 들을 수 있습니다. 양방향 통신은 실시간 상호작용에 적합합니다.",
+      "example": "// 양방향 통신 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst messages = [];\nmessages.push({ from: \"client\", text: \"ping\" });\nmessages.push({ from: \"server\", text: \"pong\" });\nconsole.log(messages.map(m => m.text).join(\"/\"));",
+      "tip": "양방향 통신은 연결 관리, 인증 갱신, 메시지 순서, 재전송을 함께 설계해야 합니다."
+    }
+  },
+  {
+    "id": "516",
+    "term": "REST 원칙",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "웹 리소스를 URI로 표현하고 HTTP 메서드와 상태 코드의 의미를 활용해 균일한 인터페이스로 설계하는 아키텍처 원칙입니다.",
+    "hint": "리소스원칙",
+    "detail": {
+      "easy": "주소와 동사로 자원 다루기",
+      "analogy": "도서관에서 책에는 고유 위치가 있고 대출, 반납, 조회 절차가 정해져 있는 것과 같습니다. REST 원칙은 웹 자원에 일관된 주소와 행동 규칙을 부여합니다.",
+      "example": "// REST 원칙 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst resource = \"/users/1\";\nconst action = \"GET\";\nconsole.log(`${action} ${resource}`);",
+      "tip": "REST는 URL 모양보다 일관된 리소스 모델이 중요합니다. 동사 중심 URL이 늘어나면 리소스 경계를 다시 보세요."
+    }
+  },
+  {
+    "id": "517",
+    "term": "RESTful 설계",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "REST 원칙을 실제 API에 적용해 리소스 이름, 메서드, 상태 코드, 에러 형식을 일관되게 정하는 설계 방식입니다.",
+    "hint": "REST설계",
+    "detail": {
+      "easy": "REST답게 API 만들기",
+      "analogy": "도시 도로 표지판이 같은 규칙으로 쓰이면 처음 온 사람도 길을 찾기 쉽습니다. RESTful 설계는 API 사용자가 예측 가능한 규칙으로 자원을 다루게 합니다.",
+      "example": "// RESTful 설계 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst api = { listUsers: \"GET /users\", createUser: \"POST /users\", updateUser: \"PUT /users/{id}\" };\nconsole.log(api.createUser);",
+      "tip": "명사형 리소스와 표준 메서드를 우선하세요. 예외가 필요하면 API 문서에 이유와 동작을 명확히 남기세요."
+    }
+  },
+  {
+    "id": "518",
+    "term": "HATEOAS",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "REST 응답 안에 다음에 가능한 행동 링크를 함께 제공해 클라이언트가 링크를 따라 상태를 전이하도록 하는 제약입니다.",
+    "hint": "응답링크",
+    "detail": {
+      "easy": "다음 행동 링크를 같이 주기",
+      "analogy": "은행 앱에서 계좌 조회 화면에 이체, 거래내역, 카드 신청 버튼이 함께 보이는 것과 같습니다. HATEOAS는 응답 안에 다음 행동의 길을 넣습니다.",
+      "example": "// HATEOAS 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst response = { id: 1, name: \"Ada\", links: [{ rel: \"orders\", href: \"/users/1/orders\" }] };\nconsole.log(response.links[0].href);",
+      "tip": "HATEOAS는 클라이언트 결합도를 줄일 수 있지만 구현 복잡도가 늘어납니다. 필요한 API 성숙도에 맞춰 적용하세요."
+    }
+  },
+  {
+    "id": "519",
+    "term": "GraphQL",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "클라이언트가 필요한 데이터의 구조를 쿼리로 명시하고 서버가 그 모양대로 응답하는 API 질의 언어입니다. 여러 리소스를 한 요청에 조합할 수 있습니다.",
+    "hint": "선택조회API",
+    "detail": {
+      "easy": "필요한 칸만 주문하는 API",
+      "analogy": "뷔페에서 원하는 음식만 접시에 담는 것과 같습니다. GraphQL은 클라이언트가 필요한 필드와 관계를 직접 지정합니다.",
+      "example": "// GraphQL 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst query = `{ user(id: 1) { name email } }`;\nconst selectedFields = query.match(/name|email/g);\nconsole.log(selectedFields);",
+      "tip": "GraphQL은 과도하게 깊은 쿼리와 N+1 문제를 조심해야 합니다. 쿼리 복잡도 제한과 DataLoader 같은 배치 전략을 고려하세요."
+    }
+  },
+  {
+    "id": "520",
+    "term": "gRPC",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "Protocol Buffers와 HTTP/2를 기반으로 서비스 간 함수를 호출하듯 통신하는 RPC 프레임워크입니다. 강한 타입 계약과 스트리밍을 지원합니다.",
+    "hint": "RPC통신",
+    "detail": {
+      "easy": "원격 함수를 부르는 통신",
+      "analogy": "다른 사무실 직원에게 정해진 양식의 업무 요청서를 보내 결과를 받는 것과 같습니다. gRPC는 네트워크 너머의 기능을 함수 호출처럼 사용하게 합니다.",
+      "example": "// gRPC 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst protoMethod = { service: \"UserService\", method: \"GetUser\", request: { id: 1 } };\nconsole.log(`${protoMethod.service}.${protoMethod.method}`);",
+      "tip": "브라우저 직접 호출은 제약이 있어 gRPC-Web이 필요할 수 있습니다. 외부 공개 API인지 내부 서비스 API인지에 따라 REST와 선택을 나누세요."
+    }
+  },
+  {
+    "id": "521",
+    "term": "OpenAPI/Swagger",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "REST API의 경로, 메서드, 요청/응답 스키마, 인증 방식을 기계가 읽을 수 있는 문서로 정의하는 표준입니다.",
+    "hint": "API명세",
+    "detail": {
+      "easy": "API 사용 설명서",
+      "analogy": "가전제품 설명서에 버튼과 사용법이 정리되어 있으면 누구나 같은 방식으로 쓸 수 있습니다. OpenAPI는 API의 사용법을 표준 문서로 고정합니다.",
+      "example": "// OpenAPI/Swagger 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst spec = { openapi: \"3.0.0\", paths: { \"/users\": { get: { summary: \"list users\" } } } };\nconsole.log(Object.keys(spec.paths));",
+      "tip": "명세를 코드와 따로 관리하면 쉽게 낡습니다. 가능하면 테스트나 생성 도구로 실제 동작과 문서를 맞추세요."
+    }
+  },
+  {
+    "id": "522",
+    "term": "페이지네이션(Pagination)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "큰 목록을 한 번에 모두 보내지 않고 페이지나 커서 단위로 나누어 전달하는 API 설계입니다. 응답 크기와 서버 부하를 줄입니다.",
+    "hint": "목록나누기",
+    "detail": {
+      "easy": "긴 목록을 쪽으로 나눠 보기",
+      "analogy": "책을 한 번에 전부 펼치지 않고 페이지를 넘겨 읽는 것과 같습니다. 페이지네이션은 긴 데이터 목록을 작은 구간으로 나눕니다.",
+      "example": "// 페이지네이션(Pagination) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst items = [\"a\", \"b\", \"c\", \"d\"];\nconst page = items.slice(0, 2);\nconsole.log(page);",
+      "tip": "OFFSET 방식은 뒤 페이지로 갈수록 느려질 수 있습니다. 최신순 피드에는 커서 기반 페이지네이션을 고려하세요."
+    }
+  },
+  {
+    "id": "523",
+    "term": "필터링/정렬 API",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "목록 API에서 조건으로 결과를 좁히고 특정 기준으로 순서를 정하게 해 주는 설계입니다. status=paid, sort=-createdAt 같은 파라미터를 사용합니다.",
+    "hint": "조건정렬API",
+    "detail": {
+      "easy": "목록을 거르고 줄 세우기",
+      "analogy": "쇼핑몰에서 색상은 검정, 가격은 낮은 순으로 고르는 것과 같습니다. 필터링/정렬 API는 원하는 목록을 정확히 찾게 합니다.",
+      "example": "// 필터링/정렬 API 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst products = [{ name: \"pen\", price: 1000 }, { name: \"bag\", price: 30000 }];\nconst result = products.filter(p => p.price < 5000).sort((a, b) => a.price - b.price);\nconsole.log(result.map(p => p.name));",
+      "tip": "허용할 필터와 정렬 필드를 화이트리스트로 제한하세요. 임의 컬럼 정렬은 성능과 보안 문제를 만들 수 있습니다."
+    }
+  },
+  {
+    "id": "524",
+    "term": "버전 관리(API Versioning)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "API 변경이 기존 클라이언트를 깨지 않도록 v1, v2 같은 버전 단위로 계약을 관리하는 방식입니다.",
+    "hint": "API버전",
+    "detail": {
+      "easy": "약속을 버전별로 나누기",
+      "analogy": "교과서 개정판이 바뀌어도 이전 판을 쓰는 학생을 당장 버리지 않는 것과 같습니다. API 버전 관리는 새 규칙과 기존 규칙을 일정 기간 함께 운영합니다.",
+      "example": "// 버전 관리(API Versioning) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst requestPath = \"/v2/users\";\nconst version = requestPath.split(\"/\")[1];\nconsole.log(version);",
+      "tip": "버전은 만들기보다 종료가 어렵습니다. 지원 기간, 변경 정책, 마이그레이션 문서를 함께 정하세요."
+    }
+  },
+  {
+    "id": "525",
+    "term": "인증 헤더(Authorization)",
+    "category": "웹 개발 심화",
+    "difficulty": "easy",
+    "phase": 2,
+    "week": 8,
+    "definition": "클라이언트가 서버에 인증 정보를 전달할 때 사용하는 HTTP 헤더입니다. Bearer 토큰, Basic 인증 같은 방식이 이 헤더에 담깁니다.",
+    "hint": "인증전달",
+    "detail": {
+      "easy": "신분증을 헤더에 넣기",
+      "analogy": "건물 출입구에서 출입증을 보여 주는 것과 같습니다. Authorization 헤더는 요청자가 누구인지 확인할 단서를 서버에 전달합니다.",
+      "example": "// 인증 헤더(Authorization) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst headers = { authorization: \"Bearer abc.def.ghi\" };\nconsole.log(headers.authorization.startsWith(\"Bearer \"));",
+      "tip": "Authorization 헤더는 로그와 에러 메시지에 그대로 남기지 마세요. HTTPS 없이 보내면 탈취 위험이 큽니다."
+    }
+  },
+  {
+    "id": "526",
+    "term": "Bearer 토큰",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "토큰을 가진 사람이 권한을 가진 것으로 간주되는 인증 토큰 전달 방식입니다. Authorization: Bearer <token> 형태로 자주 사용됩니다.",
+    "hint": "소지자토큰",
+    "detail": {
+      "easy": "가진 사람이 쓰는 출입권",
+      "analogy": "공연장 입장권처럼 표를 가진 사람이 입장할 수 있는 방식과 비슷합니다. Bearer 토큰은 토큰 자체가 권한 증명이라 유출되면 위험합니다.",
+      "example": "// Bearer 토큰 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst header = \"Bearer secret-token\";\nconst token = header.replace(\"Bearer \", \"\");\nconsole.log(token.length > 0);",
+      "tip": "Bearer 토큰은 짧은 만료 시간과 안전한 저장소가 중요합니다. 브라우저 저장 위치에 따라 XSS와 CSRF 위험이 달라집니다."
+    }
+  },
+  {
+    "id": "527",
+    "term": "API 키",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "API 호출자를 식별하고 사용량을 추적하기 위해 발급하는 고정 문자열 형태의 키입니다. 공개 클라이언트보다 서버 간 호출이나 프로젝트 식별에 주로 씁니다.",
+    "hint": "호출키",
+    "detail": {
+      "easy": "API를 쓰는 열쇠",
+      "analogy": "도서관 복사기를 쓰려면 부서별 카드 키가 필요한 것과 같습니다. API 키는 누가 API를 쓰는지 식별하고 제한하는 열쇠입니다.",
+      "example": "// API 키 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst request = { query: { api_key: \"key_123\" } };\nconsole.log(request.query.api_key.startsWith(\"key_\"));",
+      "tip": "API 키는 사용자 인증을 완전히 대체하지 못합니다. 노출되면 즉시 폐기하고 새 키로 교체할 수 있어야 합니다."
+    }
+  },
+  {
+    "id": "528",
+    "term": "웹훅(Webhook)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "특정 이벤트가 발생했을 때 서버가 미리 등록된 URL로 HTTP 요청을 보내 외부 시스템에 알리는 방식입니다.",
+    "hint": "이벤트콜백",
+    "detail": {
+      "easy": "일이 생기면 전화해 주기",
+      "analogy": "택배 상태가 바뀔 때 사용자가 계속 조회하지 않아도 문자 알림이 오는 것과 같습니다. 웹훅은 이벤트가 생기면 상대 시스템에 먼저 알려 줍니다.",
+      "example": "// 웹훅(Webhook) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst webhook = { url: \"https://client.example/hook\", event: \"payment.paid\" };\nconsole.log(`POST ${webhook.url} for ${webhook.event}`);",
+      "tip": "웹훅은 재시도와 서명 검증이 중요합니다. 수신자가 일시적으로 실패해도 이벤트가 유실되지 않게 설계하세요."
+    }
+  },
+  {
+    "id": "529",
+    "term": "서버리스(Serverless)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "서버를 직접 프로비저닝하거나 관리하지 않고 실행 단위와 사용량 중심으로 애플리케이션을 운영하는 클라우드 모델입니다.",
+    "hint": "서버관리위임",
+    "detail": {
+      "easy": "서버 관리를 맡기고 코드 실행",
+      "analogy": "식당 주방을 직접 운영하지 않고 공유 주방에 레시피와 주문량만 맡기는 것과 같습니다. 서버리스는 인프라 관리 부담을 줄이고 코드 실행에 집중하게 합니다.",
+      "example": "// 서버리스(Serverless) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst handler = async event => ({ statusCode: 200, body: `hello ${event.name}` });\nhandler({ name: \"Ada\" }).then(console.log);",
+      "tip": "서버리스는 콜드 스타트, 실행 시간 제한, 벤더 종속을 고려해야 합니다. 짧고 이벤트성 작업에 특히 잘 맞습니다."
+    }
+  },
+  {
+    "id": "530",
+    "term": "FaaS",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "Function as a Service의 약자로, 개별 함수를 이벤트가 발생할 때 실행하고 실행 시간만큼 과금하는 서버리스 실행 모델입니다.",
+    "hint": "함수서비스",
+    "detail": {
+      "easy": "이벤트가 오면 함수 실행",
+      "analogy": "벨을 누르면 필요한 직원이 잠깐 나와 일을 처리하고 다시 들어가는 것과 같습니다. FaaS는 요청이나 이벤트마다 함수를 실행합니다.",
+      "example": "// FaaS 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nasync function resizeImage(event) { return `resize ${event.file}`; }\nresizeImage({ file: \"photo.png\" }).then(console.log);",
+      "tip": "함수는 상태를 오래 들고 있지 않는 방식으로 작성하세요. 외부 연결 재사용과 타임아웃 설정도 성능에 영향을 줍니다."
+    }
+  },
+  {
+    "id": "531",
+    "term": "BaaS",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "Backend as a Service의 약자로, 인증, 데이터베이스, 파일 저장, 푸시 알림 같은 백엔드 기능을 서비스 형태로 제공받는 모델입니다.",
+    "hint": "백엔드대행",
+    "detail": {
+      "easy": "공통 백엔드 기능 빌려쓰기",
+      "analogy": "가게가 직접 배달망을 만들지 않고 배달 플랫폼을 쓰는 것과 같습니다. BaaS는 앱에서 자주 필요한 백엔드 기능을 빌려 쓰게 합니다.",
+      "example": "// BaaS 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst baas = { auth: true, database: \"managed\", storage: \"managed\" };\nconsole.log(Object.keys(baas).join(\",\"));",
+      "tip": "BaaS는 빠른 개발에 좋지만 데이터 모델과 권한 규칙이 서비스에 묶일 수 있습니다. 탈출 전략을 검토하세요."
+    }
+  },
+  {
+    "id": "532",
+    "term": "정적 사이트 생성(SSG)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "빌드 시점에 HTML을 미리 만들어 두고 요청 때는 정적 파일로 제공하는 렌더링 방식입니다. 문서, 블로그, 마케팅 페이지처럼 자주 바뀌지 않는 콘텐츠에 적합합니다.",
+    "hint": "빌드시HTML",
+    "detail": {
+      "easy": "미리 만든 페이지 제공",
+      "analogy": "빵을 주문받고 굽는 대신 미리 구워 진열해 두면 바로 판매할 수 있습니다. SSG는 페이지를 미리 만들어 빠르게 제공합니다.",
+      "example": "// 정적 사이트 생성(SSG) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst posts = [\"a\", \"b\"];\nconst html = posts.map(title => `<h1>${title}</h1>`);\nconsole.log(html.join(\"\\n\"));",
+      "tip": "자주 바뀌는 데이터에는 재빌드나 ISR 같은 보완이 필요합니다. 빌드 시간이 너무 길어지지 않게 페이지 수를 관리하세요."
+    }
+  },
+  {
+    "id": "533",
+    "term": "서버 사이드 렌더링(SSR)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "요청이 들어올 때 서버에서 HTML을 만들어 클라이언트에 보내는 렌더링 방식입니다. 초기 표시와 SEO에 유리하지만 서버 부하가 늘 수 있습니다.",
+    "hint": "서버렌더링",
+    "detail": {
+      "easy": "서버가 화면을 만들어 보냄",
+      "analogy": "식당에서 주문을 받으면 주방이 즉석에서 음식을 만들어 내는 것과 같습니다. SSR은 요청마다 서버가 현재 데이터로 HTML을 조립합니다.",
+      "example": "// 서버 사이드 렌더링(SSR) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nfunction renderUser(user) { return `<h1>${user.name}</h1>`; }\nconsole.log(renderUser({ name: \"Ada\" }));",
+      "tip": "SSR은 캐싱 전략이 중요합니다. 사용자별 데이터와 공통 HTML을 분리하면 성능과 보안을 함께 챙길 수 있습니다."
+    }
+  },
+  {
+    "id": "534",
+    "term": "클라이언트 사이드 렌더링(CSR)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "브라우저가 JavaScript를 받아 실행하면서 화면을 구성하는 렌더링 방식입니다. 서버는 주로 빈 HTML과 JS 번들을 제공하고 데이터는 API로 가져옵니다.",
+    "hint": "브라우저렌더링",
+    "detail": {
+      "easy": "브라우저가 화면을 만듦",
+      "analogy": "조립 가구를 집에서 설명서를 보고 직접 조립하는 것과 같습니다. CSR은 브라우저가 데이터를 가져와 화면을 조립합니다.",
+      "example": "// 클라이언트 사이드 렌더링(CSR) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst root = { innerHTML: \"\" };\nconst user = { name: \"Ada\" };\nroot.innerHTML = `<h1>${user.name}</h1>`;\nconsole.log(root.innerHTML);",
+      "tip": "CSR은 초기 로딩과 검색 노출에 약할 수 있습니다. 코드 스플리팅과 로딩 상태 설계를 신경 쓰세요."
+    }
+  },
+  {
+    "id": "535",
+    "term": "점진적 웹 앱(PWA)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "웹 앱에 오프라인 사용, 설치 가능성, 푸시 알림 같은 네이티브 앱에 가까운 기능을 더한 형태입니다.",
+    "hint": "앱같은웹",
+    "detail": {
+      "easy": "설치하고 오프라인도 되는 웹",
+      "analogy": "웹사이트에 단골 카드, 오프라인 안내서, 푸시 알림 기능을 더해 앱처럼 쓰는 것과 같습니다. PWA는 웹 배포의 장점과 앱 경험을 결합합니다.",
+      "example": "// 점진적 웹 앱(PWA) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst manifest = { name: \"Study App\", display: \"standalone\", start_url: \"/\" };\nconsole.log(manifest.display);",
+      "tip": "PWA는 HTTPS, manifest, 서비스 워커가 핵심입니다. 오프라인 캐시가 오래된 데이터를 보여 주지 않게 갱신 전략을 세우세요."
+    }
+  },
+  {
+    "id": "536",
+    "term": "서비스 워커",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "브라우저와 네트워크 사이에서 동작하는 백그라운드 스크립트입니다. 요청 가로채기, 캐싱, 오프라인 지원, 푸시 알림에 사용됩니다.",
+    "hint": "브라우저중개",
+    "detail": {
+      "easy": "브라우저 안의 네트워크 대리인",
+      "analogy": "우편물을 받기 전에 관리실이 대신 분류하고 보관하는 것과 같습니다. 서비스 워커는 브라우저 요청을 중간에서 가로채 캐시나 네트워크로 보냅니다.",
+      "example": "// 서비스 워커 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst cache = new Map();\ncache.set(\"/app.js\", \"cached file\");\nconsole.log(cache.has(\"/app.js\"));",
+      "tip": "서비스 워커는 한번 설치되면 페이지보다 오래 살아 있습니다. 업데이트와 캐시 삭제 로직을 반드시 테스트하세요."
+    }
+  },
+  {
+    "id": "537",
+    "term": "웹 캐싱",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "웹 응답이나 정적 리소스를 브라우저, CDN, 프록시 등에 저장해 같은 요청을 빠르게 처리하는 방식입니다.",
+    "hint": "응답저장",
+    "detail": {
+      "easy": "자주 쓰는 웹 응답 저장",
+      "analogy": "자주 보는 책을 서고가 아니라 책상 위에 두면 매번 찾으러 가지 않아도 됩니다. 웹 캐싱은 반복 요청의 시간과 비용을 줄입니다.",
+      "example": "// 웹 캐싱 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst cache = new Map();\nfunction get(url) { if (!cache.has(url)) cache.set(url, `response for ${url}`); return cache.get(url); }\nconsole.log(get(\"/logo.png\"));",
+      "tip": "캐시는 신선도와 무효화가 핵심입니다. 개인화 응답이 공용 캐시에 저장되지 않게 Cache-Control을 정확히 설정하세요."
+    }
+  },
+  {
+    "id": "538",
+    "term": "ETag",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "서버가 리소스 버전을 식별하기 위해 응답에 붙이는 값입니다. 클라이언트는 If-None-Match로 같은 버전인지 확인해 변경 없으면 304 응답을 받을 수 있습니다.",
+    "hint": "버전태그",
+    "detail": {
+      "easy": "파일 버전 지문",
+      "analogy": "문서에 붙은 버전 도장과 같습니다. ETag가 같으면 같은 문서이므로 다시 받을 필요가 없습니다.",
+      "example": "// ETag 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst etag = \"v1-abc\";\nconst ifNoneMatch = \"v1-abc\";\nconsole.log(etag === ifNoneMatch ? 304 : 200);",
+      "tip": "ETag 생성 기준을 일관되게 유지하세요. 서버 여러 대가 서로 다른 ETag를 만들면 캐시 효율이 떨어집니다."
+    }
+  },
+  {
+    "id": "539",
+    "term": "Cache-Control",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "HTTP 캐시가 응답을 저장할지, 얼마나 오래 신선하다고 볼지, 재검증이 필요한지 지시하는 헤더입니다.",
+    "hint": "캐시지시",
+    "detail": {
+      "easy": "캐시 보관 규칙 정하기",
+      "analogy": "식품 포장지의 유통기한과 보관 방법처럼 응답에도 저장 기간과 재확인 규칙이 필요합니다. Cache-Control은 캐시가 응답을 다루는 방법을 알려 줍니다.",
+      "example": "// Cache-Control 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst header = \"public, max-age=3600\";\nconst maxAge = Number(header.match(/max-age=(\\d+)/)[1]);\nconsole.log(maxAge);",
+      "tip": "로그인 사용자 응답에는 private 또는 no-store를 검토하세요. 정적 파일은 파일명 해시와 긴 max-age 조합이 효과적입니다."
+    }
+  },
+  {
+    "id": "540",
+    "term": "콘텐츠 협상",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "클라이언트가 Accept, Accept-Language 같은 헤더로 원하는 표현 형식을 알리고 서버가 적절한 응답을 선택하는 과정입니다.",
+    "hint": "응답선택",
+    "detail": {
+      "easy": "원하는 형식에 맞춰 제공",
+      "analogy": "식당에서 같은 메뉴를 맵게, 덜 맵게, 포장으로 요청할 수 있는 것과 같습니다. 콘텐츠 협상은 클라이언트가 원하는 표현 방식에 맞춰 응답을 고릅니다.",
+      "example": "// 콘텐츠 협상 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst accept = \"application/json\";\nconst responseType = accept.includes(\"json\") ? \"json\" : \"html\";\nconsole.log(responseType);",
+      "tip": "협상 기준이 캐시에 영향을 주면 Vary 헤더를 설정해야 합니다. 언어별 응답을 캐시할 때 특히 중요합니다."
+    }
+  },
+  {
+    "id": "541",
+    "term": "멱등성(Idempotency)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "같은 요청을 여러 번 보내도 서버 상태가 한 번 보낸 것과 같게 유지되는 성질입니다. PUT, DELETE는 보통 멱등하게 설계하고 결제 요청은 멱등 키로 보호합니다.",
+    "hint": "반복안전",
+    "detail": {
+      "easy": "여러 번 해도 결과가 같음",
+      "analogy": "엘리베이터 5층 버튼을 여러 번 눌러도 목적지가 5층인 것은 변하지 않습니다. 멱등성은 같은 요청이 반복되어도 최종 상태가 같게 합니다.",
+      "example": "// 멱등성(Idempotency) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst state = { deleted: false };\nfunction deleteOnce() { state.deleted = true; return state.deleted; }\nconsole.log(deleteOnce(), deleteOnce());",
+      "tip": "네트워크 재시도는 언제든 발생합니다. 생성/결제 API에는 Idempotency-Key 같은 중복 방지 장치를 고려하세요."
+    }
+  },
+  {
+    "id": "542",
+    "term": "압축(Gzip/Brotli)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "HTTP 응답 본문을 Gzip이나 Brotli 알고리즘으로 줄여 전송량을 감소시키는 기법입니다. 텍스트 기반 JS, CSS, JSON에 특히 효과적입니다.",
+    "hint": "응답압축",
+    "detail": {
+      "easy": "데이터를 작게 접어 보내기",
+      "analogy": "두꺼운 옷을 압축팩에 넣어 부피를 줄인 뒤 여행 가방에 넣는 것과 같습니다. 응답 압축은 네트워크로 보내는 데이터 크기를 줄입니다.",
+      "example": "// 압축(Gzip/Brotli) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst text = \"hello \".repeat(10);\nconsole.log(\"원본 길이:\", text.length);\nconsole.log(\"압축은 서버 설정이나 zlib로 적용합니다.\");",
+      "tip": "이미 압축된 이미지나 영상은 다시 압축해도 효과가 적습니다. CPU 비용과 전송량 절감을 함께 보세요."
+    }
+  },
+  {
+    "id": "543",
+    "term": "HTTPS 리다이렉션",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "HTTP로 들어온 요청을 HTTPS 주소로 자동 전환하는 처리입니다. 평문 통신을 줄이고 보안 연결 사용을 강제하기 위해 적용합니다.",
+    "hint": "HTTPS전환",
+    "detail": {
+      "easy": "안전한 문으로 다시 안내",
+      "analogy": "건물의 일반 출입문을 막고 보안 검색대가 있는 입구로 안내하는 것과 같습니다. HTTPS 리다이렉션은 안전하지 않은 HTTP 요청을 보안 연결로 돌려보냅니다.",
+      "example": "// HTTPS 리다이렉션 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nfunction redirectToHttps(url) { return url.replace(/^http:/, \"https:\"); }\nconsole.log(redirectToHttps(\"http://example.com/login\"));",
+      "tip": "리다이렉션만으로는 첫 요청 노출을 완전히 막지 못합니다. HSTS까지 함께 적용하면 브라우저가 처음부터 HTTPS를 사용하게 할 수 있습니다."
+    }
+  },
+  {
+    "id": "544",
+    "term": "TLS 핸드셰이크",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "클라이언트와 서버가 암호화 통신을 시작하기 전에 프로토콜 버전, 암호 스위트, 인증서, 세션 키를 협상하는 과정입니다.",
+    "hint": "보안협상",
+    "detail": {
+      "easy": "암호 통신 전 악수",
+      "analogy": "비밀 대화를 시작하기 전에 서로 신분을 확인하고 사용할 암호표를 정하는 것과 같습니다. TLS 핸드셰이크는 안전한 통신을 위한 준비 단계입니다.",
+      "example": "// TLS 핸드셰이크 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst handshake = [\"ClientHello\", \"ServerHello\", \"Certificate\", \"Finished\"];\nconsole.log(handshake.join(\" -> \"));",
+      "tip": "핸드셰이크 비용은 지연 시간에 영향을 줍니다. HTTP/2, 세션 재사용, TLS 설정 최적화를 함께 검토하세요."
+    }
+  },
+  {
+    "id": "545",
+    "term": "인증서(Certificate)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "서버의 공개키와 도메인 소유 정보를 인증기관이 서명해 준 전자 문서입니다. 브라우저는 인증서를 검증해 접속한 서버가 진짜인지 확인합니다.",
+    "hint": "서버신분증",
+    "detail": {
+      "easy": "웹사이트 신분증",
+      "analogy": "가게 사업자등록증을 보고 실제 그 가게가 맞는지 확인하는 것과 같습니다. 인증서는 서버가 주장하는 신원을 검증하게 해 줍니다.",
+      "example": "// 인증서(Certificate) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst cert = { subject: \"example.com\", issuer: \"CA\", valid: true };\nconsole.log(cert.valid && cert.subject === \"example.com\");",
+      "tip": "인증서 만료는 즉시 장애로 이어집니다. 자동 갱신과 만료 알림을 반드시 운영하세요."
+    }
+  },
+  {
+    "id": "546",
+    "term": "HTTP/2",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "하나의 TCP 연결에서 여러 요청과 응답을 동시에 처리하는 멀티플렉싱, 헤더 압축 등을 지원하는 HTTP 버전입니다.",
+    "hint": "멀티플렉싱",
+    "detail": {
+      "easy": "한 통로로 여러 요청 보내기",
+      "analogy": "한 차선에 차 한 대씩만 보내는 대신 여러 물품을 한 배송 차량에 효율적으로 싣는 것과 같습니다. HTTP/2는 한 연결에서 여러 요청을 더 효율적으로 처리합니다.",
+      "example": "// HTTP/2 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst features = [\"multiplexing\", \"header compression\", \"stream priority\"];\nconsole.log(features.includes(\"multiplexing\"));",
+      "tip": "HTTP/2는 연결 수를 줄이지만 서버와 프록시 설정이 맞아야 효과가 납니다. 오래된 도메인 샤딩 전략은 재검토하세요."
+    }
+  },
+  {
+    "id": "547",
+    "term": "HTTP/3",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "QUIC 프로토콜 위에서 동작하는 HTTP 버전으로 TCP 대신 UDP 기반 전송을 사용합니다. 연결 설정 지연과 패킷 손실 영향을 줄이는 데 초점을 둡니다.",
+    "hint": "QUIC기반",
+    "detail": {
+      "easy": "더 빠른 새 HTTP 통신",
+      "analogy": "기존 도로 정체를 피해 새로운 전용 도로를 쓰는 것과 같습니다. HTTP/3는 QUIC을 통해 연결과 손실 처리 방식을 바꿉니다.",
+      "example": "// HTTP/3 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst protocol = { http: 3, transport: \"QUIC/UDP\" };\nconsole.log(`${protocol.http} over ${protocol.transport}`);",
+      "tip": "HTTP/3는 네트워크와 CDN 지원 여부를 확인해야 합니다. 방화벽이나 UDP 제한 환경에서는 fallback이 필요합니다."
+    }
+  },
+  {
+    "id": "548",
+    "term": "DNS 조회",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "도메인 이름을 IP 주소로 변환하는 과정입니다. 브라우저가 example.com에 접속하기 전에 해당 서버의 IP를 찾는 단계입니다.",
+    "hint": "이름해석",
+    "detail": {
+      "easy": "주소록에서 IP 찾기",
+      "analogy": "친구 이름만 알고 있을 때 연락처 앱에서 전화번호를 찾는 것과 같습니다. DNS 조회는 도메인 이름을 실제 네트워크 주소로 바꿉니다.",
+      "example": "// DNS 조회 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst dnsRecord = { \"example.com\": \"93.184.216.34\" };\nconsole.log(dnsRecord[\"example.com\"]);",
+      "tip": "DNS TTL은 장애 조치 속도와 캐시 효율에 영향을 줍니다. 자주 바뀌는 서비스는 TTL 정책을 신중히 정하세요."
+    }
+  },
+  {
+    "id": "549",
+    "term": "URL 파싱",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "URL 문자열을 프로토콜, 호스트, 경로, 쿼리, 해시 같은 구성요소로 나누어 해석하는 과정입니다.",
+    "hint": "URL분해",
+    "detail": {
+      "easy": "주소를 부분별로 나누기",
+      "analogy": "우편 주소를 시, 구, 도로명, 상세주소로 나누어 읽는 것과 같습니다. URL 파싱은 웹 주소의 각 부분이 무엇을 뜻하는지 분리합니다.",
+      "example": "// URL 파싱 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst url = new URL(\"https://example.com/users?id=1#profile\");\nconsole.log(url.protocol, url.hostname, url.pathname, url.searchParams.get(\"id\"));",
+      "tip": "URL을 직접 문자열 split으로 처리하면 인코딩과 예외를 놓치기 쉽습니다. 표준 URL 파서를 사용하세요."
+    }
+  },
+  {
+    "id": "550",
+    "term": "쿼리 파라미터",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "URL의 ? 뒤에 key=value 형태로 붙는 선택적 요청 값입니다. 검색어, 페이지 번호, 정렬 기준처럼 리소스 조회 조건에 자주 사용합니다.",
+    "hint": "URL조건값",
+    "detail": {
+      "easy": "주소 뒤에 붙는 검색 조건",
+      "analogy": "도서관 검색창에서 제목, 저자, 페이지 번호를 조건으로 넣는 것과 같습니다. 쿼리 파라미터는 같은 경로에서 조회 조건을 세밀하게 전달합니다.",
+      "example": "// 쿼리 파라미터 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst url = new URL(\"https://api.example.com/items?page=2&sort=name\");\nconsole.log(url.searchParams.get(\"page\"));",
+      "tip": "민감한 값은 쿼리 파라미터에 넣지 마세요. URL은 로그, 브라우저 기록, 리퍼러에 남기 쉽습니다."
+    }
+  },
+  {
+    "id": "551",
+    "term": "경로 파라미터",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "URL 경로 일부에 포함되어 특정 리소스를 식별하는 값입니다. /users/42에서 42는 보통 사용자 ID 경로 파라미터입니다.",
+    "hint": "경로값",
+    "detail": {
+      "easy": "주소 길 안의 식별자",
+      "analogy": "아파트 주소에서 동과 호수가 경로 안에 들어 있는 것과 같습니다. 경로 파라미터는 어떤 리소스를 가리키는지 주소 자체에 담습니다.",
+      "example": "// 경로 파라미터 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst pattern = /^\\/users\\/(?<id>\\d+)$/;\nconst match = \"/users/42\".match(pattern);\nconsole.log(match.groups.id);",
+      "tip": "경로 파라미터는 리소스 식별에, 쿼리 파라미터는 필터와 옵션에 쓰는 식으로 일관성을 유지하세요."
+    }
+  },
+  {
+    "id": "552",
+    "term": "Same-Origin Policy",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "브라우저가 서로 다른 출처의 문서나 스크립트가 임의로 데이터를 읽지 못하게 제한하는 보안 정책입니다. 출처는 프로토콜, 호스트, 포트로 결정됩니다.",
+    "hint": "동일출처",
+    "detail": {
+      "easy": "같은 출처끼리만 읽기 허용",
+      "analogy": "아파트 우편함은 자기 집 열쇠로만 열 수 있는 것과 같습니다. Same-Origin Policy는 다른 사이트가 내 사이트의 민감한 응답을 마음대로 읽지 못하게 막습니다.",
+      "example": "// Same-Origin Policy 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst a = new URL(\"https://example.com:443/a\");\nconst b = new URL(\"https://example.com/b\");\nconsole.log(a.origin === b.origin);",
+      "tip": "SOP를 완화해야 할 때 CORS를 사용합니다. 허용 출처를 넓게 열면 브라우저 보호막을 약하게 만드는 셈입니다."
+    }
+  },
+  {
+    "id": "553",
+    "term": "프리플라이트 요청(Preflight)",
+    "category": "웹 개발 심화",
+    "difficulty": "medium",
+    "phase": 2,
+    "week": 8,
+    "definition": "브라우저가 실제 CORS 요청 전에 OPTIONS 요청을 보내 서버가 해당 메서드와 헤더를 허용하는지 확인하는 절차입니다.",
+    "hint": "사전확인",
+    "detail": {
+      "easy": "본 요청 전 허가 확인",
+      "analogy": "큰 짐을 들고 건물에 들어가기 전에 경비실에 반입 가능 여부를 먼저 묻는 것과 같습니다. 프리플라이트는 실제 요청 전에 서버 허가를 확인합니다.",
+      "example": "// 프리플라이트 요청(Preflight) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst preflight = { method: \"OPTIONS\", headers: [\"Access-Control-Request-Method\", \"Access-Control-Request-Headers\"] };\nconsole.log(preflight.method);",
+      "tip": "프리플라이트가 너무 자주 발생하면 지연이 늘어납니다. Access-Control-Max-Age와 단순 요청 조건을 이해하고 최적화하세요."
+    }
+  },
+  {
+    "id": "554",
+    "term": "Content-Type 헤더",
+    "category": "웹 개발 심화",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 8,
+    "definition": "HTTP 본문이 어떤 형식인지 알려 주는 헤더입니다. application/json, text/html, multipart/form-data처럼 서버와 클라이언트가 본문을 해석하는 기준이 됩니다.",
+    "hint": "본문형식",
+    "detail": {
+      "easy": "내용물 종류 라벨",
+      "analogy": "택배 상자에 음식, 문서, 깨짐주의 라벨을 붙이는 것과 같습니다. Content-Type은 본문을 어떤 방식으로 읽어야 하는지 알려 줍니다.",
+      "example": "// Content-Type 헤더 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst headers = { \"content-type\": \"application/json\" };\nconst isJson = headers[\"content-type\"].includes(\"json\");\nconsole.log(isJson);",
+      "tip": "요청 Content-Type과 실제 본문이 다르면 파싱 오류가 납니다. API 문서와 클라이언트 구현을 맞추세요."
+    }
+  },
+  {
+    "id": "555",
+    "term": "멀티파트(Multipart) 요청",
+    "category": "웹 개발 심화",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 8,
+    "definition": "하나의 HTTP 요청 본문을 여러 파트로 나누어 파일과 일반 필드를 함께 전송하는 방식입니다. 파일 업로드 폼에서 자주 사용합니다.",
+    "hint": "파일폼요청",
+    "detail": {
+      "easy": "한 상자에 여러 칸으로 담기",
+      "analogy": "택배 상자 안에 서류 봉투와 물건을 칸막이로 나눠 넣는 것과 같습니다. 멀티파트 요청은 파일과 텍스트 필드를 한 요청에 함께 담습니다.",
+      "example": "// 멀티파트(Multipart) 요청 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst form = new FormData();\nform.append(\"title\", \"profile\");\nconsole.log(form.has(\"title\"));",
+      "tip": "업로드 파일은 크기, 확장자, MIME 타입, 바이러스 검사를 모두 고려하세요. Content-Type만 믿으면 안 됩니다."
+    }
+  },
+  {
+    "id": "556",
+    "term": "HEAD/OPTIONS 메서드",
+    "category": "웹 개발 심화",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 8,
+    "definition": "HEAD는 GET과 비슷하지만 본문 없이 헤더만 받고, OPTIONS는 리소스가 허용하는 메서드나 CORS 가능 여부를 확인하는 HTTP 메서드입니다.",
+    "hint": "메타요청",
+    "detail": {
+      "easy": "본문 없이 정보만 확인",
+      "analogy": "가게에 들어가기 전 전화로 영업 여부와 가능한 서비스를 물어보는 것과 같습니다. HEAD와 OPTIONS는 실제 데이터를 받기 전 필요한 메타 정보를 확인합니다.",
+      "example": "// HEAD/OPTIONS 메서드 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst methods = { HEAD: \"headers only\", OPTIONS: \"allowed methods\" };\nconsole.log(methods.OPTIONS);",
+      "tip": "HEAD 응답 헤더는 GET과 일관되어야 합니다. OPTIONS는 CORS 프리플라이트에서 자주 호출되므로 허용 헤더를 정확히 설정하세요."
+    }
+  },
+  {
+    "id": "557",
+    "term": "PATCH 메서드",
+    "category": "웹 개발 심화",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 8,
+    "definition": "리소스 전체가 아니라 일부 필드만 부분 수정할 때 사용하는 HTTP 메서드입니다. 사용자 프로필의 nickname만 바꾸는 요청에 적합합니다.",
+    "hint": "부분수정",
+    "detail": {
+      "easy": "필요한 칸만 고치기",
+      "analogy": "신청서 전체를 다시 쓰지 않고 전화번호 칸만 수정하는 것과 같습니다. PATCH는 리소스의 일부 변경 사항만 전달합니다.",
+      "example": "// PATCH 메서드 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst user = { name: \"Ada\", nickname: \"A\" };\nconst patch = { nickname: \"Lovelace\" };\nconsole.log({ ...user, ...patch });",
+      "tip": "PATCH 문서 형식은 명확히 정해야 합니다. JSON Merge Patch인지 JSON Patch인지에 따라 의미가 다릅니다."
+    }
+  },
+  {
+    "id": "558",
+    "term": "Base64 인코딩",
+    "category": "웹 개발 심화",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 8,
+    "definition": "바이너리 데이터를 ASCII 문자 집합으로 표현하는 인코딩 방식입니다. 이미지나 토큰 일부를 텍스트 채널에 실어야 할 때 사용하지만 암호화는 아닙니다.",
+    "hint": "문자변환",
+    "detail": {
+      "easy": "바이너리를 글자로 바꾸기",
+      "analogy": "상자를 직접 보낼 수 없어 내용물을 글자 코드로 적어 보내는 것과 같습니다. Base64는 데이터를 텍스트로 표현하지만 숨기거나 보호하지는 않습니다.",
+      "example": "// Base64 인코딩 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst encoded = Buffer.from(\"hello\").toString(\"base64\");\nconst decoded = Buffer.from(encoded, \"base64\").toString(\"utf8\");\nconsole.log(encoded, decoded);",
+      "tip": "Base64는 원본보다 크기가 늘어납니다. 비밀 보호가 필요하면 암호화나 서명을 별도로 사용해야 합니다."
+    }
+  },
+  {
+    "id": "559",
+    "term": "URL 인코딩(퍼센트)",
+    "category": "웹 개발 심화",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 8,
+    "definition": "URL에서 공백, 한글, 특수문자처럼 그대로 쓸 수 없거나 의미가 충돌하는 문자를 %XX 형태로 바꾸는 방식입니다.",
+    "hint": "URL문자변환",
+    "detail": {
+      "easy": "주소용 문자로 바꾸기",
+      "analogy": "택배 주소에 특수 기호를 우편 시스템이 읽을 수 있는 표준 표기로 바꾸는 것과 같습니다. URL 인코딩은 주소 안의 문자를 안전하게 전달합니다.",
+      "example": "// URL 인코딩(퍼센트) 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst raw = \"검색어=웹 개발\";\nconst encoded = encodeURIComponent(raw);\nconsole.log(encoded);\nconsole.log(decodeURIComponent(encoded));",
+      "tip": "URL 전체와 쿼리 값은 인코딩 함수가 다를 수 있습니다. 값 단위에는 encodeURIComponent를 쓰는 것이 안전합니다."
+    }
+  },
+  {
+    "id": "560",
+    "term": "웹소켓 핸드셰이크",
+    "category": "웹 개발 심화",
+    "difficulty": "hard",
+    "phase": 2,
+    "week": 8,
+    "definition": "WebSocket 연결을 시작하기 위해 클라이언트가 HTTP Upgrade 요청을 보내고 서버가 전환을 승인하는 초기 절차입니다.",
+    "hint": "소켓전환",
+    "detail": {
+      "easy": "HTTP에서 소켓으로 바꾸는 악수",
+      "analogy": "일반 상담 전화로 시작했다가 “이제 전용 직통 회선으로 이야기합시다”라고 전환하는 것과 같습니다. 웹소켓 핸드셰이크는 HTTP 연결을 실시간 통신 연결로 바꿉니다.",
+      "example": "// 웹소켓 핸드셰이크 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst requestHeaders = { upgrade: \"websocket\", connection: \"Upgrade\", \"sec-websocket-key\": \"abc\" };\nconst canUpgrade = requestHeaders.upgrade === \"websocket\";\nconsole.log(canUpgrade);",
+      "tip": "핸드셰이크 단계에서도 인증과 Origin 검사를 해야 합니다. 연결 후에는 일반 HTTP 미들웨어가 더 이상 적용되지 않을 수 있습니다."
+    }
+  }
+]
