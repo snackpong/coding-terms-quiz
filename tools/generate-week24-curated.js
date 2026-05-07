@@ -1,0 +1,115 @@
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+const DATA_DIR = path.join(__dirname, '..', 'data');
+const plan = require('./term-bank-plan.json').filter((item) => item.week === 24);
+
+function example(term, lines) {
+  return [`# ${term} 예시: Python 3에서 실행 가능한 코드`, ...lines].join('\n');
+}
+
+const rows = [
+  ['서비스 계정(Service Account)', '서비스 계정은 사람 사용자가 아니라 애플리케이션, 파드, 자동화 작업이 클라우드나 시스템 API를 호출할 때 쓰는 신원입니다. 최소 권한과 키 회전, 감사 로그 관리가 중요합니다.', '직원이 아닌 청소 로봇에게 특정 방만 열 수 있는 출입카드를 주는 것과 같습니다. 로봇도 신원이 있어야 하고 모든 문을 열 필요는 없습니다.', ['account = {"name": "batch-job", "permissions": ["read_bucket"]}', 'print(account["name"], account["permissions"])']],
+  ['IRSA', 'IRSA는 AWS EKS에서 Kubernetes 서비스 계정을 IAM 역할과 연결해 파드가 AWS 권한을 안전하게 얻도록 하는 방식입니다. 노드 전체 권한을 공유하지 않고 워크로드별 권한을 줄 수 있습니다.', '건물 전체 마스터키를 모든 직원에게 주지 않고 업무 명찰에 맞는 방 열쇠만 자동으로 발급하는 것과 같습니다.', ['pod_sa = "report-sa"', 'iam_role = "s3-read-role"', 'print(f"{pod_sa} -> {iam_role}")']],
+  ['Workload Identity', 'Workload Identity는 클라우드 환경에서 워크로드가 장기 키 없이 플랫폼 신원을 사용해 권한을 얻는 방식입니다. GKE 등에서 Kubernetes 서비스 계정과 클라우드 IAM을 안전하게 연결합니다.', '배달원이 매번 종이 위임장을 들고 다니지 않고 회사 시스템이 신원을 확인해 필요한 문만 열어 주는 구조와 같습니다.', ['k8s_sa = "api"', 'cloud_sa = "api@project"', 'print(k8s_sa, cloud_sa)']],
+  ['클라우드 IAM 심화', '클라우드 IAM 심화는 사용자, 역할, 정책, 조건, 리소스 범위를 조합해 권한을 정밀하게 설계하는 영역입니다. 최소 권한, 직무 분리, 임시 자격 증명, 감사 가능성이 핵심입니다.', '회사 출입증이 건물, 층, 시간, 업무별로 다르게 작동하도록 설계하는 것과 같습니다. 한 장의 카드에도 많은 규칙이 붙습니다.', ['policy = {"action": "s3:GetObject", "resource": "reports/*"}', 'print(policy["action"])']],
+  ['리소스 기반 정책', '리소스 기반 정책은 사용자나 역할이 아니라 버킷, 큐, 키 같은 리소스 자체에 붙는 접근 정책입니다. 누가 어떤 조건으로 해당 리소스에 접근할 수 있는지 리소스 관점에서 제어합니다.', '창고 문에 “배송팀만 평일에 출입 가능”이라고 붙인 규칙과 같습니다. 사람 명단이 아니라 문 자체가 조건을 갖습니다.', ['bucket_policy = {"principal": "analytics-role", "action": "read"}', 'print(bucket_policy["principal"])']],
+  ['SCP(서비스 제어 정책)', 'SCP는 AWS Organizations에서 계정이나 조직 단위가 사용할 수 있는 최대 권한 범위를 제한하는 정책입니다. 개별 계정 IAM이 허용해도 SCP가 막으면 실행할 수 없습니다.', '각 지점장이 권한을 줘도 본사 규정상 금지된 작업은 할 수 없는 구조와 같습니다. 지점 규칙 위에 상한선이 있습니다.', ['scp_denies = {"DeleteTrail"}', 'action = "DeleteTrail"', 'print(action in scp_denies)']],
+  ['조직 단위(OU)', '조직 단위는 클라우드 조직 안에서 계정을 부서, 환경, 목적별로 묶는 계층 구조입니다. 정책 적용, 비용 관리, 보안 통제를 그룹 단위로 운영할 수 있습니다.', '회사 사무실을 개발팀, 운영팀, 회계팀 층으로 나눠 층별 규칙을 적용하는 것과 같습니다.', ['ou = {"name": "prod", "accounts": ["a1", "a2"]}', 'print(len(ou["accounts"]))']],
+  ['랜딩 존(Landing Zone)', '랜딩 존은 클라우드 계정, 네트워크, 보안, 로깅, 거버넌스를 표준 형태로 미리 구성한 시작 환경입니다. 여러 팀이 안전하게 클라우드를 사용할 수 있는 기반을 제공합니다.', '새 도시 개발 전에 도로, 전기, 수도, 치안 규칙을 먼저 깔아 두는 택지 조성과 같습니다. 그 위에 건물을 올립니다.', ['landing_zone = {"logging": True, "network": True, "guardrails": True}', 'print(all(landing_zone.values()))']],
+  ['계정 팩토리', '계정 팩토리는 표준 보안과 네트워크 설정이 적용된 클라우드 계정을 자동으로 생성하는 체계입니다. 팀별 계정 발급을 빠르게 하면서 거버넌스 일관성을 유지합니다.', '신규 지점이 생길 때 간판, 금고, CCTV, 출입 규칙이 포함된 표준 매장 키트를 자동 지급하는 것과 같습니다.', ['template = {"logging": True, "budget": 1000}', 'new_account = template.copy()', 'print(new_account)']],
+  ['FinOps', 'FinOps는 클라우드 비용을 기술, 재무, 비즈니스 팀이 함께 관리하는 운영 문화와 실천입니다. 비용 가시화, 최적화, 책임 분담을 통해 클라우드 지출을 비즈니스 가치와 맞춥니다.', '전기요금을 시설팀만 보지 않고 각 매장이 사용량과 매출을 함께 보며 절약 방법을 찾는 것과 같습니다.', ['cost = {"teamA": 120, "teamB": 80}', 'print(sum(cost.values()))']],
+  ['클라우드 비용 할당', '클라우드 비용 할당은 계정, 태그, 프로젝트, 팀 기준으로 사용 비용을 나누어 책임과 최적화 대상을 명확히 하는 작업입니다. 정확한 태깅과 계정 구조가 필요합니다.', '공동 사무실 전기요금을 부서별 사용량에 따라 나누어 청구하는 것과 같습니다. 누가 썼는지 알아야 줄일 수 있습니다.', ['costs = [{"team": "A", "amount": 10}, {"team": "A", "amount": 5}]', 'print(sum(c["amount"] for c in costs if c["team"] == "A"))']],
+  ['예약 인스턴스 vs Savings Plans', '예약 인스턴스와 Savings Plans는 장기 사용 약정을 통해 온디맨드보다 낮은 비용을 얻는 클라우드 할인 방식입니다. 예약 인스턴스는 특정 자원 조건이 강하고 Savings Plans는 사용량 약정이 더 유연합니다.', '정해진 좌석 정기권과 금액 기준 교통 정기권의 차이와 같습니다. 하나는 자리 조건이 뚜렷하고 하나는 사용 범위가 더 넓습니다.', ['on_demand = 100', 'discount = 0.3', 'print(on_demand * (1 - discount))']],
+  ['컴퓨트 옵티마이저', '컴퓨트 옵티마이저는 실제 사용량을 분석해 인스턴스 크기, 오토스케일링, 예약 옵션 같은 컴퓨트 자원 최적화를 제안하는 도구나 활동입니다. 과대 할당과 부족 할당을 줄입니다.', '매장 좌석 사용률을 보고 너무 큰 매장은 줄이고 붐비는 매장은 넓히라고 조언하는 컨설턴트와 같습니다.', ['cpu = 12', 'recommend = "downsize" if cpu < 20 else "keep"', 'print(recommend)']],
+  ['비용 이상 탐지', '비용 이상 탐지는 평소 패턴과 다르게 급증한 클라우드 지출을 찾아 알리는 기능입니다. 실수로 켠 대형 인스턴스나 트래픽 폭증을 빠르게 발견하는 데 중요합니다.', '평소 10만 원 나오던 전기요금이 갑자기 100만 원 나오면 관리실이 바로 연락하는 것과 같습니다.', ['daily = [10, 11, 12, 80]', 'avg = sum(daily[:-1]) / 3', 'print(daily[-1] > avg * 3)']],
+  ['태깅 전략', '태깅 전략은 리소스에 팀, 서비스, 환경, 비용센터 같은 메타데이터를 일관되게 붙이는 규칙입니다. 비용 할당, 자동화, 보안 감사, 수명주기 관리의 기반이 됩니다.', '창고 물건에 부서, 용도, 구매일 스티커를 붙여 나중에 누가 쓰는지 바로 알 수 있게 하는 것과 같습니다.', ['tags = {"team": "data", "env": "prod", "owner": "kim"}', 'required = {"team", "env", "owner"}', 'print(required <= set(tags))']],
+  ['클라우드 네이티브 패턴', '클라우드 네이티브 패턴은 탄력성, 자동화, 관리형 서비스, 관찰성, 장애 대비를 전제로 애플리케이션을 설계하는 방식입니다. 인프라를 고정 서버가 아니라 변하는 자원으로 다룹니다.', '행사장 좌석을 고정하지 않고 예약량에 따라 의자를 추가하고 빼는 운영과 같습니다. 변화가 기본 조건입니다.', ['patterns = ["autoscale", "managed-db", "observability"]', 'print("autoscale" in patterns)']],
+  ['12 요소 앱', '12 요소 앱은 클라우드 환경에 적합한 애플리케이션 설계를 위한 원칙 모음입니다. 설정 분리, stateless 프로세스, 로그 스트림, 일회성 프로세스 등을 강조합니다.', '어느 지점에 가져가도 같은 방식으로 운영되는 이동식 매장 매뉴얼과 같습니다. 환경별 차이는 설정으로 빼 둡니다.', ['config = {"DATABASE_URL": "env"}', 'stateless = True', 'print(stateless and "DATABASE_URL" in config)']],
+  ['컨테이너 오케스트레이션 심화', '컨테이너 오케스트레이션 심화는 배치, 스케일링, 롤아웃, 네트워킹, 스토리지, 보안 정책을 클러스터 수준에서 자동화하는 주제입니다. 단순 실행을 넘어 운영 자동화가 핵심입니다.', '항구에서 컨테이너를 어느 배에 싣고 언제 옮기며 고장 난 장비를 어떻게 대체할지 관제하는 것과 같습니다.', ['desired = 5', 'running = 3', 'actions = desired - running', 'print(actions)']],
+  ['노드 어피니티', '노드 어피니티는 Kubernetes에서 파드가 특정 조건의 노드에 배치되도록 선호하거나 요구하는 규칙입니다. GPU, 지역, 디스크 타입 같은 노드 특성을 활용합니다.', '냉장 식품은 냉장고가 있는 트럭에만 실어야 하는 배송 규칙과 같습니다. 아무 트럭에나 배치하면 안 됩니다.', ['node = {"gpu": True, "zone": "a"}', 'requires_gpu = True', 'print(node["gpu"] == requires_gpu)']],
+  ['테인트/톨러레이션', '테인트는 노드가 일반 파드를 받지 않도록 표시하는 값이고, 톨러레이션은 파드가 그 표시를 견딜 수 있음을 나타냅니다. 전용 노드나 특수 워크로드 격리에 사용합니다.', '특수 작업장 문에 “방진복 필요” 표지가 있고, 방진복을 가진 사람만 들어갈 수 있는 것과 같습니다.', ['node_taint = "gpu-only"', 'pod_tolerations = {"gpu-only"}', 'print(node_taint in pod_tolerations)']],
+  ['리소스 쿼터', '리소스 쿼터는 namespace나 팀이 사용할 수 있는 CPU, 메모리, 객체 수 같은 자원 한도를 정하는 Kubernetes 정책입니다. 한 팀의 과사용이 클러스터 전체를 압박하는 것을 막습니다.', '공유 사무실에서 부서별 회의실 사용 시간을 제한하는 규칙과 같습니다. 한 부서가 모든 방을 차지하지 못합니다.', ['quota_cpu = 10', 'requested_cpu = 7', 'print(requested_cpu <= quota_cpu)']],
+  ['HPA(수평 파드 자동 확장)', 'HPA는 CPU, 메모리, 커스텀 메트릭에 따라 파드 복제본 수를 자동으로 늘리거나 줄이는 Kubernetes 기능입니다. 트래픽 변화에 맞춰 처리량을 조절합니다.', '손님 줄이 길어지면 계산대를 더 열고 한산해지면 닫아 대기 시간과 인건비를 함께 조절하는 마트 운영과 같습니다.', ['cpu = 75', 'replicas = 3', 'replicas += 1 if cpu > 70 else 0', 'print(replicas)']],
+  ['VPA(수직 파드 자동 확장)', 'VPA는 파드의 CPU와 메모리 요청량을 실제 사용량에 맞춰 추천하거나 조정하는 Kubernetes 기능입니다. 파드 개수보다 한 파드의 자원 크기를 맞추는 데 초점을 둡니다.', '직원 수를 늘리는 대신 한 직원에게 더 큰 작업대와 장비를 배정하는 것과 같습니다.', ['usage_mem = 800', 'request_mem = 512', 'recommend = max(request_mem, usage_mem)', 'print(recommend)']],
+  ['KEDA(이벤트 기반 자동 확장)', 'KEDA는 큐 길이, 메시지 수, 이벤트 소스 같은 외부 신호를 기준으로 Kubernetes 워크로드를 자동 확장하는 도구입니다. 0개까지 줄였다가 이벤트가 오면 늘릴 수 있습니다.', '주문서 함에 주문이 쌓이면 직원을 부르고 비어 있으면 대기 인원을 줄이는 매장과 같습니다.', ['queue_len = 25', 'replicas = 0 if queue_len == 0 else min(5, queue_len // 10 + 1)', 'print(replicas)']],
+  ['클러스터 오토스케일러', '클러스터 오토스케일러는 파드를 배치할 노드 자원이 부족하면 노드를 늘리고, 사용되지 않는 노드는 줄이는 Kubernetes 운영 도구입니다. 워크로드와 인프라 용량을 함께 맞춥니다.', '계산대 직원만 늘리는 것이 아니라 매장 공간이 부족하면 임시 계산대를 설치하는 것과 같습니다.', ['pending_pods = 3', 'nodes = 4', 'nodes += 1 if pending_pods else 0', 'print(nodes)']],
+  ['서비스 계정 토큰', '서비스 계정 토큰은 워크로드가 API 서버나 클라우드 API에 자신을 증명할 때 사용하는 자격 증명입니다. 만료 시간, 범위, 자동 마운트 여부를 안전하게 관리해야 합니다.', '로봇 직원의 임시 출입 배지와 같습니다. 배지가 너무 오래 유효하거나 모든 문을 열 수 있으면 위험합니다.', ['token = {"aud": "k8s", "expires_in": 3600}', 'print(token["expires_in"] <= 3600)']],
+  ['OPA(정책 엔진)', 'OPA는 정책을 코드로 작성하고 다양한 시스템에서 의사결정에 사용하는 범용 정책 엔진입니다. Kubernetes admission, API 권한, CI 검증에 활용됩니다.', '회사 규정집을 사람이 읽는 문서가 아니라 자동 게이트가 판단할 수 있는 규칙으로 바꾼 것과 같습니다.', ['input_obj = {"image": "trusted/app"}', 'allowed = input_obj["image"].startswith("trusted/")', 'print(allowed)']],
+  ['Kyverno', 'Kyverno는 Kubernetes 리소스 정책을 YAML 기반으로 검증, 변환, 생성할 수 있는 정책 엔진입니다. 클러스터 보안과 표준 설정을 자동으로 강제하는 데 쓰입니다.', '입주 신청서가 들어오면 관리실이 형식과 필수 항목을 확인하고 빠진 스티커를 붙여 주는 규칙 자동화와 같습니다.', ['pod = {"runAsNonRoot": True}', 'print(pod.get("runAsNonRoot") is True)']],
+  ['이미지 스캔(Trivy)', 'Trivy는 컨테이너 이미지, 파일 시스템, IaC 설정에서 취약점과 비밀값을 검사하는 보안 스캐너입니다. CI/CD와 레지스트리 단계에서 위험을 조기에 찾을 수 있습니다.', '배송 상자를 출고 전에 열어 리콜 부품이나 금지 물품이 있는지 확인하는 검사대와 같습니다.', ['findings = [{"severity": "HIGH"}, {"severity": "LOW"}]', 'print(any(f["severity"] == "HIGH" for f in findings))']],
+  ['런타임 보안(Falco)', 'Falco는 Linux 커널 이벤트를 감시해 컨테이너와 호스트의 의심스러운 런타임 행동을 탐지하는 도구입니다. 예상치 못한 쉘 실행, 파일 접근, 네트워크 활동을 경고할 수 있습니다.', '영업 중 매장 안 CCTV가 수상한 행동을 실시간으로 알려 주는 것과 같습니다. 입장 검사 뒤에도 감시가 필요합니다.', ['events = ["open_file", "spawn_shell"]', 'alerts = [e for e in events if "shell" in e]', 'print(alerts)']],
+  ['네트워크 정책(K8s)', '네트워크 정책은 Kubernetes 파드 간 또는 외부와의 네트워크 통신을 허용/차단하는 규칙입니다. 기본 허용 환경에서 워크로드 간 이동을 제한하는 데 중요합니다.', '사무실 안에서도 회계팀 방은 승인된 부서만 들어갈 수 있게 출입문을 나누는 것과 같습니다.', ['allowed = {("api", "db")}', 'print(("web", "db") in allowed)']],
+  ['Pod 보안 표준', 'Pod 보안 표준은 Kubernetes 파드가 privileged 실행, root 사용자, host namespace 사용 같은 위험 설정을 피하도록 정의한 보안 수준입니다. baseline, restricted 같은 프로파일을 적용할 수 있습니다.', '공장 작업자가 안전모와 장갑을 착용하고 위험 구역 출입 규칙을 지키도록 한 안전 기준과 같습니다.', ['pod = {"privileged": False, "runAsRoot": False}', 'print(not pod["privileged"] and not pod["runAsRoot"])']],
+  ['시크릿 관리(Vault)', 'Vault는 비밀값, 암호화 키, 동적 자격 증명을 안전하게 저장하고 발급하는 도구입니다. 접근 정책, 감사 로그, 키 회전으로 민감 정보를 관리합니다.', '금고 관리자가 필요한 직원에게 임시 열쇠를 발급하고 누가 언제 가져갔는지 기록하는 시스템과 같습니다.', ['vault = {"db_password": "rotated"}', 'print("db_password" in vault)']],
+  ['External Secrets Operator', 'External Secrets Operator는 외부 시크릿 저장소의 값을 Kubernetes Secret으로 동기화하는 컨트롤러입니다. Vault, AWS Secrets Manager 같은 중앙 저장소와 클러스터를 연결합니다.', '본사 금고의 최신 비밀번호 봉투를 각 지점 금고에 자동으로 복사해 주는 배송 담당자와 같습니다.', ['external = {"API_KEY": "secret"}', 'k8s_secret = external.copy()', 'print(k8s_secret.keys())']],
+  ['GitOps 심화', 'GitOps 심화는 Git 선언 상태를 기준으로 배포뿐 아니라 정책, 비밀, 멀티클러스터, 드리프트 복구까지 운영하는 접근입니다. 변경 승인과 감사 추적이 Git 흐름에 묶입니다.', '본사 도면이 바뀌면 여러 지점 인테리어와 안전 규칙까지 자동으로 맞춰지는 운영 체계와 같습니다.', ['desired = {"version": "2", "policy": "restricted"}', 'live = {"version": "1", "policy": "restricted"}', 'print(desired != live)']],
+  ['플럭스CD', '플럭스CD는 Git 저장소와 클러스터 상태를 지속적으로 동기화하는 GitOps 도구입니다. 선언 파일, Helm 릴리스, 이미지 업데이트 자동화를 지원합니다.', '매장 관리자가 본사 지침서를 주기적으로 확인해 진열과 가격표를 최신 상태로 맞추는 것과 같습니다.', ['git_rev = 10', 'cluster_rev = 9', 'print("sync" if git_rev != cluster_rev else "ok")']],
+  ['드리프트 감지', '드리프트 감지는 선언된 원하는 상태와 실제 인프라 상태가 달라졌는지 찾는 과정입니다. 수동 변경이나 장애 복구 중 생긴 차이를 발견해 재조정합니다.', '설계도와 실제 매장 배치가 달라졌는지 순찰하며 확인하는 것과 같습니다. 누군가 임의로 선반을 옮겼을 수 있습니다.', ['desired = {"replicas": 3}', 'actual = {"replicas": 2}', 'print(desired != actual)']],
+  ['멀티클러스터 관리', '멀티클러스터 관리는 여러 Kubernetes 클러스터의 배포, 정책, 보안, 관찰성을 일관되게 운영하는 작업입니다. 지역, 팀, 환경별 클러스터가 늘수록 중앙 관리가 필요합니다.', '여러 지점 매장의 재고, 보안, 메뉴판을 본사에서 한눈에 관리하는 것과 같습니다. 각 지점은 독립적이지만 기준은 같아야 합니다.', ['clusters = {"prod-kr": "ok", "prod-us": "ok"}', 'print(len(clusters))']],
+  ['클러스터 페더레이션', '클러스터 페더레이션은 여러 클러스터를 묶어 리소스 배포와 서비스 노출을 조정하는 방식입니다. 멀티 리전 고가용성과 정책 일관성에 활용할 수 있습니다.', '여러 학교가 같은 교육청 아래에서 공통 교과서와 일정을 공유하는 구조와 같습니다. 각 학교는 따로 있지만 조율됩니다.', ['federated = ["cluster-a", "cluster-b"]', 'resource = "namespace/team-a"', 'print(resource, federated)']],
+  ['서비스 메시 심화', '서비스 메시 심화는 트래픽 분할, 재시도, 회로 차단, mTLS, 정책, 텔레메트리를 프록시 계층에서 세밀하게 다루는 운영 주제입니다. 서비스 간 통신이 많을수록 가치와 복잡도가 함께 커집니다.', '도시 도로망에 신호제어, 단속, 우회, 통행 기록 시스템을 모두 붙이는 고급 교통 관제와 같습니다.', ['features = {"mTLS": True, "traffic_split": True, "retry": True}', 'print(all(features.values()))']],
+  ['웨스트-이스트 트래픽', '웨스트-이스트 트래픽은 데이터센터나 클러스터 내부 서비스 간 통신을 말합니다. 외부 사용자의 남북 트래픽과 달리 내부 보안, 관찰성, 서비스 메시 설계에서 중요합니다.', '백화점 손님 출입이 아니라 매장 직원들이 창고와 다른 매장 사이를 오가는 내부 이동과 같습니다.', ['traffic = {"frontend->api": "north-south", "api->db": "east-west"}', 'print(traffic["api->db"])']],
+  ['상호 TLS(mTLS) 구현', '상호 TLS 구현은 클라이언트와 서버가 서로 인증서를 검증하며 암호화 통신을 구성하는 작업입니다. 인증서 발급, 회전, 신뢰 체인, 프록시 설정을 함께 관리해야 합니다.', '두 직원이 대화 전 서로 신분증을 확인하고 방음 회의실에서 이야기하는 절차와 같습니다. 한쪽만 확인하지 않습니다.', ['client_ok = True', 'server_ok = True', 'encrypted = True', 'print(client_ok and server_ok and encrypted)']],
+  ['옵저버빌리티 플랫폼', '옵저버빌리티 플랫폼은 메트릭, 로그, 트레이스, 이벤트를 수집하고 분석해 시스템 내부 상태를 이해하게 하는 도구 모음입니다. 장애 원인 분석과 성능 개선에 쓰입니다.', '공장 전체의 온도계, CCTV, 작업 일지를 한 관제실에서 함께 보는 시스템과 같습니다. 단일 계기만으로는 원인을 알기 어렵습니다.', ['signals = ["metrics", "logs", "traces"]', 'print(",".join(signals))']],
+  ['OpenTelemetry', 'OpenTelemetry는 메트릭, 로그, 트레이스 데이터를 수집하고 내보내기 위한 표준 계측 프레임워크입니다. 벤더 중립적인 관찰성 데이터 파이프라인을 만들 수 있습니다.', '여러 병원의 진료 기록을 같은 양식으로 적게 해 어느 분석 시스템에서도 읽을 수 있게 하는 표준 차트와 같습니다.', ['span = {"trace_id": "abc", "name": "GET /api"}', 'print(span["trace_id"])']],
+  ['분산 추적 구현', '분산 추적 구현은 요청마다 trace id와 span을 전파해 여러 서비스 호출을 하나의 흐름으로 연결하는 작업입니다. 헤더 전파와 샘플링, 수집기가 핵심입니다.', '택배 송장 번호 하나로 집화, 허브, 배송 기사 기록을 모두 연결해 보는 것과 같습니다. 각 구간 기록이 같은 번호를 가져야 합니다.', ['trace_id = "t1"', 'spans = [{"trace": trace_id, "svc": "api"}, {"trace": trace_id, "svc": "db"}]', 'print(len(spans))']],
+  ['eBPF', 'eBPF는 Linux 커널 안에서 안전하게 작은 프로그램을 실행해 네트워크, 보안, 성능 관찰을 확장하는 기술입니다. 낮은 오버헤드로 런타임 동작을 깊게 볼 수 있습니다.', '기계 내부에 작은 센서를 붙여 분해하지 않고도 움직임을 측정하는 것과 같습니다. 운영 중인 시스템을 세밀하게 관찰합니다.', ['events = ["tcp_connect", "file_open"]', 'print([e for e in events if e.startswith("tcp")])']],
+  ['클라우드 마이그레이션 전략(6R)', '6R은 클라우드 이전 전략을 Rehost, Replatform, Repurchase, Refactor/Re-architect, Retire, Retain 등으로 분류하는 프레임입니다. 애플리케이션별 비용과 가치에 맞는 이전 방식을 고릅니다.', '이사할 때 그대로 옮길 물건, 수리할 물건, 새로 살 물건, 버릴 물건을 나누는 목록과 같습니다.', ['strategies = ["rehost", "replatform", "refactor", "retire", "retain"]', 'print(strategies[:3])']],
+  ['리호스팅', '리호스팅은 애플리케이션 구조를 거의 바꾸지 않고 기존 서버를 클라우드 VM으로 옮기는 마이그레이션 방식입니다. 빠르지만 클라우드 장점을 충분히 활용하지 못할 수 있습니다.', '기존 사무실 가구 배치를 그대로 새 건물에 옮기는 것과 같습니다. 빠르게 이전하지만 새 공간에 최적화되지는 않습니다.', ['app = {"changed_code": False, "target": "cloud_vm"}', 'print(app)']],
+  ['리플랫포밍', '리플랫포밍은 큰 구조 변경 없이 일부 플랫폼 요소를 관리형 서비스나 클라우드 친화 방식으로 바꾸는 이전 전략입니다. 이전 속도와 운영 개선 사이의 중간 선택입니다.', '이사하면서 가구는 대부분 가져가되 낡은 냉장고는 새 건물의 빌트인 냉장고로 바꾸는 것과 같습니다.', ['changes = ["managed_db"]', 'code_rewrite = False', 'print(changes, code_rewrite)']],
+  ['리아키텍처링', '리아키텍처링은 클라우드 장점을 활용하기 위해 애플리케이션 구조를 크게 재설계하는 전략입니다. 비용은 크지만 확장성, 탄력성, 운영 효율을 크게 개선할 수 있습니다.', '낡은 집을 그대로 옮기지 않고 새 땅에 맞춰 구조부터 다시 설계해 짓는 것과 같습니다. 시간이 걸리지만 결과가 달라집니다.', ['old = "monolith"', 'new = "event-driven services"', 'print(old, "->", new)']],
+  ['클라우드 탈출 전략', '클라우드 탈출 전략은 특정 클라우드 장애, 비용 급증, 계약 종료, 규제 변화에 대비해 다른 환경으로 이동할 수 있는 계획입니다. 데이터 반출, 대체 서비스, 자동화 이식성을 고려합니다.', '한 물류업체만 쓰다가 문제가 생겼을 때 다른 업체로 바꿀 수 있도록 주소록과 포장 규격을 준비해 두는 것과 같습니다.', ['exit_plan = {"data_export": True, "alt_provider": True}', 'print(all(exit_plan.values()))']],
+  ['벤더 종속(Lock-in) 최소화', '벤더 종속 최소화는 특정 클라우드 전용 기능에 과도하게 의존해 이전이 어려워지는 위험을 줄이는 설계입니다. 표준 기술, 추상화, 데이터 이동성을 고려합니다.', '특정 회사 전용 충전기만 쓰는 기기보다 표준 USB 충전기를 쓰는 기기가 이동과 교체에 쉬운 것과 같습니다.', ['uses_standard = True', 'proprietary_features = 1', 'print(uses_standard and proprietary_features < 3)']],
+  ['오픈소스 대안 선택', '오픈소스 대안 선택은 관리형 서비스나 상용 도구 대신 공개 소스 기반 기술을 선택할지 평가하는 과정입니다. 비용, 운영 부담, 커뮤니티, 보안 패치를 함께 봐야 합니다.', '완제품 가구를 살지 직접 조립 가능한 공개 설계 가구를 쓸지 고르는 것과 같습니다. 자유도와 관리 책임이 함께 옵니다.', ['option = {"license": "Apache-2.0", "maintained": True}', 'print(option["maintained"])']],
+  ['AWS EKS', 'AWS EKS는 AWS가 제공하는 관리형 Kubernetes 서비스입니다. 제어 플레인 운영을 AWS가 담당하고 사용자는 노드, 네트워크, IAM 연동, 워크로드 운영을 관리합니다.', '건물 관리실은 임대인이 운영하지만 각 사무실 인테리어와 직원 배치는 입주사가 맡는 공유 오피스와 같습니다.', ['eks = {"control_plane": "managed", "workers": "user"}', 'print(eks["control_plane"])']],
+  ['GKE(Google Kubernetes Engine)', 'GKE는 Google Cloud의 관리형 Kubernetes 서비스입니다. 자동 업그레이드, 오토파일럿, Workload Identity 같은 기능으로 클러스터 운영을 단순화합니다.', '기본 시설 관리가 잘 자동화된 스마트 빌딩에 입주하는 것과 같습니다. 세부 운영 부담이 줄어듭니다.', ['gke = {"mode": "autopilot", "workload_identity": True}', 'print(gke["mode"])']],
+  ['AKS(Azure Kubernetes)', 'AKS는 Azure의 관리형 Kubernetes 서비스입니다. Azure AD, 네트워크, 모니터링, 컨테이너 레지스트리와 통합해 Kubernetes 워크로드를 운영합니다.', 'Azure 단지 안에 있는 관리형 물류센터처럼 주변 창고, 보안, 모니터링 서비스와 연결이 쉬운 구조입니다.', ['aks = {"aad": True, "acr": True}', 'print(all(aks.values()))']],
+  ['클라우드 런(Cloud Run)', 'Cloud Run은 컨테이너를 서버리스 방식으로 실행하는 Google Cloud 서비스입니다. 요청 기반 자동 확장과 scale-to-zero를 제공해 컨테이너 운영 부담을 줄입니다.', '손님이 올 때만 자동으로 열리고 손님이 없으면 조명이 꺼지는 팝업 매장과 같습니다. 컨테이너는 있지만 서버 관리는 숨겨집니다.', ['requests = 0', 'instances = 0 if requests == 0 else 1', 'print(instances)']],
+  ['Lambda 계층(Layer)', 'Lambda Layer는 AWS Lambda 함수에서 공통 라이브러리나 런타임 파일을 분리해 여러 함수가 재사용하게 하는 패키징 단위입니다. 함수 배포 크기와 중복 관리를 줄입니다.', '여러 요리사가 공통 양념통을 공유하고 각자 요리 재료만 따로 들고 오는 것과 같습니다. 반복 포장을 줄입니다.', ['layers = ["common-lib", "sdk"]', 'function = {"code": "handler", "layers": layers}', 'print(function["layers"])']],
+  ['EventBridge', 'EventBridge는 AWS의 이벤트 버스 서비스로 애플리케이션, SaaS, AWS 서비스 이벤트를 규칙에 따라 라우팅합니다. 이벤트 기반 아키텍처를 느슨하게 연결하는 데 사용됩니다.', '도시의 중앙 우편 분류소가 이벤트 편지를 받아 규칙에 맞는 부서로 보내는 것과 같습니다.', ['rule = {"source": "orders", "target": "billing"}', 'event = {"source": "orders"}', 'print(rule["target"] if event["source"] == rule["source"] else None)']],
+  ['Step Functions', 'Step Functions는 AWS에서 서버리스 워크플로를 상태 머신으로 정의하고 실행하는 서비스입니다. Lambda, API, 대기, 분기, 재시도 같은 단계를 조합할 수 있습니다.', '여행 예약 절차를 항공권, 호텔, 결제, 알림 순서의 체크리스트로 자동 실행하는 코디네이터와 같습니다.', ['workflow = ["reserve", "pay", "notify"]', 'print(" -> ".join(workflow))']],
+  ['AWS Glue', 'AWS Glue는 서버리스 데이터 통합과 ETL 작업을 위한 AWS 서비스입니다. 데이터 카탈로그, 크롤러, Spark 기반 변환 작업을 제공해 분석 파이프라인을 구성합니다.', '여러 창고의 재료를 찾아 목록화하고 손질해 분석 주방으로 보내는 자동 재료 준비팀과 같습니다.', ['tables = ["raw_orders", "clean_orders"]', 'print(tables[-1])']],
+  ['AWS Athena', 'AWS Athena는 S3에 저장된 데이터를 SQL로 조회할 수 있는 서버리스 쿼리 서비스입니다. 인프라를 직접 관리하지 않고 로그와 데이터 레이크를 분석할 수 있습니다.', '창고 안 상자를 옮기지 않고 창고 목록 위에서 바로 질문해 답을 얻는 검색 데스크와 같습니다.', ['s3_files = ["a.parquet", "b.parquet"]', 'query = "SELECT count(*)"', 'print(query, len(s3_files))']],
+  ['AWS Redshift', 'AWS Redshift는 대규모 분석 쿼리를 위한 AWS의 데이터 웨어하우스 서비스입니다. 컬럼 기반 저장과 병렬 처리를 통해 BI와 분석 워크로드를 처리합니다.', '일반 창고가 아니라 보고서 작성에 맞게 통로와 선반을 최적화한 분석 전용 창고와 같습니다.', ['rows = 1_000_000', 'columns = ["date", "sales"]', 'print(rows, columns[1])']],
+  ['Kinesis 스트리밍', 'Kinesis는 실시간 데이터 스트림을 수집, 처리, 저장하는 AWS 서비스입니다. 로그, 클릭스트림, IoT 이벤트처럼 계속 들어오는 데이터를 샤드 단위로 처리합니다.', '강물처럼 계속 흘러오는 택배 상자를 여러 컨베이어 벨트로 나눠 실시간 분류하는 것과 같습니다.', ['shards = {0: ["e1"], 1: ["e2", "e3"]}', 'print(sum(len(v) for v in shards.values()))']],
+  ['서버리스 데이터베이스', '서버리스 데이터베이스는 사용량에 따라 용량이 자동 조정되고 서버 관리 부담이 줄어든 데이터베이스 형태입니다. 비용과 콜드 스타트, 연결 관리 특성을 이해해야 합니다.', '손님 수에 따라 자동으로 좌석이 늘고 줄어드는 식당과 같습니다. 빈 시간에는 비용을 줄일 수 있습니다.', ['requests = 5', 'capacity = max(1, requests // 10 + 1)', 'print(capacity)']],
+  ['글로벌 데이터베이스', '글로벌 데이터베이스는 여러 리전에 걸쳐 데이터를 복제해 전 세계 사용자에게 낮은 지연과 재해 복구를 제공하는 데이터베이스 구성입니다. 쓰기 위치와 복제 지연을 고려해야 합니다.', '세계 여러 도시 금고에 같은 장부 사본을 두고 가까운 금고에서 조회하게 하는 것과 같습니다.', ['regions = ["us", "eu", "ap"]', 'primary = "us"', 'print(primary, regions)']],
+  ['크로스 리전 복제(DB)', '크로스 리전 복제는 데이터베이스 변경을 다른 지리적 리전으로 복제하는 구성입니다. 재해 복구, 읽기 지연 개선, 규제 대응에 사용됩니다.', '서울 본점 장부를 부산 지점 금고에도 계속 복사해 두는 것과 같습니다. 본점에 문제가 생겨도 사본을 쓸 수 있습니다.', ['primary_lsn = 100', 'secondary_lsn = 96', 'print(primary_lsn - secondary_lsn)']],
+  ['Lambda 콜드 스타트', 'Lambda 콜드 스타트는 서버리스 함수 인스턴스가 새로 시작될 때 런타임 초기화와 코드 로딩 때문에 첫 요청 지연이 커지는 현상입니다. 런타임, 패키지 크기, VPC 설정이 영향을 줍니다.', '닫혀 있던 팝업 매장을 첫 손님이 오자 조명 켜고 계산대 준비부터 하느라 시간이 걸리는 것과 같습니다.', ['warm = False', 'latency = 20 if warm else 300', 'print(latency)']],
+  ['프로비저닝된 동시성', '프로비저닝된 동시성은 Lambda 함수 인스턴스를 미리 초기화해 준비 상태로 유지하는 기능입니다. 콜드 스타트를 줄이는 대신 대기 비용이 발생합니다.', '손님이 오기 전 계산대 직원을 미리 세워 두는 것과 같습니다. 빠르게 응대하지만 한가해도 인건비가 듭니다.', ['provisioned = 5', 'incoming = 3', 'print(incoming <= provisioned)']],
+  ['클라우드 함수 최적화', '클라우드 함수 최적화는 서버리스 함수의 패키지 크기, 초기화 코드, 메모리, 타임아웃, 연결 재사용을 조정해 지연과 비용을 줄이는 작업입니다. 실행 특성을 측정하며 조정해야 합니다.', '출장 요리사가 필요한 도구만 작은 가방에 넣고 미리 손질해 이동 시간을 줄이는 것과 같습니다. 가볍고 빠르게 시작해야 합니다.', ['package_mb = 20', 'memory_mb = 512', 'optimized = package_mb < 50 and memory_mb >= 512', 'print(optimized)']]
+];
+
+if (rows.length !== 70) {
+  throw new Error(`Expected 70 rows, got ${rows.length}`);
+}
+
+const data = rows.map(([term, definition, analogy, code], index) => {
+  const planned = plan[index];
+  if (!planned || planned.term !== term) {
+    throw new Error(`Plan mismatch at ${index}: expected ${planned && planned.term}, got ${term}`);
+  }
+  return {
+    id: String(1611 + index).padStart(3, '0'),
+    term,
+    category: '클라우드 / 인프라',
+    difficulty: index < 10 ? 'easy' : index < 49 ? 'medium' : 'hard',
+    phase: 4,
+    week: 24,
+    definition,
+    hint: term.replace(/\(.+\)/, '').trim(),
+    detail: {
+      easy: `${term}은 클라우드 인프라를 안전하고 비용 효율적으로 운영하기 위한 핵심 개념입니다.`,
+      analogy,
+      example: example(term, code),
+      tip: `${term}을 적용할 때는 권한, 비용, 자동화, 장애 복구, 벤더 의존성을 함께 검토하세요.`
+    }
+  };
+});
+
+fs.mkdirSync(DATA_DIR, { recursive: true });
+fs.writeFileSync(path.join(DATA_DIR, 'terms.week24.json'), `${JSON.stringify(data, null, 2)}\n`, 'utf8');
+console.log('wrote data/terms.week24.json');
