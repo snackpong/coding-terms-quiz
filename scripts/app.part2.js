@@ -319,28 +319,55 @@ function showWrongNote(options = {}) {
 }
 
 function buildBeginnerTermDetail(term) {
-  const difficultyText = {
-    easy: '기초 단계에서 자주 나오기 때문에 먼저 편하게 익혀두면 좋습니다.',
-    medium: '기초 개념과 연결해서 보면 훨씬 이해하기 쉽습니다.',
-    hard: '처음에는 낯설 수 있지만, 역할을 하나씩 나누어 보면 이해할 수 있습니다.',
-  }[term.difficulty] || '코딩을 이해할 때 자주 만나는 개념입니다.';
-  const hint = term.hint || '핵심 힌트를 떠올리며 의미를 연결해보세요.';
-
   return [
-    `쉽게 말해 "${term.term}"는 "${hint}"처럼 생각하면 됩니다. 처음에는 정확한 문장보다 머릿속에 떠오르는 그림을 만드는 것이 더 중요합니다.`,
-    `왜 필요할까요? ${term.category}에서는 코드를 읽고, 고치고, 설명할 때 이런 용어를 자주 씁니다. 이 말을 알면 설명을 들을 때 "아, 이 역할을 말하는구나" 하고 따라가기 쉬워집니다.`,
-    `기본 설명은 "${term.definition}"입니다. 이 문장을 한 번에 외우려 하지 말고, "무엇을 하는가", "언제 쓰는가", "무엇과 헷갈릴 수 있는가"로 나누어 읽어보세요.`,
-    `${difficultyText} 퀴즈에서는 설명 속 핵심 역할을 먼저 찾고, 보기 중 그 역할과 가장 가까운 단어를 고르면 됩니다.`,
-  ];
+    { title: '핵심 한 줄', text: term.hint || term.definition },
+    { title: '기본 설명', text: term.definition },
+  ].filter(section => section.text);
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
 }
 
 function buildTermDetailBlock(term) {
+  const detail = term.detail || {};
+  const hasSpecificDetail = detail.easy || detail.analogy || detail.example || detail.tip;
+
+  if (hasSpecificDetail) {
+    const sections = [];
+    if (detail.easy || term.definition) {
+      sections.push(`<p><strong>핵심 한 줄</strong><br>${escapeHtml(detail.easy || term.definition)}</p>`);
+    }
+    if (detail.analogy) {
+      sections.push(`<p><strong>쉬운 비유</strong><br>${escapeHtml(detail.analogy)}</p>`);
+    }
+    if (detail.example) {
+      sections.push(`<p><strong>예시</strong></p><pre>${escapeHtml(detail.example)}</pre>`);
+    }
+    if (detail.tip) {
+      sections.push(`<p><strong>초보자 팁</strong><br>${escapeHtml(detail.tip)}</p>`);
+    }
+
+    return `
+      <details class="term-detail">
+        <summary>자세히 알기</summary>
+        <div class="term-detail-body">
+          ${sections.join('')}
+        </div>
+      </details>`;
+  }
+
   const paragraphs = buildBeginnerTermDetail(term);
   return `
     <details class="term-detail">
       <summary>자세히 알기</summary>
       <div class="term-detail-body">
-        ${paragraphs.map(text => `<p>${text}</p>`).join('')}
+        ${paragraphs.map(section => `<p><strong>${escapeHtml(section.title)}</strong><br>${escapeHtml(section.text)}</p>`).join('')}
       </div>
     </details>`;
 }

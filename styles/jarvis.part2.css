@@ -52,6 +52,18 @@
   margin: 0;
 }
 
+.term-detail-body pre {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  border: 1px solid rgba(0,200,255,0.22);
+  background: rgba(10,22,40,0.05);
+  padding: 14px 16px;
+  color: #18283a;
+  font: 600 0.82em/1.5 'SFMono-Regular', Consolas, 'Noto Sans KR', monospace;
+}
+
 .result-hint .term-detail {
   margin-top: 18px;
   max-width: 1040px;

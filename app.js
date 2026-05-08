@@ -4,11 +4,12 @@ const APP_CHUNKS = [
   'scripts/app.part3.js',
   'scripts/app.part4.js',
 ];
+const APP_VERSION = '20260508-detail-data';
 
 function loadScript(path) {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = path;
+    script.src = `${path}?v=${APP_VERSION}`;
     script.onload = resolve;
     script.onerror = () => reject(new Error(`Failed to load ${path}`));
     document.head.appendChild(script);
