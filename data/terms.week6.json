@@ -1034,7 +1034,7 @@
     "hint": "분석처리",
     "detail": {
       "easy": "많은 데이터를 모아 분석",
-      "analogy": "계산대가 개별 결제를 처리한다면 본사 분석팀은 한 달치 영수증을 모아 추세를 봅니다. OLAP은 많은 데이터를 묶어 큰 질문에 답합니다.",
+      "analogy": "계산대가 개별 결제를 처리한다면 본사 분석팀은 한 달치 영수증을 모아 추세를 봅니다. OLAP는 많은 데이터를 묶어 큰 질문에 답합니다.",
       "example": "CREATE TABLE sales (day TEXT, region TEXT, amount INTEGER);\nINSERT INTO sales VALUES ('2026-05-01', 'KR', 1000), ('2026-05-02', 'KR', 2000);\nSELECT region, SUM(amount) AS total FROM sales GROUP BY region;",
       "tip": "OLAP 쿼리를 운영 DB에서 직접 많이 돌리면 서비스 성능에 영향을 줄 수 있습니다. 분석 전용 저장소를 고려하세요."
     }

@@ -188,7 +188,7 @@
       "easy": "XML로 주고받는 로그인 증명",
       "analogy": "학교가 발급한 공식 재학증명서를 다른 기관에 제출하는 것과 같습니다. 정해진 양식의 문서로 신원을 증명합니다.",
       "example": "// SAML 예시: Node.js에서 실행 가능한 안전한 시뮬레이션 코드\nconst assertion = { nameId: \"user@example.com\", issuer: \"idp\", signed: true };\nconsole.log(assertion.signed && assertion.issuer === \"idp\");",
-      "tip": "SAML은 서명 검증과 audience 확인이 중요합니다. XML 파싱 취약점도 함께 점검해야 합니다."
+      "tip": "SAML는 서명 검증과 audience 확인이 중요합니다. XML 파싱 취약점도 함께 점검해야 합니다."
     }
   },
   {
@@ -412,7 +412,7 @@
       "easy": "조건 속성으로 권한 판단",
       "analogy": "도서관에서 회원 등급, 나이, 대출 시간, 책 종류를 함께 보고 빌릴 수 있는지 결정하는 것과 같습니다.",
       "example": "// ABAC 예시: Node.js에서 실행 가능한 안전한 시뮬레이션 코드\nconst ctx = { department: \"sales\", docDepartment: \"sales\", hour: 14 };\nconst allow = ctx.department === ctx.docDepartment && ctx.hour < 18;\nconsole.log(allow);",
-      "tip": "ABAC은 유연하지만 정책이 복잡해지기 쉽습니다. 정책 테스트와 감사 로그를 반드시 준비하세요."
+      "tip": "ABAC는 유연하지만 정책이 복잡해지기 쉽습니다. 정책 테스트와 감사 로그를 반드시 준비하세요."
     }
   },
   {

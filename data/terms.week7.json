@@ -106,7 +106,7 @@
     "hint": "NULL검사",
     "detail": {
       "easy": "값이 비었는지 확인",
-      "analogy": "설문지에서 0점이라고 쓴 것과 답을 비워 둔 것은 다릅니다. IS NULL은 답이 비어 있는 칸을 찾는 검사입니다.",
+      "analogy": "설문지에서 0점이라고 쓴 것과 답을 비워 둔 것은 다릅니다. IS NULL는 답이 비어 있는 칸을 찾는 검사입니다.",
       "example": "CREATE TABLE profiles (id INTEGER, nickname TEXT);\nINSERT INTO profiles VALUES (1, NULL), (2, 'neo');\nSELECT id FROM profiles WHERE nickname IS NULL;",
       "tip": "NULL은 =, != 비교에서 기대와 다르게 동작합니다. 필수 값은 NOT NULL 제약으로 막는 것이 좋습니다."
     }
@@ -138,7 +138,7 @@
     "hint": "개수제한",
     "detail": {
       "easy": "몇 개만 가져오고 앞은 건너뛰기",
-      "analogy": "책장에서 앞의 20권을 지나 다음 10권만 꺼내는 것과 같습니다. LIMIT/OFFSET은 결과 목록에서 필요한 구간만 가져옵니다.",
+      "analogy": "책장에서 앞의 20권을 지나 다음 10권만 꺼내는 것과 같습니다. LIMIT/OFFSET는 결과 목록에서 필요한 구간만 가져옵니다.",
       "example": "CREATE TABLE items (id INTEGER PRIMARY KEY, name TEXT);\nINSERT INTO items VALUES (1, 'a'), (2, 'b'), (3, 'c');\nSELECT * FROM items ORDER BY id LIMIT 2 OFFSET 1;",
       "tip": "OFFSET이 커질수록 앞 행을 세느라 느려질 수 있습니다. 큰 목록은 키셋 페이지네이션을 고려하세요."
     }
@@ -170,9 +170,9 @@
     "hint": "그룹조건",
     "detail": {
       "easy": "묶은 뒤 조건 걸기",
-      "analogy": "반별 평균 점수를 계산한 뒤 평균 80점 이상인 반만 고르는 것과 같습니다. HAVING은 계산된 그룹 결과를 기준으로 남길 그룹을 정합니다.",
+      "analogy": "반별 평균 점수를 계산한 뒤 평균 80점 이상인 반만 고르는 것과 같습니다. HAVING는 계산된 그룹 결과를 기준으로 남길 그룹을 정합니다.",
       "example": "CREATE TABLE sales (region TEXT, amount INTEGER);\nINSERT INTO sales VALUES ('KR', 100), ('KR', 200), ('US', 50);\nSELECT region, SUM(amount) AS total FROM sales GROUP BY region HAVING total >= 200;",
-      "tip": "집계 전 필터는 WHERE, 집계 후 필터는 HAVING을 쓰세요. WHERE로 먼저 줄이면 처리할 행도 줄어 성능에 유리합니다."
+      "tip": "집계 전 필터는 WHERE, 집계 후 필터는 HAVING를 쓰세요. WHERE로 먼저 줄이면 처리할 행도 줄어 성능에 유리합니다."
     }
   },
   {
@@ -218,9 +218,9 @@
     "hint": "일치조인",
     "detail": {
       "easy": "양쪽에 모두 있는 것만 연결",
-      "analogy": "초대 명단과 실제 참석 명단을 비교해 양쪽에 모두 있는 사람만 체크하는 것과 같습니다. INNER JOIN은 서로 매칭되는 행만 남깁니다.",
+      "analogy": "초대 명단과 실제 참석 명단을 비교해 양쪽에 모두 있는 사람만 체크하는 것과 같습니다. INNER JOIN는 서로 매칭되는 행만 남깁니다.",
       "example": "CREATE TABLE users (id INTEGER, name TEXT);\nCREATE TABLE orders (id INTEGER, user_id INTEGER);\nINSERT INTO users VALUES (1, 'Ada');\nINSERT INTO orders VALUES (10, 1), (11, 99);\nSELECT users.name, orders.id FROM users INNER JOIN orders ON users.id = orders.user_id;",
-      "tip": "INNER JOIN은 매칭되지 않는 행을 조용히 버립니다. 누락된 데이터도 확인해야 한다면 LEFT JOIN을 검토하세요."
+      "tip": "INNER JOIN는 매칭되지 않는 행을 조용히 버립니다. 누락된 데이터도 확인해야 한다면 LEFT JOIN을 검토하세요."
     }
   },
   {
@@ -234,7 +234,7 @@
     "hint": "왼쪽유지",
     "detail": {
       "easy": "왼쪽 표는 모두 남기기",
-      "analogy": "전체 학생 명단을 기준으로 시험 제출 여부를 붙이면 미제출 학생도 명단에 남습니다. LEFT JOIN은 기준 목록을 잃지 않습니다.",
+      "analogy": "전체 학생 명단을 기준으로 시험 제출 여부를 붙이면 미제출 학생도 명단에 남습니다. LEFT JOIN는 기준 목록을 잃지 않습니다.",
       "example": "CREATE TABLE users (id INTEGER, name TEXT);\nCREATE TABLE orders (id INTEGER, user_id INTEGER);\nINSERT INTO users VALUES (1, 'Ada'), (2, 'Bob');\nINSERT INTO orders VALUES (10, 1);\nSELECT users.name, orders.id FROM users LEFT JOIN orders ON users.id = orders.user_id;",
       "tip": "LEFT JOIN 후 오른쪽 테이블 조건을 WHERE에 쓰면 INNER JOIN처럼 바뀔 수 있습니다. 오른쪽 조건은 ON에 둘지 WHERE에 둘지 신중히 정하세요."
     }
@@ -250,9 +250,9 @@
     "hint": "오른쪽유지",
     "detail": {
       "easy": "오른쪽 표는 모두 남기기",
-      "analogy": "전체 상품 목록을 기준으로 판매 내역을 붙이면 팔리지 않은 상품도 남습니다. RIGHT JOIN은 오른쪽 목록을 기준으로 결과를 만듭니다.",
+      "analogy": "전체 상품 목록을 기준으로 판매 내역을 붙이면 팔리지 않은 상품도 남습니다. RIGHT JOIN는 오른쪽 목록을 기준으로 결과를 만듭니다.",
       "example": "-- SQLite는 RIGHT JOIN 지원 버전에 따라 다르므로 LEFT JOIN으로 같은 결과를 표현합니다.\nCREATE TABLE products (id INTEGER, name TEXT);\nCREATE TABLE sales (product_id INTEGER, qty INTEGER);\nINSERT INTO products VALUES (1, 'pen'), (2, 'bag');\nINSERT INTO sales VALUES (1, 3);\nSELECT products.name, sales.qty FROM products LEFT JOIN sales ON products.id = sales.product_id;",
-      "tip": "RIGHT JOIN은 LEFT JOIN으로 바꿔 읽는 편이 이해하기 쉬운 경우가 많습니다. 팀 컨벤션에 맞춰 한 방향 조인을 일관되게 쓰세요."
+      "tip": "RIGHT JOIN는 LEFT JOIN으로 바꿔 읽는 편이 이해하기 쉬운 경우가 많습니다. 팀 컨벤션에 맞춰 한 방향 조인을 일관되게 쓰세요."
     }
   },
   {
@@ -266,9 +266,9 @@
     "hint": "양쪽유지",
     "detail": {
       "easy": "양쪽 표를 모두 남기기",
-      "analogy": "동창회 참석 예정 명단과 실제 참석 명단을 합쳐 누가 빠졌고 누가 새로 왔는지 모두 보는 것과 같습니다. FULL OUTER JOIN은 양쪽의 불일치도 보여 줍니다.",
-      "example": "-- SQLite에서는 UNION으로 FULL OUTER JOIN을 흉내낼 수 있습니다.\nCREATE TABLE a (id INTEGER, name TEXT);\nCREATE TABLE b (id INTEGER, name TEXT);\nINSERT INTO a VALUES (1, 'left');\nINSERT INTO b VALUES (2, 'right');\nSELECT a.id, a.name, b.name FROM a LEFT JOIN b USING (id)\nUNION\nSELECT b.id, a.name, b.name FROM b LEFT JOIN a USING (id);",
-      "tip": "FULL OUTER JOIN은 결과가 커질 수 있습니다. 비교 목적이면 필요한 키와 상태 컬럼만 먼저 조회하세요."
+      "analogy": "동창회 참석 예정 명단과 실제 참석 명단을 합쳐 누가 빠졌고 누가 새로 왔는지 모두 보는 것과 같습니다. FULL OUTER JOIN는 양쪽의 불일치도 보여 줍니다.",
+      "example": "-- SQLite에서는 UNION으로 FULL OUTER JOIN를 흉내낼 수 있습니다.\nCREATE TABLE a (id INTEGER, name TEXT);\nCREATE TABLE b (id INTEGER, name TEXT);\nINSERT INTO a VALUES (1, 'left');\nINSERT INTO b VALUES (2, 'right');\nSELECT a.id, a.name, b.name FROM a LEFT JOIN b USING (id)\nUNION\nSELECT b.id, a.name, b.name FROM b LEFT JOIN a USING (id);",
+      "tip": "FULL OUTER JOIN는 결과가 커질 수 있습니다. 비교 목적이면 필요한 키와 상태 컬럼만 먼저 조회하세요."
     }
   },
   {
@@ -282,9 +282,9 @@
     "hint": "모든조합",
     "detail": {
       "easy": "가능한 모든 짝 만들기",
-      "analogy": "셔츠 3벌과 바지 4벌로 만들 수 있는 모든 코디 조합을 나열하는 것과 같습니다. CROSS JOIN은 두 목록의 모든 조합을 만듭니다.",
+      "analogy": "셔츠 3벌과 바지 4벌로 만들 수 있는 모든 코디 조합을 나열하는 것과 같습니다. CROSS JOIN는 두 목록의 모든 조합을 만듭니다.",
       "example": "CREATE TABLE colors (name TEXT);\nCREATE TABLE sizes (name TEXT);\nINSERT INTO colors VALUES ('red'), ('blue');\nINSERT INTO sizes VALUES ('S'), ('M');\nSELECT colors.name, sizes.name FROM colors CROSS JOIN sizes;",
-      "tip": "CROSS JOIN은 행 수가 곱으로 늘어납니다. 실수로 조건 없는 조인을 만들면 큰 장애가 될 수 있습니다."
+      "tip": "CROSS JOIN는 행 수가 곱으로 늘어납니다. 실수로 조건 없는 조인을 만들면 큰 장애가 될 수 있습니다."
     }
   },
   {
@@ -378,9 +378,9 @@
     "hint": "합집합중복제거",
     "detail": {
       "easy": "두 결과를 합치고 중복 빼기",
-      "analogy": "두 반의 참가자 명단을 합치면서 같은 학생 이름은 한 번만 적는 것과 같습니다. UNION은 결과를 합친 뒤 중복을 제거합니다.",
+      "analogy": "두 반의 참가자 명단을 합치면서 같은 학생 이름은 한 번만 적는 것과 같습니다. UNION는 결과를 합친 뒤 중복을 제거합니다.",
       "example": "SELECT \"Ada\" AS name\nUNION\nSELECT \"Ada\"\nUNION\nSELECT \"Bob\";",
-      "tip": "UNION은 중복 제거 비용이 있습니다. 중복 제거가 필요 없다면 UNION ALL이 더 빠를 수 있습니다."
+      "tip": "UNION는 중복 제거 비용이 있습니다. 중복 제거가 필요 없다면 UNION ALL이 더 빠를 수 있습니다."
     }
   },
   {
@@ -394,9 +394,9 @@
     "hint": "합집합전체",
     "detail": {
       "easy": "두 결과를 그대로 이어 붙이기",
-      "analogy": "두 매장의 판매 영수증을 그대로 한 묶음으로 모으면 같은 상품이 여러 번 나와도 지우지 않습니다. UNION ALL은 중복을 그대로 둡니다.",
+      "analogy": "두 매장의 판매 영수증을 그대로 한 묶음으로 모으면 같은 상품이 여러 번 나와도 지우지 않습니다. UNION ALL는 중복을 그대로 둡니다.",
       "example": "SELECT \"Ada\" AS name\nUNION ALL\nSELECT \"Ada\"\nUNION ALL\nSELECT \"Bob\";",
-      "tip": "로그나 거래 내역처럼 중복도 의미가 있는 데이터는 UNION ALL을 사용하세요. 성능도 보통 UNION보다 좋습니다."
+      "tip": "로그나 거래 내역처럼 중복도 의미가 있는 데이터는 UNION ALL를 사용하세요. 성능도 보통 UNION보다 좋습니다."
     }
   },
   {
@@ -682,7 +682,7 @@
     "hint": "행수정",
     "detail": {
       "easy": "기존 값을 고치기",
-      "analogy": "주소록에서 이사한 친구의 주소만 새 주소로 고치는 것과 같습니다. UPDATE SET은 기존 행의 특정 칸을 바꿉니다.",
+      "analogy": "주소록에서 이사한 친구의 주소만 새 주소로 고치는 것과 같습니다. UPDATE SET는 기존 행의 특정 칸을 바꿉니다.",
       "example": "CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);\nINSERT INTO users VALUES (1, 'Ada');\nUPDATE users SET name = 'Ada Lovelace' WHERE id = 1;\nSELECT * FROM users;",
       "tip": "UPDATE 전에는 같은 WHERE로 SELECT를 실행해 대상 행을 확인하세요. 조건 누락은 대량 데이터 손상으로 이어질 수 있습니다."
     }
@@ -698,7 +698,7 @@
     "hint": "행삭제",
     "detail": {
       "easy": "조건에 맞는 줄 지우기",
-      "analogy": "명부에서 탈퇴한 회원의 줄을 지우는 것과 같습니다. DELETE FROM은 테이블의 행을 제거합니다.",
+      "analogy": "명부에서 탈퇴한 회원의 줄을 지우는 것과 같습니다. DELETE FROM는 테이블의 행을 제거합니다.",
       "example": "CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);\nINSERT INTO users VALUES (1, 'Ada'), (2, 'Bob');\nDELETE FROM users WHERE id = 2;\nSELECT * FROM users;",
       "tip": "운영 데이터 삭제는 트랜잭션과 백업 확인 후 진행하세요. 감사가 필요한 데이터는 소프트 삭제가 더 적합할 수 있습니다."
     }
@@ -730,7 +730,7 @@
     "hint": "표생성",
     "detail": {
       "easy": "새 표 만들기",
-      "analogy": "새 장부를 만들면서 칸 이름과 작성 규칙을 정하는 것과 같습니다. CREATE TABLE은 데이터가 들어갈 표의 틀을 만듭니다.",
+      "analogy": "새 장부를 만들면서 칸 이름과 작성 규칙을 정하는 것과 같습니다. CREATE TABLE는 데이터가 들어갈 표의 틀을 만듭니다.",
       "example": "CREATE TABLE tasks (\n  id INTEGER PRIMARY KEY,\n  title TEXT NOT NULL,\n  done INTEGER DEFAULT 0\n);\nSELECT name FROM sqlite_master WHERE type = \"table\" AND name = \"tasks\";",
       "tip": "테이블 생성 시 기본 키, NOT NULL, 기본값을 함께 설계하세요. 나중에 대규모 테이블을 바꾸는 비용이 더 큽니다."
     }
@@ -746,7 +746,7 @@
     "hint": "표변경",
     "detail": {
       "easy": "이미 만든 표의 구조 바꾸기",
-      "analogy": "사용 중인 신청서 양식에 새 항목을 추가하는 것과 같습니다. ALTER TABLE은 이미 운영 중인 테이블의 틀을 바꿉니다.",
+      "analogy": "사용 중인 신청서 양식에 새 항목을 추가하는 것과 같습니다. ALTER TABLE는 이미 운영 중인 테이블의 틀을 바꿉니다.",
       "example": "CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);\nALTER TABLE users ADD COLUMN email TEXT;\nINSERT INTO users VALUES (1, 'Ada', 'a@example.com');\nSELECT * FROM users;",
       "tip": "큰 테이블의 ALTER는 잠금이나 긴 마이그레이션을 만들 수 있습니다. 무중단 배포가 필요하면 단계적 변경을 설계하세요."
     }
@@ -762,9 +762,9 @@
     "hint": "표제거",
     "detail": {
       "easy": "표 자체를 없애기",
-      "analogy": "내용을 비우는 것이 아니라 장부 자체를 폐기하는 것과 같습니다. DROP TABLE은 테이블이라는 보관함을 통째로 없앱니다.",
+      "analogy": "내용을 비우는 것이 아니라 장부 자체를 폐기하는 것과 같습니다. DROP TABLE는 테이블이라는 보관함을 통째로 없앱니다.",
       "example": "CREATE TABLE temp_data (id INTEGER);\nDROP TABLE temp_data;\nSELECT \"dropped\" AS status;",
-      "tip": "DROP TABLE은 복구가 어렵습니다. 운영 환경에서는 권한 제한과 백업 확인, 명확한 변경 절차가 필요합니다."
+      "tip": "DROP TABLE는 복구가 어렵습니다. 운영 환경에서는 권한 제한과 백업 확인, 명확한 변경 절차가 필요합니다."
     }
   },
   {

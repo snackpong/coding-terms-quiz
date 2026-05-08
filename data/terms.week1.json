@@ -204,7 +204,7 @@
       "easy": "웹 페이지의 뼈대를 만드는 마크업 언어. 내용과 구조를 담당합니다",
       "analogy": "건물의 철근 골조와 같습니다. 눈에 보이는 화면 뒤에서 모든 내용이 이 뼈대 위에 올려집니다.",
       "example": "<!DOCTYPE html>\n<html>\n  <body>\n    <h1>안녕하세요!</h1>\n    <p>저는 HTML입니다.</p>\n    <a href=\"https://google.com\">구글로</a>\n  </body>\n</html>",
-      "tip": "HTML은 <태그>내용</태그> 형식입니다. 여는 태그와 닫는 태그(/)가 항상 짝을 이루어야 합니다."
+      "tip": "HTML는 <태그>내용</태그> 형식입니다. 여는 태그와 닫는 태그(/)가 항상 짝을 이루어야 합니다."
     }
   },
   {
@@ -252,7 +252,7 @@
       "easy": "인터넷 주소. 웹의 특정 자원(페이지, 이미지 등)의 위치를 나타냅니다",
       "analogy": "우편 주소와 같습니다. \"서울시 강남구 테헤란로 123\"처럼 웹에서도 정확한 주소가 있어야 찾아갈 수 있습니다.",
       "example": "https://www.example.com/blog/post?id=42\n│       │             │    │\n프로토콜  도메인         경로  파라미터",
-      "tip": "URL은 프로토콜(https://), 도메인(example.com), 경로(/blog/post)로 구성됩니다. 보안 사이트는 반드시 https여야 합니다."
+      "tip": "URL는 프로토콜(https://), 도메인(example.com), 경로(/blog/post)로 구성됩니다. 보안 사이트는 반드시 https여야 합니다."
     }
   },
   {
@@ -380,7 +380,7 @@
       "easy": "코드의 변경 이력을 기록하고 관리하는 버전 관리 시스템",
       "analogy": "구글 독스의 \"문서 이력\" 기능과 같습니다. 이전 버전을 언제든지 확인하고 복원할 수 있습니다.",
       "example": "git init              # 시작\ngit add .             # 변경사항 준비\ngit commit -m \"기능 추가\"  # 스냅샷 저장\ngit log               # 이력 확인\ngit checkout 이전버전   # 이전으로 돌아가기",
-      "tip": "Git은 \"실수해도 괜찮아\"를 가능하게 해줍니다. 이전 버전으로 언제든지 돌아갈 수 있기 때문입니다."
+      "tip": "Git는 \"실수해도 괜찮아\"를 가능하게 해줍니다. 이전 버전으로 언제든지 돌아갈 수 있기 때문입니다."
     }
   },
   {
@@ -988,7 +988,7 @@
       "easy": "HTML 문서를 트리 구조로 표현한 것. JavaScript가 웹 요소를 조작하는 방식",
       "analogy": "웹페이지를 가족 관계도처럼 표현한 것입니다. html이 조상, head/body가 자녀, 그 안의 태그들이 손자...",
       "example": "// DOM으로 HTML 즉시 변경:\ndocument.getElementById(\"title\")\n  .textContent = \"새 제목\";\n// 페이지 새로고침 없이 바뀜!\n\ndocument.querySelector(\".btn\")\n  .style.color = \"red\";",
-      "tip": "JavaScript로 DOM을 조작하면 페이지를 새로고침 없이 내용을 바꿀 수 있습니다. 동적 웹페이지의 핵심입니다."
+      "tip": "JavaScript로 DOM를 조작하면 페이지를 새로고침 없이 내용을 바꿀 수 있습니다. 동적 웹페이지의 핵심입니다."
     }
   },
   {
@@ -1052,7 +1052,7 @@
       "easy": "JavaScript(Node.js) 패키지를 설치하고 관리하는 도구",
       "analogy": "앱스토어와 같습니다. 필요한 앱(패키지)을 클릭 한 번으로 설치하는 것처럼, npm 명령어 한 줄로 패키지를 설치합니다.",
       "example": "npm install react      # react 설치\nnpm install -g nodemon # 전역 설치\nnpm start              # 프로젝트 시작\nnpm run build          # 배포용 빌드\n\n# package.json이 모든 패키지 목록 관리",
-      "tip": "npm을 쓰면 패키지 버전을 일관되게 관리할 수 있습니다. package.json에 의존성이 기록되어 팀원이 동일한 환경을 구성할 수 있습니다."
+      "tip": "npm를 쓰면 패키지 버전을 일관되게 관리할 수 있습니다. package.json에 의존성이 기록되어 팀원이 동일한 환경을 구성할 수 있습니다."
     }
   },
   {

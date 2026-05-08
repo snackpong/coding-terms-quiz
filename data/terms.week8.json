@@ -314,7 +314,7 @@
     "hint": "엣지캐시",
     "detail": {
       "easy": "가까운 창고에서 물건 받기",
-      "analogy": "본사 창고 대신 집 근처 물류센터에서 물건을 받으면 배송이 빨라집니다. CDN은 사용자 가까운 서버에서 콘텐츠를 전달합니다.",
+      "analogy": "본사 창고 대신 집 근처 물류센터에서 물건을 받으면 배송이 빨라집니다. CDN는 사용자 가까운 서버에서 콘텐츠를 전달합니다.",
       "example": "// CDN 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst assetUrl = \"https://cdn.example.com/app.js\";\nconst isCdn = assetUrl.includes(\"cdn.\");\nconsole.log(isCdn);",
       "tip": "CDN 캐시 무효화와 버전 파일명을 함께 설계하세요. 오래된 JS가 남으면 배포 후 오류가 생길 수 있습니다."
     }
@@ -330,9 +330,9 @@
     "hint": "양방향연결",
     "detail": {
       "easy": "전화처럼 계속 열어 두는 연결",
-      "analogy": "문자를 한 번씩 보내는 대신 전화 통화를 열어 두고 서로 바로 말하는 것과 같습니다. WebSocket은 연결을 유지해 실시간 양방향 통신을 합니다.",
+      "analogy": "문자를 한 번씩 보내는 대신 전화 통화를 열어 두고 서로 바로 말하는 것과 같습니다. WebSocket는 연결을 유지해 실시간 양방향 통신을 합니다.",
       "example": "// WebSocket 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst socketState = { open: true, messages: [] };\nif (socketState.open) socketState.messages.push(\"ping\");\nconsole.log(socketState.messages);",
-      "tip": "WebSocket은 연결 수가 서버 자원을 계속 차지합니다. 인증 만료, 재연결, 백프레셔 처리를 설계해야 합니다."
+      "tip": "WebSocket는 연결 수가 서버 자원을 계속 차지합니다. 인증 만료, 재연결, 백프레셔 처리를 설계해야 합니다."
     }
   },
   {
@@ -458,9 +458,9 @@
     "hint": "선택조회API",
     "detail": {
       "easy": "필요한 칸만 주문하는 API",
-      "analogy": "뷔페에서 원하는 음식만 접시에 담는 것과 같습니다. GraphQL은 클라이언트가 필요한 필드와 관계를 직접 지정합니다.",
+      "analogy": "뷔페에서 원하는 음식만 접시에 담는 것과 같습니다. GraphQL는 클라이언트가 필요한 필드와 관계를 직접 지정합니다.",
       "example": "// GraphQL 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst query = `{ user(id: 1) { name email } }`;\nconst selectedFields = query.match(/name|email/g);\nconsole.log(selectedFields);",
-      "tip": "GraphQL은 과도하게 깊은 쿼리와 N+1 문제를 조심해야 합니다. 쿼리 복잡도 제한과 DataLoader 같은 배치 전략을 고려하세요."
+      "tip": "GraphQL는 과도하게 깊은 쿼리와 N+1 문제를 조심해야 합니다. 쿼리 복잡도 제한과 DataLoader 같은 배치 전략을 고려하세요."
     }
   },
   {
@@ -778,7 +778,7 @@
     "hint": "캐시지시",
     "detail": {
       "easy": "캐시 보관 규칙 정하기",
-      "analogy": "식품 포장지의 유통기한과 보관 방법처럼 응답에도 저장 기간과 재확인 규칙이 필요합니다. Cache-Control은 캐시가 응답을 다루는 방법을 알려 줍니다.",
+      "analogy": "식품 포장지의 유통기한과 보관 방법처럼 응답에도 저장 기간과 재확인 규칙이 필요합니다. Cache-Control는 캐시가 응답을 다루는 방법을 알려 줍니다.",
       "example": "// Cache-Control 예시: Node.js 또는 브라우저 콘솔에서 실행 가능한 코드\nconst header = \"public, max-age=3600\";\nconst maxAge = Number(header.match(/max-age=(\\d+)/)[1]);\nconsole.log(maxAge);",
       "tip": "로그인 사용자 응답에는 private 또는 no-store를 검토하세요. 정적 파일은 파일명 해시와 긴 max-age 조합이 효과적입니다."
     }
